@@ -1,0 +1,33 @@
+# configs/gemma4_sft.yaml (Rev 2 — T4-safe, from design doc)
+# Used in Weekend 2 on Google Colab free T4
+#
+# VRAM budget: ~2.6GB model + ~2-4GB activations + ~1GB overhead = ~6-8GB
+# (well within T4's 16GB)
+
+model: unsloth/gemma-4-E4B-it
+load_in_4bit: true              # QLoRA — T4 cannot fit 16-bit (10.2GB weights alone)
+fp16: true                      # T4 does NOT support bf16 (Turing arch)
+bf16: false
+lora_r: 16
+lora_alpha: 16
+lora_dropout: 0
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+max_seq_length: 2048            # Most dialogues <1.5K tokens; 8192 wastes 4x VRAM
+gradient_checkpointing: unsloth
+learning_rate: 2e-4
+epochs: 3
+batch_size: 2
+gradient_accumulation_steps: 4
+warmup_steps: 5
+optimizer: adamw_8bit
+weight_decay: 0.01
+lr_scheduler_type: cosine
+save_steps: 100                 # Catches overfitting, 5-6 checkpoints
+save_total_limit: 3             # Keep latest 3 to avoid filling Colab disk
