@@ -1,0 +1,144 @@
+{
+  "version": "1.0",
+  "description": "Reference student profiles derived from production eval data. Used by the two-LLM synthetic data pipeline to ground generated conversations in realistic student histories.",
+  "students": [
+    {
+      "id": "kuzey",
+      "first_name": "Kuzey",
+      "age": 10,
+      "instrument": "Piano",
+      "skill_level": "beginner-intermediate",
+      "playing_level_numeric": 1,
+      "weeks_active": 5,
+      "practice_pattern": "consistent",
+      "session_notes": [
+        {
+          "session_number": 1,
+          "weeks_ago": 5,
+          "notes": "Continued Oh When the Saints. Learned D Major chord and D Major scale with F-sharp and C-sharp. Left hand position focus with 3rd and 4th finger exercises. Metronome practice from 75 to 100 BPM.",
+          "focus_areas": ["scales", "chords", "left_hand_technique", "metronome"],
+          "concepts_introduced": ["D_major_chord", "D_major_scale", "F_sharp", "C_sharp"]
+        },
+        {
+          "session_number": 2,
+          "weeks_ago": 4,
+          "notes": "D Major scale and chord review. Practiced legato playing. Left hand focus on 3rd and 4th finger placement. Metronome work starting at 75 BPM, working up to 100 BPM.",
+          "focus_areas": ["scale_review", "legato", "finger_placement", "metronome"],
+          "concepts_introduced": ["legato", "finger_independence_3rd_4th"]
+        },
+        {
+          "session_number": 3,
+          "weeks_ago": 3,
+          "notes": "New piece after Oh When the Saints. Combined both hands for the first time. Learned A Major scale with C-sharp, G-sharp, F-sharp. Practiced finger numbers, started with one octave then expanded to two octaves.",
+          "focus_areas": ["hands_together", "new_piece", "A_major_scale", "finger_numbers"],
+          "concepts_introduced": ["hands_together", "A_major_scale", "G_sharp", "two_octave_scales"]
+        },
+        {
+          "session_number": 4,
+          "weeks_ago": 2,
+          "notes": "Staff note reading. Learned how to find high notes using reference note method. First identify a reference note you know on the staff, then count up or down to find the target note.",
+          "focus_areas": ["note_reading", "staff_navigation", "reference_note_method"],
+          "concepts_introduced": ["reference_note_method", "counting_intervals_on_staff"]
+        },
+        {
+          "session_number": 5,
+          "weeks_ago": 1,
+          "notes": "Two new rhythms and a new piece. Practiced right hand then left hand separately. Learned dotted quarter notes and single-grouped eighth notes. Reinforced the piece at the end of the lesson.",
+          "focus_areas": ["rhythm", "new_piece", "hands_separate", "dotted_rhythms"],
+          "concepts_introduced": ["dotted_quarter_note", "eighth_note_groupings", "hands_separate_practice"]
+        }
+      ],
+      "practice_sessions": [
+        {"days_ago": 8, "duration_minutes": 15},
+        {"days_ago": 6, "duration_minutes": 25},
+        {"days_ago": 4, "duration_minutes": 20},
+        {"days_ago": 2, "duration_minutes": 15},
+        {"days_ago": 1, "duration_minutes": 20}
+      ],
+      "practice_summary": {
+        "total_sessions_last_2_weeks": 5,
+        "total_minutes_last_2_weeks": 95,
+        "average_session_minutes": 19,
+        "consistency": "high"
+      },
+      "known_strengths": [
+        "Consistent practice habits",
+        "Responds well to metronome work",
+        "Motivated to learn new pieces",
+        "Handles hands-separate practice before hands-together"
+      ],
+      "known_challenges": [
+        "Left hand 3rd and 4th finger independence",
+        "Reading higher ledger line notes",
+        "Maintaining legato when hands come together"
+      ],
+      "current_repertoire": ["Oh When the Saints (mastered)", "New piece (in progress)"],
+      "current_technical_work": ["A Major scale two octaves", "D Major scale", "Dotted quarter note rhythms"],
+      "pipeline_usage_notes": "Use this profile to generate piano conversations at beginner-intermediate level for a 10-year-old. Student is technically progressing but may still struggle with hands-together coordination and note reading above the staff. Metronome and methodical practice are established habits."
+    },
+    {
+      "id": "beverly",
+      "first_name": "Beverly",
+      "age": 6,
+      "instrument": "Voice",
+      "skill_level": "beginner",
+      "playing_level_numeric": 1,
+      "weeks_active": 4,
+      "practice_pattern": "light",
+      "session_notes": [
+        {
+          "session_number": 1,
+          "weeks_ago": 4,
+          "notes": "Posture is the secret to singing. Learning to use your whole body effectively. Begins with good posture followed by correct breathing techniques. Control the body, you control the breath. Control the breath, you control the voice. Lift your sternum, bring your head back so it is aligned.",
+          "focus_areas": ["posture", "alignment", "breathing_introduction"],
+          "concepts_introduced": ["sternum_lift", "head_alignment", "body_breath_voice_connection"]
+        },
+        {
+          "session_number": 2,
+          "weeks_ago": 3,
+          "notes": "Great work today! Started with body movement, very important to begin practice and lessons this way. Helps stretch and relax muscles to reduce body tension. Stretching ideas: star fish, shake arms, shoulder rolls, touch the sky, touch your toes.",
+          "focus_areas": ["body_movement", "stretching", "muscle_relaxation"],
+          "concepts_introduced": ["starfish_stretch", "shake_arms", "shoulder_rolls", "body_tension_awareness"]
+        },
+        {
+          "session_number": 3,
+          "weeks_ago": 2,
+          "notes": "Practice is the key to success. Start with stretching. Warm up with vocal exercises and scales. Practice a song. Focus on breathing from the diaphragm.",
+          "focus_areas": ["warmup_routine", "vocal_exercises", "diaphragmatic_breathing"],
+          "concepts_introduced": ["diaphragm_breathing", "vocal_warmup_sequence"]
+        },
+        {
+          "session_number": 4,
+          "weeks_ago": 1,
+          "notes": "Practice is the key to success. Start with stretching and loosening the body. Remember that singing requires your whole body. Warm up with vocal exercises and scales. Practice a song you enjoy.",
+          "focus_areas": ["whole_body_singing", "routine_reinforcement", "song_practice"],
+          "concepts_introduced": ["singing_whole_body_concept", "song_enjoyment_motivation"]
+        }
+      ],
+      "practice_sessions": [
+        {"days_ago": 5, "duration_minutes": 10},
+        {"days_ago": 2, "duration_minutes": 10}
+      ],
+      "practice_summary": {
+        "total_sessions_last_2_weeks": 2,
+        "total_minutes_last_2_weeks": 20,
+        "average_session_minutes": 10,
+        "consistency": "low"
+      },
+      "known_strengths": [
+        "Enthusiastic and willing to move and stretch",
+        "Responds to encouraging and playful instruction",
+        "Beginning to understand the body-breath-voice connection"
+      ],
+      "known_challenges": [
+        "Very young (6) — short attention span",
+        "Diaphragmatic breathing is abstract at this age",
+        "Limited practice consistency (2 sessions in 2 weeks)",
+        "Needs concrete physical metaphors for all concepts"
+      ],
+      "current_repertoire": ["Age-appropriate song (in progress, unspecified)"],
+      "current_technical_work": ["Posture alignment", "Diaphragmatic breathing", "Warmup routine (stretch, vocal exercises, scales, song)"],
+      "pipeline_usage_notes": "Use this profile to generate voice conversations for a 6-year-old beginner. Language must be simple, physical, and playful. Abstract concepts like 'diaphragm' need concrete metaphors (balloon in your belly, smell the flowers). Warmup routine is being established. Do not assume any prior music theory knowledge."
+    }
+  ]
+}

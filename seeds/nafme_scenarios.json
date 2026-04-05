@@ -1,0 +1,464 @@
+{
+  "version": "2.0",
+  "description": "50 base scenarios derived from NAfME National Core Arts Standards and ABRSM grade descriptors. Replaces v1 placeholder data. Used as seeds for the two-LLM synthetic data generation pipeline (Opus=tutor, Sonnet=student). Distribution: Piano 15, Violin 12, Guitar 12, Voice 8, Drums 3.",
+  "total_scenarios": 50,
+  "instrument_distribution": {
+    "piano": 15,
+    "violin": 12,
+    "guitar": 12,
+    "voice": 8,
+    "drums": 3
+  },
+  "scenarios": [
+    {
+      "id": "nafme_01",
+      "instrument": "piano",
+      "age_range": [5, 7],
+      "standard": "MU:Pr4.2.Ka - With guidance, demonstrate awareness of music concepts while engaging in music learning activities",
+      "skill_level": "beginner",
+      "description": "Young student is learning to find Middle C and the surrounding notes on the staff. They can identify the note by name when pointed to but cannot yet locate it independently on the keyboard.",
+      "student_opener": "I can find Middle C when my teacher shows me but I always forget where it is when I try by myself."
+    },
+    {
+      "id": "nafme_02",
+      "instrument": "piano",
+      "age_range": [6, 8],
+      "standard": "MU:Pr4.2.1a - Demonstrate and explain, with teacher guidance, awareness of basic music concepts while reading music notation",
+      "skill_level": "beginner",
+      "description": "Student is learning quarter notes and half notes. They can clap rhythms in isolation but struggle to play and count at the same time.",
+      "student_opener": "I can clap the rhythm fine but when I try to play it on the piano my counting gets all messed up."
+    },
+    {
+      "id": "nafme_03",
+      "instrument": "piano",
+      "age_range": [7, 9],
+      "standard": "MU:Pr5.1.2a - Apply established practice strategies and skills to address performance challenges",
+      "skill_level": "beginner",
+      "description": "Student is working on their first two-hand piece. Right hand is solid but left hand keeps losing its place when they try to play together.",
+      "student_opener": "My right hand knows the song perfectly but the second I add my left hand it all falls apart."
+    },
+    {
+      "id": "nafme_04",
+      "instrument": "piano",
+      "age_range": [8, 10],
+      "standard": "ABRSM Grade 1 - Play pieces with correct notes, rhythm, and basic dynamics at a steady pulse",
+      "skill_level": "beginner",
+      "description": "Student is preparing their first ABRSM Grade 1 piece. Notes are mostly correct but tempo rushes in the difficult bars and slows down in the easy ones.",
+      "student_opener": "My teacher says my tempo is uneven. I don't even notice I'm rushing until I listen back to a recording."
+    },
+    {
+      "id": "nafme_05",
+      "instrument": "piano",
+      "age_range": [9, 11],
+      "standard": "MU:Pr4.2.4a - Demonstrate understanding of the structure and the elements of music in music selected for performance",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is working on a piece in C Major and starting to learn about key signatures. They understand C Major but do not yet understand why key signatures exist.",
+      "student_opener": "Why can't all songs just be in C Major? Why do we need key signatures at all?"
+    },
+    {
+      "id": "nafme_06",
+      "instrument": "piano",
+      "age_range": [9, 12],
+      "standard": "MU:Pr5.1.4a - Apply teacher-provided and collaboratively developed criteria and feedback to evaluate accuracy of ensemble and individual performance",
+      "skill_level": "beginner-intermediate",
+      "description": "Student has learned all the notes of a piece but is playing it mechanically without dynamic contrast. Teacher has marked piano and forte in the score but student ignores them.",
+      "student_opener": "I learned all the notes. Why does my teacher keep saying it doesn't sound like music yet?"
+    },
+    {
+      "id": "nafme_07",
+      "instrument": "piano",
+      "age_range": [10, 13],
+      "standard": "ABRSM Grade 2 - Demonstrate legato and staccato articulation within pieces; observe repeat marks and da capo",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is working on legato phrasing. They can play legato in slow practice but their default touch reverts to a slightly detached sound at performance tempo.",
+      "student_opener": "I can play it smooth when I go slowly but when I speed it up it sounds choppy again."
+    },
+    {
+      "id": "nafme_08",
+      "instrument": "piano",
+      "age_range": [10, 13],
+      "standard": "MU:Cr1.1.4a - Improvise rhythmic, melodic, and harmonic ideas, and explain connection to specific music concepts",
+      "skill_level": "beginner-intermediate",
+      "description": "Student wants to start improvising but does not know where to begin. They know a pentatonic scale but freeze when asked to play freely.",
+      "student_opener": "I want to make up my own music but whenever I try I just play random notes that sound bad."
+    },
+    {
+      "id": "nafme_09",
+      "instrument": "piano",
+      "age_range": [11, 14],
+      "standard": "MU:Re7.1.5a - Demonstrate and explain how personal interests and musical understanding inform personal music selection for specific purposes",
+      "skill_level": "intermediate",
+      "description": "Student is working on voicing — bringing out the melody in the right hand while keeping the accompaniment in the left hand softer. They understand the concept intellectually but both hands play at the same volume.",
+      "student_opener": "My teacher told me to make the melody sing out but I don't know how to make one hand louder than the other."
+    },
+    {
+      "id": "nafme_10",
+      "instrument": "piano",
+      "age_range": [11, 14],
+      "standard": "ABRSM Grade 3 - Demonstrate understanding of phrase shaping, balance between hands, and basic pedaling",
+      "skill_level": "intermediate",
+      "description": "Student is learning to use the sustain pedal for the first time. They understand the concept but pedal at the wrong times, creating harmonic muddle.",
+      "student_opener": "I tried using the pedal like my teacher showed me but it just makes everything sound blurry."
+    },
+    {
+      "id": "nafme_11",
+      "instrument": "piano",
+      "age_range": [12, 15],
+      "standard": "MU:Pr4.1.5a - Demonstrate and explain how the selection of music to perform is influenced by personal interest, knowledge, purpose, and context",
+      "skill_level": "intermediate",
+      "description": "Student is preparing a performance piece and wants to add personal interpretation but is afraid of deviating from what is written. They play the notes and rhythms correctly but without character.",
+      "student_opener": "How do I add my own expression to a piece without playing it wrong?"
+    },
+    {
+      "id": "nafme_12",
+      "instrument": "piano",
+      "age_range": [12, 16],
+      "standard": "MU:Cn10.0.6a - Demonstrate how interests, knowledge, and skills relate to personal choices and intent when creating, performing, and responding to music",
+      "skill_level": "intermediate",
+      "description": "Student is working on sight-reading. They can read notes they know but lock up when encountering new rhythmic patterns or ledger lines.",
+      "student_opener": "Every time I try to sight-read something new I have to stop and figure out every single note. It takes forever."
+    },
+    {
+      "id": "nafme_13",
+      "instrument": "piano",
+      "age_range": [8, 11],
+      "standard": "MU:Pr4.2.3a - Demonstrate understanding of expressive qualities and how creators use them to convey expressive intent",
+      "skill_level": "beginner",
+      "description": "Student is learning about forte and piano but applies them randomly rather than in response to musical context or written markings.",
+      "student_opener": "My teacher put f and p in my music but I can't remember when I'm supposed to be loud or quiet while I'm playing."
+    },
+    {
+      "id": "nafme_14",
+      "instrument": "piano",
+      "age_range": [6, 8],
+      "standard": "MU:Pr6.1.Ka - With guidance, perform music with expression, technical accuracy, and appropriate interpretation",
+      "skill_level": "beginner",
+      "description": "A young student has just learned their first short piece and is excited to play it. They rush through it when excited and play very quietly from nervousness.",
+      "student_opener": "I learned the whole song! Do you want to hear it? I practiced it all week!"
+    },
+    {
+      "id": "nafme_15",
+      "instrument": "piano",
+      "age_range": [13, 16],
+      "standard": "ABRSM Grade 4-5 - Demonstrate facility with varied articulation, pedaling, and stylistic awareness across different musical periods",
+      "skill_level": "intermediate",
+      "description": "Student is working on a Baroque piece and a Romantic piece simultaneously. They play both in the same style and cannot differentiate the articulation conventions.",
+      "student_opener": "My teacher gave me a Bach piece and a Chopin piece but I don't understand why I have to play them differently."
+    },
+    {
+      "id": "nafme_16",
+      "instrument": "violin",
+      "age_range": [5, 7],
+      "standard": "MU:Pr4.2.Ka - With guidance, demonstrate awareness of music concepts while engaging in music learning activities",
+      "skill_level": "beginner",
+      "description": "Young student is learning how to hold the bow for the first time. They grip it tightly in their fist instead of using a relaxed curved finger placement.",
+      "student_opener": "Holding the bow is really hard. My fingers don't want to go in the right place."
+    },
+    {
+      "id": "nafme_17",
+      "instrument": "violin",
+      "age_range": [6, 9],
+      "standard": "MU:Pr5.1.1a - With guidance, apply practice strategies to address performance challenges in music",
+      "skill_level": "beginner",
+      "description": "Student has started learning open string bowing. Their bow goes crooked rather than parallel to the bridge and they produce a scratchy tone.",
+      "student_opener": "My violin sounds really scratchy and squeaky when I play. How do I make it sound better?"
+    },
+    {
+      "id": "nafme_18",
+      "instrument": "violin",
+      "age_range": [7, 10],
+      "standard": "ABRSM Initial - Play open strings and first simple pieces with basic bow control and left hand position",
+      "skill_level": "beginner",
+      "description": "Student is placing their first fingers on the string but presses too hard, causing pitch to go sharp and hand to tense up.",
+      "student_opener": "When I put my finger down the note sounds weird, like it's not the right pitch."
+    },
+    {
+      "id": "nafme_19",
+      "instrument": "violin",
+      "age_range": [8, 11],
+      "standard": "MU:Pr4.2.2a - Demonstrate understanding of simple musical concepts while performing with technical accuracy",
+      "skill_level": "beginner",
+      "description": "Student is learning detache bowing and struggles to use the full bow length. They use only the middle third of the bow and produce a thin, short sound.",
+      "student_opener": "My teacher says I need to use more bow but I don't understand what that means when I'm playing."
+    },
+    {
+      "id": "nafme_20",
+      "instrument": "violin",
+      "age_range": [9, 12],
+      "standard": "MU:Pr5.1.3a - Apply teacher-provided criteria to evaluate personal performance and expression",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is working on intonation in first position. They can hear when a note is out of tune after they play it but cannot hear it in advance or self-correct in real time.",
+      "student_opener": "I can hear that I played the wrong note after I play it, but I don't know how to fix it before it comes out."
+    },
+    {
+      "id": "nafme_21",
+      "instrument": "violin",
+      "age_range": [9, 12],
+      "standard": "ABRSM Grade 1 - Play pieces with correct intonation in first position; perform basic bowing patterns",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is working on their first slur. They understand the concept intellectually but bow speed changes awkwardly mid-slur and tone becomes uneven.",
+      "student_opener": "When I try to slur two notes my bow kind of stops and starts and it sounds bumpy."
+    },
+    {
+      "id": "nafme_22",
+      "instrument": "violin",
+      "age_range": [10, 13],
+      "standard": "MU:Cr2.1.4a - Demonstrate selected and developed musical ideas for improvisations, arrangements, or compositions to express intent",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is learning to shift to third position for the first time. They understand the target position but fear of going off-pitch makes them hesitate and the shift sounds clunky.",
+      "student_opener": "Shifting feels really scary. What if I miss the note?"
+    },
+    {
+      "id": "nafme_23",
+      "instrument": "violin",
+      "age_range": [10, 14],
+      "standard": "MU:Re9.1.4a - Evaluate musical works and performances based on analysis and established criteria",
+      "skill_level": "intermediate",
+      "description": "Student has been told to add vibrato to a lyrical piece. They have practiced the wrist motion in isolation but vibrato is tense and narrow when added to actual playing.",
+      "student_opener": "I can do the vibrato motion on its own but when I try to do it while playing it gets really tight and fast."
+    },
+    {
+      "id": "nafme_24",
+      "instrument": "violin",
+      "age_range": [11, 15],
+      "standard": "ABRSM Grade 3 - Demonstrate varied bow strokes including spiccato; play in third position",
+      "skill_level": "intermediate",
+      "description": "Student is attempting spiccato (bouncing bow stroke) but the bow bounces unevenly and randomly rather than in a controlled, rhythmic pattern.",
+      "student_opener": "I can't get spiccato to work. Sometimes the bow bounces fine and sometimes it just drags."
+    },
+    {
+      "id": "nafme_25",
+      "instrument": "violin",
+      "age_range": [12, 16],
+      "standard": "MU:Pr4.1.6a - Demonstrate an understanding of the expressive intent of a selected piece based on analysis of the music",
+      "skill_level": "intermediate",
+      "description": "Student can play the technical demands of a piece correctly but their teacher says it lacks musicality. Student does not know how to translate expressive markings into actual sound.",
+      "student_opener": "My teacher writes more musical everywhere in my music but I don't know what that actually means or how to do it."
+    },
+    {
+      "id": "nafme_26",
+      "instrument": "violin",
+      "age_range": [7, 10],
+      "standard": "MU:Pr4.2.2a - Demonstrate understanding of music concepts including pitch, rhythm, and dynamics while performing",
+      "skill_level": "beginner",
+      "description": "Student is learning to read rhythms from notation. They understand quarter and half notes individually but confuse them when reading a full line of music.",
+      "student_opener": "I know what a quarter note is and I know what a half note is but when I look at a whole line of music I lose track."
+    },
+    {
+      "id": "nafme_27",
+      "instrument": "violin",
+      "age_range": [13, 16],
+      "standard": "MU:Cn11.0.6a - Demonstrate understanding of relationships between music and the other arts, disciplines, and contexts of society",
+      "skill_level": "intermediate",
+      "description": "Student is preparing a performance of a Romantic concerto excerpt and wants to understand how to convey the emotional content the composer intended.",
+      "student_opener": "My piece is from the Romantic era. What does that mean for how I should play it?"
+    },
+    {
+      "id": "nafme_28",
+      "instrument": "guitar",
+      "age_range": [7, 10],
+      "standard": "MU:Pr4.2.1a - Demonstrate awareness of basic music concepts while playing simple melodies",
+      "skill_level": "beginner",
+      "description": "Student has just started learning guitar. Their fretting hand fingertips hurt and they keep stopping mid-practice because of the discomfort.",
+      "student_opener": "My fingers really hurt when I press the strings. Is it supposed to hurt this much?"
+    },
+    {
+      "id": "nafme_29",
+      "instrument": "guitar",
+      "age_range": [8, 11],
+      "standard": "MU:Pr5.1.2a - Apply established practice strategies to address performance challenges",
+      "skill_level": "beginner",
+      "description": "Student is learning their first open position chord (G Major). They can form the chord shape slowly but struggle to get all strings ringing cleanly.",
+      "student_opener": "When I play my G chord some strings sound muted or buzzy. I can't figure out what I'm doing wrong."
+    },
+    {
+      "id": "nafme_30",
+      "instrument": "guitar",
+      "age_range": [9, 12],
+      "standard": "ABRSM Initial/Grade 1 - Play simple melodies in first position with correct finger placement and basic right-hand technique",
+      "skill_level": "beginner",
+      "description": "Student is learning to pick individual strings in a simple melody but their pick accidentally hits adjacent strings, creating unwanted noise.",
+      "student_opener": "When I try to play one string at a time my pick keeps hitting the wrong strings."
+    },
+    {
+      "id": "nafme_31",
+      "instrument": "guitar",
+      "age_range": [9, 12],
+      "standard": "MU:Pr4.2.3a - Demonstrate understanding of expressive qualities and how they convey expressive intent",
+      "skill_level": "beginner",
+      "description": "Student is working on a simple song and wants to add strumming rather than single notes. They can strum downstrokes but cannot coordinate an up-down strumming pattern.",
+      "student_opener": "I can strum down fine but when I try to go up and down my hand gets confused and I lose the beat."
+    },
+    {
+      "id": "nafme_32",
+      "instrument": "guitar",
+      "age_range": [10, 13],
+      "standard": "MU:Pr5.1.4a - Apply criteria and feedback to evaluate performance challenges and refine technique",
+      "skill_level": "beginner-intermediate",
+      "description": "Student has learned three open chords (G, C, D) individually but chord transitions between them are very slow and disrupt the rhythmic flow of songs.",
+      "student_opener": "I know all three chords but when I switch between them I have to stop the music and think about where to put my fingers."
+    },
+    {
+      "id": "nafme_33",
+      "instrument": "guitar",
+      "age_range": [10, 13],
+      "standard": "MU:Cr1.1.4a - Improvise and develop rhythmic and melodic ideas connected to musical concepts",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is learning barre chords and cannot get the F Major barre chord to ring cleanly. They have enough strength but their index finger is not fully pressing all strings.",
+      "student_opener": "I cannot get the F chord. My fingers aren't strong enough or something. I've been trying for weeks."
+    },
+    {
+      "id": "nafme_34",
+      "instrument": "guitar",
+      "age_range": [11, 14],
+      "standard": "ABRSM Grade 2 - Demonstrate facility with basic position chord playing, simple arpeggios, and first attempts at barre chords",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is learning fingerpicking patterns. They can pluck individual strings but struggle to maintain a steady pattern while also fretting chord shapes.",
+      "student_opener": "I can do the fingerpicking pattern on open strings but the second I add chords my right hand messes up the pattern."
+    },
+    {
+      "id": "nafme_35",
+      "instrument": "guitar",
+      "age_range": [12, 15],
+      "standard": "MU:Re8.1.5a - Interpret and describe expressive intent and meaning in musical works by analyzing contextual clues",
+      "skill_level": "intermediate",
+      "description": "Student knows the minor pentatonic scale and can play it up and down but sounds mechanical when improvising — just running up and down the scale with no phrasing.",
+      "student_opener": "I know the pentatonic scale but every time I solo I just run up and down it and it sounds boring."
+    },
+    {
+      "id": "nafme_36",
+      "instrument": "guitar",
+      "age_range": [12, 15],
+      "standard": "MU:Pr4.1.5a - Demonstrate how selection of music to perform is influenced by personal interests and musical understanding",
+      "skill_level": "intermediate",
+      "description": "Student wants to learn to read tablature to learn songs from the internet but their teacher has been teaching standard notation. Student is frustrated by what they see as a disconnect.",
+      "student_opener": "Why do I need to learn sheet music? All the songs I want to learn online just have tabs."
+    },
+    {
+      "id": "nafme_37",
+      "instrument": "guitar",
+      "age_range": [13, 16],
+      "standard": "MU:Cr3.1.6a - Evaluate and refine craftsmanship of musical works using feedback and criteria",
+      "skill_level": "intermediate",
+      "description": "Student is preparing to perform a fingerstyle arrangement of a song they love. The piece is slightly above their current level and they are frustrated by slow progress.",
+      "student_opener": "I've been working on this song for three weeks and it still doesn't sound right. I'm starting to think I just can't do it."
+    },
+    {
+      "id": "nafme_38",
+      "instrument": "guitar",
+      "age_range": [8, 11],
+      "standard": "MU:Pr6.1.2a - Perform music for an audience using established notation, technique, and expression",
+      "skill_level": "beginner",
+      "description": "Student just learned their first complete song on guitar and is proud but nervous about playing it for family. They play perfectly when alone but freeze when someone watches.",
+      "student_opener": "I can play the song perfectly by myself but when my mom watches me I forget everything."
+    },
+    {
+      "id": "nafme_39",
+      "instrument": "guitar",
+      "age_range": [14, 16],
+      "standard": "MU:Cn10.0.7a - Demonstrate how personal interests, knowledge, and skills inform personal choices when creating and performing music",
+      "skill_level": "intermediate",
+      "description": "Student wants to understand music theory as it applies to guitar — specifically why certain chords sound good together and how to figure out which chords belong to a key.",
+      "student_opener": "I want to learn why some chords sound good together. How do I know what chords go with each other?"
+    },
+    {
+      "id": "nafme_40",
+      "instrument": "voice",
+      "age_range": [5, 7],
+      "standard": "MU:Pr4.2.Ka - With guidance, demonstrate awareness of basic music concepts while engaging in singing activities",
+      "skill_level": "beginner",
+      "description": "Very young student is learning the concept of singing versus speaking. They frequently speak-sing instead of using their head voice, staying in chest voice throughout.",
+      "student_opener": "I don't know how to make my voice go up high. It's like my voice doesn't want to go there."
+    },
+    {
+      "id": "nafme_41",
+      "instrument": "voice",
+      "age_range": [6, 9],
+      "standard": "MU:Pr5.1.1a - With guidance, apply practice strategies to address performance challenges in singing",
+      "skill_level": "beginner",
+      "description": "Student is learning that singing requires the whole body and is working on releasing tension. They sing with hunched shoulders and a locked jaw, affecting tone quality.",
+      "student_opener": "My teacher says I look tense when I sing. I don't feel tense. How do I fix that?"
+    },
+    {
+      "id": "nafme_42",
+      "instrument": "voice",
+      "age_range": [8, 11],
+      "standard": "MU:Pr4.2.2a - Demonstrate understanding of music concepts including breath, posture, and basic pitch matching",
+      "skill_level": "beginner",
+      "description": "Student is learning to sing a simple melody but runs out of breath before the phrase ends. They take a breath partway through and disrupt the musical line.",
+      "student_opener": "I always run out of air before the phrase is done. What am I doing wrong?"
+    },
+    {
+      "id": "nafme_43",
+      "instrument": "voice",
+      "age_range": [9, 12],
+      "standard": "ABRSM Initial - Sing simple songs with basic pitch accuracy, clear diction, and controlled breathing",
+      "skill_level": "beginner",
+      "description": "Student is working on matching pitch. They can hear when they are off pitch after the fact but cannot adjust in real time while singing.",
+      "student_opener": "I know I'm going off pitch but I don't know how to fix it while I'm singing. It's like I can't hear myself."
+    },
+    {
+      "id": "nafme_44",
+      "instrument": "voice",
+      "age_range": [10, 13],
+      "standard": "MU:Pr5.1.4a - Apply criteria and feedback to improve singing technique and expressive delivery",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is working on singing through a passaggio (register transition). They have an audible break between their chest voice and head voice.",
+      "student_opener": "My voice makes this weird cracking sound right in the middle of my range. How do I stop that from happening?"
+    },
+    {
+      "id": "nafme_45",
+      "instrument": "voice",
+      "age_range": [11, 14],
+      "standard": "MU:Re8.1.4a - Demonstrate awareness of expressive qualities in vocal music and how they contribute to expressive intent",
+      "skill_level": "beginner-intermediate",
+      "description": "Student can sing the notes and words of a song correctly but their delivery is flat and emotionless. Teacher says they need more expression but student does not know what to do differently.",
+      "student_opener": "I know all the words and the tune but my teacher says it doesn't sound like I feel anything when I sing it."
+    },
+    {
+      "id": "nafme_46",
+      "instrument": "voice",
+      "age_range": [12, 15],
+      "standard": "MU:Cr2.1.6a - Select and refine musical ideas to express intent in compositions and arrangements",
+      "skill_level": "intermediate",
+      "description": "Student is working on diction in a classical art song. Certain vowel sounds cause their tone quality to change or become nasal.",
+      "student_opener": "Some vowels sound fine when I sing them but when I sing the vowel ee my voice gets really nasal and tight."
+    },
+    {
+      "id": "nafme_47",
+      "instrument": "voice",
+      "age_range": [13, 16],
+      "standard": "MU:Pr4.1.5a - Demonstrate how choices in performance are informed by personal understanding of expressive intent",
+      "skill_level": "intermediate",
+      "description": "Student is preparing a song for an audition and wants to add personal stylistic interpretation but is unsure how much to deviate from the written melody and rhythm.",
+      "student_opener": "I'm auditioning with this song and I want to make it my own but I don't know how much I'm allowed to change."
+    },
+    {
+      "id": "nafme_48",
+      "instrument": "drums",
+      "age_range": [7, 10],
+      "standard": "MU:Pr4.2.1a - Demonstrate awareness of basic music concepts including pulse and rhythm while performing on percussion",
+      "skill_level": "beginner",
+      "description": "Young student is learning to maintain a steady beat on a practice pad. They rush when excited and drag when concentrating too hard.",
+      "student_opener": "My teacher says I'm not staying on the beat. Sometimes I go faster and sometimes I go slower but I can't feel it happening."
+    },
+    {
+      "id": "nafme_49",
+      "instrument": "drums",
+      "age_range": [9, 12],
+      "standard": "MU:Pr5.1.3a - Apply practice strategies to develop technical accuracy and consistency in rhythmic performance",
+      "skill_level": "beginner-intermediate",
+      "description": "Student is learning their first basic drum beat with kick-snare-hi-hat coordination. They can play each limb independently but cannot coordinate all three simultaneously.",
+      "student_opener": "I can do the kick and hi-hat together, and I can do the snare and hi-hat together, but when I try to put them all together my brain shuts down."
+    },
+    {
+      "id": "nafme_50",
+      "instrument": "drums",
+      "age_range": [11, 14],
+      "standard": "MU:Re7.1.4a - Demonstrate and explain how the elements of music, including rhythm and form, are used in selected works",
+      "skill_level": "beginner-intermediate",
+      "description": "Student has mastered a basic beat and wants to add fills between sections. Their fills always interrupt the groove and they land in the wrong place coming back into the beat.",
+      "student_opener": "Whenever I try to do a fill I lose track of where the beat is supposed to start back up."
+    }
+  ]
+}
