@@ -7,17 +7,18 @@ description: "Thoven Pedagogy Eval v2 — Weekend 1 Baseline"
 
 providers:
   # Condition A: Base Gemma + neutral prompt
-  - id: huggingface:text-generation:google/gemma-3-4b-it
+  # Using gemma-3-12b-it via featherless-ai (4b has no inference providers)
+  - id: huggingface:chat:google/gemma-3-12b-it:featherless-ai
     label: "A: Base Gemma (neutral)"
     config:
-      maxTokens: 1024
+      max_new_tokens: 1024
       temperature: 0.7
 
   # Condition B: Base Gemma + Socratic prompt
-  - id: huggingface:text-generation:google/gemma-3-4b-it
+  - id: huggingface:chat:google/gemma-3-12b-it:featherless-ai
     label: "B: Base Gemma (Socratic)"
     config:
-      maxTokens: 1024
+      max_new_tokens: 1024
       temperature: 0.7
 
   # Condition D: Opus + neutral prompt
