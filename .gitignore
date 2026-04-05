@@ -1,0 +1,48 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated/proprietary data
+data/raw/
+data/generated/
+data/processed/
+*.jsonl
+*.parquet
+
+# Model artifacts
+outputs/
+models/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+adapter_config.json
+adapter_model.*
+
+# Eval outputs
+eval/results/
+eval/*.html
+eval/output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Notebooks (contain outputs)
+*.ipynb
+!notebooks/*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# HuggingFace cache
+.cache/
+huggingface/
+
+# Node
+node_modules/
