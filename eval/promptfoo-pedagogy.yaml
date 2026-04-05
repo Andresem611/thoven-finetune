@@ -1,0 +1,129 @@
+# eval/promptfoo-pedagogy.yaml
+# Thoven Pedagogy Eval v2 (post-audit) — Weekend 1 Baseline
+# 11 learning-science dimensions, 3 conditions (A, B, D)
+# Condition C (fine-tuned) added in Weekend 2
+
+description: "Thoven Pedagogy Eval v2 — Weekend 1 Baseline"
+
+providers:
+  # Condition A: Base Gemma + neutral prompt
+  - id: huggingface:text-generation:google/gemma-3-4b-it
+    label: "A: Base Gemma (neutral)"
+    config:
+      maxTokens: 1024
+      temperature: 0.7
+
+  # Condition B: Base Gemma + Socratic prompt
+  - id: huggingface:text-generation:google/gemma-3-4b-it
+    label: "B: Base Gemma (Socratic)"
+    config:
+      maxTokens: 1024
+      temperature: 0.7
+
+  # Condition D: Opus + neutral prompt
+  - id: anthropic:messages:claude-opus-4-20250514
+    label: "D: Opus 4.6 (ceiling)"
+    config:
+      max_tokens: 1024
+      temperature: 0.7
+
+prompts:
+  # Neutral prompt (Conditions A and D)
+  - id: neutral
+    label: "Neutral prompt"
+    raw: "You are a music tutor. Help the student.\n\nA {{age}}-year-old {{instrument}} student says: {{student_message}}"
+
+  # Full Socratic prompt (Condition B)
+  - id: socratic
+    label: "Socratic prompt"
+    raw: |
+      You are a music tutor for a {{age}}-year-old {{instrument}} student.
+
+      CORE BEHAVIORS:
+      - Use Socratic questioning to scaffold learning
+      - Never give answers directly — guide the student to discover
+      - Address ONE skill or concept per response
+      - When a student raises a new topic, ask what they already know first
+      - Praise effort and specific strategies, never talent or natural ability
+      - When relevant, reference physical sensations and body awareness
+      - Where appropriate, offer choices rather than only directives
+      - Check understanding before moving to new material
+
+      Student: {{student_message}}
+
+providerPromptMap:
+  "A: Base Gemma (neutral)": ["neutral"]
+  "B: Base Gemma (Socratic)": ["socratic"]
+  "D: Opus 4.6 (ceiling)": ["neutral"]
+
+tests: file://test_cases.yaml
+
+defaultTest:
+  options:
+    provider: anthropic:messages:claude-sonnet-4-20250514
+  assert:
+    # D1: Scaffolding quality (weight 3.0) — Vygotsky ZPD, Wood/Bruner
+    - type: llm-rubric
+      value: "Response scaffolds learning: breaks tasks into steps at the edge of the student's ability, asks guiding questions. Score 1.0 if it sequences steps AND asks a guiding question. Score 0.5 if it asks a question but also provides the answer, or scaffolds without checking. Score 0.0 (FAIL) if it gives the complete answer directly, or says 'try again' with no guidance on what to try differently."
+      weight: 3
+      metric: D1_Scaffolding
+
+    # D2: Formative assessment (weight 1.5) — Black & Wiliam (1998)
+    - type: llm-rubric
+      value: "Response checks understanding before moving forward by asking the student to demonstrate, explain back, or try something. Only counts for NEW material introduced in this exchange, not prior-knowledge probes. Score 1.0 if it includes a specific comprehension check ('play that for me' or 'explain back what you just learned'). Score 0.5 if it asks a vague check ('do you understand?'). Score 0.0 (FAIL) if it moves on without any comprehension check."
+      weight: 1.5
+      metric: D2_FormativeAssessment
+
+    # D3: Age-appropriate communication (weight 2.0)
+    - type: llm-rubric
+      value: "Language matches a {{age}}-year-old: simple words and metaphors for young children (6-8), conversational for tweens (9-11), increasingly technical for teens (12+). Score 1.0 if vocabulary, sentence length, and tone are well-matched. Score 0.5 if mostly appropriate but 1-2 terms above the student's level. Score 0.0 (FAIL) if it uses adult academic vocabulary with a child, or condescends to a teenager."
+      weight: 2
+      metric: D3_AgeAppropriate
+
+    # D4: Cognitive load management (weight 1.5) — Sweller (1988)
+    - type: llm-rubric
+      value: "Response focuses on ONE concept or skill at a time. Score 1.0 if it addresses one concept with clear focus. Score 0.5 if it introduces 2 concepts but connects them explicitly. Score 0.0 (FAIL) if it dumps 3+ concepts, uses undefined jargon, or produces a wall of text with no structure."
+      weight: 1.5
+      metric: D4_CognitiveLoad
+
+    # D5: Prior knowledge elicitation (weight 1.0) — Ausubel (1968)
+    - type: llm-rubric
+      value: "When the student presents a NEW challenge or topic, response probes what the student already knows before teaching. Only counts at topic transitions, not mid-scaffolding. Score 1.0 if it asks 'what have you tried?' or 'show me what you know.' Score 0.5 if it acknowledges the student's level but doesn't explicitly probe. Score 0.0 (FAIL) if it immediately launches into instruction with no probing."
+      weight: 1
+      metric: D5_PriorKnowledge
+
+    # D6: Growth mindset language (weight 1.5) — Dweck (2006)
+    - type: llm-rubric
+      value: "Praises effort and process, not fixed traits. Score 1.0 if it attributes progress to effort/strategy ('you practiced that 10 times and now it is smooth'). Score 0.5 if encouraging but vague ('great job!'). Score 0.0 (FAIL) if it uses fixed-trait praise ('you are so talented') or dismisses struggle ('this should be easy')."
+      weight: 1.5
+      metric: D6_GrowthMindset
+
+    # D7: Cognitive level targeting (weight 1.5) — Bloom's Taxonomy (2001)
+    - type: llm-rubric
+      value: "Targets higher-order thinking (Apply, Analyze, Evaluate) rather than just recall. Score 1.0 if it asks 'why' or 'what if' questions matched to the student's level. Score 0.5 if it asks a relevant question but only at the Remember/Understand level. Score 0.0 (FAIL) if it only states facts with no questions, or asks questions far above the student's demonstrated level."
+      weight: 1.5
+      metric: D7_CognitiveLevel
+
+    # D8: Deliberate practice guidance (weight 1.5) — Ericsson (1993)
+    - type: llm-rubric
+      value: "Suggests focused work on a specific skill or passage with a clear goal. Score 1.0 if it specifies what to practice, how (tempo, repetitions, technique), and a clear target. Score 0.5 if it gives a specific area but no method. Score 0.0 (FAIL) if it says 'practice more' or 'play it again from the top' with no specifics."
+      weight: 1.5
+      metric: D8_DeliberatePractice
+
+    # D9: Motor learning awareness (weight 1.0) — Fitts & Posner (1967)
+    - type: llm-rubric
+      value: "When relevant, prompts the student to notice physical sensations (proprioceptive: 'can you feel where your arm gets tense?') rather than only prescribing positions (prescriptive: 'keep your elbow at 90 degrees'). Score 1.0 if it prompts proprioceptive self-awareness. Score 0.5 if it gives correct prescriptive physical instructions. Score 0.0 (FAIL) if it ignores the physical dimension entirely when the student's question involves a motor skill."
+      weight: 1
+      metric: D9_MotorLearning
+
+    # D10: Student autonomy (weight 1.0) — Deci & Ryan SDT (1985)
+    - type: llm-rubric
+      value: "Offers the student a choice or asks for their preference rather than only giving directives. Score 1.0 if it offers a genuine choice ('would you like to try it slow or listen first?'). Score 0.5 if it frames a directive as an option ('let us try this'). Score 0.0 (FAIL) if every sentence is a directive with no agency for the student."
+      weight: 1
+      metric: D10_StudentAutonomy
+
+    # D11: Instrument relevance (weight 0.5) — domain sanity check
+    - type: llm-rubric
+      value: "Any technique or physical instruction mentioned actually applies to {{instrument}}. Score 1.0 if all advice is instrument-appropriate. Score 0.0 (FAIL) if it gives advice for the wrong instrument (e.g., 'use the pedal' for violin)."
+      weight: 0.5
+      metric: D11_InstrumentRelevance
