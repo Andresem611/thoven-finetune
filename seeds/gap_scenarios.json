@@ -1,0 +1,1464 @@
+{
+  "version": "2.0",
+  "description": "160 gap-targeted scenarios for 5 eval dimensions where baseline models underperform. Replaces v1 placeholder data. Each scenario is designed to elicit the specific tutor behavior named in expected_tutor_behavior. Used as seeds for the two-LLM synthetic data generation pipeline (Opus=tutor, Sonnet=student).",
+  "total_scenarios": 160,
+  "gap_distribution": {
+    "prior_knowledge": 50,
+    "body_awareness": 30,
+    "growth_mindset": 30,
+    "student_autonomy": 50
+  },
+  "eval_dimension_mapping": {
+    "prior_knowledge": "D5 - Prior knowledge elicitation",
+    "body_awareness": "D9 - Motor learning awareness",
+    "growth_mindset": "D6 - Growth mindset language",
+    "student_autonomy": "D10 - Student autonomy"
+  },
+  "scenarios": [
+
+    {
+      "id": "pk_01",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 8,
+      "context": "Student raises the topic of sharps in their new piece without any prompting.",
+      "student_opener": "There are these little hashtag things next to some notes and I don't know what they are.",
+      "expected_tutor_behavior": "Before explaining what sharps are, ask the student what they already know or have guessed about those symbols. 'What do you think they might mean?' or 'have you seen anything like that before?' Probe before teaching."
+    },
+    {
+      "id": "pk_02",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 9,
+      "context": "Student brings up the concept of vibrato after hearing a professional recording.",
+      "student_opener": "I heard a violinist on YouTube and her notes had this wobbly sound. How do I do that?",
+      "expected_tutor_behavior": "Before explaining vibrato technique, probe what the student has already noticed. 'What part of the arm or hand do you think might be making that wobble?' or 'have you tried anything like that yourself?'"
+    },
+    {
+      "id": "pk_03",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 11,
+      "context": "Student asks about chord theory unprompted during a session.",
+      "student_opener": "Why do chords have numbers like G major is the one chord in G?",
+      "expected_tutor_behavior": "Ask what the student already knows about scales before launching into Roman numeral theory. 'Tell me what you know about the notes in a G major scale first.'"
+    },
+    {
+      "id": "pk_04",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 10,
+      "context": "Student asks about breath support at the start of a lesson.",
+      "student_opener": "My mom told me I need to breathe from my stomach but I don't really know what that means.",
+      "expected_tutor_behavior": "Before demonstrating, ask the student to show what they currently do when they take a breath to sing. Gather their baseline before teaching."
+    },
+    {
+      "id": "pk_05",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 12,
+      "context": "Student asks about how to practice more effectively.",
+      "student_opener": "I practice every day but I feel like I'm not getting any better. What am I doing wrong?",
+      "expected_tutor_behavior": "Ask the student to describe what a typical practice session looks like before diagnosing. 'Walk me through exactly what you do for those 20 minutes.'"
+    },
+    {
+      "id": "pk_06",
+      "gap": "prior_knowledge",
+      "instrument": "drums",
+      "age": 10,
+      "context": "Student brings up the concept of a metronome after a friend mentioned it.",
+      "student_opener": "My friend said I should practice with a metronome. What is that?",
+      "expected_tutor_behavior": "Before explaining, ask if the student has any idea what it might do. 'What do you think your friend meant?' Assess their intuition about steady pulse before teaching."
+    },
+    {
+      "id": "pk_07",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 7,
+      "context": "Student starts the session by talking about a song they heard.",
+      "student_opener": "I want to learn the song from Frozen. Can we do that today?",
+      "expected_tutor_behavior": "Before assessing whether the piece is level-appropriate, ask the student to sing or hum the melody to understand what they know about it and what they imagine playing it would involve."
+    },
+    {
+      "id": "pk_08",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 14,
+      "context": "Student raises the topic of improvisation mid-session.",
+      "student_opener": "I want to start doing solos. Like actually improvising, not just playing written stuff.",
+      "expected_tutor_behavior": "Before prescribing a method, ask what the student has already tried or what they think improvising involves. 'Have you noodled around on your own? What happened?'"
+    },
+    {
+      "id": "pk_09",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 9,
+      "context": "Student asks about why some notes have dots above them.",
+      "student_opener": "What does it mean when a note has a little dot on top of it?",
+      "expected_tutor_behavior": "Ask the student to guess based on what it looks like before explaining staccato. 'What do you think a dot might tell you to do with the note?'"
+    },
+    {
+      "id": "pk_10",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 13,
+      "context": "Student mentions they want to work on their head voice.",
+      "student_opener": "I want to develop my head voice. I feel like it's really weak compared to my chest voice.",
+      "expected_tutor_behavior": "Ask the student what they understand head voice to be and how they currently experience the difference between their two registers before designing any exercises."
+    },
+    {
+      "id": "pk_11",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 11,
+      "context": "Student asks about shifting positions at the start of a new lesson topic.",
+      "student_opener": "My teacher said next we're going to learn about shifting. What is that?",
+      "expected_tutor_behavior": "Before explaining, ask the student what they imagine shifting means based on the word itself. Build on their intuition before introducing the formal concept."
+    },
+    {
+      "id": "pk_12",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 7,
+      "context": "Student says they want to learn about chords after seeing their sibling play them.",
+      "student_opener": "My brother plays chords. Can you teach me what chords are?",
+      "expected_tutor_behavior": "Ask the student what they noticed when their brother played chords. How many notes, what it sounded like. Build the concept from their observation."
+    },
+    {
+      "id": "pk_13",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 9,
+      "context": "Student asks about tuning at the start of the session.",
+      "student_opener": "My guitar sounds weird. My dad said it might be out of tune but I don't know what that means.",
+      "expected_tutor_behavior": "Before explaining tuning, ask the student what they notice about the sound — does something sound high or low, right or wrong? Understand their baseline ear awareness."
+    },
+    {
+      "id": "pk_14",
+      "gap": "prior_knowledge",
+      "instrument": "drums",
+      "age": 12,
+      "context": "Student wants to learn a specific drum fill they saw on YouTube.",
+      "student_opener": "I saw this drummer do this really fast thing between the chorus and verse. Can you show me how to do that?",
+      "expected_tutor_behavior": "Ask the student to clap or tap what they heard to assess their rhythmic ear before determining whether the fill is currently within their reach."
+    },
+    {
+      "id": "pk_15",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 8,
+      "context": "Student asks about dynamics in singing.",
+      "student_opener": "My teacher wrote soft and loud in my song. How do I make my voice loud without it sounding mean?",
+      "expected_tutor_behavior": "Before explaining vocal dynamics, ask the student to try singing the same word both ways first so you can hear their current concept of loud versus soft."
+    },
+    {
+      "id": "pk_16",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 11,
+      "context": "Student brings up the circle of fifths after seeing a chart online.",
+      "student_opener": "I saw this circle of fifths diagram online. Is it important? What does it even mean?",
+      "expected_tutor_behavior": "Ask the student what they already noticed or understood about the diagram before explaining it. Even partial intuition about why keys are arranged in a circle is worth drawing out first."
+    },
+    {
+      "id": "pk_17",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 14,
+      "context": "Student raises the topic of bow distribution for the first time.",
+      "student_opener": "I keep running out of bow at the ends of long notes. What am I doing wrong?",
+      "expected_tutor_behavior": "Before prescribing a fix, ask the student where in the bow they tend to start long notes and what they currently do when they feel themselves running out. Gather baseline technique information."
+    },
+    {
+      "id": "pk_18",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 12,
+      "context": "Student asks about the difference between major and minor chords.",
+      "student_opener": "Why does E minor sound sad but E major sounds happy? What's actually different?",
+      "expected_tutor_behavior": "Ask the student what they already notice when they play both. Does anything feel different in their fingers? Do any notes sound different? Assess their ear before explaining the third."
+    },
+    {
+      "id": "pk_19",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 6,
+      "context": "Student asks about the black keys at the start of a lesson.",
+      "student_opener": "Why are some keys black and some keys white? Are the black ones harder?",
+      "expected_tutor_behavior": "Ask the student what they already know or have guessed. Have they touched the black keys? What did they sound like? Explore before explaining the keyboard layout."
+    },
+    {
+      "id": "pk_20",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 11,
+      "context": "Student asks about warming up the voice before singing.",
+      "student_opener": "Do I really have to do warmups every time? What happens if I just start singing?",
+      "expected_tutor_behavior": "Ask the student what they think happens to muscles when you use them cold before explaining vocal physiology. Connect to their existing knowledge of sports or physical activity."
+    },
+    {
+      "id": "pk_21",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 8,
+      "context": "Student notices a new marking in their sheet music.",
+      "student_opener": "What does this curved line over the notes mean? It goes over like four notes at once.",
+      "expected_tutor_behavior": "Before explaining slurs, ask the student to guess what connecting multiple notes under one curved line might mean for how you play them."
+    },
+    {
+      "id": "pk_22",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 15,
+      "context": "Student wants to learn about modes after seeing the term online.",
+      "student_opener": "I keep seeing people talk about Dorian mode and Mixolydian. What are modes and do I need them?",
+      "expected_tutor_behavior": "Before explaining modes, ask what the student already knows about major scales and whether they notice anything when they start a major scale on a different note. Build from their existing frame."
+    },
+    {
+      "id": "pk_23",
+      "gap": "prior_knowledge",
+      "instrument": "drums",
+      "age": 9,
+      "context": "Student asks about reading drum notation for the first time.",
+      "student_opener": "I saw drum sheet music online but it doesn't look like piano notes. How do I read it?",
+      "expected_tutor_behavior": "Ask the student what they already understand from the notation. Did anything look familiar? What did they think the different lines might mean? Probe before explaining drum staff notation."
+    },
+    {
+      "id": "pk_24",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 13,
+      "context": "Student asks about chord inversions after encountering them in a piece.",
+      "student_opener": "My piece has this thing where the C chord sounds different because a different note is at the bottom. What is that?",
+      "expected_tutor_behavior": "Before explaining inversions, ask the student to describe what they heard. Can they identify which note is at the bottom? Do they know the names of the notes in a C chord? Assess their chord knowledge first."
+    },
+    {
+      "id": "pk_25",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 14,
+      "context": "Student mentions wanting to learn belting technique.",
+      "student_opener": "I want to belt like the singers I see in musicals. How do I do that?",
+      "expected_tutor_behavior": "Before discussing technique, ask the student what they understand belting to involve, and whether they have tried it already. This establishes a safety baseline and avoids teaching into potentially harmful technique."
+    },
+    {
+      "id": "pk_26",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 10,
+      "context": "Student asks about the rosin on their bow.",
+      "student_opener": "What is this orange crumbly thing my teacher told me to rub on the bow?",
+      "expected_tutor_behavior": "Ask the student what they think might happen if they play without rosin. Let them hypothesize before explaining friction and bow grip on strings."
+    },
+    {
+      "id": "pk_27",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 10,
+      "context": "Student asks about how to read a chord diagram.",
+      "student_opener": "My teacher gave me this picture with dots on a grid. Is that how I play the chord?",
+      "expected_tutor_behavior": "Before explaining chord diagrams, ask the student what they can figure out from the picture on their own. What do the vertical lines look like to them? What might the dots mean? Build from visual intuition."
+    },
+    {
+      "id": "pk_28",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 10,
+      "context": "Student asks about ties in their music.",
+      "student_opener": "There's a curved line connecting two of the same notes and I don't know if I play them both or just one.",
+      "expected_tutor_behavior": "Ask the student what they tried first. Did they play one or two? What did each sound like? Gather their experiment before explaining tied notes versus slurs."
+    },
+    {
+      "id": "pk_29",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 7,
+      "context": "Student asks why they have to practice the same song again.",
+      "student_opener": "Why do we have to do this song again? I already learned it.",
+      "expected_tutor_behavior": "Ask the student what they think learning a song means before explaining the difference between knowing notes and performing a song with expression and consistency."
+    },
+    {
+      "id": "pk_30",
+      "gap": "prior_knowledge",
+      "instrument": "drums",
+      "age": 11,
+      "context": "Student wants to understand how to count sixteenth notes.",
+      "student_opener": "I keep hearing people say one-e-and-a but I don't understand what that means.",
+      "expected_tutor_behavior": "Ask the student to clap a simple quarter note pulse first and ask what they notice about the space between beats. Build toward subdivisions from their existing sense of pulse."
+    },
+    {
+      "id": "pk_31",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 9,
+      "context": "Student encounters a repeat sign for the first time.",
+      "student_opener": "There are two dots next to these double bar lines and I don't know what to do when I get there.",
+      "expected_tutor_behavior": "Before explaining repeat signs, ask the student what the word repeat means to them in everyday life and whether they can guess how that might apply to music."
+    },
+    {
+      "id": "pk_32",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 12,
+      "context": "Student brings up the concept of harmonics.",
+      "student_opener": "I heard someone play this really high ghostly note without pressing down the string all the way. How does that work?",
+      "expected_tutor_behavior": "Before explaining natural harmonics, ask the student what they think might happen acoustically when you only touch the string lightly. What do they know about vibration from physics class or everyday experience?"
+    },
+    {
+      "id": "pk_33",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 13,
+      "context": "Student asks about using a capo.",
+      "student_opener": "My friend uses this clamp thing on the neck and plays different chords. What does that do?",
+      "expected_tutor_behavior": "Before explaining capo mechanics, ask the student what they noticed about the sound when their friend used it. Did it sound higher or lower? Same chords but different? Assess their ear before explaining."
+    },
+    {
+      "id": "pk_34",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 14,
+      "context": "Student asks about the relationship between tempo markings in Italian and what they mean.",
+      "student_opener": "What does Andante mean? There are so many Italian words in music and I can never remember them.",
+      "expected_tutor_behavior": "Before providing a list, ask the student which Italian tempo terms they already know and what they understand them to mean. Build from known anchors outward."
+    },
+    {
+      "id": "pk_35",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 9,
+      "context": "Student asks about sight-singing.",
+      "student_opener": "What is solfege? My teacher said we're going to start doing it.",
+      "expected_tutor_behavior": "Ask the student if they have heard Do Re Mi from The Sound of Music before explaining solfege. Meet them at the cultural reference point they almost certainly already know."
+    },
+    {
+      "id": "pk_36",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 6,
+      "context": "Student starts a session after watching their teacher tune the violin.",
+      "student_opener": "Why does your violin make that twangy sound when you twist the things at the top?",
+      "expected_tutor_behavior": "Ask the student what they think is happening inside the violin when you turn the peg. Draw out their curiosity about how the instrument works before explaining string tension and pitch."
+    },
+    {
+      "id": "pk_37",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 16,
+      "context": "Student asks about recording their playing at home.",
+      "student_opener": "I want to start recording myself to practice but I don't know if I need special equipment or if my phone is good enough.",
+      "expected_tutor_behavior": "Before recommending equipment, ask what the student intends to use the recordings for. To hear themselves back, to share online, to track progress over time? The answer determines the right approach."
+    },
+    {
+      "id": "pk_38",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 8,
+      "context": "Student asks what fermata means after seeing it in their piece.",
+      "student_opener": "There's this bird-eye looking symbol over a note and I don't know what it means.",
+      "expected_tutor_behavior": "Before explaining, ask the student to guess. Does it look like it would make the note shorter or longer? What does the shape suggest to them?"
+    },
+    {
+      "id": "pk_39",
+      "gap": "prior_knowledge",
+      "instrument": "drums",
+      "age": 13,
+      "context": "Student asks about polyrhythm after hearing African drumming.",
+      "student_opener": "My teacher played this music where it sounded like two different tempos at once. How is that possible?",
+      "expected_tutor_behavior": "Before explaining polyrhythm, ask the student to clap what they heard. Can they identify any regular pattern in it? What does their ear lock onto?"
+    },
+    {
+      "id": "pk_40",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 12,
+      "context": "Student asks about resonance and placement.",
+      "student_opener": "My teacher keeps saying I need to sing forward and bright. What does that mean?",
+      "expected_tutor_behavior": "Before explaining resonance placement, ask the student where they currently feel their voice when they sing. Chest, throat, or face? Identify their proprioceptive starting point first."
+    },
+    {
+      "id": "pk_41",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 11,
+      "context": "Student asks about relative minor keys.",
+      "student_opener": "My teacher said C major and A minor use the same notes. That seems wrong. How can two different scales use the same notes?",
+      "expected_tutor_behavior": "Before explaining relative keys, ask the student to play both scales and tell you what they notice. Does anything sound the same? Does anything feel different? Build from their observation."
+    },
+    {
+      "id": "pk_42",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 9,
+      "context": "Student encounters a new bow marking (down bow/up bow) in their music.",
+      "student_opener": "What are these little symbols that look like a square bracket and a V? They're all over my music.",
+      "expected_tutor_behavior": "Ask the student which direction they have been starting their bow strokes so far. Establish whether they have an existing habit before introducing the formal notation for bow direction."
+    },
+    {
+      "id": "pk_43",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 11,
+      "context": "Student asks about bar lines in their sheet music.",
+      "student_opener": "What do these vertical lines going through the staff mean? Do I stop when I hit one?",
+      "expected_tutor_behavior": "Before explaining measures, ask the student what they notice about the space between bar lines. Does the amount of notes seem consistent? Build the concept from their observation."
+    },
+    {
+      "id": "pk_44",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 7,
+      "context": "Student wants to understand why their new piece has words like Allegro at the top.",
+      "student_opener": "What does it say at the top of my piece? Is that a name?",
+      "expected_tutor_behavior": "Ask the student if the word looks like any English word they know, or what language it might be. Make it a discovery before explaining that it describes how fast to play."
+    },
+    {
+      "id": "pk_45",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 15,
+      "context": "Student asks about mix voice.",
+      "student_opener": "Someone told me I need to develop my mix voice. I don't know what that is or if I even have one.",
+      "expected_tutor_behavior": "Before explaining mix voice, ask the student to demonstrate what they currently do when they sing in their middle range. Where does it feel like the sound is coming from?"
+    },
+    {
+      "id": "pk_46",
+      "gap": "prior_knowledge",
+      "instrument": "violin",
+      "age": 13,
+      "context": "Student asks about pizzicato after seeing a marking in their new piece.",
+      "student_opener": "It says pizz over this section. Am I supposed to pluck the strings?",
+      "expected_tutor_behavior": "Confirm their read but then ask if they have ever tried plucking the strings before introducing the technique. Establish baseline familiarity before teaching."
+    },
+    {
+      "id": "pk_47",
+      "gap": "prior_knowledge",
+      "instrument": "guitar",
+      "age": 14,
+      "context": "Student asks about drop D tuning.",
+      "student_opener": "I heard drop D makes heavy riffs easier. What is it and how do I use it?",
+      "expected_tutor_behavior": "Before explaining the tuning change, ask the student what they already understand about standard tuning and why changing one string might affect chord shapes. Connect to their existing knowledge."
+    },
+    {
+      "id": "pk_48",
+      "gap": "prior_knowledge",
+      "instrument": "piano",
+      "age": 10,
+      "context": "Student asks about syncopation after noticing an off-beat rhythm in their music.",
+      "student_opener": "Why does this song feel like the notes start in the wrong place? Like between the beats somehow?",
+      "expected_tutor_behavior": "Before explaining syncopation, validate that they are hearing something real and ask them to clap what they hear. Their ear has already identified the phenomenon — now build the vocabulary around it."
+    },
+    {
+      "id": "pk_49",
+      "gap": "prior_knowledge",
+      "instrument": "drums",
+      "age": 14,
+      "context": "Student asks about ghost notes.",
+      "student_opener": "Pro drummers seem to have these super quiet notes between the main beats. What are those and how do I do them?",
+      "expected_tutor_behavior": "Ask the student to try playing a regular snare note very softly and describe what they notice. Begin with what they can already do rather than teaching ghost notes from scratch."
+    },
+    {
+      "id": "pk_50",
+      "gap": "prior_knowledge",
+      "instrument": "voice",
+      "age": 16,
+      "context": "Student asks about singing in a foreign language for the first time.",
+      "student_opener": "My teacher gave me a song in Italian and I don't speak Italian. Do I have to actually understand the words?",
+      "expected_tutor_behavior": "Before explaining diction and text painting, ask the student what they think the emotional content of the song is just from the music. Do they have any intuition about the mood before knowing the words?"
+    },
+
+    {
+      "id": "ba_01",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 9,
+      "context": "Student's wrists drop below the keyboard level and they complain of fatigue.",
+      "student_opener": "My hands get tired really fast when I play. Is that normal?",
+      "expected_tutor_behavior": "Ask the student to notice where they feel the tiredness: fingers, wrists, or forearm? Prompt a proprioceptive self-scan before suggesting any positional adjustment."
+    },
+    {
+      "id": "ba_02",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 8,
+      "context": "Student grips the bow too tightly causing a scratchy tone.",
+      "student_opener": "My teacher always says relax your bow arm but I don't know what relaxed feels like.",
+      "expected_tutor_behavior": "Guide the student to shake out their arm and then pick up the bow and describe the difference in sensation. Make them name the feeling rather than prescribing a position."
+    },
+    {
+      "id": "ba_03",
+      "gap": "body_awareness",
+      "instrument": "guitar",
+      "age": 12,
+      "context": "Student's picking hand is tense across the whole forearm.",
+      "student_opener": "My picking arm gets really stiff after a few minutes of playing.",
+      "expected_tutor_behavior": "Ask the student to touch their forearm while playing and describe what they feel: hard or soft? Moving or locked? Use the tactile scan to locate the tension before discussing technique."
+    },
+    {
+      "id": "ba_04",
+      "gap": "body_awareness",
+      "instrument": "voice",
+      "age": 11,
+      "context": "Student raises their shoulders when trying to sing louder.",
+      "student_opener": "When I try to sing louder my voice goes tight and it sounds worse.",
+      "expected_tutor_behavior": "Ask the student to place one hand on their shoulders and sing. Can they feel the shoulders rising? Guide the self-discovery that shoulder tension is opposing the breath support they need."
+    },
+    {
+      "id": "ba_05",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 7,
+      "context": "Student is using a curled-in thumb that collides with other fingers.",
+      "student_opener": "My thumb keeps bumping into my other fingers when I play fast things.",
+      "expected_tutor_behavior": "Ask the student to look at their thumb while playing slowly and describe what it does. Prompt visual and proprioceptive awareness before any correction."
+    },
+    {
+      "id": "ba_06",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 11,
+      "context": "Student complains that shifting hurts their hand.",
+      "student_opener": "When I shift to third position my hand kind of pinches. Is that normal?",
+      "expected_tutor_behavior": "Ask the student to do the shift slowly and notice exactly where the pinch happens: base of thumb, side of first finger, or somewhere else? Locate before diagnosing."
+    },
+    {
+      "id": "ba_07",
+      "gap": "body_awareness",
+      "instrument": "guitar",
+      "age": 9,
+      "context": "Student's fretting hand thumb wraps over the neck.",
+      "student_opener": "My teacher says my thumb is wrong but it feels normal to me.",
+      "expected_tutor_behavior": "Ask the student to try both thumb positions and describe the difference in how it feels. Does one position give more or less reach to the other fingers? Use sensation to motivate the change."
+    },
+    {
+      "id": "ba_08",
+      "gap": "body_awareness",
+      "instrument": "drums",
+      "age": 10,
+      "context": "Student locks their wrists and uses only arm motion for single strokes.",
+      "student_opener": "My arms get tired really fast when I do the hi-hat pattern.",
+      "expected_tutor_behavior": "Ask the student to tap on a table with a relaxed wrist and then with a locked wrist and describe the difference in the forearm. Connect that felt sensation to the drum motion."
+    },
+    {
+      "id": "ba_09",
+      "gap": "body_awareness",
+      "instrument": "voice",
+      "age": 9,
+      "context": "Student takes shallow chest breaths that do not support long phrases.",
+      "student_opener": "I always run out of air. I breathe in as big as I can but it still doesn't last.",
+      "expected_tutor_behavior": "Ask the student to place one hand on their chest and one on their belly before breathing. Which hand moves first? Use this observation to introduce the difference between chest and diaphragmatic breathing."
+    },
+    {
+      "id": "ba_10",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 13,
+      "context": "Student uses excessive arm tension for octaves causing fatigue and inaccuracy.",
+      "student_opener": "Playing octaves for a long time makes my whole arm ache. Is that just how it is?",
+      "expected_tutor_behavior": "Ask the student to pause mid-octave passage and notice whether their arm feels open or closed. Is there a sense of gripping? Prompt them to identify the tension before discussing technique changes."
+    },
+    {
+      "id": "ba_11",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 7,
+      "context": "Student cranes their neck sideways to look at their bow arm.",
+      "student_opener": "My neck hurts after I play. I don't understand why.",
+      "expected_tutor_behavior": "Ask the student to describe what they do with their head while playing. Where do they look? Prompt them to feel whether their neck is moving to one side during practice."
+    },
+    {
+      "id": "ba_12",
+      "gap": "body_awareness",
+      "instrument": "guitar",
+      "age": 14,
+      "context": "Student strums from the shoulder rather than the wrist, creating a stiff strumming motion.",
+      "student_opener": "My strumming sounds mechanical and stiff compared to what I hear from real guitarists.",
+      "expected_tutor_behavior": "Ask the student to strum and describe which part of their arm is leading the motion: shoulder, elbow, or wrist? Make them identify the source before suggesting where the motion should originate."
+    },
+    {
+      "id": "ba_13",
+      "gap": "body_awareness",
+      "instrument": "voice",
+      "age": 15,
+      "context": "Student locks their jaw while singing, constricting tone and diction.",
+      "student_opener": "My tone sounds small and constricted and I don't know why.",
+      "expected_tutor_behavior": "Ask the student to place two fingers gently under their chin while singing. Can they feel the jaw muscles clenching? Guide them to notice the tension themselves before working on release."
+    },
+    {
+      "id": "ba_14",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 10,
+      "context": "Student uses stiff, unbending knuckles for faster passage work.",
+      "student_opener": "When I play fast passages my fingers feel clumsy and they don't lift properly.",
+      "expected_tutor_behavior": "Ask the student to gently flex their knuckles on the keys slowly and describe what that feels like, then ask what it feels like when they play fast. The contrast builds proprioceptive awareness."
+    },
+    {
+      "id": "ba_15",
+      "gap": "body_awareness",
+      "instrument": "drums",
+      "age": 13,
+      "context": "Student squeezes the sticks too tightly during loud passages, killing rebound.",
+      "student_opener": "When I try to play really loud my strokes get really uneven and bouncy in a bad way.",
+      "expected_tutor_behavior": "Ask the student to notice their grip on the sticks before, during, and after a loud stroke. Does the grip change? Prompt them to feel the tightening rather than just being told about it."
+    },
+    {
+      "id": "ba_16",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 13,
+      "context": "Student collapses their bow shoulder during down bows, affecting tone consistency.",
+      "student_opener": "My down bows sound strong at the beginning but get thin and weak by the time I reach the tip.",
+      "expected_tutor_behavior": "Ask the student to place their free hand on their bow shoulder and do a slow down bow. Can they feel any sinking or lowering in the shoulder? Build proprioceptive awareness before prescribing the fix."
+    },
+    {
+      "id": "ba_17",
+      "gap": "body_awareness",
+      "instrument": "guitar",
+      "age": 11,
+      "context": "Student presses far too hard on frets, causing early fatigue and sharp intonation.",
+      "student_opener": "My fingers hurt a lot after just a few minutes of playing chords.",
+      "expected_tutor_behavior": "Ask the student to fret a note with as little pressure as possible until it buzzes, then just enough to ring clean. Can they feel the difference? Use that threshold sensation as the target pressure."
+    },
+    {
+      "id": "ba_18",
+      "gap": "body_awareness",
+      "instrument": "voice",
+      "age": 13,
+      "context": "Student pushes from the throat when trying to increase volume.",
+      "student_opener": "Every time I try to sing louder I feel a strain in my throat the next day.",
+      "expected_tutor_behavior": "Ask the student to put one hand flat on their abdomen and one loosely on their throat and try singing louder. Where do they feel more effort happening: throat or belly? Make the mismatch physically visible."
+    },
+    {
+      "id": "ba_19",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 8,
+      "context": "Student tenses the whole body when playing a difficult passage.",
+      "student_opener": "Whenever I get to the hard part of my piece I mess it up even more than in practice.",
+      "expected_tutor_behavior": "Ask the student to notice what happens in their body the moment they see the hard section approaching. Do they hold their breath? Tighten their shoulders? Guide a body scan before the difficult bars."
+    },
+    {
+      "id": "ba_20",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 10,
+      "context": "Student presses the bow too hard into the string, producing a choked, scratchy tone.",
+      "student_opener": "No matter what I do my violin sounds scratchy. I've tried moving the bow faster but it doesn't help.",
+      "expected_tutor_behavior": "Ask the student to play a note and rate how heavy the bow feels on the string from one to ten. Then ask what a three or four might feel like. Get them exploring the pressure dimension themselves."
+    },
+    {
+      "id": "ba_21",
+      "gap": "body_awareness",
+      "instrument": "guitar",
+      "age": 8,
+      "context": "Student holds the guitar at an uncomfortable angle because they have not learned correct sitting position.",
+      "student_opener": "After I play for a while my back starts hurting.",
+      "expected_tutor_behavior": "Ask the student to describe how they are sitting. Where is the guitar resting? What does their back feel like at the start versus after ten minutes? Physical scanning before ergonomic correction."
+    },
+    {
+      "id": "ba_22",
+      "gap": "body_awareness",
+      "instrument": "drums",
+      "age": 8,
+      "context": "Student uses stiff, overhead arm strokes rather than wrist-led strokes on the snare.",
+      "student_opener": "I want to play faster but my arms can't move that quick.",
+      "expected_tutor_behavior": "Ask the student to tap their leg with just their wrist, then with their whole arm, and describe which feels faster and more natural. Build from felt experience to the concept of wrist economy."
+    },
+    {
+      "id": "ba_23",
+      "gap": "body_awareness",
+      "instrument": "voice",
+      "age": 6,
+      "context": "Student sings with pushed-forward head and neck, straining the singing muscles.",
+      "student_opener": "My neck feels tired after I sing. Is that normal?",
+      "expected_tutor_behavior": "Ask the student to put a finger gently on the back of their neck while singing. Does it feel hard or soft? Guide them to sense the engagement in the neck muscles themselves."
+    },
+    {
+      "id": "ba_24",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 12,
+      "context": "Student uses a stiff pedal leg that creates uneven pedal changes.",
+      "student_opener": "My teacher says my pedaling is choppy and I don't know what I'm doing wrong.",
+      "expected_tutor_behavior": "Ask the student to describe what their foot is doing. Is it lifting fully off the pedal, pressing all the way to the floor, or staying somewhere in between? Prompt a foot awareness scan."
+    },
+    {
+      "id": "ba_25",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 15,
+      "context": "Student has developed tension in the left shoulder from an over-elevated bow arm position.",
+      "student_opener": "I've been getting this ache in my left shoulder during long practice sessions.",
+      "expected_tutor_behavior": "Ask the student to notice whether the left shoulder is higher than the right when they are mid-phrase. Prompt a comparison awareness before addressing the cause."
+    },
+    {
+      "id": "ba_26",
+      "gap": "body_awareness",
+      "instrument": "guitar",
+      "age": 15,
+      "context": "Student uses an arched wrist on the fretting hand, limiting reach and causing strain.",
+      "student_opener": "My wrist hurts after barre chord practice. Am I doing something wrong?",
+      "expected_tutor_behavior": "Ask the student to look at their wrist from above while holding a barre chord. Does it appear bent at an angle? Ask them to describe what they feel versus what they see. Combine visual and proprioceptive checking."
+    },
+    {
+      "id": "ba_27",
+      "gap": "body_awareness",
+      "instrument": "voice",
+      "age": 10,
+      "context": "Student takes audible, gasping breaths between phrases that disrupt the musical line.",
+      "student_opener": "My teacher says my breaths are too noisy and big. But I feel like I need all that air.",
+      "expected_tutor_behavior": "Ask the student to put a hand on their chest and take both a gasping breath and a quiet breath, then describe the difference in where they feel the air going. Make the two strategies physically distinguishable."
+    },
+    {
+      "id": "ba_28",
+      "gap": "body_awareness",
+      "instrument": "piano",
+      "age": 14,
+      "context": "Student plays forte passages with a high, tense forearm rather than using arm weight.",
+      "student_opener": "When I play loud the sound is hard and bangy, not full and round.",
+      "expected_tutor_behavior": "Ask the student to let their arm drop from a height onto a key and describe how that sounds and feels versus their normal loud touch. Contrast the free fall with the effortful push."
+    },
+    {
+      "id": "ba_29",
+      "gap": "body_awareness",
+      "instrument": "drums",
+      "age": 12,
+      "context": "Student tenses up their entire upper body before a fill, telegraphing it and disrupting flow.",
+      "student_opener": "My fills feel separate from the rest of my playing. Like I have to prepare for them and it throws off the groove.",
+      "expected_tutor_behavior": "Ask the student to notice what happens in their shoulders and upper body in the bar before a fill. Do they tense, inhale sharply, or shift in their seat? Make the anticipatory tension visible before addressing it."
+    },
+    {
+      "id": "ba_30",
+      "gap": "body_awareness",
+      "instrument": "violin",
+      "age": 9,
+      "context": "Student collapses the left wrist inward, flattening the fingers and causing poor intonation.",
+      "student_opener": "My teacher keeps saying my fingers are flat but I can't tell when they are flat or not.",
+      "expected_tutor_behavior": "Ask the student to look at their own knuckles while playing. Are they rounded like small mountains or flat? Then ask them to describe what they feel in their fingertip when they press with a flat versus a curved finger."
+    },
+
+    {
+      "id": "gm_01",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 8,
+      "context": "Student is struggling with a difficult passage and getting frustrated.",
+      "student_opener": "I've tried this part a hundred times and I still can't get it. I think I'm just not good at piano.",
+      "expected_tutor_behavior": "Attribute the difficulty to the complexity of the task, not student ability. Acknowledge the struggle explicitly and connect progress to the number of repetitions rather than talent."
+    },
+    {
+      "id": "gm_02",
+      "gap": "growth_mindset",
+      "instrument": "violin",
+      "age": 10,
+      "context": "Student compares themselves negatively to a friend who started at the same time.",
+      "student_opener": "My friend started violin at the same time as me and she's already on a harder book. I feel like I'm too slow.",
+      "expected_tutor_behavior": "Redirect from comparison to personal progress. Identify a specific skill the student has developed since they started and attribute it to their own practice choices, not innate ability or pace."
+    },
+    {
+      "id": "gm_03",
+      "gap": "growth_mindset",
+      "instrument": "guitar",
+      "age": 12,
+      "context": "Student successfully navigated a chord transition that had been difficult for weeks.",
+      "student_opener": "I finally got the G to D transition! It just kind of clicked today.",
+      "expected_tutor_behavior": "Resist attributing the success to luck or natural clicking. Connect the breakthrough explicitly to the student's practice strategy. What specifically did they do that made it click?"
+    },
+    {
+      "id": "gm_04",
+      "gap": "growth_mindset",
+      "instrument": "voice",
+      "age": 11,
+      "context": "Student is discouraged after a bad practice session.",
+      "student_opener": "I had a terrible practice yesterday. Everything sounded worse than before. Maybe I'm going backwards.",
+      "expected_tutor_behavior": "Normalize regression as part of skill consolidation. Then reconnect the student to a specific earlier skill they have clearly locked in, as evidence that progress is real and non-linear."
+    },
+    {
+      "id": "gm_05",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 14,
+      "context": "Student dismisses their own progress with self-deprecating humor.",
+      "student_opener": "I mean I'm not talented like the other kids in my class. I'm just here because my parents make me.",
+      "expected_tutor_behavior": "Do not agree or disagree with the talent framing. Identify something specific the student did in that lesson that required effort and skill, and name it as the product of effort."
+    },
+    {
+      "id": "gm_06",
+      "gap": "growth_mindset",
+      "instrument": "violin",
+      "age": 7,
+      "context": "Student played a piece smoothly for the first time.",
+      "student_opener": "I played it all the way through with no mistakes!",
+      "expected_tutor_behavior": "Celebrate the outcome while tying it to what the student did. Avoid vague praise. Instead: 'you practiced the hard part separately this week and it showed in that run-through.'"
+    },
+    {
+      "id": "gm_07",
+      "gap": "growth_mindset",
+      "instrument": "guitar",
+      "age": 9,
+      "context": "Student wants to quit because a skill feels too hard.",
+      "student_opener": "I really don't think I can learn the F chord. Maybe guitar just isn't for me.",
+      "expected_tutor_behavior": "Normalize the F chord as universally difficult and reframe the struggle as expected, not evidence of inability. Offer a concrete one-week micro-target that makes progress visible and measurable."
+    },
+    {
+      "id": "gm_08",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 6,
+      "context": "Student arrives excited having practiced more than usual.",
+      "student_opener": "I practiced every single day this week! Even on Saturday!",
+      "expected_tutor_behavior": "Reinforce the effort decision explicitly. 'You chose to practice on Saturday when you could have done something else.' Link it to what you will hear improvement in today."
+    },
+    {
+      "id": "gm_09",
+      "gap": "growth_mindset",
+      "instrument": "voice",
+      "age": 14,
+      "context": "Student is upset after singing in front of peers did not go well.",
+      "student_opener": "I froze up singing in choir rehearsal and everyone heard me crack. I was so embarrassed.",
+      "expected_tutor_behavior": "Separate the performance event from the skill trajectory. The crack is a normal physiological event, not a judgment on ability. Identify something the student did well in the same performance."
+    },
+    {
+      "id": "gm_10",
+      "gap": "growth_mindset",
+      "instrument": "violin",
+      "age": 13,
+      "context": "Student has mastered a technically demanding passage after weeks of work.",
+      "student_opener": "It finally sounds clean! I guess it just took time.",
+      "expected_tutor_behavior": "Do not accept the passive framing of 'just took time.' Reframe: the time was filled with specific practice choices. Name two or three strategies the student used that contributed to the outcome."
+    },
+    {
+      "id": "gm_11",
+      "gap": "growth_mindset",
+      "instrument": "guitar",
+      "age": 15,
+      "context": "Student hears a professional guitarist and feels discouraged.",
+      "student_opener": "I watched a concert last night and thought, I'll never sound like that. What's the point.",
+      "expected_tutor_behavior": "Connect the professional's skill to accumulated practice time rather than innate talent. Then zoom in: what specific element in what they heard would they want to work toward first? Reframe from comparison to aspiration."
+    },
+    {
+      "id": "gm_12",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 9,
+      "context": "Student got praised by their teacher in a lesson and wants to share.",
+      "student_opener": "My teacher said I was the best student she has this semester!",
+      "expected_tutor_behavior": "Redirect from identity praise to behavior. What does the student think they are doing that led to that feedback? Draw out a specific practice habit or attitude rather than reinforcing the 'best student' identity."
+    },
+    {
+      "id": "gm_13",
+      "gap": "growth_mindset",
+      "instrument": "drums",
+      "age": 11,
+      "context": "Student made several errors during a jam with friends and is embarrassed.",
+      "student_opener": "I messed up so many times when I played with my friends. They're way better than me.",
+      "expected_tutor_behavior": "Reframe jamming mistakes as learning opportunities. Identify what the student learned from the experience that they could not have learned from solo practice."
+    },
+    {
+      "id": "gm_14",
+      "gap": "growth_mindset",
+      "instrument": "voice",
+      "age": 9,
+      "context": "Student has been working on a high note for two months and finally hit it cleanly.",
+      "student_opener": "I got the high note! I didn't think I was ever going to be able to do that.",
+      "expected_tutor_behavior": "Name a specific thing the student did differently: a breathing approach, a relaxation technique, a warmup exercise. Connect the win to agency, not luck or voice maturation alone."
+    },
+    {
+      "id": "gm_15",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 11,
+      "context": "Student is frustrated that sight-reading is still slow after weeks of practice.",
+      "student_opener": "I've been practicing sight-reading for a month and I'm still terrible at it. Some people just have it and I don't.",
+      "expected_tutor_behavior": "Reject the fixed-trait framing explicitly but kindly. Pull up a sight-reading example from a month ago and name one concrete thing that is different now. Make progress visible before it feels invisible."
+    },
+    {
+      "id": "gm_16",
+      "gap": "growth_mindset",
+      "instrument": "violin",
+      "age": 6,
+      "context": "Student is struggling to hold the instrument properly.",
+      "student_opener": "This is too hard. My arms are too short.",
+      "expected_tutor_behavior": "Acknowledge the physical challenge without attributing it to limitation. Identify one small thing the student can do today that they could not do last week. Build a concrete evidence base for capability."
+    },
+    {
+      "id": "gm_17",
+      "gap": "growth_mindset",
+      "instrument": "guitar",
+      "age": 13,
+      "context": "Student says they are naturally bad at rhythm.",
+      "student_opener": "I've always been bad at rhythm. I'm just not a rhythmic person.",
+      "expected_tutor_behavior": "Challenge the fixed framing with evidence. Ask the student if they can walk in time to music, clap to a beat, or identify a song's pulse. Rhythm is trainable and the student already has baseline capacity."
+    },
+    {
+      "id": "gm_18",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 16,
+      "context": "Student performed well at a recital for the first time.",
+      "student_opener": "I actually played really well at the recital! I surprised myself.",
+      "expected_tutor_behavior": "Do not accept the surprise framing as if success was random. Ask the student what they did differently in preparation this time compared to previous recitals. Credit the strategy."
+    },
+    {
+      "id": "gm_19",
+      "gap": "growth_mindset",
+      "instrument": "voice",
+      "age": 7,
+      "context": "Young student is frustrated that a classmate can already sing a song the student is still working on.",
+      "student_opener": "Emma already knows the whole song and I only know the first part. She's better than me.",
+      "expected_tutor_behavior": "Normalize different learning rates without dismissing the feeling. Focus on what the student knows now versus what they knew at the start, not the comparison to Emma."
+    },
+    {
+      "id": "gm_20",
+      "gap": "growth_mindset",
+      "instrument": "drums",
+      "age": 14,
+      "context": "Student has been working on a complex polyrhythm pattern and made a major breakthrough.",
+      "student_opener": "I got the three against four pattern today. I don't know how but it just worked.",
+      "expected_tutor_behavior": "Replace the 'I don't know how' with a specific attribution. The student spent time with the metronome on that pattern, counted it a specific way, or isolated one hand at a time. Name the method."
+    },
+    {
+      "id": "gm_21",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 7,
+      "context": "Student struggles to read notes and feels ashamed.",
+      "student_opener": "Why can some kids just read music and I can't? Reading is so hard for me.",
+      "expected_tutor_behavior": "Frame note reading as a skill like learning to read words. No child can read the day they learn the alphabet. Identify one note the student can recognize without hesitation and build outward from there."
+    },
+    {
+      "id": "gm_22",
+      "gap": "growth_mindset",
+      "instrument": "violin",
+      "age": 12,
+      "context": "Student used a deliberate practice strategy (isolating difficult bar) successfully.",
+      "student_opener": "I did what you said — I only practiced the hard bar twenty times. It actually worked.",
+      "expected_tutor_behavior": "Connect the result directly to the choice to use a specific strategy rather than playing through from the beginning. Reinforce that the student's decision about how to practice drove the outcome."
+    },
+    {
+      "id": "gm_23",
+      "gap": "growth_mindset",
+      "instrument": "guitar",
+      "age": 16,
+      "context": "Student is feeling imposter syndrome before a band audition.",
+      "student_opener": "I don't know if I should even audition. The other people trying out have been playing longer than me.",
+      "expected_tutor_behavior": "Refocus on what the student has prepared and what specific skills they bring. Time spent practicing is not the same as quality of preparation. Identify three concrete things they can do well."
+    },
+    {
+      "id": "gm_24",
+      "gap": "growth_mindset",
+      "instrument": "voice",
+      "age": 12,
+      "context": "Student successfully sang through a previously cracking transition smoothly.",
+      "student_opener": "I sang through the high part and it didn't crack! That's never happened before.",
+      "expected_tutor_behavior": "Do not attribute the success to the voice maturing on its own. Ask the student what warm-up exercises they did today or what they tried differently. Anchor the win in action."
+    },
+    {
+      "id": "gm_25",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 10,
+      "context": "Student makes an error they have made many times before and gets angry at themselves.",
+      "student_opener": "I keep making the same mistake in the same place. I'm so stupid.",
+      "expected_tutor_behavior": "Interrupt the self-attack firmly but kindly. Reframe the repeated error as information: 'this spot is telling us it needs a specific kind of practice.' Design a micro-repair strategy together."
+    },
+    {
+      "id": "gm_26",
+      "gap": "growth_mindset",
+      "instrument": "drums",
+      "age": 9,
+      "context": "Student discovers they can maintain a groove for a full minute without losing tempo.",
+      "student_opener": "I played along with the song for the whole thing and didn't lose the beat!",
+      "expected_tutor_behavior": "Celebrate while tracing it to specific practice. Ask if they used the metronome this week, how many times they ran it. Reinforce that the outcome was built by specific choices."
+    },
+    {
+      "id": "gm_27",
+      "gap": "growth_mindset",
+      "instrument": "violin",
+      "age": 14,
+      "context": "Student is frustrated that their intonation is not improving despite daily practice.",
+      "student_opener": "My intonation is still bad and I've been practicing every day for two months. I think I'm tone deaf.",
+      "expected_tutor_behavior": "Challenge the tone-deaf label directly. The student can hear that their intonation is off — that is the opposite of tone-deaf. Then explore the practice method: are they practicing intonation specifically or just playing through?"
+    },
+    {
+      "id": "gm_28",
+      "gap": "growth_mindset",
+      "instrument": "guitar",
+      "age": 10,
+      "context": "Student's barre chord attempt succeeded for the first time.",
+      "student_opener": "Wait — it just rang! Did you hear that? All six strings!",
+      "expected_tutor_behavior": "Match the excitement but ground it in what the student did. Which adjustment — thumb position, pressure, wrist angle — made it work? Anchor the technique that produced the success."
+    },
+    {
+      "id": "gm_29",
+      "gap": "growth_mindset",
+      "instrument": "piano",
+      "age": 13,
+      "context": "Student is comparing themselves to a sibling who plays piano at a higher level.",
+      "student_opener": "My sister has been playing for the same amount of time as me and she's way ahead. It makes me not want to practice.",
+      "expected_tutor_behavior": "Name the comparison trap explicitly. It measures progress against the wrong baseline. Redirect to the student's own trajectory and identify a specific skill milestone they have reached this month."
+    },
+    {
+      "id": "gm_30",
+      "gap": "growth_mindset",
+      "instrument": "voice",
+      "age": 16,
+      "context": "Student received a rejection from a school musical audition.",
+      "student_opener": "I didn't get the part. I worked so hard. Maybe I'm just not cut out for this.",
+      "expected_tutor_behavior": "Separate audition outcome from skill trajectory. Auditions involve factors outside skill (casting fit, competitive cohort). Identify what in the preparation was excellent and name one specific area to develop for next time."
+    },
+
+    {
+      "id": "sa_01",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 9,
+      "context": "Student needs to decide what to work on first in the session.",
+      "student_opener": "So what are we doing today?",
+      "expected_tutor_behavior": "Rather than setting the entire agenda, offer a genuine choice: 'we could start with the new rhythm from last week or work on the legato section — which feels more important to you right now?'"
+    },
+    {
+      "id": "sa_02",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 11,
+      "context": "Student is ready to select a new piece to learn.",
+      "student_opener": "I finished my last piece. What song are we doing next?",
+      "expected_tutor_behavior": "Offer two or three level-appropriate options with a brief description of what each one would develop, and let the student choose. Explain that their preference will shape how much they connect with the practice."
+    },
+    {
+      "id": "sa_03",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 13,
+      "context": "Student is deciding how to structure their home practice time.",
+      "student_opener": "How long should I practice and what should I practice at home?",
+      "expected_tutor_behavior": "Instead of prescribing a fixed schedule, offer a framework: 'you have about 20 minutes most days, what would you like to split that time between: technique, your current song, or learning something new?' Let the student make the allocation."
+    },
+    {
+      "id": "sa_04",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 12,
+      "context": "Student needs to choose a warmup routine.",
+      "student_opener": "Do we have to do all the same exercises every time? Some of them I really don't like.",
+      "expected_tutor_behavior": "Ask the student which exercises they find useful versus which feel pointless, then offer a modified menu: 'let's pick three that serve the goals. Which two do you find most helpful?'"
+    },
+    {
+      "id": "sa_05",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 7,
+      "context": "Student has a choice between two approaches to practicing a difficult section.",
+      "student_opener": "I can't play this part right.",
+      "expected_tutor_behavior": "Offer the student a concrete choice about how to address it: 'we could try playing it super slowly three times, or we could clap the rhythm first without the keys — which sounds easier to you?'"
+    },
+    {
+      "id": "sa_06",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 8,
+      "context": "Student seems bored with their current piece.",
+      "student_opener": "I don't really like this song anymore.",
+      "expected_tutor_behavior": "Before making a unilateral decision, ask the student what they would prefer: 'should we finish it so you can play it for someone, or find something new? What do you think?'"
+    },
+    {
+      "id": "sa_07",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 10,
+      "context": "Student wants to choose how they learn a new chord.",
+      "student_opener": "Can you show me the D chord?",
+      "expected_tutor_behavior": "Before showing the chord shape, ask the student how they prefer to learn new things. Do they want to see it, try it from a description, or look at a diagram? Adapt to their stated learning preference."
+    },
+    {
+      "id": "sa_08",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 14,
+      "context": "Student is setting practice goals for the week.",
+      "student_opener": "What should I aim to get done before next lesson?",
+      "expected_tutor_behavior": "Rather than specifying exactly what to achieve, offer a range: 'you could aim to solidify the left hand alone, or push to get hands together slowly — what feels achievable and still challenging to you?'"
+    },
+    {
+      "id": "sa_09",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 9,
+      "context": "Student needs to pick a song to work on for an upcoming performance.",
+      "student_opener": "I have to sing something for the school concert. What should I sing?",
+      "expected_tutor_behavior": "Offer two or three options that fit the context and the student's voice, explain why each could work, and let the student decide. Their ownership of the choice will affect motivation to prepare it."
+    },
+    {
+      "id": "sa_10",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 14,
+      "context": "Student is deciding whether to push tempo on a piece they know well.",
+      "student_opener": "Should I try playing it faster now?",
+      "expected_tutor_behavior": "Turn the question back with a genuine invitation: 'what does your ear tell you — does it feel locked in at this tempo or still a little fragile? You know this piece best right now.'"
+    },
+    {
+      "id": "sa_11",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 16,
+      "context": "Student is choosing between two musical paths to explore.",
+      "student_opener": "I'm not sure if I want to focus on fingerstyle or lead guitar. Which should I do?",
+      "expected_tutor_behavior": "Provide honest perspective on what each path would develop, then ask the student which type of music they most want to be able to play. Connect the technical choice to the musical identity they are building."
+    },
+    {
+      "id": "sa_12",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 10,
+      "context": "Student is choosing a practice tempo for a new piece.",
+      "student_opener": "How slow should I practice this?",
+      "expected_tutor_behavior": "Offer a guided choice: 'try it at two different speeds and tell me which one lets you think ahead of your fingers without stopping — what does that feel like to you?'"
+    },
+    {
+      "id": "sa_13",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 15,
+      "context": "Student wants to perform at a recital but is anxious about song choice.",
+      "student_opener": "I want to perform at the recital but I don't know what to pick. I'm scared to choose wrong.",
+      "expected_tutor_behavior": "Ask the student what kind of impression they want to make and what they feel most confident singing. Then narrow the options collaboratively. Make clear that no choice is objectively wrong if they commit to preparing it."
+    },
+    {
+      "id": "sa_14",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 7,
+      "context": "Student needs to decide how many times to repeat a passage in practice.",
+      "student_opener": "How many times do I have to play this part?",
+      "expected_tutor_behavior": "Offer a self-directed criteria instead of a fixed number: 'play it until it feels easy — then play it one more time after that. You tell me when it starts feeling easy, okay?'"
+    },
+    {
+      "id": "sa_15",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 12,
+      "context": "Student is choosing a fingerpicking versus strumming approach to a song.",
+      "student_opener": "Should I play this song with strumming or fingerpicking?",
+      "expected_tutor_behavior": "Play a brief example of both and ask the student which feels more like what they hear in their head when they imagine this song. Connect the technical choice to their musical imagination."
+    },
+    {
+      "id": "sa_16",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 6,
+      "context": "Student finishes their assigned piece and has extra time in the session.",
+      "student_opener": "I finished! Can we do something fun now?",
+      "expected_tutor_behavior": "Offer several options within the learning session — explore the black keys, try to play a song they know by ear, or start a new short piece — and let the student choose what feels fun."
+    },
+    {
+      "id": "sa_17",
+      "gap": "student_autonomy",
+      "instrument": "drums",
+      "age": 11,
+      "context": "Student is working on fill complexity and needs to decide how adventurous to be.",
+      "student_opener": "Should I try the harder fill or stick with the one I can already do?",
+      "expected_tutor_behavior": "Present both as valid options with honest context: 'the safe fill keeps the groove smooth, the harder one might disrupt the beat for a week while you learn it. Which risk do you want to take this week?'"
+    },
+    {
+      "id": "sa_18",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 13,
+      "context": "Student wants input on whether to push their high range.",
+      "student_opener": "My voice feels okay going to that high note but I'm not sure if I should push it.",
+      "expected_tutor_behavior": "Offer a framework for self-checking rather than a directive: 'if you feel effort in your throat, back off — if you feel effort in your breath support, that is okay. What do you feel right now?'"
+    },
+    {
+      "id": "sa_19",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 12,
+      "context": "Student needs to decide between two viable fingerings for a passage.",
+      "student_opener": "My teacher marked a fingering but my hand is small and it's hard. Can I do a different one?",
+      "expected_tutor_behavior": "Offer to explore both fingerings together and let the student evaluate which produces cleaner intonation for their hand size. Make the student the judge of the decision with their own ear and hand as evidence."
+    },
+    {
+      "id": "sa_20",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 8,
+      "context": "Student wants to use drawings rather than written notes to remember chords.",
+      "student_opener": "Do I have to write chord names down or can I draw pictures to help me remember them?",
+      "expected_tutor_behavior": "Affirm the choice fully. If drawing works better for them than words, that is a legitimate memory strategy. Ask what kind of picture would help them remember the chord shape."
+    },
+    {
+      "id": "sa_21",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 11,
+      "context": "Student needs to decide between two practice strategies for a difficult bar.",
+      "student_opener": "Should I practice the hard bar over and over or just play the whole piece and hope I get it?",
+      "expected_tutor_behavior": "Explain what each approach tends to produce without prescribing. Then ask: 'which feels more satisfying when it works?' Let the student's sense of agency guide the method while you inform the tradeoffs."
+    },
+    {
+      "id": "sa_22",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 8,
+      "context": "Student wants to sing a song they love rather than their assigned repertoire.",
+      "student_opener": "Can we work on Let It Go today instead of the other song?",
+      "expected_tutor_behavior": "Rather than refusing or fully pivoting, negotiate: 'we can do five minutes on that if we do ten minutes on your recital song first — does that work for you?' Give the student partial agency within a structure."
+    },
+    {
+      "id": "sa_23",
+      "gap": "student_autonomy",
+      "instrument": "drums",
+      "age": 13,
+      "context": "Student is choosing which drum pattern to learn next.",
+      "student_opener": "I want to learn a reggae beat but my teacher usually just gives me rock patterns.",
+      "expected_tutor_behavior": "Ask the student why reggae interests them — is it a specific song, a feel? Use that to connect it to what they have already learned and offer to make it the next focus if they want."
+    },
+    {
+      "id": "sa_24",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 10,
+      "context": "Student is choosing whether to use a shoulder rest.",
+      "student_opener": "My teacher uses a shoulder rest but I'm not sure if I need one. Do I have to use it?",
+      "expected_tutor_behavior": "Explain what shoulder rests do and the tradeoffs rather than prescribing. Ask the student to try both and describe the difference in comfort. Let the student make the decision with informed awareness."
+    },
+    {
+      "id": "sa_25",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 14,
+      "context": "Student wants to decide when they are ready to perform in front of others.",
+      "student_opener": "Am I good enough to play at the open mic?",
+      "expected_tutor_behavior": "Return the judgment to the student: 'what would good enough look like to you? Is it playing without stopping, getting through the hard chord change, or something else?' Let them define the readiness bar."
+    },
+    {
+      "id": "sa_26",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 13,
+      "context": "Student is evaluating their own performance of a piece.",
+      "student_opener": "I just played it through — how did it sound?",
+      "expected_tutor_behavior": "Before offering feedback, ask the student for their own assessment first: 'what did you notice? Where did it feel good and where did it feel uncertain?' Their self-evaluation is data for both of you."
+    },
+    {
+      "id": "sa_27",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 14,
+      "context": "Student is deciding on a vocal genre to pursue.",
+      "student_opener": "I like both classical and pop singing. Should I pick one?",
+      "expected_tutor_behavior": "Explain the technical overlaps and divergences honestly, but ultimately ask the student which music excites them more right now. Autonomy in genre direction is fundamental to long-term engagement."
+    },
+    {
+      "id": "sa_28",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 9,
+      "context": "Student wants to express how they want a phrase to sound.",
+      "student_opener": "This part sounds sad to me. Can I play it softer than what it says?",
+      "expected_tutor_behavior": "Validate the interpretive instinct: 'that is a real musical idea — let's try it your way and then the written way and you tell me which one feels more true to what you hear.' Honor the student as a musical decision-maker."
+    },
+    {
+      "id": "sa_29",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 11,
+      "context": "Student is choosing between a steel-string and a nylon-string guitar for home practice.",
+      "student_opener": "I have two guitars at home. Does it matter which one I practice on?",
+      "expected_tutor_behavior": "Explain the tradeoffs in feel and tone without mandating one. Ask the student which feels more comfortable to play for 20 minutes. Comfort is the right criterion and the student is in the best position to judge it."
+    },
+    {
+      "id": "sa_30",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 8,
+      "context": "Student is deciding on a practice location at home.",
+      "student_opener": "Does it matter if I practice in the living room where my family is or in my room by myself?",
+      "expected_tutor_behavior": "Explain the pros and cons of each environment without prescribing. Then ask the student which setting makes them want to practice more. Intrinsic comfort with the environment affects practice consistency."
+    },
+    {
+      "id": "sa_31",
+      "gap": "student_autonomy",
+      "instrument": "drums",
+      "age": 10,
+      "context": "Student is choosing what to play during free improvisation time at the end of a lesson.",
+      "student_opener": "Can I just play whatever I want now?",
+      "expected_tutor_behavior": "Affirm the free play fully and step back. If the student asks for a prompt, offer one minimal constraint: 'try to tell a little story with your drums — a beginning, a middle, and an end.' Then listen without directing."
+    },
+    {
+      "id": "sa_32",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 11,
+      "context": "Student is deciding whether to push through fatigue or stop practice.",
+      "student_opener": "My voice feels a little tired. Should I keep going?",
+      "expected_tutor_behavior": "Teach the student to make this decision themselves: 'if it feels scratchy or strained, that is a stop sign — if it just feels warm and worked, that is okay. What does it feel like to you?'"
+    },
+    {
+      "id": "sa_33",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 15,
+      "context": "Student is deciding how to approach memorization of a piece.",
+      "student_opener": "How should I go about memorizing this piece?",
+      "expected_tutor_behavior": "Offer multiple valid memorization strategies (chunking, hands-separate memory, harmonic analysis, visualization) and ask the student which approach matches how they naturally remember things in other areas of life."
+    },
+    {
+      "id": "sa_34",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 15,
+      "context": "Student is choosing between two possible performance opportunities.",
+      "student_opener": "There's a youth recital at the music school and also my school concert. Should I do both?",
+      "expected_tutor_behavior": "Give an honest assessment of what each would require and ask the student what their real motivation is for each. Is it experience, audience, or something else? Let their answer guide the recommendation."
+    },
+    {
+      "id": "sa_35",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 9,
+      "context": "Student wants to decorate their guitar pick.",
+      "student_opener": "Can I draw on my pick? Is that bad for it?",
+      "expected_tutor_behavior": "Give the factual answer (permanent marker on a pick does not affect playability) and let the student do it. Small personal touches to equipment increase student ownership of the instrument."
+    },
+    {
+      "id": "sa_36",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 12,
+      "context": "Student is evaluating two different interpretations of the same phrase.",
+      "student_opener": "I played that phrase two different ways. I'm not sure which I like more.",
+      "expected_tutor_behavior": "Ask the student to describe what each version sounded like to them emotionally before offering any opinion. Their interpretive judgment should lead."
+    },
+    {
+      "id": "sa_37",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 16,
+      "context": "Student is deciding on a key to perform a song in.",
+      "student_opener": "The song is written in G but it sits weirdly for my voice. Can I change the key?",
+      "expected_tutor_behavior": "Affirm the instinct to find the right key and ask the student to hum the melody and locate where their voice feels most free. Teach them to choose their own key by ear rather than giving the answer."
+    },
+    {
+      "id": "sa_38",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 13,
+      "context": "Student is deciding what to focus on before a graded exam.",
+      "student_opener": "I have three weeks until my Grade 2 exam. What should I spend the most time on?",
+      "expected_tutor_behavior": "Before prioritizing for them, ask the student which elements they feel most confident about and which feel shakiest. Let their self-assessment inform the work plan rather than imposing one."
+    },
+    {
+      "id": "sa_39",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 15,
+      "context": "Student wants to co-write a practice plan for the coming month.",
+      "student_opener": "I want to get serious about improving. Can we make a plan?",
+      "expected_tutor_behavior": "Structure the planning as a collaborative process. Ask the student what their target is, what they enjoy practicing most, and what they tend to avoid. Build the plan around their answers rather than handing them a template."
+    },
+    {
+      "id": "sa_40",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 9,
+      "context": "Student wants to add dynamics to a piece beyond what is written.",
+      "student_opener": "Can I play this part louder even though it doesn't say forte?",
+      "expected_tutor_behavior": "Affirm the student's interpretive instinct while contextualizing notation as a guide, not a law. Ask them to play it their way and explain why. Make the interpretive reasoning part of the exercise."
+    },
+    {
+      "id": "sa_41",
+      "gap": "student_autonomy",
+      "instrument": "drums",
+      "age": 14,
+      "context": "Student is choosing between two practice focuses.",
+      "student_opener": "I could work on speed or I could work on making what I already know sound more musical. Which is more important?",
+      "expected_tutor_behavior": "Present both as legitimate with honest context, but ultimately ask: 'which one would make you happiest to improve?' Let that answer guide the priority."
+    },
+    {
+      "id": "sa_42",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 7,
+      "context": "Student wants to choose how to start the lesson today.",
+      "student_opener": "Can we do the stretching game first instead of scales?",
+      "expected_tutor_behavior": "Accept the reordering if it is pedagogically equivalent. The warmup goal is achieved either way. Letting the student sequence the routine builds ownership of the practice ritual."
+    },
+    {
+      "id": "sa_43",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 16,
+      "context": "Student is deciding whether to continue classical training or shift toward jazz.",
+      "student_opener": "I've been doing classical for eight years but lately I'm more interested in jazz. Is it too late to change?",
+      "expected_tutor_behavior": "Reframe the question. Classical training is not lost, it becomes a foundation for jazz. Ask the student what specifically about jazz attracts them, and use that to design a bridge path that honors their agency."
+    },
+    {
+      "id": "sa_44",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 6,
+      "context": "Student is choosing between two brief activities at the end of a lesson.",
+      "student_opener": "Can we play a game now? Like the bow game?",
+      "expected_tutor_behavior": "Offer the bow game and one other short music game and let the student pick. Both options should reinforce something from today's lesson, and the selection should feel genuinely free."
+    },
+    {
+      "id": "sa_45",
+      "gap": "student_autonomy",
+      "instrument": "guitar",
+      "age": 12,
+      "context": "Student is deciding whether to learn a song by ear or from tabs.",
+      "student_opener": "Should I try to figure this song out by ear or just look up the tab?",
+      "expected_tutor_behavior": "Explain the skill each path builds without prescribing. Ask the student which skill they most want to strengthen right now and let them choose the method accordingly."
+    },
+    {
+      "id": "sa_46",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 11,
+      "context": "Student is deciding what time of day to practice.",
+      "student_opener": "My parents say I should practice right after school but I'm tired then. When should I practice?",
+      "expected_tutor_behavior": "Give factual context about cognitive load and practice quality without overriding the student's self-knowledge. Ask when they personally feel most focused and energetic. Then design the practice habit around that window."
+    },
+    {
+      "id": "sa_47",
+      "gap": "student_autonomy",
+      "instrument": "voice",
+      "age": 10,
+      "context": "Student wants to share a song they wrote themselves.",
+      "student_opener": "I made up a little song. Can I sing it to you?",
+      "expected_tutor_behavior": "Invite the student to sing it without any scaffolding instructions. Receive the creative product fully first. Ask what the song is about before offering any feedback, and keep the initial response affirming of the creative act."
+    },
+    {
+      "id": "sa_48",
+      "gap": "student_autonomy",
+      "instrument": "drums",
+      "age": 8,
+      "context": "Student is choosing between two songs to play along with.",
+      "student_opener": "Can I pick the song we play along to today?",
+      "expected_tutor_behavior": "Let the student pick from their own music library if the tempo is broadly suitable. The motivational value of playing along to music they love outweighs the pedagogical cost of a non-ideal tempo."
+    },
+    {
+      "id": "sa_49",
+      "gap": "student_autonomy",
+      "instrument": "piano",
+      "age": 14,
+      "context": "Student wants to evaluate their own recording of a piece.",
+      "student_opener": "I recorded myself playing. Can I play it and tell you what I think before you say anything?",
+      "expected_tutor_behavior": "Let the student lead the self-assessment fully. Listen without interjecting. After they finish, respond to what they identified before adding anything. Their self-evaluation shapes the feedback conversation."
+    },
+    {
+      "id": "sa_50",
+      "gap": "student_autonomy",
+      "instrument": "violin",
+      "age": 16,
+      "context": "Student is deciding whether to audition for a competitive youth orchestra.",
+      "student_opener": "I think I might audition for the state youth orchestra but I'm not sure if I'm ready or if I even want that kind of pressure.",
+      "expected_tutor_behavior": "Rather than advising one way or the other, ask the student what they are most hoping to get out of the orchestra experience and what specifically they fear about the pressure. Let them articulate both sides before you offer any perspective."
+    }
+
+  ]
+}
