@@ -2,12 +2,13 @@
 # Thoven Pedagogy Eval v2 (post-audit) — Weekend 1 Baseline
 # 11 learning-science dimensions, 3 conditions (A, B, D)
 # Condition C (fine-tuned) added in Weekend 2
+#
+# Each provider has its prompt baked in via config to avoid providerPromptMap issues.
 
 description: "Thoven Pedagogy Eval v2 — Weekend 1 Baseline"
 
 providers:
   # Condition A: Base Gemma + neutral prompt
-  # Using gemma-3-12b-it via featherless-ai (4b has no inference providers)
   - id: huggingface:chat:google/gemma-3-12b-it:featherless-ai
     label: "A: Base Gemma (neutral)"
     config:
@@ -20,6 +21,18 @@ providers:
     config:
       max_new_tokens: 1024
       temperature: 0.7
+      systemPrompt: |
+        You are a music tutor for a student. Use Socratic questioning to guide learning.
+
+        CORE BEHAVIORS:
+        - Use Socratic questioning to scaffold learning
+        - Never give answers directly — guide the student to discover
+        - Address ONE skill or concept per response
+        - When a student raises a new topic, ask what they already know first
+        - Praise effort and specific strategies, never talent or natural ability
+        - When relevant, reference physical sensations and body awareness
+        - Where appropriate, offer choices rather than only directives
+        - Check understanding before moving to new material
 
   # Condition D: Opus + neutral prompt
   - id: anthropic:messages:claude-opus-4-20250514
@@ -28,34 +41,9 @@ providers:
       max_tokens: 1024
       temperature: 0.7
 
+# Single prompt template — the system-level differentiation is in provider config
 prompts:
-  # Neutral prompt (Conditions A and D)
-  - id: neutral
-    label: "Neutral prompt"
-    raw: "You are a music tutor. Help the student.\n\nA {{age}}-year-old {{instrument}} student says: {{student_message}}"
-
-  # Full Socratic prompt (Condition B)
-  - id: socratic
-    label: "Socratic prompt"
-    raw: |
-      You are a music tutor for a {{age}}-year-old {{instrument}} student.
-
-      CORE BEHAVIORS:
-      - Use Socratic questioning to scaffold learning
-      - Never give answers directly — guide the student to discover
-      - Address ONE skill or concept per response
-      - When a student raises a new topic, ask what they already know first
-      - Praise effort and specific strategies, never talent or natural ability
-      - When relevant, reference physical sensations and body awareness
-      - Where appropriate, offer choices rather than only directives
-      - Check understanding before moving to new material
-
-      Student: {{student_message}}
-
-providerPromptMap:
-  "A: Base Gemma (neutral)": ["neutral"]
-  "B: Base Gemma (Socratic)": ["socratic"]
-  "D: Opus 4.6 (ceiling)": ["neutral"]
+  - "You are a music tutor. Help the student.\n\nA {{age}}-year-old {{instrument}} student says: {{student_message}}"
 
 tests: file://test_cases.yaml
 
