@@ -6,147 +6,147 @@
     "test": 16
   },
   "dev_metrics": {
-    "tp": 9,
-    "fn": 5,
-    "tn": 5,
+    "tp": 0,
+    "fn": 0,
+    "tn": 0,
     "fp": 0,
-    "tpr": 0.643,
-    "tnr": 1.0,
-    "accuracy": 0.737
+    "tpr": 0,
+    "tnr": 0,
+    "accuracy": 0
   },
   "dev_results": [
     {
       "id": 14,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The tutor asks several higher-order questions that require the student to think beyond simple recall. Specifically: 'What song are you singing when you notice the cracking?' requires the student to reflect on their specific experience and make connections; 'What note specifically cracks?' asks for diagnostic analysis of when the problem occurs; and most notably, 'How does it *feel* when your voice cracks?' is a clear reflective question asking the student to analyze and describe their physical sensations, going well beyond factual recall. This last question particularly requires the student to introspect and evaluate their experience, which is exactly the type of higher-order thinking the criterion seeks.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo581QwLjJP7sbhqur9o'}",
+      "agree": false
     },
     {
       "id": 15,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "The response is entirely instructional and prescriptive, providing detailed breakdowns of techniques, explanations, and exercises without asking any questions that require the student to think beyond recall. While the tutor does say 'let me know which area you'd like to focus on first' at the end of the first paragraph, this is merely asking for a preference selection rather than engaging the student in reflection, analysis, or evaluation. The response lacks any diagnostic questions (like 'What specific emotions are you trying to convey?' or 'What happens when you try to sing with emotion now?'), reflective questions (like 'How do you currently connect to songs emotionally?'), or analytical questions (like 'What do you think makes some singers sound more emotional than others?'). The entire response consists of information delivery without genuine engagement that would require the student to think, reflect, or analyze.",
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo5823taJYhzVzLLkqZP'}",
       "agree": false
     },
     {
       "id": 37,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The tutor asks several questions that require thinking beyond simple recall. 'What specific part are you having trouble with?' is a diagnostic question requiring the student to reflect on and identify their specific challenge. The follow-up multiple choice options (chord shape, reading music, rhythm, or something else) still require diagnostic thinking about their own experience. The final question 'can you tell me what you're working on so we can tackle it together?' asks the student to articulate and assess their current learning situation. These are all higher-order questions that engage the student in reflection and self-diagnosis rather than factual recall.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo582bdSNYXEhJobcWf3'}",
+      "agree": false
     },
     {
       "id": 32,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The tutor provides comprehensive instructional content about blues improvisation, covering the blues scale, chord progressions, techniques, and practice suggestions. However, examining the response for higher-order questions, I find only one question at the very end: 'Would you like me to show you the fingering pattern for that first blues box, or do you want to know more about phrasing and making it sound musical?' This is essentially a preference question asking the student to choose between two instructional paths. While it does require the student to evaluate their learning needs and make a decision about what would be most helpful, it's quite limited. The vast majority of the response is purely instructional with no questions that engage the student in reflection, analysis, self-assessment, or application. The tutor missed opportunities to ask diagnostic questions like 'What styles of blues do you listen to?' or 'Have you tried any improvisation before?' or reflective questions like 'What aspects of blues improvisation appeal to you most?' The single preference question at the end barely meets the threshold for higher-order thinking.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo583Bbj2ALgwrf4WTwr'}",
+      "agree": false
     },
     {
       "id": 19,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "This response contains multiple higher-order questions that require the student to think beyond simple recall. Key examples include: 'Do you feel like those pieces are challenging, too easy, or just right?' (self-assessment requiring evaluation), 'When you practice, do you mostly play through the whole pieces, or do you break them down into smaller sections?' (reflective question about practice methods), and 'Do you ever practice really slowly?' (diagnostic question about technique). The tutor also embeds analytical thinking in questions like asking about practice goals and listening habits. While some questions are factual ('What pieces are you currently working on?'), the response clearly includes several questions that engage higher-order thinking skills including self-assessment, reflection on practice methods, and evaluation of difficulty levels.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo5849eBoS7T39UHjFwh'}",
+      "agree": false
     },
     {
       "id": 0,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "This response includes three clear higher-order thinking questions at the end. Question 1 asks 'Which of these ideas sounds most appealing to you to try first?' - this requires the student to evaluate multiple options and make a preference-based choice. Question 3 asks 'On a scale of 1 to 5, how frustrating is it feeling like you can't play with both hands?' - this is a self-assessment question requiring the student to reflect on their emotional experience and quantify it. Both of these go well beyond simple factual recall and engage the student in evaluation and reflection. Question 2 is more factual but still contextual. The response successfully engages the student in thinking beyond mere recall.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo584bBj6E72HvLseQbq'}",
+      "agree": false
     },
     {
       "id": 5,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "This response contains multiple higher-order questions that require the student to think beyond simple recall. The tutor asks 'Which of those sounds the most fun to you?' which requires evaluation and preference-based thinking. The follow-up question 'Do you want to keep practicing the kind of notes and rhythms you used in Mary Had a Little Lamb, or do you want to try something a bit different?' asks the student to reflect on their learning preferences and make a comparative evaluation. While 'Are you playing with just one hand, or are you using both hands?' is more factual, the first two questions clearly engage analytical and evaluative thinking. The tutor also emphasizes that the student should choose based on what 'sounds exciting' rather than difficulty level, which further encourages reflective thinking about personal motivation and preferences.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo5854TiYhNP8TMnHQF9'}",
+      "agree": false
     },
     {
       "id": 23,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "The tutor provides extensive helpful advice and strategies for playing with both hands, but only asks one question at the very end: 'What piece are you working on?' This is a pure factual recall question asking for a basic piece of information. While the tutor does say 'Maybe I can give you specific tips for that song!' which shows intent to help further, the actual question itself requires no thinking beyond simple recall of a fact. There are no questions that ask the student to reflect, diagnose, analyze, evaluate, or think beyond basic information recall. The response is mostly instructional and declarative.",
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo585VFxx1J1ofYxwMVi'}",
       "agree": false
     },
     {
       "id": 6,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The tutor response includes several questions that require the student to think beyond simple recall. Specifically: 'Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes?' - this is a diagnostic question asking the student to reflect on and analyze their physical experience during different types of playing. 'Does it hurt, or just feel tired?' is a reflective/evaluative question requiring the student to differentiate between different physical sensations and assess their own bodily experience. Both questions engage the student in thinking about their experience rather than just recalling facts. The response also includes an application-embedded suggestion 'Let's try a quick shoulder roll right now!' which engages the student in immediate practical application.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo585saQRQkD6e5NV61n'}",
+      "agree": false
     },
     {
       "id": 20,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "The tutor response provides extensive instructional content with step-by-step methods, analogies, and encouragement. However, examining the questions asked: The response ends with 'Would you like to try playing just two notes together first - one with each hand?' This is essentially asking for permission/willingness to proceed with an activity rather than engaging the student in higher-order thinking. It's a simple yes/no question about readiness to try something, which doesn't require the student to reflect, analyze, evaluate, or think beyond basic agreement. While the response is pedagogically sound with good teaching strategies, it lacks any questions that would engage the student in thinking beyond simple recall or basic agreement.",
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo586EuNZipNrZYjZBRA'}",
       "agree": false
     },
     {
       "id": 17,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "This response contains multiple higher-order thinking questions. 'Can you tell me a little bit about what you're struggling with right now?' is a diagnostic question requiring the student to reflect on their current difficulties. 'What have you already tried?' asks the student to evaluate their past attempts and learning process. 'What part is confusing you the most?' requires the student to analyze and pinpoint specific areas of difficulty. All three questions go well beyond simple factual recall - they ask the student to reflect, diagnose, and evaluate their own learning experience. The tutor effectively uses these questions to encourage metacognition rather than just providing answers.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo586dDnjZVXwX8pekHF'}",
+      "agree": false
     },
     {
       "id": 30,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "The tutor response is primarily instructional and supportive, providing extensive advice about dealing with sore fingertips. However, it contains only one question at the very end: 'Would you like to learn some easier songs that use fewer string presses while your fingers get stronger?' This is essentially a yes/no question offering a solution, but it doesn't require the student to think beyond simple recall or preference. The question doesn't ask the student to reflect, diagnose, analyze, or evaluate anything about their experience - it's just asking if they want a particular type of help. There are no questions asking the student to think about when the pain occurs, what specifically hurts, how it feels, or what they've already tried. The response lacks the kind of higher-order questioning that would engage the student in meaningful reflection or analysis.",
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo5875kaXyEym1W4jyiB'}",
       "agree": false
     },
     {
       "id": 2,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "This response is entirely instructional and explanatory without asking any questions that require the student to think beyond recall. While the tutor does mention 'I'll also ask some questions along the way to make sure we're on the same page,' the actual questions present are purely factual recall: 'What piece are you working on right now?' and 'Can you describe a specific section where you're struggling with voicing?' These are asking for basic information rather than engaging the student in analysis, reflection, evaluation, or any form of higher-order thinking. The response cuts off mid-sentence, but based on what's provided, there are no questions that would require the student to reflect on their playing experience, analyze what they hear, evaluate different approaches, or apply concepts in a thoughtful way. The content is educational but fails to engage the student as an active thinker.",
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo587Vony5sUXA97Mbsi'}",
       "agree": false
     },
     {
       "id": 3,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "This response contains several questions that require the student to think beyond simple recall. The most prominent higher-order questions include: 'Can you play it slowly and steadily?' which asks the student to apply a technique and self-assess their ability; 'What piece are you working on?' which, while factual, is followed by 'What part of the left hand is feeling the most difficult? Is it the notes themselves, the rhythm, or something else?' - this is a diagnostic question requiring the student to analyze and differentiate between different aspects of their difficulty. The final question 'Can you try playing just the left hand part of the piece slowly?' is an application-embedded question that asks the student to apply a specific practice technique. These questions engage the student in reflection, self-assessment, and application rather than mere factual recall.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo58824gyoyJSitenR5N'}",
+      "agree": false
     },
     {
       "id": 13,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "This response is entirely instructional and explanatory, containing zero questions of any kind. The tutor provides a comprehensive breakdown of why the student sounds repetitive and offers detailed exercises and techniques, but never asks the student to think, reflect, diagnose, or evaluate anything. There are no questions like 'What specific pattern are you using?', 'How does it feel when you play the same thing?', 'Which of these techniques sounds most interesting to you?', or 'Can you tell me more about what you mean by sounding the same?' The response is purely declarative - explaining concepts and giving instructions without any engagement that would require the student to think beyond recall.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo588U6jYnYGzHm7aPwH'}",
+      "agree": false
     },
     {
       "id": 12,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "This response is entirely instructional and declarative, providing a comprehensive lesson plan about blues improvisation. While it contains extensive information about blues progressions, scales, and techniques, it asks zero questions of any kind throughout the entire response. The tutor delivers information in a one-way format without engaging the student in thinking, reflection, diagnosis, or evaluation. There are no opportunities for the student to analyze their current knowledge, reflect on their experience, evaluate options, or think beyond receiving factual information. The response reads like a textbook chapter rather than an interactive tutoring session that would engage the student's critical thinking abilities.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo588ue4qbeZR2GQ1ShR'}",
+      "agree": false
     },
     {
       "id": 34,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "The tutor response is primarily instructional and explanatory, providing detailed information about why voice cracks happen and offering multiple practical tips. While the response ends with 'Would you like to try a fun exercise together to help with those high notes?', this is a simple yes/no question that doesn't require the student to think beyond basic recall or preference. The question doesn't ask the student to reflect on their experience, diagnose their specific situation, analyze their technique, or engage in any higher-order thinking. Throughout the response, there are no questions that ask the student to think about when the cracking happens, how it feels, what they've tried, or to evaluate different approaches. The response is well-intentioned and informative, but lacks the kind of questioning that would engage the student in reflection or analysis of their own experience.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo589LSDboHBZDC5i3Pd'}",
+      "agree": false
     },
     {
       "id": 1,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "This response is entirely prescriptive and instructional, consisting of a lengthy set of teaching strategies and explanations directed at other tutors rather than engaging with the student. While it contains many good pedagogical ideas, it asks zero questions of any kind throughout the entire response. There are no analytical questions like 'Why do you think scales might be useful?', no diagnostic questions like 'What specifically feels boring about them?', no reflective questions like 'How do you feel when you play them?', and no evaluative questions like 'Which of these approaches sounds interesting to you?' The response is purely declarative, providing information and suggestions without creating any opportunity for the student to think, reflect, or engage beyond passive listening.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo589oTqeVScYmFQuXS7'}",
+      "agree": false
     },
     {
       "id": 27,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "This response is entirely instructional and prescriptive. The tutor provides a comprehensive explanation of vibrato technique with step-by-step exercises and tips, but asks only one question at the very end: 'Would you like me to explain any of these steps more?' This is a basic yes/no service question that requires no thinking beyond simple recall or preference. The response lacks any questions that would engage the student in reflection, diagnosis, analysis, or evaluation. There are no questions like 'What does vibrato sound like to you?', 'Which part of this feels most challenging?', 'How does your hand feel when you try this motion?', or 'What do you notice when you listen to violinists using vibrato?' The response is informative but misses opportunities to engage the student's analytical thinking about their own playing experience or understanding of the technique.",
-      "agree": true
+      "judge": "Error",
+      "critique": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZo58AA3zVq8aLuWA8iBt'}",
+      "agree": false
     }
   ],
   "status": "NEEDS ITERATION"

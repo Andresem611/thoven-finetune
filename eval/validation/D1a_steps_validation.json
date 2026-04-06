@@ -19,133 +19,133 @@
       "id": 10,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response clearly decomposes the explanation into sequential steps and substeps. The tutor explicitly states 'I'll break it down into a few categories' and then provides three numbered main sections: 1) Why it Hurts, 2) What We Can Do Right Now, and 3) What We Can Do Long-Term. Each main section contains multiple bulleted substeps that provide actionable guidance. Additionally, there's a separate 'Let's Check Your Technique!' section with its own substeps. This creates a clear sequential structure that an 8-year-old can follow one step at a time, moving from understanding the problem to immediate solutions to long-term strategies.",
+      "critique": "The tutor clearly breaks down their response into sequential steps and categories. The response is organized into three main sections: '1. Why it Hurts,' '2. What We Can Do Right Now,' and '3. What We Can Do Long-Term.' Each section contains multiple sub-steps or bullet points that provide actionable guidance. The tutor also includes a 'Let's Check Your Technique!' section with specific steps for the student to follow. This creates a logical progression from understanding the problem, to immediate solutions, to long-term strategies, and finally to technique assessment. The step decomposition is clear and allows the student to follow along sequentially rather than receiving all information in one undifferentiated block.",
       "agree": true
     },
     {
       "id": 11,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response does break down the explanation into sequential steps and categories. The response is clearly structured with numbered main sections (1. Understanding, 2. Exercises, 3. Mindset) and further breaks down the exercises section into multiple sequential sub-steps like 'Slow and Deliberate,' 'Ghost Note Method,' 'Chord Change Drills,' etc. Each exercise is presented as a step-by-step process the student can follow (e.g., 'Choose 2-3 chords,' 'Play the change very slowly,' 'Count,' 'Repeat'). While comprehensive, the response does decompose the task into clear sequential steps that the student can follow one at a time, meeting the criterion for step decomposition.",
+      "critique": "The tutor's response does break down the task into sequential steps, though they are embedded within a complex structure. The response is organized into numbered categories (1. Understanding, 2. Exercises, 3. Mindset), and within the Exercises section, there are clear sequential steps marked with bullet points and sub-bullets. For example, in the 'Slow and Deliberate' subsection, there are specific sequential steps: choose chords, play very slowly, count, repeat. The 'Ghost Note' method also provides a clear sequence: play first chord, hover fingers over next chord shape, press down and play. While the overall response is quite lengthy and comprehensive rather than focusing on just a few key steps, it does meet the criterion of decomposing the task into sequential steps that a student can follow one at a time.",
       "agree": true
     },
     {
       "id": 35,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor clearly breaks down the complex topic of singing with emotion into sequential steps and substeps. The response is organized into distinct sections: 'Start with the lyrics' (with 3 sub-points), 'Connect to your own experiences' (3 sub-points), 'Use your whole body' (3 sub-points), 'Technical tips that help' (3 sub-points), and ends with a 'Practice exercise' that provides a concrete activity. Each section represents a sequential step in developing emotional singing, progressing logically from understanding the song's meaning, to personal connection, to physical expression, to technical application, and finally to practical exercise. The bullet points within each section provide clear substeps that can be followed one at a time.",
+      "critique": "The tutor clearly breaks down the task of singing with more emotion into sequential steps and substeps. The response is organized with distinct sections marked by bold headers: 'Start with the lyrics,' 'Connect to your own experiences,' 'Use your whole body,' 'Technical tips that help,' and 'Practice exercise.' Each section contains specific, actionable steps that the student can follow sequentially. For example, under 'Start with the lyrics,' there are three clear substeps about understanding the song, asking questions, and speaking the lyrics first. The 'Practice exercise' provides a concrete activity with specific instructions. This is a clear example of step decomposition rather than giving advice in a single undifferentiated block.",
       "agree": true
     },
     {
       "id": 31,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor clearly breaks down the chord transition improvement process into 5 sequential, numbered steps that the student can follow one at a time. Each step has a clear title and specific instructions: (1) Start with two chords only, (2) Use anchor fingers, (3) Practice freeze and release, (4) Try chord shadows, and (5) Use a metronome starting slow. The response provides a logical progression from basic concepts to more advanced techniques, with each step building on the previous ones. This is a clear example of step decomposition rather than giving advice in a single undifferentiated block.",
+      "critique": "The tutor response clearly decomposes the solution into 5 numbered sequential steps that the student can follow one at a time. Each step is distinctly numbered (1-5) and provides specific, actionable instructions: starting with two chords, using anchor fingers, practicing freeze and release, trying chord shadows, and using a metronome. The steps are logically sequenced from basic practice (two chords) to more advanced techniques (metronome work). This is not a single undifferentiated block of advice but rather a structured, step-by-step approach that allows the student to work through the problem systematically.",
       "agree": true
     },
     {
       "id": 14,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor provides an excellent example of step decomposition. The response is clearly broken down into multiple sequential sections: 1. What's Actually Happening (explaining the science), 2. Why is it More Common at Your Age (developmental context), 3. What Can We Do About It (solutions broken into further substeps like warm-ups, breath support, vowel shapes, etc.), followed by diagnostic questions and reminders. Each major section contains its own substeps, creating a comprehensive scaffolded approach. The tutor uses clear headings, numbered points, and bullet points to organize the sequential steps, making it easy for the student to follow one step at a time rather than receiving everything in one overwhelming block.",
+      "critique": "The tutor response clearly breaks down the explanation and solution into multiple sequential steps. The response is structured with numbered sections: 1) What's Actually Happening (explaining the science), 2) Why it's More Common at Your Age (developmental context), and 3) What Can We Do About It (practical solutions). Within section 3, the tutor further decomposes the solution into specific substeps including warm-ups (with specific exercises like lip trills, humming, sirens), breath support techniques, vowel shape experiments, guidance about not pushing, and gradual progression. Each element builds logically on the previous one, creating a clear sequential learning path for the student to follow.",
       "agree": true
     },
     {
       "id": 0,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor clearly breaks down the response into multiple sequential steps and methods. The response is structured with numbered sections (1-5) and within section 2 'The Slow and Steady Approach,' there are specific bullet-pointed substeps: practice each hand separately, then try one measure together slowly, repeat that measure, then add one measure at a time. Section 3 'The Clap & Count Method' also provides sequential steps: clap right hand rhythm, clap left hand rhythm, clap both together, tap with fingers, then play on piano. The response goes well beyond the minimum requirement of 2 sequential steps, providing multiple pathways with clear step-by-step breakdowns that the student can follow sequentially.",
+      "critique": "The tutor clearly breaks down the response into 5 numbered sequential steps/approaches that the student can follow: 1. Celebrate what you can do, 2. The slow and steady approach (with sub-steps like practice each hand separately, then try one measure together, then add measures), 3. The clap & count method (with sequential sub-steps from clapping rhythms to playing), 4. The walk and talk method (with progressive steps), and 5. Don't get discouraged. Each numbered section contains its own sequential sub-steps as well. This goes well beyond the minimum requirement of 2 sequential steps - it provides multiple organized approaches with clear step-by-step progressions within each approach.",
       "agree": true
     },
     {
       "id": 4,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response clearly breaks down the explanation into 4 distinct, numbered sequential sections that build upon each other: 1) What the pedal is supposed to do (foundational understanding), 2) Why it sounds muddy (diagnosis), 3) Specific exercises to fix it (actionable steps), and 4) Tips to remember (reinforcement). Within section 3, there are further sub-steps with 4 numbered exercises that progress from simple (single note) to more complex (chord work). The response uses clear formatting with numbered sections and bullet points, making it easy for the student to follow one step at a time. This is not a meta-discussion of what the tutor would say, but actual scaffolded instruction that the student can follow sequentially.",
+      "critique": "This response excellently decomposes the task into clear, sequential steps. The tutor structures the explanation with numbered sections: 1) What the pedal does, 2) Why it sounds muddy, 3) Specific exercises to fix it, and 4) Tips to remember. Within section 3, there are four numbered exercises that build progressively from simple (single note) to more complex (four notes with pedal changes). Each exercise has clear substeps with specific instructions. The response ends by directing the student to start with Exercise 1, creating a clear entry point for sequential practice. This is a strong example of step decomposition that allows the student to follow one step at a time.",
       "agree": true
     },
     {
       "id": 20,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor clearly breaks the task into sequential steps across multiple sections. The response includes: 1) 'Start with baby steps' with numbered instructions to play hands separately first, 2) 'Try this fun exercise' with bulleted sequential actions (right hand on lap, play left 3 times, switch hands, then combine), 3) 'Here's a trick that helps' with step-by-step progression (start with one measure, count aloud, add more measures). Each section provides clear sequential substeps that the student can follow one at a time, moving from simpler to more complex tasks.",
+      "critique": "The response clearly decomposes the task into multiple sequential steps that the student can follow. It starts with 'Start with baby steps' and provides a numbered step (1. play each hand separately). It then provides a 'Try this fun exercise' section with 4 sequential bullet points (put right hand on lap, play left hand 3 times, switch hands, then try both together slowly). It continues with 'Here's a trick that helps' and breaks that into 3 more sequential steps (start with one measure, count out loud, add one more measure). While there are some general encouragement sections, the core instruction is broken down into at least 7-8 clear sequential steps across multiple sections, far exceeding the minimum requirement of 2 steps.",
       "agree": true
     },
     {
       "id": 6,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response clearly breaks down the explanation into 3 sequential sections that are explicitly labeled and numbered: '1. What's Happening? Why Does Your Arm Get Tired?', '2. What We Can Do Together (with me, your tutor!)', and '3. What *You* Can Do (Simple Exercises!)'. Each section contains multiple substeps as well. Within section 3, there are specific numbered exercise steps like shoulder rolls, wrist circles, fist clenches, etc. The response provides a logical progression from understanding the problem, to collaborative solutions, to independent actions the student can take. This clearly meets the criterion of decomposing the task into at least 2 sequential steps that the student can follow one at a time.",
+      "critique": "The tutor response clearly breaks down the explanation into three distinct sequential sections with explicit headers: '1. What's Happening? Why Does Your Arm Get Tired?', '2. What We Can Do Together (with me, your tutor!)', and '3. What You Can Do (Simple Exercises!)'. Each section contains multiple substeps and specific actions. The response moves logically from diagnosis (what's happening) to collaborative solutions (what we can do together) to independent practice (what you can do). This creates a clear sequential structure that the student can follow step by step, rather than presenting all information in a single undifferentiated block.",
       "agree": true
     },
     {
       "id": 15,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor clearly decomposes the response into sequential steps and substeps. The response is structured with three main numbered sections: 1. Understanding & Connecting to the Song (The Foundation), 2. Technical Aspects That Support Emotion, and 3. Exercises to Try (Let's Get Practical!). Each main section further breaks down into multiple bullet-pointed substeps that the student can follow systematically. For example, section 1 includes substeps like 'What's the Song Actually About?', 'Identify the Emotional Arc', 'Personal Connection', and 'Character Work'. Section 2 breaks down technical aspects into 'Vocal Dynamics', 'Vocal Color/Timbre', 'Phrasing & Rhythm', and 'Resonance'. Section 3 provides specific exercises with clear step-by-step instructions. The response explicitly asks the student to 'read through all of this, and then let me know which area you think you'd like to focus on first,' indicating a sequential approach where the student should process the information step by step.",
+      "critique": "The tutor response breaks down the task of 'singing with more emotion' into three major sequential sections: (1) Understanding & Connecting to the Song, (2) Technical Aspects That Support Emotion, and (3) Exercises to Try. Each section contains multiple subsections and steps. Within section 1, there are clear substeps like analyzing the song's meaning, identifying the emotional arc, making personal connections, and character work. Section 2 breaks down technical elements into dynamics, vocal color, phrasing, and resonance. Section 3 provides practical exercises. The response uses clear formatting with numbered sections, bullet points, and logical progression from understanding to technique to practice. This definitely meets the criterion of decomposing the task into sequential steps that a student can follow one at a time.",
       "agree": true
     },
     {
       "id": 13,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response clearly decomposes the task into sequential steps and substeps. The response is structured with: 1) Understanding Why You Sound the Same (with 4 bullet-pointed explanations), 2) Variation: How to Mix Things Up (with 4 subsections A-D, each containing specific exercises), and 3) Application: Putting it into Music (with 2 subsections A-B). Each major section contains actionable steps and specific exercises that the student can follow sequentially. The organization uses clear headings, numbered sections, lettered subsections, and specific exercise instructions that break down the complex task of making pentatonic playing more varied into manageable, sequential components.",
+      "critique": "The tutor response clearly breaks down the explanation into sequential steps with excellent organization. The response uses explicit numbered sections (1. Understanding, 2. Variation, 3. Application) and further subdivides these into lettered subsections (A, B, C, D). Within each subsection, there are specific action items and exercises that the student can follow sequentially. For example, in section 2A, it provides a clear action ('Find diagrams of other pentatonic positions') followed by a specific exercise ('Spend 15 minutes each day practicing just one position'). The structure moves logically from understanding the problem, to learning variations, to applying the knowledge - giving the student a clear roadmap to follow rather than dumping all information in one undifferentiated block.",
       "agree": true
     },
     {
       "id": 28,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor effectively breaks down the complex concept of 'playing musically' into clear sequential steps and categories. The response is well-organized with: 1) **Start with these basics** section covering three fundamental elements (dynamics, phrasing, bow control), 2) **Try this exercise** section with a specific 3-step practice method (play the same piece three different ways), and 3) **Questions to ask yourself** section for self-reflection. Each section provides actionable steps the student can follow sequentially. The tutor doesn't just give a monolithic explanation but decomposes the task into manageable, ordered components that build upon each other.",
+      "critique": "The tutor does break down the response into sequential sections with clear headers ('Start with these basics', 'Try this exercise', 'Questions to ask yourself'), which provides some organization. However, examining more closely, these are not truly sequential steps that build on each other in a logical progression. The 'basics' section lists three parallel concepts rather than sequential steps. The 'exercise' section does provide a clear 3-step activity (play the piece three different ways), which counts as step decomposition. The 'questions' section provides reflection prompts but not sequential action steps. While there is some structure and the exercise portion does contain sequential steps, the overall response is more of a comprehensive overview with multiple parallel suggestions rather than a clear step-by-step progression the student can follow sequentially.",
       "agree": true
     },
     {
       "id": 1,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "This response fails to meet the criterion. While the tutor announces 'I'll break it down into a few parts' and uses numbered sections like '1. Acknowledge and Validate' and '2. Explain Why Scales Are Important,' this is meta-commentary about what the tutor WOULD say rather than actually providing sequential steps for the student to follow. The response is structured as advice to another tutor ('Here's how I'd respond... you can pick and choose what feels most appropriate') rather than direct scaffolded steps for the 10-year-old student. The tutor discusses methodology instead of actually implementing step-by-step guidance that the student can follow sequentially.",
+      "critique": "The tutor response is structured as a meta-discussion about 'how I'd respond' rather than actually providing sequential steps for the student. The tutor explicitly states 'Here's how I'd respond' and 'I'll break it down into a few parts' but then provides instructional advice TO the tutor rather than sequential steps FOR the student. While the content contains numbered sections (1, 2, 3, 4), these are instructional frameworks for the tutor to follow, not actionable steps that the student can take. The response discusses what the tutor would say in each section rather than actually saying it directly to the student in a step-by-step format. This is a clear example of meta-discussion that fails to provide actual sequential scaffolding.",
       "agree": false
     },
     {
       "id": 2,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor clearly breaks down the complex concept of voicing into sequential, numbered steps. The response includes: 1. What is Voicing? (The Basic Idea), 2. Why is Voicing Important?, 3. How Do We Achieve Voicing? (The Techniques), 4. Let's Get Practical - Examples & Exercises, and 5. Let's Talk About Your Music. Each step builds logically on the previous one, moving from basic understanding to practical application. The tutor uses clear numbering and section headers to delineate each step, making it easy for the student to follow sequentially. This is a clear example of step decomposition rather than giving the complete answer in a single undifferentiated block.",
+      "critique": "The tutor clearly breaks down the response into sequential steps. The response is structured with numbered sections: 1. What is Voicing?, 2. Why is Voicing Important?, 3. How Do We Achieve Voicing?, 4. Let's Get Practical - Examples & Exercises, and 5. Let's Talk About Your Music. Within section 4, there are also numbered sub-exercises (1. The 'One Note at a Time' Exercise, 2. The 'Simple Chord Progression' Exercise, 3. Listen and Identify). This creates a clear progression from conceptual understanding to practical application, allowing the student to follow along step by step rather than receiving all information in one undifferentiated block.",
       "agree": true
     },
     {
       "id": 25,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides song recommendations organized into categories, but does not break down the learning process into sequential steps. While the response is well-structured with categories ('similar songs' vs 'small challenge'), it presents multiple options rather than decomposing how to actually learn the next song. The tutor gives suggestions and a tip about dynamics, but doesn't provide step-by-step guidance like 'First, choose a song... Then, learn the right hand... Next, add the left hand...' The response is more of a menu of options than a scaffolded learning sequence.",
+      "critique": "The tutor provides suggestions for next songs to learn but does not break down the process of learning a new song into sequential steps. Instead, it offers a categorized list of song options (similar difficulty vs. small challenge) and suggests a practice technique for the current song. While the response is well-organized with clear categories, it doesn't decompose the actual task of 'what to learn next' or 'how to learn your next song' into sequential steps that the student can follow. The response is more of a menu of options rather than a step-by-step approach to selecting and learning the next piece.",
       "agree": true
     },
     {
       "id": 21,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides an explanation of why scales are important with various analogies and suggestions, but does not break this into sequential steps or substeps that the student can follow. The response is structured with bullet points and sections, but these are different reasons/benefits rather than sequential steps. The tutor gives suggestions like 'play them like different animals' and 'try playing them loud then soft' but these are presented as a collection of options rather than a step-by-step process. The response ends with a proposal ('How about we try just 5 minutes...') but doesn't decompose the actual practice approach into sequential steps the student should follow.",
+      "critique": "The tutor provides an explanation of why scales are important and offers suggestions to make them more fun, but does not break this into sequential steps or substeps that the student can follow. The response uses bullet points to organize different reasons and fun approaches, but these are not sequential steps - they are parallel categories of information. The tutor gives multiple suggestions simultaneously (play like animals, use dynamics, set timers, etc.) rather than guiding the student through a step-by-step process. While the response is engaging and well-organized with clear sections, it doesn't meet the criterion of decomposing into sequential steps that can be followed one at a time.",
       "agree": true
     },
     {
       "id": 37,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor does not break down the task or explanation into sequential steps. Instead, the response is primarily motivational and procedural - explaining why they won't just give the answer and asking the student to identify what they're struggling with. While the tutor mentions 'let's break it down into smaller steps,' this is just a promise of future scaffolding rather than actual step decomposition. The response offers multiple choice options for what the student might be struggling with, but these are diagnostic questions, not sequential steps to follow. The tutor is essentially asking the student to provide more information before any actual teaching or step-by-step guidance can begin.",
+      "critique": "The tutor's response does not break the task into sequential steps or substeps. Instead, it provides a general explanation about why working together is better than giving direct answers, then asks diagnostic questions to understand what the student needs help with. While the tutor mentions 'let's break it down into smaller steps,' this is just a promise of future scaffolding rather than actual step decomposition. The response is entirely in a single conversational block focused on motivating the student and gathering information, with no sequential steps provided for the student to follow.",
       "agree": true
     },
     {
       "id": 5,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor response does not decompose the task of learning the next song into sequential steps. Instead, it provides three broad categories of song options (similar songs, slightly challenging songs, and different types of songs) and then asks questions to help determine which direction to go. While the response is well-organized with clear categories and bullet points, these are not sequential steps that the student can follow one at a time to learn their next piece. The tutor is essentially presenting multiple options and gathering information rather than breaking down a learning process into sequential substeps. The format is more of a menu of choices rather than a step-by-step approach to learning.",
+      "critique": "The tutor's response does not break down the learning task into sequential steps that the student can follow. Instead, it presents multiple options categorized by difficulty level (Option 1, 2, 3) and then asks questions to help decide what to learn next. While the response is well-organized with clear categories, it doesn't provide a step-by-step process for actually learning the next piece. The tutor essentially gives a menu of choices rather than decomposing the task of learning a new song into sequential substeps like 'First practice the right hand melody, then add left hand, then combine them' or similar instructional steps. The response is more about song selection than providing a scaffolded learning approach.",
       "agree": true
     },
     {
       "id": 36,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides multiple strategies for making practice more enjoyable, but these are presented as a collection of alternative options rather than sequential steps to follow. The suggestions (game playing, short practice, sticker chart, favorite songs) are parallel choices, not a step-by-step process. While the tutor does ask a follow-up question about what's difficult, this doesn't create a sequential workflow. The response reads more like a menu of options rather than a decomposed sequence of steps the student should take one after another.",
+      "critique": "The tutor response provides multiple suggestions and strategies but does not decompose them into sequential steps that build on each other. Instead, it presents a collection of parallel options (game playing, short practice, stickers, favorite songs) that the student could choose from. While the response is well-structured with clear formatting, the suggestions are alternatives rather than sequential steps. The tutor then asks diagnostic questions, but this is more about gathering information than providing step-by-step guidance. The response lacks the 'First do this, then do that' sequential progression that defines step decomposition.",
       "agree": true
     }
   ],

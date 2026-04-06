@@ -6,153 +6,153 @@
     "test": 15
   },
   "dev_metrics": {
-    "tp": 15,
-    "fn": 1,
+    "tp": 14,
+    "fn": 2,
     "tn": 4,
     "fp": 0,
-    "tpr": 0.938,
+    "tpr": 0.875,
     "tnr": 1.0,
-    "accuracy": 0.95
+    "accuracy": 0.9
   },
   "dev_results": [
     {
       "id": 14,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response contains several genuine questions that guide the student to think and reflect. The tutor asks: 'What song are you singing when you notice the cracking?', 'What note specifically cracks?', and 'How does it *feel* when your voice cracks?' These are all direct questions to the student that prompt thinking and self-reflection about their specific experience. The tutor is gathering information to better help the student, which demonstrates good pedagogical practice. While much of the response is explanatory, the inclusion of these guiding questions meets the criterion.",
+      "critique": "The response contains several genuine guiding questions that prompt the student to think and reflect. Specifically, the tutor asks: 'What song are you singing when you notice the cracking?', 'What note specifically cracks?', and 'How does it feel when your voice cracks?' These are all direct questions that guide the student to analyze their own experience and provide specific information. While the response is quite lengthy and instructional, it does fulfill the criterion of including at least one genuine question that guides the student to think or try something.",
       "agree": true
     },
     {
       "id": 16,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "The response is entirely composed of explanations, instructions, and suggestions, but contains no genuine questions directed at the student. While the tutor provides extensive guidance on what questions OTHER adults might ask the child (like 'Can you tell me a little bit about why you don't want to practice right now?' or 'Is it too hard?'), these are suggested scripts for parents or other tutors, not actual questions posed to the student. The response reads like a comprehensive guide or manual rather than direct interaction with the 5-year-old. There are no question marks in sentences that directly address the student - it's all instructional content about how to handle the situation.",
+      "critique": "The tutor response is comprehensive and detailed but contains no direct questions to the student. While it provides excellent guidance for the tutor themselves about how to handle the situation, it doesn't actually model having a conversation with the student. The response includes example questions that *could* be asked (like 'Can you tell me a little bit about why you don't want to practice right now?'), but these are presented as suggested approaches for the tutor to consider, not actual questions being posed to the student. The response is essentially a meta-commentary on how to respond rather than an actual response to the student.",
       "agree": false
     },
     {
       "id": 26,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response contains two genuine questions at the end: 'Would you like to try one of these exercises together?' and 'Or show me how you're holding your bow so I can help?' Both questions directly guide the student to take action - either trying an exercise or demonstrating their bow hold for feedback. These are not rhetorical questions but genuine invitations for the student to engage and try something specific. While most of the response is explanatory and instructional, the presence of these guiding questions at the end meets the criterion.",
+      "critique": "The response contains two genuine questions at the end: 'Would you like to try one of these exercises together?' and 'Or show me how you're holding your bow so I can help?' These are both authentic guiding questions that prompt the student to make a choice about what to try or to demonstrate their current technique. The first question guides the student toward action (trying exercises), and the second guides them toward reflection and demonstration of their current practice. While the majority of the response consists of explanations and suggestions, these concluding questions clearly invite student engagement and thinking.",
       "agree": true
     },
     {
       "id": 28,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor's response contains one clear guiding question at the end: 'Would you like to tell me about a specific piece you're working on?' This is a genuine question that invites the student to engage and share information that would lead to more personalized guidance. Additionally, there are several questions in the 'Questions to ask yourself' section ('What emotion or story does this piece convey?', 'Which notes feel most important?', 'Are you listening to professional recordings of your pieces?') which, while framed as self-reflection questions, still function as guiding questions that prompt the student to think and analyze their playing. The response also includes an implicit question in the exercise section ('Notice how your bow, dynamics, and timing naturally change?') which guides the student to observe and reflect on their playing variations.",
+      "critique": "The tutor provides extensive advice on musical expression, including dynamics, phrasing, and bow control. The response contains several genuine questions that guide the student to think and reflect: 'Are you playing with different volumes (loud/soft)?', 'Where would you naturally breathe if you were singing?', 'Notice how your bow, dynamics, and timing naturally change?', 'What emotion or story does this piece convey?', 'Which notes feel most important?', 'Are you listening to professional recordings of your pieces?' and 'Would you like to tell me about a specific piece you're working on?' These questions prompt self-reflection, experimentation, and further engagement. While some are embedded within explanations, they clearly function as guiding questions that encourage the student to think about their playing in new ways.",
       "agree": true
     },
     {
       "id": 19,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response contains multiple genuine questions that guide the student to think and reflect. The tutor asks several specific questions including: 'Are you just playing through pieces from beginning to end?', 'What pieces are you working on?', 'Are you working on just pieces, or also scales, chords, and technique exercises?', 'Do you feel like those pieces are challenging, too easy, or just right?', 'Are you practicing slowly?', 'Are you breaking things down into smaller chunks?', 'Are you really listening to yourself?', 'Are you practicing with a goal in mind?', 'Are you practicing consistently?', 'When you practice, do you mostly play through the whole pieces, or do you break them down into smaller sections?', 'Do you ever practice really slowly?', and several others about sleep, diet, stress, and enjoyment. These questions are clearly designed to help the student reflect on their practice habits and identify areas for improvement. The tutor explicitly states 'I'll ask you some questions along the way, so be ready to think!' and structures the response around getting the student to self-evaluate their approach.",
+      "critique": "This response contains multiple genuine questions that guide the student to think and reflect. The tutor asks: 'What pieces are you currently working on?', 'Do you feel like those pieces are challenging, too easy, or just right?', 'When you practice, do you mostly play through the whole pieces, or do you break them down into smaller sections?', and 'Do you ever practice really slowly?'. These are all direct questions that prompt the student to analyze their practice habits and provide specific information. While the response also includes some rhetorical/illustrative questions ('Are you just playing through pieces from beginning to end?'), the presence of multiple clear, actionable questions that guide student thinking and engagement easily meets the criterion.",
       "agree": true
     },
     {
       "id": 0,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor's response contains multiple genuine guiding questions at the end that prompt the student to think and make choices. Specifically: 'Which of these ideas sounds most appealing to you to try first?' guides the student to evaluate options and make a decision; 'Do you have a simple piece of music you're working on right now that we could try these methods with?' prompts the student to think about their current materials; and 'On a scale of 1 to 5... how frustrating is it feeling like you can't play with both hands?' asks the student to reflect on their emotional experience. These are all genuine questions that guide thinking, reflection, and action, meeting the criterion clearly.",
+      "critique": "This response contains multiple genuine questions that guide the student to think and try things. At the end, the tutor asks three specific questions: 1) 'Which of these ideas sounds most appealing to you to try first?' - this guides the student to reflect on the options and make a choice, 2) 'Do you have a simple piece of music you're working on right now that we could try these methods with?' - this prompts the student to think about their current materials, and 3) 'On a scale of 1 to 5... how frustrating is it feeling like you can't play with both hands?' - this guides the student to reflect on their emotional state. The tutor also asks the student to 'tell me which one you'd like to try first' earlier in the response. These are all genuine guiding questions that prompt thinking, reflection, and action from the student.",
       "agree": true
     },
     {
       "id": 5,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor's response contains multiple genuine questions that guide the student to think and make decisions. Specifically, the tutor asks: 'Which of those sounds the most fun to you?', 'Do you want to keep practicing the kind of notes and rhythms you used in \"Mary Had a Little Lamb\", or do you want to try something a bit different?', and 'Are you playing with just one hand, or are you using both hands?' These are all direct questions that prompt the student to reflect on their preferences and current abilities, helping guide the learning path forward. The questions are meaningful and encourage student engagement rather than just being rhetorical.",
+      "critique": "The tutor's response contains multiple genuine guiding questions that prompt the student to think and make choices. Specifically, the tutor asks: 'Which of those sounds the most fun to you?' which guides the student to reflect on their preferences; 'Do you want to keep practicing the kind of notes and rhythms you used in \"Mary Had a Little Lamb\", or do you want to try something a bit different?' which helps the student think about their learning direction; and 'Are you playing with just one hand, or are you using both hands?' which prompts the student to provide information about their current skill level. These are all genuine questions that guide the student to think, reflect, and engage in the learning process, not just rhetorical statements.",
       "agree": true
     },
     {
       "id": 23,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response contains one genuine question at the very end: 'What piece are you working on? Maybe I can give you specific tips for that song!' This question directly invites the student to share information that will guide the tutor's next response. While the vast majority of the response consists of explanations, instructions, and encouragement (which are valuable but don't count as guiding questions), this final question does meet the criterion by prompting the student to think about and communicate their specific situation.",
+      "critique": "The response contains extensive helpful advice and explanations about playing with both hands, but when examining it for genuine guiding questions, there is only one question at the very end: 'What piece are you working on?' This question does ask the student to provide information that could lead to more specific guidance. However, the vast majority of the response (approximately 95%) consists of declarative statements, instructions, and explanations without any questions that prompt the student to think, reflect, or try something specific. While the final question about the piece they're working on does count as a genuine question, it feels somewhat tacked on rather than integrated into the teaching approach.",
       "agree": true
     },
     {
       "id": 6,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response contains multiple genuine guiding questions that prompt the student to think and provide feedback. Specifically, the tutor asks: 'Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes?' and 'Does it hurt, or just feel tired?' These are clear questions that guide the student to reflect on their experience and provide specific information. The tutor also includes an action-oriented suggestion: 'Let's try a quick shoulder roll right now!' While this is phrased as a suggestion rather than a direct question, it still guides the student to try something. The response successfully combines explanation and instruction with genuine inquiry.",
+      "critique": "This response contains several genuine guiding questions that prompt the student to think and provide information. The tutor asks 'Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes?' which guides the student to reflect on their specific experience. They also ask 'Does it hurt, or just feel tired?' which is an important diagnostic question. Additionally, 'Let's try a quick shoulder roll right now!' while phrased as a suggestion, functions as a guiding question that prompts immediate action. These questions encourage the student to self-reflect and engage actively in the learning process rather than just receiving information passively.",
       "agree": true
     },
     {
       "id": 20,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response contains one genuine question at the end: 'Would you like to try playing just two notes together first - one with each hand?' This is a clear guiding question that prompts the student to try a specific activity. The rest of the response is filled with explanations, instructions, and encouragement, but this single question at the end qualifies the response as containing at least one genuine guiding question that directs the student to think or try something.",
+      "critique": "The tutor provides extensive advice, instructions, and encouragement through analogies and step-by-step guidance. At the very end, there is one genuine question: 'Would you like to try playing just two notes together first - one with each hand?' This question directly invites the student to try a specific activity and guides them toward action. While the vast majority of the response is instructional, this single guiding question meets the criterion for a pass.",
       "agree": true
     },
     {
       "id": 18,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response contains multiple genuine guiding questions that prompt the student to think and reflect. Specifically: 'Can you tell me a little bit more?', 'What were we just talking about?', 'What feels tricky?', 'Do you just need a little reminder?', and 'What were we doing when you said I don't know?' These are all authentic questions designed to help the student identify what they're struggling with and guide them toward clarification. The questions are open-ended and encourage self-reflection, which is exactly what guiding questions should do.",
+      "critique": "The tutor response contains multiple genuine questions that guide the student to think and reflect. Specifically: 'Can you tell me a little bit more?', 'What were we just talking about?', 'What feels tricky?', 'Do you just need a little reminder?', and 'What were we doing when you said I don't know?' These are all authentic questions that prompt the student to think about their situation and provide information. The questions are not rhetorical but are designed to help the student identify what specifically they're struggling with, which is excellent scaffolding for a 7-year-old who gave a very general response.",
       "agree": true
     },
     {
       "id": 31,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor provides comprehensive instruction on chord transitions with detailed strategies and techniques. The response is primarily instructional, containing extensive explanations, tips, and step-by-step methods. However, at the very end, the tutor asks 'Which chord changes are giving you the most trouble?' This is a genuine question that guides the student to identify their specific challenges and invites them to engage in further dialogue. The question prompts the student to think about and articulate their particular difficulties, which would allow for more targeted instruction. While the bulk of the response is declarative, this final question meets the criterion for guiding the student to think and respond.",
+      "critique": "The response contains extensive instructional content with detailed strategies for improving chord transitions. While most of the response consists of numbered tips and explanations, it does end with a genuine question: 'Which chord changes are giving you the most trouble?' This question directly asks the student to identify their specific challenges, which would guide them to reflect on their playing and help the tutor provide more targeted assistance. The question prompts the student to think about and communicate their particular difficulties, making it a genuine guiding question rather than just a rhetorical one.",
       "agree": true
     },
     {
       "id": 2,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The tutor response contains numerous genuine questions that guide the student to think and try things. Examples include: 'What piece are you working on right now?' and 'Can you describe a specific section where you're struggling with voicing?' The response also mentions asking 'questions along the way to make sure we're on the same page.' Additionally, it provides specific exercises with implicit questions embedded (like experimenting with different touches and volumes). The response goes beyond just explaining concepts by actively engaging the student with questions about their specific situation and encouraging them to try practical exercises.",
-      "agree": true
+      "judge": "Fail",
+      "critique": "This response is extremely long and detailed, but critically fails to include any genuine questions that guide the student to think or try something. While the tutor mentions 'I'll also ask some questions along the way to make sure we're on the same page,' the actual response contains no questions until the very end where it's cut off. The response is entirely comprised of explanations, instructions, and examples, but lacks the interactive questioning element that would engage the student in active thinking or experimentation. Even the exercises presented are written as commands ('Try this', 'Play just the accompaniment') rather than guiding questions. The response reads more like a textbook chapter than an interactive tutoring session.",
+      "agree": false
     },
     {
       "id": 3,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response contains several genuine guiding questions that prompt the student to think and try things. The tutor asks 'Can you play it slowly and steadily?' which guides the student to attempt a specific technique. They ask 'What piece are you working on?' and 'What part of the left hand is feeling the most difficult?' which prompt reflection and information-gathering. The response ends with 'Can you try playing just the left hand part of the piece slowly?' which is a clear call to action. While the response is quite lengthy and contains many declarative statements, it does include multiple questions that guide the student toward specific actions and thinking.",
+      "critique": "This response contains multiple genuine questions that guide the student to think and try things. The tutor asks several specific guiding questions: 'Can you play it slowly and steadily?' prompts the student to try a specific practice approach. 'What piece are you working on?' guides the student to provide information that will help with instruction. 'What part of the left hand is feeling the most difficult?' encourages the student to reflect on their specific challenges. The final question 'Can you try playing just the left hand part of the piece slowly?' directly guides the student to attempt a specific practice technique. While the response is quite lengthy and contains many declarative statements, it clearly includes multiple genuine questions that prompt thinking, reflection, and action from the student.",
       "agree": true
     },
     {
       "id": 36,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor response contains multiple genuine guiding questions that prompt the student to think and try different approaches. Specifically: 'Can you play your piece like a sleepy turtle? Now like a bouncy bunny?' guides the student to experiment with different playing styles. 'What if we just play for 5 minutes?' suggests a specific action to try. 'Is there a song you really like? Maybe from a movie?' prompts the student to think about their preferences. Most importantly, 'Can you tell me: What's the hardest part about practicing?' directly asks the student to reflect on their experience and identify specific challenges. These are all genuine questions that guide thinking and action, not rhetorical statements.",
+      "critique": "This response contains multiple genuine guiding questions that prompt the student to think and try things. First, there are action-oriented questions like 'Can you play your piece like a sleepy turtle? Now like a bouncy bunny?' and 'What if we just play for 5 minutes?' These guide the student to try specific approaches to make practice more engaging. The tutor also asks a reflective question 'Can you tell me: What's the hardest part about practicing?' with specific options, which prompts the student to think about and articulate their feelings. There's also 'Is there a song you really like? Maybe from a movie?' which guides the student to consider their preferences. These are all genuine questions that invite student participation and thinking, not just rhetorical statements.",
       "agree": true
     },
     {
       "id": 4,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response is predominantly instructional, consisting of explanations about pedal technique and detailed practice exercises. However, it concludes with a genuine guiding question: 'Can you try that and tell me: How does it feel' which directs the student to try Exercise 1 and reflect on their experience. This question prompts both action and self-reflection, meeting the criterion for a guiding question.",
+      "critique": "The response contains one clear guiding question at the end: 'Can you try that and tell me: How does it feel' - this directly asks the student to try Exercise 1 and report back on their experience. However, the vast majority of this very long response consists of explanations, instructions, and prescribed exercises without asking the student genuine questions that would guide their thinking or invite reflection. The tutor provides detailed information about what the pedal does, why it sounds muddy, and gives multiple exercises with specific instructions, but doesn't ask questions like 'What do you notice when you press the pedal?' or 'Which part of using the pedal feels most challenging?' The single question at the end does qualify as a guiding question that prompts the student to try something and reflect, meeting the minimum criterion.",
       "agree": true
     },
     {
       "id": 15,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response is entirely declarative and instructional. While it's comprehensive and well-organized, it contains no genuine questions that guide the student to think or try something. The tutor provides extensive explanations about understanding emotion, technical aspects, and exercises, but never asks the student a question. The closest thing to a question is the statement 'Please read through all of this, and then let me know which area you think you'd like to focus on first' - but this is framed as an instruction rather than a question. There are also phrases like 'What's the Song Actually About?' and 'What would you feel?' but these are rhetorical questions used as teaching points in the explanations, not questions directed at the student to prompt thinking or action. The response reads like a lecture or textbook rather than an interactive tutoring session.",
+      "critique": "The response is entirely declarative and instructional. While it's comprehensive and well-structured, it consists only of explanations, instructions, and advice without containing any genuine questions directed at the student. The closest thing to a question is the rhetorical 'What's the Song *Actually* About?' which is really a section header/instruction rather than a question posed to the student. The statement '**Please read through all of this, and then let me know which area you think you'd like to focus on first.**' is a command/instruction, not a question with a question mark. Even the examples like 'What would *you* feel? How would you react?' are presented as rhetorical examples within the character work explanation rather than direct questions to the student. The response lacks any guiding questions that would prompt the student to think, reflect, or try something specific.",
       "agree": true
     },
     {
       "id": 8,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response is entirely declarative, consisting of explanations, instructions, and prescriptions without any questions directed at the student. While the tutor provides comprehensive advice organized into clear categories (tone production, rhythm & phrasing, expression), they never ask the student to think about, reflect on, or try anything through questioning. The response includes many commands like 'Experiment!', 'Try playing...', 'Listen carefully', 'Practice bowing...', etc., but these are imperative statements, not questions. There are no genuine guiding questions such as 'What do you think your teacher means when they say...?', 'Can you try playing this passage with different bow pressure?', or 'Which part of your playing feels most mechanical to you?' The response is informative but fails to engage the student in active thinking through questioning.",
+      "critique": "The tutor response is entirely declarative, providing detailed explanations, instructions, and advice about tone production, rhythm, phrasing, and expression. While the response is comprehensive and educational, it contains no genuine questions directed at the student. The tutor explains what the teacher might mean, offers exercises, and gives extensive guidance, but never asks the student to think about, try, or reflect on anything specific. Commands like 'Try playing the same note with very light pressure' and 'Listen carefully to the difference' are imperative statements, not questions. The response reads more like a detailed instructional manual than an interactive tutoring session that would engage the student in active thinking or experimentation through questioning.",
       "agree": true
     },
     {
       "id": 12,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This tutor response is entirely declarative and instructional. It provides extensive information about blues progressions, scales, and theory, but never asks the student a genuine question that would guide them to think or try something. The response is structured as a comprehensive lesson plan with explanations, instructions, and commands (like 'Listen!', 'Practice:', 'Find a backing track'), but lacks any questions that would engage the student in active thinking or prompt them to try specific things. While the content is educational and well-organized, it follows a one-way information delivery model rather than an interactive, question-guided approach that would help the student discover concepts through their own exploration.",
+      "critique": "The response is entirely declarative - it consists of explanations, instructions, and structured content about blues improvisation, but contains no genuine questions directed at the student. The tutor provides comprehensive information about blues progressions, pentatonic scales, and practice methods, but never asks the student to think, reflect, or try something. While there are parenthetical asides like '(We can talk about positions later if you're not familiar)' and directives like 'Listen!' and 'Experiment!', these are commands or statements rather than questions that would guide the student to engage actively. The response is informative but lacks the interactive questioning element that would prompt student thinking or action.",
       "agree": true
     },
     {
       "id": 13,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response is entirely instructional and declarative. While it contains excellent musical advice and detailed explanations, it fails to include any genuine questions directed at the student. The tutor uses action-oriented language ('Action:', 'Exercise:') and gives clear instructions ('Find diagrams', 'Spend 15 minutes each day', 'Try playing a note'), but never asks the student a question that would prompt thinking, reflection, or immediate action. There are no questions like 'What part of your playing feels most repetitive?' or 'Can you try playing just the first three notes in a different rhythm?' The response is comprehensive but purely prescriptive rather than interactive.",
+      "critique": "The tutor response is entirely composed of explanations, instructions, and prescriptive advice without any genuine questions directed at the student. While the response is comprehensive and educational, covering understanding, variation techniques, and application methods, it follows a purely declarative format throughout. The tutor tells the student what to do ('Find diagrams', 'Spend 15 minutes each day practicing', 'Try playing a note just before the beat') and explains concepts, but never asks the student to think about or try anything through questioning. There are no instances of guiding questions like 'What happens when you skip notes?' or 'Can you try bending this note?' The response reads more like a textbook or instructional manual than an interactive tutoring session that would engage the student through inquiry.",
       "agree": true
     }
   ],
