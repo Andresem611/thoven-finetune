@@ -150,40 +150,47 @@ defaultTest:
     # =========================================================================
     - type: llm-rubric
       value: |
-        You are evaluating a music tutor's response to a student.
+        You are evaluating whether a music tutor's response includes a comprehension check or practice invitation.
 
-        TASK: Determine whether the tutor checks for understanding after introducing new material, rather than teaching and moving on.
+        ## Definitions
 
-        CRITERION: After teaching or explaining something new, the response must include a check — asking the student to demonstrate, explain back, or try something before moving to additional content.
+        PASS: The tutor includes ANY of these before or after instruction:
+        - Asks the student to try, play, or demonstrate something specific ("Try playing just the right hand", "Can you try that?", "play a short phrase first piano then forte")
+        - Provides a named exercise the student should do ("try shoulder rolls and wrist circles", "do lip trills for 5 minutes", "try the chromatic scale warmup") — assigning a specific exercise IS a practice invitation
+        - Asks the student to explain back or describe what they notice ("What do you hear when you do X?", "Can you hear the difference?")
+        - Invites the student to practice or attempt something specific ("Would you like to try the pedal exercise?", "Let's try this together", "Can you play the first four notes?")
+        - Asks a diagnostic question about the student's direct experience ("How does it feel when you do X?", "What happens when you try?")
+        - Ends with specific questions to apply learning to their piece ("What piece are you working on? Can you describe where you're struggling?") — these invite the student to practice-apply what was taught.
+        All of these count as verification — they require the student to engage with the material, not just passively receive instruction.
 
-        PASS definition:
-        - Response includes a comprehension check: asks the student to demonstrate ("play that for me"), explain back ("can you tell me what that means?"), or try something specific before moving on.
-        - Asking the student to attempt a task counts as a comprehension check.
+        FAIL: The tutor ONLY explains/teaches and ends without ANY invitation to try, demonstrate, reflect, or apply.
+        - Generic closers like "Does that make sense?" or "Any questions?" alone do NOT count.
+        - A pure DIRECTION-CHANGE offer ("Would you like to learn easier songs instead?") does NOT count — that's changing course, not checking comprehension.
+        - "Would you like to try X?" DOES count because it specifically invites action on what was taught.
 
-        FAIL definition:
-        - Response teaches or explains new material and moves on with no verification of understanding.
-        - Vague checks like "Does that make sense?" or "Got it?" alone are borderline — they count only if combined with a specific action prompt.
+        ## Examples
 
-        FEW-SHOT EXAMPLES:
-
-        Example 1 — PASS (11yo violin, "how do I do vibrato?"):
-        Tutor response: "Vibrato is a slight wobbling of the pitch that makes the sound warmer. Start by placing your finger on the string and rocking it back and forth very slowly. Try it on your A string — can you make a slow wobble without pressing too hard? Show me what that feels like."
-        Critique: The tutor explains vibrato, then asks the student to try it and demonstrate ("Show me what that feels like"). This is a clear comprehension check through action.
+        ### Example 1: PASS
+        Student (7yo piano): "I can't play with both hands at the same time"
+        Response: "Let's start with just the right hand. Can you play the first four notes for me? Once that feels easy, we'll try the left hand alone, and then see what happens when we put them together very slowly."
+        Critique: The tutor asks the student to play the right hand ("Can you play the first four notes for me?") before moving to the next step. This is a genuine comprehension/skill check embedded in the instruction flow.
         Result: Pass
 
-        Example 2 — FAIL (7yo piano, "can't play both hands"):
-        Tutor response: "Playing with both hands is like patting your head and rubbing your tummy! Start with the right hand alone, then add the left hand. Once both hands know their parts, put them together very slowly. Then gradually speed up. You'll get it with practice!"
-        Critique: The tutor explains a multi-step approach but never checks if the student understood any of it. It moves through all the steps and ends with encouragement, but no verification.
+        ### Example 2: FAIL
+        Student (10yo piano): "Why do I have to practice scales? They're boring"
+        Response: "Scales are like a superpower for piano players! Just like soccer players do drills, scales train your fingers to be fast and accurate. They help you learn new songs quicker because your fingers already know the patterns. Try thinking of them as a game — see how fast you can play C major without mistakes!"
+        Critique: The tutor explains why scales matter and suggests reframing them as a game, but never checks whether the student understood the connection between scales and song-learning. The closing suggestion "try thinking of them as a game" is an instruction, not a check. No verification of understanding.
         Result: Fail
 
-        Example 3 — BORDERLINE PASS (10yo piano, "pedal sounds muddy"):
-        Tutor response: "When the pedal catches too many notes, it sounds muddy. The trick is to lift and press the pedal right when you change chords. Try playing two different chords — press the pedal on the first, then lift and re-press on the second. Does it sound cleaner now?"
-        Critique: "Does it sound cleaner now?" is a comprehension check that asks the student to evaluate the result of their action. It's tied to a specific task, not just a generic "understand?" — so it counts.
+        ### Example 3: PASS (borderline)
+        Student (14yo piano): "I don't understand how to voice the melody over the accompaniment"
+        Response: "Voicing is about making the melody louder than the accompaniment. Try this: play just the melody notes with your right hand, pressing firmly. Now play just the left hand very softly. Can you hear the difference in volume? That difference is what we want when both hands play together."
+        Critique: The tutor asks "Can you hear the difference in volume?" — this is a borderline check. It asks the student to notice something specific (volume contrast) rather than just asking "do you understand?" The tutor is verifying the student can perceive the concept before combining hands. Borderline but passes.
         Result: Pass
 
-        Now evaluate the following tutor response. First write a critique analyzing whether the response checks for understanding, then give your verdict.
-
-        Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.
+        ## Output Format
+        Respond with JSON only:
+        {"critique": "detailed assessment referencing specific evidence from the response", "result": "Pass or Fail"}
       weight: 1.5
       metric: D2_ComprehensionCheck
 
@@ -226,7 +233,7 @@ defaultTest:
         Critique: Uses a relatable sports analogy. "Key signatures" is a music term but appropriate for a 10-year-old who is taking lessons. Language is conversational. Appropriate for the age.
         Result: Pass
 
-        Now evaluate the following tutor response to a {{age}}-year-old {{instrument}} student. First write a critique analyzing language appropriateness for the stated age, then give your verdict.
+        Now evaluate the following tutor response to a student of the stated age. First write a critique analyzing language appropriateness for the stated age, then give your verdict.
 
         Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.
       weight: 2
@@ -239,42 +246,46 @@ defaultTest:
     # =========================================================================
     - type: llm-rubric
       value: |
-        You are evaluating a music tutor's response to a student.
+        You are evaluating whether a music tutor's response manages cognitive load by focusing on ONE main concept.
 
-        TASK: Determine whether the tutor keeps cognitive load manageable by focusing on one main concept or skill at a time.
+        ## Definitions
 
-        CRITERION: The response should address one main concept or skill. If a second concept is mentioned, it must be explicitly connected to the first. Three or more unrelated concepts is a failure.
+        PASS: The response addresses one main concept or skill, even if it uses numbered steps to break that concept down. Sequential steps for ONE skill (e.g., "Step 1: play right hand. Step 2: play left hand. Step 3: combine slowly") is PASS — that's scaffolding, not overload. A structured response with clear focus on a single topic passes even if it's detailed.
 
-        PASS definition:
-        - Response addresses one main concept or skill.
-        - If it mentions a second concept, it explicitly connects it to the first (e.g., "and this connects to..." or the second concept is a substep of the first).
-        - Well-structured with clear organization (numbered steps, short paragraphs).
+        FAIL: The response introduces 3 or more UNRELATED concepts (e.g., "work on posture, AND practice scales, AND try sight-reading, AND listen to recordings"). The key is whether items are independent topics vs sequential steps for one skill. Also FAIL if it uses undefined jargon the student hasn't learned, or is an unstructured wall of text.
 
-        FAIL definition:
-        - Response introduces 3+ disconnected concepts without explicit connections between them.
-        - Uses undefined jargon (terms introduced without explanation).
-        - Is a wall of text with no structure — no paragraphs, no lists, no breaks.
+        IMPORTANT: Count the number of DISTINCT PROBLEMS addressed, NOT the number of tips or techniques. Ask: "Are these items solving ONE student concern, or introducing unrelated problems?"
+        - Multiple methods/tips all addressing ONE concern = PASS. Example: student asks about arm fatigue → tutor gives 5 tips about bow hold, arm position, posture, and breaks. ALL are about ONE problem (arm fatigue) = PASS.
+        - "1. Practice hands separately. 2. Combine slowly. 3. Speed up gradually" = ONE concept (hand coordination) = PASS
+        - "1. Fix your posture. 2. Practice scales. 3. Learn music theory. 4. Try sight-reading" = FOUR unrelated problems = FAIL
+        - A long response with many tips focused on ONE student concern = PASS even if the list is long
+        - A response that addresses multiple INDEPENDENT concerns unrelated to what the student asked = FAIL
 
-        FEW-SHOT EXAMPLES:
+        When in doubt: if the student could summarize the response as "my tutor helped me with [ONE thing I asked about]", it's PASS.
 
-        Example 1 — PASS (7yo piano, "can't play both hands"):
-        Tutor response: "Let's focus on one thing: getting each hand comfortable on its own first. 1. Play the right hand part 5 times until it feels easy. 2. Then play the left hand part 5 times. 3. Once both feel easy, try just the first measure with both hands together, super slowly."
-        Critique: Focuses on one concept (hands-together coordination) broken into clear sequential steps. No concept overload.
+        ## Examples
+
+        ### Example 1: PASS
+        Student (7yo piano): "I can't play with both hands at the same time"
+        Response: "Playing with both hands is tricky! Let's focus on just one thing: getting each hand really comfortable on its own first. Can you play the right hand part five times in a row without stopping? Once that feels easy, we'll try the left hand."
+        Critique: One concept: practice hands separately. The response stays focused on this single step without jumping to rhythm, posture, or fingering. Clear and manageable for a 7-year-old.
         Result: Pass
 
-        Example 2 — FAIL (10yo piano, "why practice scales"):
-        Tutor response: "Scales help with finger independence, sight-reading, transposition, chord theory, ear training, and improvisation. You should also work on arpeggios, broken chords, and chromatic scales. Additionally, understanding circle of fifths will help you see how key signatures relate to each other, and don't forget about relative minors..."
-        Critique: Dumps 10+ concepts (finger independence, sight-reading, transposition, chord theory, ear training, improvisation, arpeggios, broken chords, chromatic scales, circle of fifths, relative minors) with no connections. Overwhelming.
+        ### Example 2: FAIL
+        Student (8yo guitar): "The strings hurt my fingers"
+        Response: "That's normal! Here are some tips: 1) Press with your fingertips, not the pads. 2) Start with nylon strings instead of steel. 3) Practice for shorter sessions. 4) Try using a capo to reduce tension. 5) Make sure your action height is correct. 6) Your calluses will develop over time. Also, make sure you're using proper posture..."
+        Critique: Six independent suggestions plus a posture aside. An 8-year-old cannot process and act on 6+ tips. Even though each tip is correct, the combined load overwhelms. Should have picked ONE actionable thing (e.g., "let's check how you're pressing the strings — show me your left hand").
         Result: Fail
 
-        Example 3 — BORDERLINE PASS (14yo piano, "voicing melody"):
-        Tutor response: "Voicing is about making the melody sing above the accompaniment. The main technique is dynamic contrast — play the melody hand slightly louder and the accompaniment hand softer. This connects to touch: the melody fingers press more firmly while the accompaniment fingers stay light."
-        Critique: Introduces voicing and dynamic contrast, but explicitly connects them ("The main technique is dynamic contrast"). Touch is explained as a substep of the same concept. Two closely connected ideas, not a concept dump.
+        ### Example 3: PASS (borderline)
+        Student (12yo guitar): "I can play chords but switching between them is slow"
+        Response: "Chord switching is all about muscle memory. Here's what I want you to try: practice switching between just G and C — two chords, nothing else. Place your fingers on G, then lift them ALL at once and place them on C. The key is lifting all fingers together, not one at a time. Try it 10 times slowly."
+        Critique: Technically introduces two ideas (lift-all-together technique + repetition count) but they're tightly connected — the technique and how to practice it. This is one focused concept with a specific method. Borderline but passes.
         Result: Pass
 
-        Now evaluate the following tutor response. First write a critique counting and analyzing the concepts introduced, then give your verdict.
-
-        Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.
+        ## Output Format
+        Respond with JSON only:
+        {"critique": "detailed assessment referencing specific evidence from the response", "result": "Pass or Fail"}
       weight: 1.5
       metric: D4_CognitiveLoad
 
@@ -287,37 +298,70 @@ defaultTest:
       value: |
         You are evaluating a music tutor's response to a student.
 
-        TASK: Determine whether the tutor probes the student's existing knowledge or experience before launching into instruction.
+        TASK: Determine whether the tutor probes or acknowledges the student's existing knowledge, experience, or situation.
 
-        CRITERION: Before teaching new content, the response must ask about what the student already knows, has tried, or can do.
+        CRITERION: The response must include at least one genuine attempt to understand what the student already knows, has tried, or is currently experiencing.
 
-        PASS definition:
-        - Response asks about the student's existing knowledge or experience before teaching.
-        - Examples: "What have you tried so far?", "Show me what you know", "Have you done X before?", "How long have you been working on this?"
-        - The probe must come before the main instruction, not as an afterthought.
+        PASS definition — ANY of the following count, at ANY position in the response:
+        - Direct probes before or during instruction: "What have you tried so far?", "Show me what you know", "Have you done X before?"
+        - Diagnostic questions about the student's specific situation: "What specific part are you having trouble with?", "What piece are you working on?", "Which chords are you switching between?"
+        - Questions about what the student has already attempted: "What have you already tried?", "When you make a mistake, what do you do?"
+        - Acknowledgment of student-stated knowledge: "Since you mentioned you can play hands separately...", "You said you know the scale already..."
+        - Asking the student to demonstrate current ability: "Can you show me how you're doing it now?"
+        - Questions asking for the student's specific context to personalize future advice: "What piece are you working on? Maybe I can give you specific tips for that song!" — this counts even at the end.
+        - Questions embedded ANYWHERE in the response that invite the student to reflect on their specific situation
+
+        SPECIFIC EXCEPTIONS — these do NOT count even if present:
+        - Practice-habit questions appended AFTER complete instruction: "How often do you practice?", "Are you warming up before playing?" — these are routines, not prior knowledge
+        - Background questions at end of complete instruction: "How long have you been playing?", "How many years of lessons have you had?"
+        - Pure preference questions: "What style of music do you like?", "What songs interest you?"
+        - "What piece are you working on?" AFTER the response already includes complete exercises and practice guidance that the student could follow WITHOUT answering the question. When the instruction is ALREADY self-sufficient (with specific exercises, techniques, and practice tips), adding "What piece?" at the end is an afterthought, not genuine probing. Exception: if the response gives ONLY general strategies (no specific exercises) and needs the answer to give targeted advice, it counts.
+
+        SELF-CHECK: Before finalizing your result, scan your critique for the phrase "fails to probe", "no probing", or "does not probe the student". If your critique contains any of these, your result MUST be "pass": false. You cannot write "fails to probe" in your critique and then output "pass": true — that is a logical contradiction.
 
         FAIL definition:
-        - Response immediately starts teaching or explaining without any probing question.
-        - Launches into steps, explanations, or advice without first asking what the student knows.
+        - The response contains ZERO questions about what the student specifically knows, has tried, or is experiencing.
+        - Only asks "Does that make sense?" or "Any questions?" — comprehension checks, not knowledge probes.
+        - ONLY appends practice-habit or background questions to an otherwise complete response (see exceptions above).
 
         FEW-SHOT EXAMPLES:
 
         Example 1 — PASS (12yo guitar, "switching between chords is slow"):
         Tutor response: "Chord switching is something everyone works on! Before we dive in — which chords are you switching between? And when you switch, does your whole hand lift off or do you try to keep some fingers down?"
-        Critique: Before giving any instruction, the tutor asks two probing questions about the student's specific situation and technique. Probes before teaches.
+        Critique: The tutor opens with two specific probing questions: "Which chords are you switching between?" and "Does your hand lift off?" — both probe the student's current technique before giving any instruction. Clear early probing.
         Result: Pass
 
         Example 2 — FAIL (7yo piano, "can't play both hands"):
-        Tutor response: "Okay, that's a very common feeling! Don't worry — it's totally normal. Here's a step-by-step guide to help you: Step 1: Play the right hand part alone..."
-        Critique: The tutor immediately jumps into a step-by-step guide without asking what the student has tried, how long they've been working on it, or what piece they're playing. No probing.
+        Tutor response: "Okay, that's a very common feeling! Don't worry — it's totally normal. Here's a step-by-step guide: Step 1: Play the right hand alone. Step 2: Play the left hand alone. Step 3: Combine slowly. Try this every day!"
+        Critique: Complete step-by-step instruction with zero questions about the student's situation — no asking what piece, what they've tried, or where they get stuck. No probing at all.
         Result: Fail
 
-        Example 3 — BORDERLINE PASS (10yo piano, "pedal sounds muddy"):
+        Example 3 — PASS (10yo piano, "pedal sounds muddy"):
         Tutor response: "Muddy pedaling is really common! Can you show me how you're using the pedal right now? Press the pedal and play a few chords so I can hear what's happening."
-        Critique: "Can you show me how you're using the pedal right now?" is a probe — it asks the student to demonstrate their current approach before the tutor gives instruction. The tutor wants to see the student's existing technique first.
+        Critique: "Can you show me how you're using the pedal right now?" — a genuine probe asking the student to demonstrate current technique before any instruction.
         Result: Pass
 
-        Now evaluate the following tutor response. First write a critique analyzing whether the tutor probes before teaching, then give your verdict.
+        Example 4 — PASS (8yo piano, "left hand is different notes"):
+        Tutor response: "Great that you're learning the right hand! The left hand uses different notes to add harmony underneath. Here are 4 strategies to try... [4 strategies]. What piece are you working on? Maybe I can give you specific tips for that song!"
+        Critique: After giving general strategies, the tutor ends with "What piece are you working on?" — this is a diagnostic probe asking for the student's specific context to personalize further advice. Even at the end, it's a genuine attempt to understand the student's current situation.
+        Result: Pass
+
+        Example 5 — FAIL (6yo violin, "arm gets tired"):
+        Tutor response: "That's very common when you're starting! Here are some things to try: 1. Take short breaks every 5 minutes. 2. Check your bow hold — thumb bent, pinky curved. 3. Keep your shoulder relaxed. 4. Try lighter bow pressure. How long have you been playing violin? Are you warming up before your practice sessions?"
+        Critique: Complete four-tip instructional response. The questions at the end ("How long have you been playing?" and "Are you warming up?") are background and practice-habit questions — they don't probe what the student specifically knows or has tried about arm fatigue. Fails.
+        Result: Fail
+
+        Example 6 — FAIL (10yo voice, "voice cracks on high notes"):
+        Tutor response: "[Complete explanation of voice anatomy and why cracks happen, detailed warm-up exercises, breathing techniques, approach strategies for high notes...] What note specifically cracks? How does it feel when your voice cracks — like a tightness, or something else?"
+        Critique: The tutor provides comprehensive coverage of voice science, warmup exercises, and approach strategies. The diagnostic questions at the end — "What note cracks?" and "How does it feel?" — are genuinely diagnostic and WOULD HAVE changed the instruction if asked first. But they come AFTER a complete prescription. The tutor did not wait for these answers before prescribing. A diagnostic question tacked on after complete instruction is an afterthought, not genuine prior-knowledge probing.
+        Result: Fail
+
+        Example 7 — PASS (5yo piano, "doesn't want to practice" — teaching guide with embedded probes):
+        Tutor response: "Here's how I'd approach this. **Step 1: Validate their feelings.** **Step 2: Find out why — ask gentle questions:** 'Is it too hard? Too easy? Something else entirely?' 'Can you tell me what part you don't like?' **Step 3: Make it fun...**"
+        Critique: The response is structured as teaching guidance ('here's how I'd approach'), but Step 2 includes direct probing questions: "Is it too hard? Too easy?" and "Can you tell me what part you don't like?" These are genuine probing questions that ask about the student's specific situation. Even embedded in a teaching guide, they count.
+        Result: Pass
+
+        Now evaluate the following tutor response. First write a critique analyzing whether the tutor probes or acknowledges the student's knowledge/situation at any point, then give your verdict.
 
         Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.
       weight: 1
@@ -377,18 +421,28 @@ defaultTest:
       value: |
         You are evaluating a music tutor's response to a student.
 
-        TASK: Determine whether the tutor asks at least one higher-order thinking question, rather than only stating facts or asking pure recall questions.
+        TASK: Determine whether the tutor asks at least one question that requires the student to think beyond simple recall.
 
-        CRITERION: The response must include at least one "why", "what if", "how would you", "what do you notice", or similarly open-ended question that targets Apply, Analyze, Evaluate, or Create levels of thinking (Bloom's taxonomy).
+        CRITERION: The response must include at least one question that engages the student in thinking beyond pure factual recall. This is BROADER than classic Bloom's taxonomy — it includes any question that asks the student to reflect, diagnose, apply, analyze, evaluate, hypothesize, or make a judgment.
 
-        PASS definition:
-        - Asks at least one higher-order question: "Why do you think...?", "What would happen if...?", "How would you...?", "What do you notice when...?"
-        - The question must be appropriate to the student's level.
+        PASS definition — ANY of the following question types count:
+        - Analytical/evaluative: "Why do you think...?", "What do you notice when...?", "Which one sounds better to you?"
+        - Diagnostic: "What specific part are you struggling with?", "When does it happen?", "What have you tried?"
+        - Reflective: "How does that feel when you play it?", "Does it hurt or just feel tired?"
+        - Application-embedded: "Can you try playing just the right hand?", "Can you play it slowly and see what happens?"
+        - Hypothetical: "What do you think would happen if you played it slower?"
+        - Self-assessment: "Do you feel like those pieces are challenging, too easy, or just right?", "On a scale of 1-5, how frustrating is it?"
+        - Preference with reasoning: "Which of these ideas sounds most appealing to you?"
+        - Action-invitation with student decision: "Would you like to try X?", "Want to practice this now?", "Shall we work on this together?" — these require the student to evaluate their readiness or preference, which is higher-order.
+        - Direction-steering: "What piece are you working on?" or "What are you trying to learn?" — when asked in context, these require the student to select and communicate relevant information about their own learning, going beyond pure fact-recall.
+        The key test: does the question require the student to THINK (reflect, diagnose, evaluate, apply, hypothesize, decide) rather than merely recall a fact? If yes, it's a pass.
+        NOTE: Look carefully through the ENTIRE response including mid-paragraph sentences, not just questions at the end. Questions can appear embedded in prose.
 
         FAIL definition:
-        - Only states facts and gives instructions with no questions at all.
-        - Only asks pure recall questions: "What note is this?", "How many beats in a quarter note?"
-        - Asks only yes/no questions: "Do you understand?", "Ready?"
+        - ZERO questions of any kind in the entire response (purely declarative/instructional).
+        - Only asks pure factual recall: "What note is this?", "How many beats in a quarter note?"
+        - Only asks rhetorical questions that are really statements: "Isn't that cool?" with no genuine engagement.
+        - Only asks bare yes/no questions with no thinking required: "Do you understand?", "Ready?", "Okay?"
 
         FEW-SHOT EXAMPLES:
 
@@ -402,9 +456,19 @@ defaultTest:
         Critique: Entirely prescriptive — a list of instructions with no questions of any kind. No opportunity for the student to think or reflect.
         Result: Fail
 
-        Example 3 — BORDERLINE PASS (9yo violin, "what does forte mean?"):
-        Tutor response: "Forte means loud! But here's the fun part — when a composer writes forte, what do you think they want the audience to feel? Try playing a part forte and then piano (soft). Which one sounds happier to you?"
-        Critique: "What do you think they want the audience to feel?" asks the student to analyze/evaluate the composer's intent. "Which one sounds happier?" asks for evaluation based on experience. Both are above recall level.
+        Example 3 — PASS (6yo violin, "arm gets tired"):
+        Tutor response: "Oh no, let's figure this out! Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes? Does it hurt, or just feel tired?"
+        Critique: "When does your arm get the most tired?" is a diagnostic question requiring the student to reflect on their experience. "Does it hurt, or just feel tired?" asks the student to differentiate between physical sensations — a reflective/evaluative question. Both go beyond recall.
+        Result: Pass
+
+        Example 4 — PASS (7yo piano, "can't play both hands"):
+        Tutor response: "Playing with both hands is like patting your head and rubbing your tummy! Here are some ideas: you could try hands separately first, use the slow-and-steady method, or try the clap-and-count method. Which of these ideas sounds most appealing to you? On a scale of 1 to 5, how frustrating is it right now?"
+        Critique: "Which sounds most appealing?" requires evaluation/preference. "On a scale of 1-5, how frustrating?" requires self-assessment. Both require the student to think beyond recall.
+        Result: Pass
+
+        Example 5 — PASS (10yo, "voice cracks on high notes"):
+        Tutor response: "Voice cracking is totally normal! Let me ask: What song are you singing when it happens? What note specifically cracks? How does it feel when your voice cracks — like a catch or a flip?"
+        Critique: While "What song?" is factual, "How does it feel when your voice cracks?" is a reflective question requiring the student to analyze their physical sensation. This goes beyond recall.
         Result: Pass
 
         Now evaluate the following tutor response. First write a critique analyzing the types of questions asked, then give your verdict.
@@ -424,17 +488,27 @@ defaultTest:
 
         TASK: Determine whether the tutor provides specific, actionable practice guidance rather than vague encouragement.
 
-        CRITERION: When practice is suggested, the response must specify WHAT to practice AND HOW (tempo, repetitions, technique, method, or specific target).
+        CRITERION: When practice is suggested, the response must tell the student WHAT SPECIFICALLY to do. Numerical parameters (tempo, reps) are ONE way to be specific, but not the only way.
 
-        PASS definition:
-        - Specifies what to practice AND how: "Practice the first 4 measures hands-separately at 60 BPM, 5 times each."
-        - At minimum, names a specific skill/passage AND gives a method or target.
-        - For young children (5-7), simplified specificity is acceptable: "Play it 3 times super slowly."
+        PASS definition — the response tells the student WHAT SPECIFICALLY to practice AND gives enough detail that the student knows HOW to do it. Specificity can come from ANY of:
+        - Numerical parameters: "play it 5 times at 60 BPM"
+        - Named exercises or techniques: "try a chromatic scale warmup", "do lip trills sliding up to high C", "try shoulder rolls and wrist circles" — naming the exercise is sufficient even without rep counts
+        - Qualitative-specific method: "play just the right hand slowly", "practice hands separately until each feels comfortable, then combine one measure at a time"
+        - Contrast or sequenced practice: "play a short phrase, first piano (softly), then forte (loudly)" — specific technique contrast counts even without specifying which exact phrase or tempo. The student can pick any phrase and execute the contrast. This IS actionable.
+        - Technique descriptions: "press with your fingertips, not the pads", "lift all fingers together, not one at a time"
+        - Specific practice structure: "practice in 10-15 minute sessions", "work on 4 bars at a time", "break it into 5-10 minute bursts a few times a day" — time/session structure IS specific guidance
+        - Named musical content: "play the A minor pentatonic in all 5 positions", "practice switching between G and C"
+        - Focus strategies: "focus on accuracy first, then speed", "focus on one aspect at a time" — telling the student what to focus on IS practice guidance
+        - Creative practice variations: "try playing scales in different rhythms", "create a melody using those notes", "play it like different animals" — making practice engaging with specific creative approaches
+        The key test: could the student sit down and DO what the tutor described? If the student knows what to practice AND has at least one approach (even if not a specific piece), it passes. The response does NOT need to be entirely practice-focused. If it includes specific actionable practice guidance ANYWHERE — even amid extensive explanation or theory — it passes. A response that is 80% explanation and 20% concrete practice suggestions still passes.
 
         FAIL definition:
-        - Says "practice more", "keep working on it", "play it again" with no specific method or target.
-        - Vague encouragement: "Just keep at it!", "Practice makes perfect!", "You'll get it with time."
-        - Gives a general area but no method: "Work on your scales" (which scales? how?).
+        - Purely vague: "practice more", "keep working on it", "just keep at it", "you'll get it with time"
+        - General area with no method at all: "work on your technique" (which technique? doing what?)
+        - Vague qualitative direction without specifying HOW: "play with more expression", "use different characters", "make it more musical" without a concrete method
+        - Vague song-based or character-based suggestions: "play your favorite song", "play like a turtle/bunny" — these are motivational engagement techniques, not specific practice guidance for developing a skill
+        - Only motivational/emotional support with zero actionable guidance
+        - Only asks questions without providing any practice direction
 
         FEW-SHOT EXAMPLES:
 
@@ -448,10 +522,30 @@ defaultTest:
         Critique: "Just keep practicing" and "trust the process" are completely vague. No specific scales named, no tempo, no method, no target. Pure encouragement with no actionable guidance.
         Result: Fail
 
-        Example 3 — BORDERLINE PASS (12yo guitar, "chord switching is slow"):
+        Example 3 — PASS (12yo guitar, "chord switching is slow"):
         Tutor response: "Try this: set a timer for 1 minute and switch between G and C as many times as you can. Count your switches. Tomorrow, try to beat your number."
         Critique: Specifies what (G and C chord switch), how (timed 1-minute drill), and a target (beat your count). Concrete method even though it doesn't specify tempo explicitly.
         Result: Pass
+
+        Example 4 — PASS (10yo piano, "pedal sounds muddy"):
+        Tutor response: "Here are some exercises to clean up your pedal: Exercise 1 — play a single note, press the pedal after the note sounds, then lift the pedal right before playing the next note. Exercise 2 — play a C major chord, listen to it ring, then lift the pedal and play a G chord. Repeat this slowly, paying attention to the moment of silence between pedal changes."
+        Critique: Names specific exercises (single note pedal timing, chord change pedal exercise), specifies the technique (press after note, lift before next), and describes a clear method (slowly, listen for silence). The student knows exactly what to do even without a BPM number.
+        Result: Pass
+
+        Example 5 — PASS (10yo voice, "voice cracks on high notes"):
+        Tutor response: "Let's work on some warm-ups: start with lip trills, humming up and down gently. Then try sustained 'ssss' sounds to build breath support. For the cracking notes, approach them on an 'oo' vowel first — it's easier than 'ah'. Practice in short sessions, 10-15 minutes at a time."
+        Critique: Names specific exercises (lip trills, humming, sustained ssss, oo vowel approach), gives a practice structure (short sessions, 10-15 minutes). The student knows what to do. Passes without explicit repetition counts.
+        Result: Pass
+
+        Example 6 — PASS (borderline, 10yo piano, "scales are boring"):
+        Tutor response: "Scales CAN feel boring! Here's how to make them better: break your practice into short 5-10 minute sessions instead of one long one. Focus on just one thing at a time — maybe accuracy today, speed tomorrow. Try creating a little melody using the scale notes — it makes them feel more like music! You could also play them in different rhythms."
+        Critique: The tutor provides several specific practice structures: time structure (5-10 minute sessions), focus strategy (one aspect at a time), and creative exercises (create a melody, play in different rhythms). The student knows HOW to practice even though no specific scale or BPM is named. Passes.
+        Result: Pass
+
+        Example 7 — FAIL (5yo piano, "I don't want to practice"):
+        Tutor response: "That's okay! Is there a song you really like? Maybe from a movie? Let's play that first! Can you tell me what's the hardest part? Is it too long? Too hard? Not fun enough?"
+        Critique: "Play your favorite song" is vague — the student doesn't know what technique to focus on, how to approach the song, or what to practice about it. The rest is diagnostic questions, not practice guidance. No actionable method.
+        Result: Fail
 
         Now evaluate the following tutor response. First write a critique analyzing the specificity of practice guidance, then give your verdict.
 
@@ -473,14 +567,26 @@ defaultTest:
         CRITERION: When the student's message involves a physical or motor skill issue (hand position, pain, fatigue, posture, bow hold, etc.), the response must prompt the student to notice physical sensations — not just tell them what position to adopt.
 
         IMPORTANT: If the student's message does NOT involve a physical or motor skill issue, score PASS by default (not applicable).
+        Physical/motor issues include (evaluate these for proprioceptive prompting):
+        - Pain, discomfort, or fatigue from playing (fingers, arms, shoulders, throat)
+        - Posture, bow hold, hand position, or embouchure problems
+        - Specific physical techniques: vibrato, bow technique, tone production
+        - Coordinating both hands simultaneously playing different parts — this is a physical motor coordination challenge
+
+        NOT physical/motor (score PASS by default):
+        - Single-hand speed/transition issues: chord switching speed, finger dexterity drills
+        - Pure learning/memory issues: note reading, music theory, memorization
+        - Motivation or emotional issues: not wanting to practice, performance anxiety
+        - Conceptual understanding: dynamics terms, music theory concepts
 
         PASS definition:
-        - Prompts the student to notice physical sensations: "Can you feel where it gets tense?", "What does it feel like when you...?", "Notice what happens in your arm when..."
-        - Asks the student to attend to their body rather than just following a prescription.
+        - Explicit sensation prompts: "Can you feel where it gets tense?", "What does it feel like when you...?", "Notice what happens in your arm when..."
+        - Body-awareness references at ANY position: "listen to your body", "pay attention to how your fingers feel", "notice when the discomfort starts"
+        - Body-state the student must physically sense to achieve: "feel your thumb relaxed against the neck", "feel comfortable with the wrist movements" — "feel comfortable" or "feel [state]" references a physical sensation
+        - Sensation questions: "How does it feel when your voice cracks?", "Does it hurt or just feel tired?" — count even at the end of the response
 
         FAIL definition:
-        - Only gives prescriptive corrections: "Keep your wrist up", "Curve your fingers", "Hold the bow at a 45-degree angle."
-        - Addresses the physical issue but with zero proprioceptive prompting — all commands, no awareness.
+        - The issue IS physical AND the response gives ONLY prescriptive corrections: "Keep your wrist up", "Curve your fingers", "Hold the bow at a 45-degree angle" — with no invitation to notice or feel anything physical.
 
         FEW-SHOT EXAMPLES:
 
@@ -513,18 +619,29 @@ defaultTest:
       value: |
         You are evaluating a music tutor's response to a student.
 
-        TASK: Determine whether the tutor offers the student at least one genuine choice, rather than issuing only directives.
+        TASK: Determine whether the tutor gives the student any agency over what happens next, rather than issuing only directives.
 
-        CRITERION: The response must include at least one genuine choice that gives the student agency over their learning path.
+        CRITERION: The response must include at least one moment where the student gets to influence the direction of the lesson or practice.
 
-        PASS definition:
-        - Offers at least one genuine choice: "Would you like to try X or Y?", "Which one sounds more interesting to you?", "Do you want to start with the easy part or the challenging part?"
-        - The choice must be genuine — two or more real options the student could pick from.
+        PASS definition — ANY of the following count as giving the student agency:
+        - Explicit binary choice: "Would you like to try X or Y?"
+        - Open-ended invitation: "What sounds most fun to you?", "What would you like to focus on?"
+        - Presenting options and asking which appeals: listing 3 approaches and asking "Which of these would you like to try first?"
+        - Student-directed question: "Which of these ideas sounds most appealing?", "What part do you want to work on?"
+        - Asking what the student wants: "What song do you want to learn?", "What style of music interests you most?"
+        - Offering to go deeper OR move on: "Do you want to try that now, or would you like me to explain more?"
+        - Presenting multiple suggestions and inviting the student to choose: "Here are a few ideas... let me know which one you'd like to try"
+        - Inline or parenthetical choice language embedded in a list: "(choose a few that sound fun)", "(pick one)", "(try whichever appeals to you)" — explicit choice language counts as agency EVEN IF informal or parenthetical, not phrased as a direct question.
+        - Student-directed content questions: "What pieces are you currently working on?", "What are you trying to learn?", "What would you like to focus on?" — inviting the student to direct what the lesson focuses on counts as agency.
+        - Presenting a menu of possible issues and asking which applies: "Is it X? Y? Or something else entirely?" — the student gets to identify which issue is theirs, which directs what happens next.
+        - Asking what the student needs: "Just tell me a little bit more and we can start there", "Tell me what you're working on" — inviting the student to steer the direction.
+        The key test: does the student get to DECIDE or DIRECT something about what happens next? If the tutor asks what the student needs, wants, or is working on — in a way that would shape the response — it passes.
 
         FAIL definition:
-        - All directives, no choices offered.
+        - ALL directives, zero questions that give the student a say.
         - Every instruction is a command: "Do this", "Play that", "Now try this."
-        - Framing a single directive as a question doesn't count: "Let's try this, okay?" is not a choice.
+        - Framing a single directive as permission: "Let's try this, okay?" is not a choice.
+        - Only asks pure closed information questions with no effect on direction ("How old are you?", "Where do you live?").
 
         FEW-SHOT EXAMPLES:
 
@@ -538,12 +655,22 @@ defaultTest:
         Critique: Every sentence is a directive. No choice offered at any point. The student has zero agency — the entire practice plan is prescribed.
         Result: Fail
 
-        Example 3 — BORDERLINE PASS (8yo guitar, "strings hurt my fingers"):
+        Example 3 — PASS (8yo guitar, "strings hurt my fingers"):
         Tutor response: "Sore fingers are normal when you're starting! Your fingertips will get tougher over time. For now, we could practice for shorter periods, or we could try some songs that use fewer strings. What sounds better to you?"
         Critique: "We could practice for shorter periods, or we could try some songs that use fewer strings. What sounds better to you?" is a genuine choice with two real options and an explicit invitation for the student to decide.
         Result: Pass
 
-        Now evaluate the following tutor response. First write a critique analyzing whether genuine choices are offered, then give your verdict.
+        Example 4 — PASS (10yo piano, "why practice scales"):
+        Tutor response: "Scales don't have to be boring! You could play them like different animals, try them with dynamics, or race against a timer. Here are several ideas... What's a song you really want to learn? We can connect scales to that."
+        Critique: The tutor presents multiple approaches and then asks what song the student wants to learn — giving the student agency to direct where the lesson goes. The question "What's a song you really want to learn?" lets the student steer the content.
+        Result: Pass
+
+        Example 5 — PASS (8yo, "I don't know what to do"):
+        Tutor response: "That's okay! Let me help. Are you: Not sure how to hold your bow? Confused about finger placement? Having trouble reading music? Or something else entirely?"
+        Critique: The tutor presents a list of possibilities and invites the student to identify their own concern. "Or something else entirely?" is open-ended. The student gets to direct where help goes.
+        Result: Pass
+
+        Now evaluate the following tutor response. First write a critique analyzing whether the student gets any agency over what happens next, then give your verdict.
 
         Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.
       weight: 1

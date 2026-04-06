@@ -6,148 +6,148 @@
     "test": 15
   },
   "dev_metrics": {
-    "tp": 14,
-    "fn": 3,
+    "tp": 13,
+    "fn": 4,
     "tn": 2,
     "fp": 0,
-    "tpr": 0.824,
+    "tpr": 0.765,
     "tnr": 1.0,
-    "accuracy": 0.842
+    "accuracy": 0.789
   },
   "dev_results": [
     {
       "id": 35,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's question 'How do I sing with more emotion?' is about expressive singing technique, which is conceptual rather than physical/motor. While singing involves physical coordination, this specific question focuses on emotional expression and interpretation rather than physical issues like vocal strain, breathing problems, posture, or throat tension. The student isn't reporting any physical discomfort or asking about motor coordination challenges. This falls under conceptual understanding of musical expression rather than a physical/motor skill issue that would require proprioceptive awareness prompting.",
+      "critique": "The student's question 'How do I sing with more emotion?' is about artistic expression and performance technique, not a physical or motor skill issue. This falls into the conceptual understanding category - the student is asking about how to convey emotion through singing, which is an artistic/interpretive skill rather than a physical problem like pain, posture, vocal tension, or breath support issues. Since this is not a physical/motor skill issue, the criterion does not apply and the response should be scored as Pass by default.",
       "agree": true
     },
     {
       "id": 25,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message does not involve a physical or motor skill issue. The 7-year-old is asking about song progression after successfully learning 'Mary Had a Little Lamb' - this is purely about repertoire selection and learning progression, not about any physical technique, posture, pain, or motor coordination challenges. Since no physical/motor issue is present, this automatically scores as Pass (not applicable).",
+      "critique": "The student's message is about song progression and what to learn next after mastering 'Mary Had a Little Lamb.' This is purely a repertoire/learning question and does not involve any physical or motor skill issues. There are no mentions of pain, discomfort, hand position, posture, bow hold, or any other physical aspects of playing. The student is simply asking for curriculum guidance on their next piece to learn. Since this is not a physical/motor skill issue, this automatically receives a Pass (not applicable).",
       "agree": true
     },
     {
       "id": 14,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "The student's issue is clearly physical/motor - voice cracking during high notes is a vocal cord coordination problem. The tutor's response provides extensive technical explanations and prescriptive corrections (breath support techniques, vowel shapes, lip positioning, etc.) but fails to prompt proprioceptive awareness. While the response ends with 'How does it *feel* when your voice cracks?' this single question comes at the very end and asks about the sensation of the problem occurring, not guiding the student to notice body sensations that could help prevent or address the cracking. The response is dominated by telling the student what to do rather than helping them develop awareness of their physical sensations during singing.",
-      "agree": false
+      "judge": "Pass",
+      "critique": "This is a physical/motor skill issue - voice cracking when singing high notes is a vocal technique/production problem involving the coordination of vocal cords. The tutor provides extensive technical explanation and prescriptive techniques (lip trills, breath support, vowel shapes, etc.) but includes one clear proprioceptive prompt: 'How does it *feel* when your voice cracks? (Does it feel like a sudden break, a tightness, or something else?)' This question explicitly asks the student to attend to and describe their physical sensations during the vocal crack. While the response is heavily weighted toward prescriptive advice, the presence of this sensation-focused question meets the criterion for prompting proprioceptive awareness.",
+      "agree": true
     },
     {
       "id": 10,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "This is a clear physical/motor skill issue - finger pain from pressing guitar strings. The tutor provides extensive advice about practice duration, technique, and equipment, but fails to prompt any proprioceptive awareness. The response is entirely prescriptive: 'use the tips of your fingers', 'press right behind the fret', 'try to relax your hand', 'only need to press hard enough to make a clear note'. While the tutor asks 'Can you show me how you're holding down the strings?' this is asking for a visual demonstration, not asking the student to notice or describe their physical sensations. There are no prompts like 'How does the pain feel?', 'Can you notice where it hurts most?', 'What does it feel like when you press too hard vs. just right?', or 'Pay attention to how your fingers feel when you relax your grip'. The response misses the opportunity to help the student develop body awareness around pressure, tension, and comfort.",
+      "critique": "This is a clear physical/motor issue - the student is experiencing pain in their fingers from string pressure. The tutor provides extensive explanations and general advice about calluses, practice duration, and equipment, but fails to prompt proprioceptive awareness. While the tutor does ask the student to 'show me how you're holding down the strings' and asks technical questions about finger positioning, there are no prompts for the student to notice or describe their physical sensations. The response lacks questions like 'Where exactly do you feel the pain?', 'What does the hurt feel like?', 'Can you feel when you're pressing too hard?', or 'Notice how your fingers feel when you relax your grip.' The tutor gives prescriptive corrections ('use the tips of your fingers', 'press right behind the fret', 'relax your hand') without inviting the student to tune into their bodily sensations to guide these adjustments.",
       "agree": false
     },
     {
       "id": 19,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message ('I practiced for an hour but I'm not getting better') does not involve a physical or motor skill issue. This is about practice effectiveness, motivation, and learning progress - conceptual/strategic issues rather than physical problems like pain, posture, hand position, or motor coordination. The student isn't reporting any physical discomfort, technique problems, or body-related challenges. Since this is not a physical/motor skill issue, the criterion for proprioceptive prompting does not apply.",
+      "critique": "The student's message ('I practiced for an hour but I'm not getting better') does not involve a physical or motor skill issue. This is a learning/practice effectiveness issue, not a complaint about pain, discomfort, posture, hand position, or any other physical aspect of playing. The student is frustrated about lack of progress despite time investment, which is a conceptual/methodological concern about practice quality and strategy. Since this is not a physical/motor skill issue, the criterion does not apply and the response should be scored as Pass by default.",
       "agree": true
     },
     {
       "id": 11,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's issue is about speed/transition between chords, which is a single-hand coordination skill focused on finger dexterity and muscle memory development. This falls under 'single-hand speed/transition issues' which are NOT considered physical/motor issues requiring proprioceptive prompting according to the criteria. The issue is about building coordination and speed rather than addressing pain, posture, bow hold, or other body awareness concerns. Since this is not a physical/motor skill issue that requires proprioceptive awareness, this scores as Pass by default (not applicable).",
+      "critique": "This is a single-hand speed/transition issue, not a physical/motor skill problem. The student is asking about chord switching speed - this falls under finger dexterity and coordination skills that don't require proprioceptive awareness prompting. According to the scoring criteria, single-hand speed/transition issues like 'chord switching speed' and 'finger dexterity drills' should be scored as PASS by default (not applicable). The student's issue is about the speed of transitions between chord shapes, which is a technical skill development matter rather than a physical sensation or body awareness issue.",
       "agree": true
     },
     {
       "id": 38,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message 'I don't know' does not involve a physical or motor skill issue. This is a general uncertainty or confusion statement that could relate to any aspect of learning violin - conceptual understanding, what to practice, or general overwhelm. The tutor's response appropriately tries to clarify what the student is unsure about by offering various possibilities. Since no physical/motor skill issue is present in the student's message, this automatically scores as Pass (not applicable).",
+      "critique": "The student's message 'I don't know' is extremely vague and does not specify any physical or motor skill issue. While the tutor's response mentions some physical elements like bow hold and finger placement in their clarifying questions, the student has not actually raised a physical/motor skill issue that would require proprioceptive prompting. Since the student's original message does not involve a physical or motor skill issue, this should be scored as Pass by default (not applicable).",
       "agree": true
     },
     {
       "id": 1,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message does not involve a physical or motor skill issue. The 10-year-old is expressing a motivational/emotional concern about finding scales boring, not reporting any physical problems like pain, discomfort, posture issues, or motor coordination difficulties. This is purely about motivation and understanding the purpose of practice, not about physical technique or bodily sensations. Since the criterion states to score PASS by default when the student's message does not involve a physical/motor skill issue, this response receives a pass regardless of the tutor's approach.",
+      "critique": "The student's message is about motivation/boredom with practicing scales, not a physical or motor skill issue. The student is expressing that scales are boring, which is an emotional/motivational concern, not a complaint about pain, posture, hand position, or any physical technique. According to the criterion, when the student's message does NOT involve a physical or motor skill issue, this should be scored as PASS by default (not applicable).",
       "agree": true
     },
     {
       "id": 6,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The student's message involves a clear physical/motor skill issue - arm fatigue from holding the bow. While the tutor provides extensive prescriptive corrections and advice throughout (proper posture, bow grip, practice schedules, exercises), there are several proprioceptive prompts present. The tutor asks 'Can you tell me when your arm gets the most tired?' which requires the student to notice timing of physical sensations. 'Does it hurt, or just feel tired?' directly prompts the student to differentiate between types of physical sensations. The tutor also includes body awareness language like 'listening to your body' and 'feel the difference between tension and relaxation.' However, the proprioceptive prompting is somewhat limited compared to the extensive prescriptive content, and could have been stronger with more direct sensation-focused questions.",
-      "agree": true
+      "judge": "Fail",
+      "critique": "The student's message clearly involves a physical/motor skill issue - arm fatigue from holding the bow. This requires evaluation for proprioceptive prompting. The response contains extensive information and advice but lacks meaningful proprioceptive prompts. While the tutor mentions 'listening to your body' and asks 'Does it hurt, or just feel tired?', these are minimal compared to the overwhelming amount of prescriptive corrections and instructions. The response is dominated by telling the student what to do ('Check Your Posture', 'Bow Hold Relaxation', 'Shoulder Rolls', etc.) rather than guiding them to notice and explore their physical sensations. A truly proprioceptive approach would ask the student to notice where they feel the tiredness, when it starts, what it feels like, or guide them to sense the difference between tension and relaxation in their arm. The brief sensation references are buried in extensive prescriptive advice, failing to meaningfully prompt body awareness.",
+      "agree": false
     },
     {
       "id": 33,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's issue is about sounding repetitive with the pentatonic scale - this is about musical expression, creativity, and technique variety, not a physical or motor skill problem. The student isn't reporting pain, discomfort, posture issues, or problems with physical coordination. They're seeking advice on how to create more musical variety and avoid monotonous playing patterns. Since this doesn't involve a physical/motor skill issue, the proprioceptive prompting criterion doesn't apply.",
+      "critique": "The student's message is about sounding repetitive with the pentatonic scale, which is primarily a creative/musical expression issue rather than a physical/motor skill problem. The student has learned the scale technically but wants to vary their musical phrases and sound. This involves creativity, musical phrasing, rhythm patterns, and note selection - not physical technique, posture, pain, or motor coordination challenges. While some suggestions like bending notes and vibrato involve physical technique, the core issue is about musical creativity and expression, not a physical problem the student is experiencing.",
       "agree": true
     },
     {
       "id": 17,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message 'Can you just tell me the answer?' does not involve any physical or motor skill issue. This is a general request for information without specifying any physical technique, posture, pain, fatigue, or motor coordination challenge. The student is not mentioning any specific guitar technique, hand position, fingering difficulty, or physical discomfort. Since this is not a physical/motor skill issue, the criterion for proprioceptive prompting does not apply.",
+      "critique": "The student's message 'Can you just tell me the answer?' does not involve any physical or motor skill issue. This is a general request for information without mentioning any specific physical aspects of guitar playing such as hand position, finger pain, posture, bow hold, or other motor coordination challenges. Since there is no physical/motor skill issue present in the student's message, this automatically receives a Pass score as it is not applicable to evaluate for proprioceptive prompting.",
       "agree": true
     },
     {
       "id": 22,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message is about voicing the melody over accompaniment, which is NOT a physical/motor skill issue. This is a musical technique/concept question about dynamics and musical expression - how to make one voice stand out over others. While the tutor's response does include some physical tips like 'arm weight' and 'heavy thumb,' the core issue the student is asking about is conceptual: understanding what voicing means and how to achieve it musically. This falls under musical understanding and technique rather than a physical problem like pain, posture, or motor coordination difficulties. Since the student's original concern is not a physical/motor skill issue, this scores Pass by default.",
+      "critique": "The student's message is about voicing the melody over accompaniment, which is not a physical or motor skill issue. This is about musical expression, dynamics control, and understanding musical concepts like melody vs. accompaniment roles. While the tutor's response does include some physical techniques (arm weight, finger pressure, hand rotation), the student's original question is conceptual - they don't understand the concept of voicing, not that they're experiencing physical difficulty executing it. Since this is not a physical/motor skill issue, this should be scored as Pass by default.",
       "agree": true
     },
     {
       "id": 7,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "The student's question 'How do I do vibrato?' is asking about vibrato technique, which is a physical motor skill involving wrist rotation, forearm movement, and finger coordination. This is clearly a physical/motor skill issue that should be evaluated for proprioceptive prompting. However, the tutor's response is entirely prescriptive and instructional. The response provides detailed technical explanations ('gentle, rotating movement,' 'rocking horse motion,' 'pendulum motion') and step-by-step exercises with specific instructions ('Place your left hand in playing position,' 'Gently rock your wrist forward and backward,' 'keep your elbow relaxed'). While comprehensive and well-structured, the response contains zero invitations for the student to notice, feel, or attend to their physical sensations. There are no prompts like 'Can you feel the difference when...?', 'What does it feel like when your wrist moves this way?', or 'Notice what happens in your arm when...' The tutor tells the student exactly what to do but never asks them to tune into their body awareness or physical sensations during the learning process.",
+      "critique": "The student asks about vibrato technique, which is clearly a physical/motor skill issue involving specific hand, wrist, forearm, and finger movements. The tutor provides detailed prescriptive instructions ('Gently rock your wrist forward and backward', 'swing your forearm forward and backward', 'tap your finger up and down') but fails to include any proprioceptive prompts. There are no invitations for the student to notice physical sensations like 'Can you feel the rotation in your wrist?', 'What does it feel like when you combine these movements?', or 'Notice when tension creeps in.' The response is entirely instructional without asking the student to tune into their body awareness or physical feedback.",
       "agree": false
     },
     {
       "id": 13,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's issue is about musical creativity and expression - they're saying their pentatonic scale playing 'sounds the same every time.' This is not a physical or motor skill issue. The student isn't reporting pain, discomfort, posture problems, bow hold issues, hand positioning difficulties, or any other physical challenges. Instead, they're describing a creative/musical limitation where their playing lacks variety and expression. This falls under conceptual understanding and musical development rather than physical technique. Since this is not a physical/motor skill issue, the criterion doesn't apply and the response should be scored as Pass by default.",
+      "critique": "The student's message is about sounding repetitive when playing the pentatonic scale. This is NOT a physical or motor skill issue - it's about musical creativity, variation, and expression. The student isn't complaining about hand position, pain, fatigue, posture, or any physical technique problems. They're asking about musical content and variety in their playing, which is a conceptual/creative issue rather than a physical one. Since this doesn't involve a physical or motor skill issue, this should be scored as Pass by default (not applicable).",
       "agree": true
     },
     {
       "id": 2,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This student's question is about voicing the melody over accompaniment, which is NOT a physical/motor skill issue. This is a conceptual/musical understanding issue about dynamics, touch, and musical expression techniques. The student is asking about a musical concept - how to make the melody stand out - rather than reporting any physical discomfort, motor coordination problems, or specific physical technique issues. According to the criteria, when the student's message does NOT involve a physical or motor skill issue, this should score PASS by default (not applicable).",
+      "critique": "The student's message involves voicing the melody over accompaniment, which is about musical expression and dynamic control rather than a physical/motor skill issue. Voicing is primarily about listening skills, musical understanding, and subtle dynamic adjustments - not about body position, pain, fatigue, posture, or physical technique problems. This falls under conceptual understanding of musical performance rather than physical coordination or motor skills. Since the student's issue is not physical/motor in nature, this should be scored as Pass by default (not applicable).",
       "agree": true
     },
     {
       "id": 28,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The student's message does not involve a physical or motor skill issue. The concern is about 'sounding musical' rather than any physical technique, posture, pain, or motor coordination problem. This is about musical expression and interpretation, which falls into the conceptual/artistic domain rather than physical/motor skills. Since no physical or motor skill issue is present, this scores Pass by default (not applicable).",
+      "critique": "The student's message is about playing 'musically' rather than just hitting the right notes. This is not a physical/motor skill issue - it's about musical expression, interpretation, and style. The student can already play the notes correctly, so there's no physical technique problem mentioned (no pain, posture issues, bow hold problems, etc.). This is a conceptual/artistic development issue about bringing emotion and musicality to their playing. Since this doesn't involve a physical or motor skill issue, it should be scored as Pass (not applicable).",
       "agree": true
     },
     {
       "id": 4,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The student's message mentions pedal technique creating muddy sound, which is primarily a listening/ear training issue rather than a physical/motor skill issue. The student isn't reporting physical discomfort, pain, coordination problems, or asking about physical positioning. They're describing an auditory result ('sounds muddy') and seeking technique advice. While pedal technique involves foot coordination, the student's concern is about the sound quality outcome, not the physical mechanics of pedal use. This falls into the 'not applicable' category since it's not a physical/motor skill issue requiring proprioceptive awareness.",
-      "agree": true
+      "judge": "Fail",
+      "critique": "The student's issue is about pedal technique resulting in muddy sound, which is a physical motor skill issue involving foot coordination and timing. However, the tutor's response is entirely prescriptive, giving detailed instructions on what to do ('Press the pedal just as you play the note', 'Lift the pedal just as you lift your finger', 'Small movements') without any prompts for the student to notice physical sensations. The tutor does ask 'How does it feel' at the very end, but this appears to be asking about the exercise outcome rather than guiding attention to physical sensations during the movement. There are no proprioceptive prompts like 'Can you feel when your foot presses too hard?' or 'Notice what your leg feels like when you make those small movements' or 'Pay attention to how much pressure you're using.' The response focuses entirely on prescriptive technique corrections.",
+      "agree": false
     },
     {
       "id": 23,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The student's message is about coordinating both hands playing different notes simultaneously, which is a physical motor coordination challenge that qualifies as a physical/motor skill issue. However, the tutor's response provides only instructional strategies and prescriptive advice without any proprioceptive prompting. The response includes techniques like practicing hands separately, the 'Superman' method, going slow, and breaking into small sections - all good pedagogical advice. But there are no prompts asking the student to notice physical sensations, feel coordination challenges, or pay attention to bodily awareness during the coordination process. The tutor never asks the student to sense what happens in their body when attempting two-handed coordination, such as 'Can you feel when your hands want to do the same thing?' or 'Notice what happens in your arms when you try both hands together.' This is purely instructional guidance without body awareness elements.",
+      "critique": "The student's message is about coordinating both hands playing different parts simultaneously, which is a physical motor coordination challenge. However, the tutor's response contains only instructional advice and prescriptive corrections without any proprioceptive prompting. The response gives techniques like 'Practice the left hand alone first', 'Try the Superman method', 'Go super slow with both hands', and 'Practice just 2 measures at a time', but never asks the student to notice or feel any physical sensations. There are no prompts like 'Can you feel when your hands want to follow each other?' or 'Notice what happens in your arms when you try to coordinate them' or 'How does it feel when both hands are working independently?' The response fails to engage the student's body awareness for this motor coordination issue.",
       "agree": true
     },
     {
       "id": 20,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The student's message involves a physical/motor skill issue - coordinating both hands simultaneously to play different parts is a physical motor coordination challenge that requires body awareness and proprioceptive feedback. However, the tutor's response provides only instructional strategies and prescriptive corrections without any prompts for the student to notice physical sensations. The response includes directions like 'play each hand separately,' 'go SUPER slowly,' 'start with just one measure,' and 'count out loud' but never asks the student to feel or notice anything about their body coordination, hand positioning, or physical sensations during the coordination attempts. There are no proprioceptive prompts such as asking how it feels when the hands get out of sync, what they notice in their arms or fingers when coordinating, or inviting them to sense when the coordination feels smooth versus awkward.",
+      "critique": "The student's message is about coordinating both hands simultaneously to play different parts - this is a physical motor coordination challenge that involves proprioceptive skills. However, the tutor's response provides only instructional steps and encouragement without any prompts for body awareness. The response gives prescriptive corrections like 'play each hand separately,' 'go SUPER slowly,' 'count out loud,' and 'start with just one measure at a time.' While these are helpful practice strategies, there are zero invitations for the student to notice physical sensations, feel coordination between their hands, or become aware of what their body is doing during the coordination process. The tutor never asks the student to feel, notice, or attend to any physical sensations related to hand coordination.",
       "agree": true
     }
   ],
-  "status": "PASS"
+  "status": "NEEDS ITERATION"
 }

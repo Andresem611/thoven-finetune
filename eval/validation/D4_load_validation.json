@@ -6,12 +6,12 @@
     "test": 15
   },
   "dev_metrics": {
-    "tp": 9,
-    "fn": 1,
-    "tn": 9,
-    "fp": 1,
-    "tpr": 0.9,
-    "tnr": 0.9,
+    "tp": 8,
+    "fn": 2,
+    "tn": 10,
+    "fp": 0,
+    "tpr": 0.8,
+    "tnr": 1.0,
     "accuracy": 0.9
   },
   "dev_results": [
@@ -19,140 +19,140 @@
       "id": 9,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response focuses entirely on one musical concept: the meaning and application of 'forte.' It clearly defines the term, provides pronunciation guidance, contrasts it with piano (which reinforces understanding), explains the musical notation (f), and offers a simple practice activity to demonstrate the concept. All elements serve the single purpose of helping the student understand what forte means and how to apply it. The suggested activity is directly related to practicing the concept just explained, not introducing a separate skill. This is appropriate cognitive load management for a 9-year-old.",
+      "critique": "The response addresses one main concept: the meaning and application of 'forte'. While the tutor explains forte by contrasting it with piano, this serves to clarify the single concept rather than introduce multiple unrelated topics. The response defines forte, shows how it appears in notation ('f'), and provides a practical exercise to demonstrate loud vs. soft playing. All elements work together to help the 9-year-old understand what forte means and how to apply it. The structure is clear and age-appropriate without overwhelming the student with additional musical concepts.",
       "agree": true
     },
     {
       "id": 23,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response addresses ONE main concept: how to coordinate different notes between left and right hands. While it provides 4 numbered tips, they all serve the same goal of solving the student's specific problem with hand coordination. The tips are: (1) practice left hand alone, (2) use 'Superman' method for preparation, (3) combine hands slowly, and (4) work in small sections. These are all sequential steps and techniques focused on the single challenge of playing different notes with each hand simultaneously. The response stays focused on this one coordination issue throughout, with encouraging language appropriate for an 8-year-old. The tutor doesn't jump to unrelated topics like posture, music theory, or sight-reading - everything connects back to solving the hand coordination problem the student presented.",
+      "critique": "The response addresses one main concept: how to coordinate different notes between left and right hands (hand independence). While it provides 4 numbered tips, they are all sequential steps and different methods for solving the same problem - getting the hands to work together when playing different parts. The tips progress logically: practice left hand alone \u2192 prepare both hands separately \u2192 combine slowly \u2192 work in small sections. All techniques serve the single goal of hand coordination. The response maintains focus on the student's specific concern about hands playing different notes, rather than introducing unrelated topics like posture, rhythm reading, or music theory. The encouraging tone and relatable analogies are appropriate for an 8-year-old without adding cognitive load.",
       "agree": true
     },
     {
       "id": 20,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response focuses entirely on ONE main concept: hand coordination/playing with both hands together. While it provides multiple techniques (hands separately, slow practice, one measure at a time, counting), all strategies directly address the single problem the 7-year-old asked about. The numbered steps are sequential scaffolding for the same skill rather than introducing unrelated concepts. The language is age-appropriate with helpful analogies (patting head/rubbing tummy, turtle pace). The response maintains clear focus throughout - everything relates back to solving the two-hand coordination challenge.",
+      "critique": "This response addresses ONE main concept: learning to play with both hands together. While it contains multiple tips and steps, they are all sequential methods for solving the same single problem the student presented. The structure follows a logical progression: 1) practice hands separately, 2) try a slow combination exercise, 3) work measure by measure, 4) use counting to coordinate. All elements serve the same goal of hand coordination. The encouragement and analogies ('turtle pace', 'pat head/rub tummy') are age-appropriate scaffolding, not separate concepts. The final suggestion to 'try two notes together' is still within the same concept. This is focused teaching that breaks down ONE skill into manageable steps.",
       "agree": true
     },
     {
       "id": 26,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response addresses ONE main problem: the student's arm fatigue while holding the bow. All the suggestions provided - taking breaks, checking bow hold, doing strengthening exercises, and the encouragement - are different approaches to solving the same underlying issue. The tutor organizes multiple techniques under clear headings, but they all serve the single purpose of addressing arm tiredness. The response uses age-appropriate language ('holding a small bird,' 'frog's leg thumb') and ends with an invitation to practice together, maintaining focus on the original concern. While there are many tips listed, they're all methods for tackling ONE problem rather than introducing separate, unrelated concepts.",
+      "critique": "The response addresses ONE main concern - the student's arm fatigue - with multiple strategies all targeting this single problem. While the tutor provides many tips organized under different headings (quick fixes, bow hold, exercises), they are all solutions for arm tiredness rather than introducing unrelated topics. The suggestions include immediate relief (breaks, shaking), technique adjustments (proper bow hold), and strengthening exercises - but all serve the same goal of reducing arm fatigue. This is appropriate scaffolding for addressing one concern comprehensively, not cognitive overload from multiple unrelated concepts. The age-appropriate language and invitation to try one exercise together shows good pedagogical awareness.",
       "agree": true
     },
     {
       "id": 17,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response addresses one main concept: encouraging the student to engage in the learning process rather than seeking quick answers. While it includes multiple questions (what are you struggling with, what have you tried, what's confusing), these are all focused on the single goal of getting the student to think through their problem. The questions are structured tools to address one pedagogical concern - helping the student become an active learner rather than passive recipient. This is not introducing multiple unrelated concepts but rather providing a framework for one approach.",
+      "critique": "The response addresses one main concept: guiding the student to engage in problem-solving rather than seeking direct answers. While it includes multiple questions (what you're struggling with, what you've tried, what's confusing), these are all serving the single pedagogical goal of helping the student articulate their learning challenge. The questions are tools for one focused approach - moving from answer-seeking to collaborative problem-solving. This is structured guidance around one educational principle, not multiple unrelated topics.",
       "agree": true
     },
     {
       "id": 37,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response addresses one clear concept: explaining why working through problems together is better than just giving answers, and redirecting toward collaborative problem-solving. While it lists multiple options (chord shapes, reading music, rhythm), these are just examples to help identify what the student needs help with - they're not separate concepts being taught. The core message is unified: 'let's work together to understand rather than just get quick answers.' The tutor stays focused on this single pedagogical approach without introducing unrelated topics or overwhelming the student with multiple learning objectives.",
+      "critique": "The response addresses one main concept: encouraging the student to engage in the learning process rather than seeking shortcuts. While the tutor lists multiple possible areas of difficulty (chord shapes, reading music, rhythm), these are not separate concepts being taught - they're diagnostic questions to identify what specific problem the student needs help with. The entire response maintains focus on the single pedagogical goal of shifting from 'give me the answer' to 'let's work through this together.' The tutor doesn't actually introduce multiple unrelated skills or overwhelm with different techniques - everything serves the one purpose of motivating collaborative problem-solving.",
       "agree": true
     },
     {
       "id": 34,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response focuses on ONE main concept: addressing voice cracks when singing high notes. While it provides multiple tips (warm-up, relaxation, vowel sounds, etc.), all strategies are directly related to solving the single problem the student asked about - voice cracks on high notes. The response explains why cracks happen, then gives coordinated techniques all aimed at the same goal. This is scaffolding and multiple approaches to ONE issue, not introducing unrelated concepts like breath support AND posture AND sight-singing AND music theory. The student could summarize this as 'my tutor helped me with voice cracks on high notes.' The structure with explanations and numbered tips actually helps manage cognitive load by organizing the information clearly around the single focus.",
+      "critique": "This response focuses on ONE main concept: managing voice cracks when singing high notes. While it provides 5 different techniques, they all address the same specific problem the student asked about. The tips are all related methods for achieving smoother high notes - warming up, mental imagery, physical relaxation, throat positioning, and vowel choice. These aren't separate unrelated topics but rather different approaches to solve the single issue of voice cracking. The response also includes age-appropriate encouragement and explanation of why cracks happen, which supports understanding of the main concept rather than introducing new problems to work on.",
       "agree": true
     },
     {
       "id": 28,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "This response addresses ONE main concept: making playing more musical/expressive. While it provides multiple techniques (dynamics, phrasing, bow control), these are all different approaches to solving the same problem the student identified. The three-way exercise and reflection questions are all focused on developing musical expression. The response maintains clear structure and all elements work toward the single goal of helping the student move beyond 'just hitting the right notes' to playing musically. The offer to discuss a specific piece continues this focused approach rather than introducing new unrelated topics.",
-      "agree": true
+      "judge": "Fail",
+      "critique": "While the response is well-structured and informative, it introduces too many distinct concepts for effective learning. The tutor addresses dynamics, phrasing, bow control, emotional interpretation, and listening to recordings - these are five separate musical skills that require independent development. Even though they're all related to 'musical playing,' each requires different practice techniques and mental focus. A 15-year-old student asking this question would benefit more from focusing on ONE specific aspect (like dynamics or phrasing) with concrete practice steps, rather than trying to work on multiple musical elements simultaneously. The three-way exercise is creative but adds another layer of complexity. The response, while comprehensive, creates cognitive overload by presenting too many pathways to 'musical playing' at once.",
+      "agree": false
     },
     {
       "id": 16,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "This response fails the cognitive load test by addressing far too many unrelated concepts and strategies. The tutor presents a complex multi-step framework with numerous sub-options: (1) validation techniques with 4+ different phrase options, (2) diagnostic questioning with multiple approaches, (3) various problem-solving strategies for different scenarios (too hard, boring, wanting something else, finger pain), and (4) gamification methods (cut off but clearly continuing). While each individual suggestion may be sound, a 5-year-old asking 'I don't want to practice' cannot process this overwhelming menu of options. The response reads like a training manual for teachers rather than a focused response to one child's immediate concern. The tutor should have picked ONE simple approach (e.g., just validation + one specific fun activity) rather than presenting this comprehensive decision tree.",
+      "critique": "This response addresses far too many unrelated concepts for a 5-year-old to process. While the student expressed one simple concern ('I don't want to practice'), the tutor provides an overwhelming structure with 4 main sections, each containing multiple sub-approaches and dozens of different techniques. The response jumps between validation techniques, questioning strategies, problem diagnosis, finger injury concerns, gamification methods, and negotiation tactics. A 5-year-old cannot cognitively handle this volume of information or choose between multiple complex approaches. The tutor even acknowledges this overload by saying 'Please read the whole response first, then pick the parts that feel most natural to you' - indicating awareness that it's too much. For a young child expressing reluctance, the response should focus on ONE simple approach (like validation + one small fun activity) rather than a comprehensive manual of possibilities.",
       "agree": false
     },
     {
       "id": 24,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response focuses on ONE main concept: proper pedal technique to avoid muddy sound. While it provides multiple tips and exercises, they all serve the same purpose - teaching the student how to use the pedal cleanly. The numbered exercise steps (1-4) are sequential instructions for practicing one skill, not separate concepts. The 'listen carefully' and 'start small' sections are additional methods for approaching the same problem. All content directly addresses the student's specific concern about muddy pedal sound. The structure breaks down one skill into manageable parts, which is appropriate scaffolding for a 10-year-old.",
+      "critique": "This response focuses on ONE main concept: how to use the pedal to avoid muddy sound. All the tips and techniques provided are directly addressing the student's specific problem with muddy pedal technique. The numbered steps (play note, press pedal after, lift before next note, etc.) are sequential instructions for learning proper pedal technique - this is scaffolding one skill, not introducing multiple unrelated concepts. The listening advice, starting small, and the exercise are all different approaches to solve the same problem the student asked about. The response stays tightly focused on pedal technique and doesn't branch into unrelated topics like posture, fingering, or music theory.",
       "agree": true
     },
     {
       "id": 4,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "While this response is well-intentioned and comprehensive, it introduces multiple distinct concepts rather than focusing on one main issue. The response covers: (1) what the pedal does theoretically, (2) four different reasons for muddiness, (3) four separate exercises with different techniques, and (4) general tips. For a 10-year-old asking specifically about muddy pedal sound, this creates significant cognitive overload. The student asked about ONE problem (muddy sound) but receives theory lessons, multiple diagnostic explanations, four different exercises, and general advice all at once. A more effective approach would focus on ONE specific technique (like the 'lift before you play' rule) with one simple exercise, rather than presenting a comprehensive pedal curriculum. The response reads more like a lesson plan than targeted help for the specific muddy sound issue.",
+      "critique": "This response addresses multiple distinct concepts rather than focusing on one main skill. While all relate to pedal use, the tutor introduces: (1) theoretical explanation of what the pedal does, (2) four different reasons for muddiness, (3) four separate exercises with different techniques, and (4) general tips. A 10-year-old cannot effectively process and practice 4+ different exercises plus theory. The response should have focused on ONE specific technique (like 'lift before you play the next note') with one simple exercise to master that concept first.",
       "agree": true
     },
     {
       "id": 15,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response addresses multiple unrelated concepts rather than focusing on one main skill. While the student asked specifically about 'singing with emotion,' the tutor introduces at least 4-5 distinct areas: (1) understanding/connecting to songs, (2) vocal dynamics, (3) vocal color/timbre, (4) phrasing & rhythm, (5) resonance, plus multiple exercises. Each section contains numerous sub-techniques and tips. The response reads like a comprehensive curriculum overview rather than focused instruction on one concept. A 15-year-old would struggle to process and act on this information overload. The tutor even acknowledges this by asking the student to 'read through all of this, and then let me know which area you'd like to focus on first' - indicating awareness that too much was presented at once. An effective response would have picked ONE aspect (like connecting personally to the song's meaning) and worked on that specific skill.",
+      "critique": "This response fails to manage cognitive load effectively. While the student asked one focused question about singing with emotion, the tutor introduces multiple distinct problem areas: (1) Understanding & connecting to the song, (2) Technical aspects (which itself contains 4-5 sub-concepts like vocal dynamics, timbre, phrasing, resonance), and (3) Exercises to try. The response reads like a comprehensive curriculum rather than focused guidance. The tutor explicitly states 'we'll cover understanding emotion, connecting it to the song, and then the technical aspects' - acknowledging they're addressing multiple separate areas. A 15-year-old asking about emotion would be better served with one focused approach (e.g., just song connection OR just one technical element) rather than this overwhelming breakdown of the entire topic. The response also cuts off mid-sentence in the exercises section, suggesting even more content was planned.",
       "agree": true
     },
     {
       "id": 12,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response addresses far too many distinct concepts for a beginner improviser. The tutor introduces: (1) 12-bar blues progression theory, (2) dominant 7th chord construction, (3) A minor pentatonic scale, (4) A major pentatonic scale, (5) scale positions, (6) chord tone targeting, (7) blues notes/chromaticism, and (8) backing track practice methods. Each section could be its own lesson. A 16-year-old asking 'where to start' needs ONE clear first step, not a comprehensive curriculum. The response is well-structured but creates massive cognitive overload by trying to cover the entire topic at once instead of focusing on the most immediate, actionable first step.",
+      "critique": "This response fails to manage cognitive load appropriately by introducing far too many independent concepts for a beginner improviser. The tutor presents at least 5-6 distinct areas: 12-bar blues structure, dominant 7th chord theory, pentatonic scales (both major and minor), target note concepts, blues notes/chromaticism, and backing track practice methods. While each topic is relevant to blues improvisation, presenting them all simultaneously creates significant cognitive overload for a 16-year-old asking 'where to start.' The response reads like a comprehensive curriculum rather than a focused first lesson. A more appropriate response would have focused on ONE starting point - likely just learning the A minor pentatonic scale over a backing track - and left other concepts for future lessons once that foundation was solid.",
       "agree": true
     },
     {
       "id": 8,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response addresses multiple unrelated concepts: tone production, rhythm & phrasing, and expression. Each category contains numerous sub-techniques and exercises. The tutor introduces concepts like bow pressure, speed, placement, relaxation, rubato, phrasing markings, dynamics, and more. While the organization is clear, this presents a cognitive overload for addressing one student concern. A 15-year-old asking about sounding 'more musical' would be better served by focusing on ONE aspect (e.g., just tone quality OR just phrasing) with specific actionable steps, rather than a comprehensive breakdown of three major areas of musical development. The response reads like a textbook chapter rather than targeted instruction for one concern.",
+      "critique": "This response completely violates cognitive load management by introducing 3-4 completely distinct and independent concepts (Tone Production, Rhythm & Phrasing, Expression, plus communication with teacher). Each major section contains multiple sub-techniques and exercises, creating an overwhelming wall of information. A 15-year-old asking about sounding 'more musical' receives what amounts to a comprehensive music theory lesson covering bow technique, rubato, dynamics, and more. The response acknowledges the student has technical foundation but then dumps an entire curriculum rather than focusing on ONE specific, actionable element of musicality. This is exactly the type of cognitive overload that prevents effective learning - the student cannot possibly process and implement all these concepts simultaneously.",
       "agree": true
     },
     {
       "id": 7,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response addresses multiple distinct concepts: understanding what vibrato is (theory), where movement comes from (anatomy), various exercises for different body parts (wrist, forearm, finger), combining movements, and introducing the bow. While all related to vibrato, these are separate learning components that would overwhelm an 11-year-old. The response also uses undefined technical terms like 'intonation' without explanation. An effective approach for this age would focus on ONE simple aspect, like just the wrist motion, rather than trying to cover the entire vibrato technique comprehensively. The wall-of-text format with multiple numbered sections and sub-bullets further increases cognitive load.",
+      "critique": "This response addresses multiple unrelated concepts rather than focusing on one main skill. While vibrato is the overall topic, the tutor introduces: (1) theoretical understanding of what vibrato is, (2) anatomical breakdown of multiple movement sources (wrist, forearm, finger), (3) four separate exercises with different focuses, and (4) begins introducing bow technique. For an 11-year-old, this creates cognitive overload by presenting too many simultaneous learning objectives. A focused approach would pick ONE starting point (like just wrist movement) and develop that thoroughly before introducing other elements. The response reads like a comprehensive curriculum rather than a single lesson focused on one actionable step.",
       "agree": true
     },
     {
       "id": 3,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response fails to manage cognitive load for an 8-year-old. While the student asked a simple question about the left hand being different notes, the tutor provides an overwhelming amount of information: (1) detailed explanation of why left/right hands differ, (2) at least 7 different practice strategies (left hand only, slow practice, clapping rhythm, saying notes, short sections, games, thinking of it as different languages), (3) additional diagnostic questions about the piece and difficulty, and (4) encouragement. This creates severe cognitive overload - an 8-year-old cannot process and remember 7+ different techniques. The response reads like a comprehensive lesson plan rather than focused help. A much better approach would have been to pick ONE strategy (like 'let's just practice the left hand by itself slowly') and focus entirely on that.",
+      "critique": "This response fails to manage cognitive load by presenting far too many concepts and suggestions for an 8-year-old. While the student asked about one specific issue (left hand having different notes), the tutor introduces multiple unrelated strategies: left-hand-only practice, rhythm work, note naming, sectional practice, games, and conceptual explanations about melody vs. harmony roles. The response lists 6+ distinct practice techniques plus theoretical explanations, which creates overwhelming choice paralysis for a young student. An 8-year-old cannot process and decide between clapping rhythms, saying note names, playing games, and understanding harmonic roles all at once. The tutor should have focused on ONE actionable step, likely just practicing the left hand alone slowly, rather than this comprehensive but cognitively overloading list of options.",
       "agree": true
     },
     {
       "id": 2,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The response addresses multiple unrelated concepts that overwhelm cognitive load. While all topics relate to 'voicing,' they constitute distinct problems: dynamic contrast, touch/weight techniques, duration/tenuto, articulation differences, and pedal usage. Additionally, the response introduces three different exercise types (one-note-at-a-time, chord progression, and listening exercises) plus begins transitioning to yet another topic about the student's specific piece. The wall-of-text format with extensive explanations, definitions, and multiple numbered sections creates cognitive overload for a 14-year-old. A focused response should have picked ONE technique (likely dynamic contrast as the 'biggest one') and provided specific practice steps for that single approach.",
+      "critique": "This response addresses multiple distinct concepts rather than focusing on one main skill. While voicing is the overarching topic, the tutor introduces: (1) what voicing is conceptually, (2) why it's important, (3) multiple different techniques (dynamics, touch/weight, duration, articulation, pedal), (4) practice exercises, and (5) listening analysis. The response then shifts to asking about the student's specific pieces. This creates significant cognitive load for a 14-year-old by presenting 5+ independent techniques and multiple exercises simultaneously. A focused approach would have introduced ONE technique (likely dynamic contrast) with specific practice steps, saving other methods for future lessons. The response reads more like a comprehensive lesson plan than a manageable next step for the student.",
       "agree": true
     },
     {
       "id": 31,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The response addresses ONE main concept (improving chord transitions) but presents it through multiple unrelated techniques rather than a focused approach. While all 5 methods are valid for chord switching, they represent different independent strategies: anchor fingers, freeze-and-release, chord shadows, metronome work, and two-chord practice. A 12-year-old would struggle to process and implement all 5 techniques simultaneously. The response should have focused on ONE method (like starting with two chords) and walked through that approach thoroughly. The multiple numbered sections create cognitive overload despite being well-organized.",
+      "critique": "This response addresses ONE main concept - chord switching speed - but provides 5 different numbered strategies plus additional advice. While all techniques relate to the same problem (slow chord changes), presenting 5 distinct methods simultaneously creates cognitive overload for a 12-year-old. The student asked about one specific issue but received: anchor fingers, freeze/release, chord shadows, metronome work, and two-chord focus, plus repetition counts and timeline expectations. Even though each tip is valid and related to chord switching, the sheer number of simultaneous strategies violates the 'focus on ONE main concept' principle. A better approach would be to pick ONE technique (like practicing two chords only) and master that before introducing others.",
       "agree": true
     },
     {
       "id": 33,
       "human": "Fail",
-      "judge": "Pass",
-      "critique": "This response addresses ONE main problem: making pentatonic scale playing sound more varied and musical. While it presents multiple techniques (rhythm, note choices, articulation techniques), they are all different approaches to solving the same core issue - avoiding repetitive, 'samey' pentatonic playing. The categories (rhythm tricks, note choices, flavor techniques) are all methods for addressing musical expression within the pentatonic framework. The response maintains focus on the student's specific concern about sounding repetitive, and the techniques are all related solutions rather than independent topics. The quick exercise reinforces the main concept, and the follow-up question stays on-topic. This is scaffolding multiple techniques to solve one problem rather than introducing unrelated concepts.",
-      "agree": false
+      "judge": "Fail",
+      "critique": "The response introduces four distinct categories of techniques: rhythm variations, note choice patterns, articulation techniques (bends, vibrato, etc.), and a practice exercise. While all relate to the student's core problem of sounding repetitive with pentatonic scales, these represent multiple independent skill areas that a 14-year-old would need to work on separately. The response jumps between rhythm concepts, positional playing, and advanced techniques like bends and vibrato without focusing on one approach. A better response would have picked ONE area (like rhythm variation) and given specific, actionable steps for that single concept. The cognitive load of processing four different categories of improvement simultaneously is too high for effective learning.",
+      "agree": true
     },
     {
       "id": 10,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response addresses multiple unrelated concepts rather than focusing on one main approach to finger pain relief. While all the information is relevant to the student's concern, it introduces numerous distinct categories: understanding why fingers hurt (science explanation), immediate pain management (short sessions, breaks, soaking, ice), long-term solutions (callus building, string gauge, guitar setup), technique checking, and diagnostic questions. An 8-year-old cannot process and act on this volume of information effectively. The tutor should have picked ONE actionable approach - likely checking technique or suggesting shorter practice sessions - rather than presenting a comprehensive analysis with multiple independent solutions.",
+      "critique": "This response addresses multiple distinct problems rather than focusing on ONE main concept. While the student asked specifically about finger pain, the tutor introduces: 1) Why fingers hurt (science explanation), 2) Immediate pain relief strategies (short sessions, breaks, soaking, ice), 3) Long-term solutions (callus building, string gauge, guitar setup), and 4) Technique checking (finger positioning, fret placement, grip pressure). Each section contains multiple sub-points, creating cognitive overload for an 8-year-old. The response also uses undefined technical jargon ('gauge,' 'action,' 'fretboard') and presents an overwhelming wall of information. For an 8-year-old experiencing finger pain, this should focus on ONE actionable solution like checking their finger placement or taking shorter practice sessions, not a comprehensive multi-category analysis.",
       "agree": true
     }
   ],

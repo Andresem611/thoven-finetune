@@ -6,155 +6,155 @@
     "test": 15
   },
   "dev_metrics": {
-    "tp": 6,
-    "fn": 1,
-    "tn": 11,
-    "fp": 2,
-    "tpr": 0.857,
-    "tnr": 0.846,
-    "accuracy": 0.85
+    "tp": 5,
+    "fn": 2,
+    "tn": 10,
+    "fp": 3,
+    "tpr": 0.714,
+    "tnr": 0.769,
+    "accuracy": 0.75
   },
   "dev_results": [
     {
       "id": 37,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor includes several genuine probing questions throughout the response. First, they ask 'What specific part are you having trouble with?' and then provide specific diagnostic options: 'Is it: - A chord shape that's hard to finger? - Reading a piece of music? - Understanding a rhythm? - Something else?' These are clear attempts to understand the student's current situation and what they're struggling with. The response ends with another probe: 'can you tell me what you're working on so we can tackle it together?' All of these questions come before any specific instruction and are designed to understand the student's existing knowledge and current challenges. The tutor is actively trying to diagnose the student's specific needs rather than providing generic advice.",
+      "critique": "The tutor includes multiple genuine probing questions throughout the response. After explaining why working together is better than just giving answers, the tutor asks 'What specific part are you having trouble with?' followed by diagnostic options: 'A chord shape that's hard to finger? Reading a piece of music? Understanding a rhythm? Something else?' These are clear attempts to understand the student's specific situation. The response ends with another probe: 'can you tell me what you're working on so we can tackle it together?' All of these questions genuinely seek to understand what the student is currently experiencing before providing targeted instruction.",
       "agree": true
     },
     {
       "id": 10,
       "human": "Pass",
-      "judge": "Pass",
-      "critique": "The tutor provides a comprehensive explanation of why fingers hurt when playing guitar and offers extensive advice across multiple categories. However, examining the response for probing reveals that meaningful diagnostic questions only appear at the very end. The tutor asks 'Can you show me how you're holding down the strings?' and requests the student demonstrate their finger positioning and technique - this is a genuine probe asking the student to show their current approach. Additionally, the tutor asks 'What kind of guitar do you have?', 'How long have you been playing?', and 'What are you trying to play right now?' While some of these could be seen as background questions, 'What are you trying to play right now?' is asking about the student's current specific situation. The technique demonstration request ('Can you show me how you're holding down the strings?') is particularly strong probing as it directly asks the student to reveal their current method before further instruction.",
-      "agree": true
+      "judge": "Fail",
+      "critique": "The tutor provides an extremely comprehensive response covering the science behind finger pain, immediate solutions, and long-term strategies. However, most of this instruction is given without first understanding the student's specific situation. The response does include some probing elements: 'Can you show me how you're holding down the strings with your fingers?' is a clear request for the student to demonstrate their current technique, and the tutor asks specific diagnostic questions about guitar type, experience length, and what the student is practicing. However, these probes come AFTER a complete instructional response covering technique tips, practice schedules, string recommendations, and setup advice. The student could follow all the given advice without answering any of the questions. The probing questions appear to be afterthoughts rather than genuine attempts to understand the student's situation before prescribing solutions.",
+      "agree": false
     },
     {
       "id": 36,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor provides four complete strategies (game playing, short practice sessions, sticker charts, playing favorites) before asking any probing questions. However, the response does include genuine diagnostic probing: 'Can you tell me: What's the hardest part about practicing? Is it: Too long? Too hard? Not fun enough? Something else?' These questions directly probe the student's specific situation and barriers to practicing. The tutor explicitly states 'Once I know what bothers you, we can fix it together!' - indicating they want to understand the student's particular challenge before providing targeted solutions. While the probing comes after initial suggestions, it's a genuine attempt to diagnose the root cause of the practice resistance, not just a superficial add-on.",
+      "critique": "The tutor provides four specific strategies to make practice more engaging (game playing, short sessions, sticker rewards, playing favorites) before asking any probing questions. However, the response does include genuine diagnostic probing: 'Can you tell me: What's the hardest part about practicing? Is it: Too long? Too hard? Not fun enough? Something else?' These questions directly probe the student's specific situation and feelings about practicing. The tutor explicitly states 'Once I know what bothers you, we can fix it together!' - indicating they recognize the need to understand the student's specific issue before providing targeted solutions. While the probing comes after initial suggestions, it's substantive diagnostic questioning that seeks to understand the root cause of the student's resistance to practice.",
       "agree": true
     },
     {
       "id": 23,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "The tutor provides a comprehensive four-step instructional approach with detailed practice strategies for playing hands separately and together. However, looking for probing questions, the tutor ends with 'What piece are you working on? Maybe I can give you specific tips for that song!' This is a diagnostic question asking for the student's specific context. But examining the overall response structure, the tutor has already provided complete, self-sufficient instruction that the student could follow without answering this question - four detailed practice methods, specific techniques like the 'Superman' method, and complete guidance for approaching two-handed playing. The instruction is already comprehensive and actionable. The 'What piece?' question comes after complete instruction as an afterthought for potential additional help, not as genuine prior-knowledge probing that would inform the main instruction. According to the criteria, when instruction is already self-sufficient with specific exercises and practice tips, adding 'What piece?' at the end doesn't count as genuine probing.",
+      "critique": "The tutor provides a comprehensive four-step instructional approach with specific techniques (practicing hands separately, 'Superman' method, slow practice, small sections). The response includes complete guidance that the student could follow without needing to answer any questions. At the very end, the tutor asks 'What piece are you working on? Maybe I can give you specific tips for that song!' However, this comes after already providing a full set of exercises and practice strategies. Since the instruction is already self-sufficient with specific techniques and practice tips, this question at the end appears to be an afterthought rather than genuine probing of the student's current situation before instruction. The tutor does not probe what the student has already tried, what specific difficulties they're having, or demonstrate any attempt to understand their current knowledge before providing the complete instructional response.",
       "agree": false
     },
     {
       "id": 17,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor includes several clear probing questions embedded within the response: 'Can you tell me a little bit about what you're struggling with right now?' followed by three specific diagnostic questions: 'What question are you trying to answer?', 'What have you already tried?', and 'What part is confusing you the most?' These are genuine attempts to understand the student's specific situation, current knowledge, and what they've attempted. The tutor explicitly asks what the student has tried ('Even if it didn't work, it's helpful to know what you've already considered') and what they're confused about. This clearly meets the criterion for probing the student's existing knowledge and experience.",
+      "critique": "The tutor clearly probes the student's existing knowledge and situation. After explaining why understanding is better than just getting answers, the tutor asks 'Can you tell me a little bit about what you're struggling with right now?' followed by three specific diagnostic questions: 'What question are you trying to answer?', 'What have you already tried?', and 'What part is confusing you the most?' These are genuine attempts to understand the student's current situation, what they've attempted, and where they're stuck. The probing happens early in the response and is clearly the main focus before any instruction would be given.",
       "agree": true
     },
     {
       "id": 16,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor provides extensive guidance on how to handle a reluctant child, including validation techniques and problem-solving strategies. Crucially, Step 2 contains specific probing questions designed to understand why the child doesn't want to practice: 'Can you tell me a little bit about why you don't want to practice right now?', 'Is there something about practicing that you don't like?', 'Is it too hard? Too easy? Or maybe something else?', 'Are you tired?', and 'Do you want to do something else instead?' These are genuine diagnostic questions that probe the student's specific situation and feelings. The response then shows how to tailor the approach based on different possible answers (too hard, boring, want something else, fingers hurt). While structured as teaching guidance, these embedded probing questions demonstrate a clear attempt to understand the student's current experience before prescribing solutions.",
+      "critique": "The tutor response contains multiple genuine probing questions embedded within the instructional guidance. In Step 2, 'Try to Understand *Why* They Don't Want To,' the response includes specific diagnostic questions: 'Can you tell me a little bit about why you don't want to practice right now?', 'Is there something about practicing that you don't like?', 'Is it too hard? Too easy? Or maybe something else?', 'Are you tired?', and 'Do you want to do something else instead?' These are all genuine attempts to understand the student's specific situation and current experience. Even though this is structured as teaching guidance for how to respond, these embedded probing questions demonstrate understanding that the tutor needs to discover what the student knows, has tried, or is currently experiencing before providing targeted advice.",
       "agree": true
     },
     {
       "id": 39,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor includes multiple genuine probing questions that directly investigate the student's current practice methods and situation: 'Are you practicing the whole piece from start to finish, or working on small sections?', 'When you make a mistake, what do you do?', and 'Are you playing at full speed or slowing down the tricky parts?' These questions probe the student's existing knowledge and approach before giving advice. The tutor then provides specific practice strategies. The final question 'What piece are you working on?' comes after giving general strategies but invites specific contextualization - since the tutor offers to 'make a specific practice plan,' this shows genuine intent to understand the student's situation for personalized guidance. The response demonstrates clear probing of the student's current practice approach.",
+      "critique": "The tutor includes multiple genuine probing questions in the middle of the response: 'Are you practicing the whole piece from start to finish, or working on small sections?', 'When you make a mistake, what do you do?', and 'Are you playing at full speed or slowing down the tricky parts?' These are clear diagnostic questions that probe the student's current practice methods and techniques before providing the practice guidance. The tutor is genuinely trying to understand how the student is currently practicing to better address their frustration. The final question 'What piece are you working on?' also counts as it's asking for specific context to create a personalized practice plan. This is clear probing of the student's existing approach and situation.",
       "agree": true
     },
     {
       "id": 4,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides a comprehensive explanation of pedal technique with clear exercises and tips. However, the response fails to probe the student's current knowledge or situation. The tutor jumps straight into instruction without asking any diagnostic questions like 'Can you show me how you're using the pedal now?', 'What piece are you working on?', 'Have you tried anything to fix the muddiness?', or 'Where specifically does it sound muddy?' The response is entirely prescriptive - giving complete theory, exercises, and practice tips without first understanding what the student has already tried or their current technique. While the tutor does ask at the very end 'Can you try that and tell me how it feels?', this comes after providing complete instruction and is asking about a future exercise attempt, not probing existing knowledge or experience.",
+      "critique": "The tutor provides a comprehensive explanation of pedal technique with clear exercises and tips. However, the response fails to probe the student's existing knowledge or experience with the pedal before diving into instruction. The tutor doesn't ask what the student has already tried, what specific pieces they're working on, how they're currently using the pedal, or what exactly sounds muddy to them. While the response ends with a question asking the student to try an exercise and report back ('Can you try that and tell me: How does it feel'), this is asking for feedback on new instruction rather than probing existing knowledge or situation. The tutor jumps straight into comprehensive instruction without first understanding the student's current approach or specific context.",
       "agree": true
     },
     {
       "id": 13,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The response provides comprehensive instruction about pentatonic scale variations, including detailed explanations, categorized strategies, and specific exercises. However, it contains zero questions about what the student specifically knows, has tried, or is currently experiencing. The tutor does not ask which pentatonic position the student learned, what they've attempted to vary their sound, how they're currently playing it, or what specific aspect sounds repetitive to them. The response jumps directly into complete instruction without any diagnostic probing. While the advice is thorough and well-structured, it fails to acknowledge or probe the student's existing knowledge and situation.",
+      "critique": "The tutor provides a comprehensive response covering why the student sounds repetitive and offering multiple strategies for improvement. However, the response completely fails to probe or acknowledge the student's existing knowledge, experience, or current situation. The tutor never asks: which position/shape of the pentatonic scale the student knows, what they've already tried, how they're currently playing it, what specific aspects sound repetitive to them, or any other diagnostic questions about their current abilities or challenges. The response jumps straight into extensive instruction without any attempt to understand what the 14-year-old already knows or has experienced. While the instruction is thorough and well-organized, it lacks any genuine probing of the student's prior knowledge or current situation.",
       "agree": true
     },
     {
       "id": 15,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides comprehensive instruction about emotion in singing, covering understanding songs, technical aspects, and exercises. However, there is zero probing of the student's existing knowledge or situation. The response doesn't ask what songs they're working on, what they've tried before, or what specific challenges they're facing with emotion. While the tutor ends with 'let me know which area you'd like to focus on first,' this comes AFTER complete instruction covering all areas - it's asking for preference on already-provided material, not probing what the student currently knows or has experienced. The response fails to acknowledge or inquire about the student's current emotional singing abilities, repertoire, or previous attempts at conveying emotion.",
+      "critique": "The tutor provides an extensive, well-structured response covering understanding emotion, technical aspects, and practical exercises. However, the response completely fails to probe the student's existing knowledge, experience, or situation. There are zero questions about what the student already knows about emotional singing, what songs they're working on, what specific challenges they face, or what they've tried before. The tutor jumps straight into comprehensive instruction without any attempt to understand the student's current level, experience with emotional singing, or specific context. While the response ends with 'let me know which area you'd like to focus on first,' this is asking for preference about the provided content, not probing existing knowledge or situation. The tutor missed an opportunity to ask diagnostic questions like 'What songs are you working on?', 'Have you tried any techniques for emotional singing before?', or 'What specifically feels challenging about adding emotion?' The response is instructionally complete but contains no genuine probing of the student's prior knowledge or current situation.",
       "agree": true
     },
     {
       "id": 35,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "The tutor provides comprehensive instruction covering lyrics analysis, personal connection techniques, body language, technical tips, and a specific practice exercise. However, the response fails to probe the student's existing knowledge or situation until the very end. The question 'What song are you working on right now?' comes after complete instruction that the student could follow without answering it. The tutor has already provided general strategies, technical tips, and even a specific practice exercise. This end question is an afterthought rather than genuine probing - the student received full instruction and could practice emotional singing techniques without specifying their song. The tutor did not wait to understand the student's current approach, specific challenges, or what they've already tried before prescribing solutions.",
-      "agree": true
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive advice covering lyrics analysis, personal connection, body language, technical tips, and a practice exercise. However, there is genuine probing at the end: 'What song are you working on right now? I'd love to help you find specific emotional moments to focus on!' This question asks for the student's specific context to provide targeted emotional guidance. While the instruction is already complete and actionable, this probe shows intent to personalize further advice based on the student's actual repertoire. The question demonstrates genuine interest in the student's current situation and invites them to share specifics that would allow for more tailored emotional coaching.",
+      "agree": false
     },
     {
       "id": 3,
       "human": "Fail",
-      "judge": "Pass",
-      "critique": "The tutor provides extensive instruction and strategies for left hand piano practice, but includes clear probing questions at multiple points. In the 'Let's Talk About What You're Playing' section, the tutor asks: 'What piece are you working on?' and 'What part of the left hand is feeling the most difficult? Is it the notes themselves, the rhythm, or something else?' These are genuine diagnostic questions that probe the student's specific situation and would help personalize the advice. Additionally, embedded within the instruction, the tutor asks 'Can you play it slowly and steadily?' as part of the left-hand-only practice suggestion, which is asking the student to demonstrate their current ability. At the end, there's another probe: 'Can you try playing just the left hand part of the piece slowly?' These questions genuinely attempt to understand what the student is experiencing and what they can currently do.",
-      "agree": false
+      "judge": "Fail",
+      "critique": "The tutor provides extensive instruction covering why the left hand is different, multiple practice strategies, and encouragement. However, examining the response for genuine probing of the student's existing knowledge or situation reveals limited attempts. The tutor does ask two diagnostic questions near the end: 'What piece are you working on?' and 'What part of the left hand is feeling the most difficult?' These questions seek to understand the student's specific context and challenges. However, these come after providing comprehensive instruction including detailed explanations, multiple practice strategies, and specific techniques. The bulk of the response is complete instruction that the student could follow without answering these questions. The diagnostic questions appear more as afterthoughts to potentially refine already-complete advice rather than genuine early probing to shape the instruction. While the questions are diagnostic in nature, they follow a pattern of complete instruction first, probe second, which does not demonstrate genuine prior-knowledge assessment.",
+      "agree": true
     },
     {
       "id": 6,
       "human": "Fail",
       "judge": "Pass",
-      "critique": "The tutor provides a comprehensive response with detailed explanations and strategies, but crucially includes genuine diagnostic probes. Near the end, the tutor asks three specific questions: 'Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes?' - this probes the student's specific experience to understand when fatigue occurs. 'Does it hurt, or just feel tired?' - this is a diagnostic question about the student's current physical sensation, which would inform whether this is normal fatigue or a potential injury concern. These are genuine attempts to understand the student's specific situation that would inform how to adjust the instruction. The questions come after substantial instruction, but they are diagnostic rather than just background questions - they seek to understand the student's specific experience with arm fatigue to personalize the approach.",
+      "critique": "The tutor provides a comprehensive response with detailed explanations and solutions but includes genuine probing questions at the end. After giving complete instruction across three major sections (What's Happening, What We Can Do Together, What You Can Do), the tutor asks three specific diagnostic questions: 'Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes?' and 'Does it hurt, or just feel tired?' These are legitimate attempts to understand the student's specific situation and would inform future instruction. The questions probe the timing/context of fatigue and distinguish between tiredness versus pain - both diagnostically relevant. Even though they come after substantial instruction, they represent genuine probing of the student's experience.",
       "agree": false
     },
     {
       "id": 33,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides a comprehensive set of strategies for making pentatonic scale playing more varied, covering rhythm, note selection, techniques, and practice exercises. However, the response completely fails to probe what the student already knows or has tried. There are no questions about their current playing technique, what specific sounds they're creating that feel 'samey,' what they've already attempted, or how they're currently using the pentatonic scale. The question at the very end - 'What style of music are you most interested in playing?' - is a preference question, not a probe of the student's existing knowledge or current situation with the pentatonic scale. The tutor jumps straight into comprehensive instruction without understanding the student's specific context or what they've already explored.",
+      "critique": "The tutor provides a comprehensive response with multiple strategies organized into clear categories: rhythm tricks, note choice variations, flavor techniques, and a specific exercise. However, examining for probing: the response gives complete instruction covering rhythm patterns, note selection, technique variations, and even a specific exercise - all without first understanding what the student has already tried or where specifically they're getting stuck. The question at the end - 'What style of music are you most interested in playing?' - is a preference question, not a probe of existing knowledge or attempts. The tutor doesn't ask what the student has tried so far, what their current approach sounds like, or where specifically they feel stuck in their pentatonic playing. This is complete instruction without any genuine probing of the student's current knowledge or situation.",
       "agree": true
     },
     {
       "id": 9,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides a clear definition of forte and explains the notation, but fails to probe the student's existing knowledge or experience. There are no questions about what the student already knows about dynamics, whether they've encountered forte before, or what piece they're working on that contains this marking. The tutor does ask the student to demonstrate playing piano vs forte ('Can you play a short phrase, first piano, then forte?'), but this is asking them to practice the new concept just explained, not probing their prior knowledge. The final questions ('Do you want to try that now? Or would you like me to explain anything else?') are comprehension checks, not knowledge probes. No genuine attempt to understand what the student already knows about dynamics or their current musical context.",
+      "critique": "The tutor provides a clear, age-appropriate explanation of forte with helpful comparisons and context. However, the response contains no probing questions about the student's existing knowledge or experience. The tutor doesn't ask what the student already knows about dynamics, whether they've encountered piano/soft playing before, or what piece they're working on where they encountered 'forte'. The response jumps straight into definition and instruction. The questions at the end ('Can you play a short phrase...' and 'Do you want to try that now?') are activity suggestions and comprehension checks, not probes about prior knowledge. There is zero attempt to understand what the student already knows or has experienced before providing the complete explanation.",
       "agree": true
     },
     {
       "id": 14,
       "human": "Fail",
-      "judge": "Fail",
-      "critique": "The tutor provides a comprehensive explanation of voice cracking with detailed techniques and exercises. However, the response gives complete instruction before asking any probing questions. The tutor explains the science, provides warm-up exercises, breath support techniques, vowel modifications, and practice guidelines - a full curriculum that the student could follow without answering any questions. Only at the very end does the tutor ask diagnostic questions: 'What song are you singing?', 'What note specifically cracks?', and 'How does it feel?' These questions come after complete instruction has already been provided, making them afterthoughts rather than genuine attempts to understand the student's situation before prescribing. The tutor did not wait for these answers before giving detailed exercises and techniques.",
-      "agree": true
+      "judge": "Pass",
+      "critique": "The tutor provides extensive instructional content covering the science of voice cracks, warm-up exercises, breathing techniques, vowel shapes, and practice principles. However, near the end of the response, the tutor includes three genuine probing questions: 'What song are you singing when you notice the cracking?', 'What note specifically cracks?', and 'How does it feel when your voice cracks?' These are diagnostic questions that probe the student's specific situation and would help personalize the instruction. Even though they come after comprehensive instruction, they are genuine attempts to understand the student's current experience and specific context.",
+      "agree": false
     },
     {
       "id": 11,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides extensive instructional content covering understanding, exercises, and mindset for chord changes. However, I need to check if there is any probing of the student's existing knowledge, experience, or specific situation. Looking through the response: The tutor mentions 'Let me know what those are if you want specific advice!' in reference to which chords the student struggles with most, but this comes after already providing complete instruction with multiple exercises and strategies. This is similar to Example 6 - a diagnostic question tacked on after comprehensive instruction is an afterthought, not genuine prior-knowledge probing. The student could follow all the provided exercises and practice guidance without answering this question. There are no questions about what the student has already tried, which specific chords they're switching between, what their current technique looks like, or any other aspect of their existing knowledge or situation. The response fails to probe the student's prior knowledge before or during instruction.",
+      "critique": "The response provides extensive, detailed instruction on chord switching with multiple exercises, explanations, and practice strategies. However, it lacks probing of the student's current knowledge or situation. The tutor asks '(Let me know what those are if you want specific advice!)' regarding which 2-3 chords the student struggles with most, but this comes in parentheses within a complete instructional framework that the student could follow without answering. The response provides comprehensive exercises (slow practice, ghost notes, metronome work), explanations of why switching is slow, and practice habits - all without first understanding what the student has already tried, which specific chords they're switching between, or what their current technique looks like. The question about specific chords is embedded within complete instruction rather than serving as genuine prior-knowledge probing to inform the teaching approach.",
       "agree": true
     },
     {
       "id": 24,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides comprehensive instruction about pedal technique, including specific exercises and practice steps. However, the response fails to probe the student's existing knowledge or experience at any point. The tutor doesn't ask what the student has already tried, which specific piece they're working on, how they're currently using the pedal, or what exactly sounds muddy to them. The question at the very end - 'Would you like to try the pedal exercise with a specific part of your piece?' - comes after complete instruction has already been given. This is more of an offer to continue rather than genuine probing to understand the student's current situation before providing advice. The tutor jumps straight into comprehensive instruction without first understanding what the student specifically knows or has attempted.",
+      "critique": "The tutor provides comprehensive instruction on pedal technique with four structured sections covering pedal changes, a specific exercise, listening skills, and gradual implementation. However, the response contains zero questions about what the student currently knows, has tried, or is specifically experiencing. The tutor doesn't ask which piece the student is working on, how they're currently using the pedal, what specifically sounds muddy to them, or what they've already attempted. The only question appears at the very end: 'Would you like to try the pedal exercise with a specific part of your piece?' But this comes after complete instruction that the student could already follow without answering the question - it's an optional add-on rather than genuine probing of prior knowledge. The tutor gives a full prescription without first understanding the student's current situation or technique.",
       "agree": true
     },
     {
       "id": 8,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides a comprehensive and well-structured response about making violin playing more musical, covering tone production, rhythm/phrasing, and expression with specific exercises and techniques. However, the response fails to probe or acknowledge what the student already knows, has tried, or is specifically experiencing. The tutor jumps directly into complete instructional content without asking any diagnostic questions such as: 'What specific feedback did your teacher give?', 'What pieces are you working on?', 'What have you tried so far to make it more musical?', or 'Can you show me what you mean by playing a phrase?' The response is entirely prescriptive, offering general solutions without understanding the student's current situation, specific challenges, or what they may have already attempted. While the content is thorough and potentially helpful, it lacks any genuine attempt to understand the student's existing knowledge or experience before providing instruction.",
+      "critique": "The tutor provides extensive technical instruction covering tone production, rhythm/phrasing, and expression with specific exercises and practice strategies. However, this response completely fails to probe the student's existing knowledge, experience, or specific situation. The student mentions their teacher's feedback about not sounding musical, but the tutor never asks what the student has already tried to address this, what specific pieces they're working on, what aspect of 'not sounding musical' they struggle with most, or how they currently approach musical expression. The response is a comprehensive tutorial that could apply to any violinist, but contains zero questions to understand this particular student's situation, attempts, or current level of musical understanding. While thorough and educational, it lacks any genuine attempt to diagnose the student's specific needs before prescribing solutions.",
       "agree": true
     },
     {
       "id": 22,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "The tutor provides a comprehensive explanation of voicing technique with clear definitions, practical strategies, and specific exercises. However, the response fails to probe the student's existing knowledge or situation before launching into instruction. The tutor doesn't ask what the student has already tried, what specific difficulties they're experiencing, or what piece they're working on that's causing this challenge. The only probing question appears at the very end: 'What piece are you working on? I can give you specific tips for that music!' But this comes after a complete instructional response that includes definitions, multiple techniques, exercises, and practice tips. The student could follow all the given advice without answering this question - it's an afterthought rather than genuine prior-knowledge probing. The tutor missed the opportunity to understand the student's current approach, specific struggles, or musical context before prescribing solutions.",
+      "critique": "The tutor provides a comprehensive instructional response covering what voicing means, practical techniques, physical tips, and exercises. The response ends with 'What piece are you working on? I can give you specific tips for that music!' This is a diagnostic question asking for the student's specific context to personalize further advice. However, this question comes AFTER the tutor has already provided complete instruction including definition, four detailed strategies, physical techniques, and a specific exercise. The student could follow all the given advice without answering this question - the instruction is already self-sufficient. According to the criteria, when complete exercises and practice guidance are provided that the student could follow WITHOUT answering the question, adding 'What piece?' at the end is an afterthought, not genuine probing. The tutor fails to probe the student's existing knowledge, experience, or specific situation before providing instruction.",
       "agree": true
     }
   ],
-  "status": "PASS"
+  "status": "NEEDS ITERATION"
 }

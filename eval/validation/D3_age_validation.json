@@ -6,139 +6,139 @@
     "test": 16
   },
   "dev_metrics": {
-    "tp": 13,
-    "fn": 3,
+    "tp": 14,
+    "fn": 2,
     "tn": 2,
     "fp": 0,
-    "tpr": 0.812,
+    "tpr": 0.875,
     "tnr": 1.0,
-    "accuracy": 0.833
+    "accuracy": 0.889
   },
   "dev_results": [
     {
       "id": 34,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response demonstrates excellent age-appropriate language for a 10-year-old. The vocabulary is accessible while introducing appropriate musical concepts like 'vocal cords' and 'pitches' with clear explanations. The analogies are perfect for this age group - comparing high notes to floating balloons and referencing the familiar yawn sensation. The tone is warm and encouraging without being condescending. The structure with bullet points and numbered tips is organized and easy to follow for a 10-year-old. The tutor normalizes the experience ('completely normal', 'even professional singers dealt with this') which is reassuring. Technical terms are minimal and always explained in relatable ways. The ending question invites engagement appropriately.",
+      "critique": "The response demonstrates excellent age-appropriate language for a 10-year-old. The vocabulary strikes the right balance - using proper musical terms like 'vocal cords' and 'pitches' while explaining them in accessible ways. The analogies are perfect for this age group: comparing high notes to 'floating balloons' and using the relatable 'yawn feeling' to explain throat positioning. The tone is warm, encouraging, and reassuring without being condescending. The structure with clear headings and numbered tips is appropriate for a 10-year-old's attention span and comprehension level. The explanation of why voice cracks happen is scientifically accurate but simplified appropriately. The encouragement about professional singers having the same experience is relatable and motivating for this age group.",
       "agree": true
     },
     {
       "id": 24,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor uses age-appropriate language for a 10-year-old piano student. The vocabulary includes basic musical terminology like 'chord,' 'pedal changes,' and 'measures' which is appropriate for someone taking piano lessons at this age. The explanations are clear and conversational without being condescending. The analogy comparing pedal use to 'taking a fresh breath' and learning to ride a bike is relatable and helpful. The structured approach with numbered steps and bullet points works well for this age group. The tone is encouraging and supportive ('I understand!', 'Remember...') without being overly childish. The tutor avoids complex technical jargon while still teaching proper technique concepts. The interactive ending asking about practicing with a specific piece engages the student appropriately.",
+      "critique": "The tutor uses age-appropriate language for a 10-year-old piano student. The vocabulary is conversational and accessible, with basic music terms like 'chord' and 'measures' that are appropriate for a student taking lessons. The analogies are relatable - 'taking a fresh breath' for pedal technique and 'learning to ride a bike' for skill development. The response is well-structured with clear, actionable steps that a 10-year-old can follow. The tone is encouraging and supportive without being condescending. The tutor explains technical concepts (why muddy sound occurs) in simple terms and provides concrete practice suggestions. The interactive ending invites further engagement appropriately.",
       "agree": true
     },
     {
       "id": 17,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response demonstrates appropriate language for a 13-year-old. The vocabulary is conversational and accessible without being condescending. The tutor uses proper punctuation and sentence structure suitable for a teenager while maintaining an encouraging tone. The phrase 'the really cool thing about learning guitar' is age-appropriate enthusiasm without being overly juvenile. The structured approach with bullet points and specific questions shows respect for the student's cognitive abilities. The emoji at the end adds a friendly touch without being overly childish. The explanation about why learning through discovery is valuable is presented in a way that respects the teen's developing critical thinking skills rather than talking down to them.",
+      "critique": "The tutor's language is perfectly appropriate for a 13-year-old. The vocabulary is conversational and age-appropriate, using terms like 'cool thing' and 'stuck' that resonate with teenagers. The tone is encouraging without being condescending - it doesn't talk down to the student with overly simple language or treat them like a little kid. The response acknowledges the student's frustration ('I hear you!') and explains the pedagogical reasoning in an accessible way. The structured questions with bullet points and examples show respect for the student's maturity level while still being supportive. The emoji use is light and appropriate for the age group. The tutor successfully balances being helpful with maintaining educational boundaries.",
       "agree": true
     },
     {
       "id": 12,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response uses appropriate vocabulary and terminology for a 16-year-old guitar student. The tutor uses proper musical terms like 'dominant 7th chords,' 'pentatonic scales,' and 'chord tones' which are standard for intermediate-level guitar instruction. The tone is encouraging and conversational without being condescending - using phrases like 'fantastic!' and 'Don't worry about feeling overwhelmed' shows enthusiasm while acknowledging the student's concerns. The explanations are thorough but accessible, with good use of formatting to organize information clearly. The reference to well-known blues guitarists (B.B. King, Eric Clapton, etc.) is age-appropriate and relevant. The language strikes the right balance between being informative and engaging for a teenager who is serious about learning guitar improvisation.",
+      "critique": "This response demonstrates excellent age-appropriate language for a 16-year-old guitar student. The tutor uses proper musical terminology (dominant 7th chords, pentatonic scales, chord tones, blues note) which is appropriate for a teenager who is serious enough about guitar to want to learn improvisation. The tone is encouraging and conversational without being condescending - phrases like 'fantastic!', 'Don't worry about feeling overwhelmed', and 'This is *essential*' show enthusiasm while treating the student as capable. The structure is well-organized with clear headings and bullet points that a 16-year-old can easily follow. The references to famous guitarists (B.B. King, Eric Clapton, SRV) are culturally appropriate and inspiring for this age group. The language strikes the right balance between being educational and accessible - complex enough to be engaging for a teenager but not overly academic. The practical approach with specific exercises shows respect for the student's learning ability.",
       "agree": true
     },
     {
       "id": 21,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response is excellently calibrated for a 10-year-old. The tutor uses age-appropriate language with conversational tone and relatable analogies (sports training, alphabet/reading). Music terms like 'staccato' are introduced with clear explanations ('bouncy'). The response uses engaging elements like emojis and bullet points that appeal to this age group. The tutor acknowledges the student's feelings without being condescending, offers practical solutions, and connects scales to the student's interests (favorite songs). The vocabulary is accessible while still being educational, and the tone strikes the right balance of being encouraging and fun without being overly childish.",
+      "critique": "This response demonstrates excellent age-appropriate communication for a 10-year-old. The tutor uses relatable analogies (sports training, alphabet/reading) that a 10-year-old can easily understand. The vocabulary is conversational and accessible - terms like 'staccato' are introduced with simple explanations ('bouncy'). The tone is warm and encouraging without being condescending. The response acknowledges the student's feelings ('I totally get it'), uses engaging formatting with emojis, and offers practical, fun solutions that would appeal to this age group. The tutor also connects scales to the student's interests ('favorite pop songs') and maintains enthusiasm throughout. This is exactly the right level of musical terminology and explanation for a 10-year-old piano student.",
       "agree": true
     },
     {
       "id": 13,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response demonstrates excellent age-appropriate language for a 14-year-old. The tutor uses proper musical terminology (pentatonic scale, positions, syncopation, vibrato) which is appropriate for a teenager taking guitar lessons. The tone is conversational and encouraging without being condescending - phrases like 'that's half the battle!' and 'Let's go!' show enthusiasm without talking down to the student. The analogies used are sophisticated enough for the age ('it's like reciting a list of words - it's not a story') and the structured approach with clear categories and actionable exercises matches the cognitive development of a 14-year-old. The language complexity is appropriate, using terms like 'expressive potential' and 'fragmented' that a teenager can understand while still being educational. The tutor avoids overly technical jargon while still introducing important musical concepts with clear explanations.",
+      "critique": "The language is highly appropriate for a 14-year-old. The tutor uses proper musical terminology (pentatonic scale, fretboard, vibrato, syncopation) which is suitable for a teenager who's already learned basic scales. The tone is encouraging and conversational without being condescending. The explanations are clear and well-structured with helpful analogies like 'reciting a list of words - it's not a story' and 'highlighting important words in a sentence.' The tutor provides actionable advice with specific exercises and resources. The writing style is engaging and treats the student as capable of understanding more complex musical concepts, which is appropriate for this age group.",
       "agree": true
     },
     {
       "id": 38,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The tutor's response is perfectly appropriate for a 7-year-old. The language is simple and warm, using short, clear sentences. The tone is encouraging and reassuring ('That's okay - everyone feels unsure sometimes'). The tutor breaks down the question into simple, concrete options that a 7-year-old can easily understand and relate to their violin experience. The suggestions are age-appropriate ('clap out a rhythm', 'playing some open strings') and the emoji adds a playful touch. The overall approach is patient and non-intimidating, which is exactly what a young child needs when feeling uncertain.",
+      "critique": "This response demonstrates excellent age-appropriate language for a 7-year-old. The tutor uses simple, clear vocabulary without any technical jargon. The tone is warm, encouraging, and patient ('That's okay', 'There's no wrong answer'). The questions are concrete and specific to things a young violinist would actually struggle with, presented in simple terms like 'hold your bow' and 'put your fingers' rather than technical terminology. The suggestions at the end ('play some open strings', 'clap out a rhythm') use basic musical concepts appropriate for beginners. The emoji adds a playful touch suitable for a child. The overall approach is nurturing and breaks down the learning process into manageable, understandable pieces.",
       "agree": true
     },
     {
       "id": 1,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "This response completely fails the age-appropriate language test for a 10-year-old student. While the tutor attempts to use relatable analogies (LEGOs, sports), the overall structure and delivery is entirely inappropriate. The response is formatted as a meta-analysis or teaching guide ('Here's how I'd respond...', 'I'll break it down into parts', 'depending on what I know about the student') rather than actually speaking TO the student. The language is filled with instructional jargon like 'articulations', 'staccato vs. legato', 'dynamics', and complex pedagogical concepts. The response is excessively long and academic in tone, reading more like a music education textbook than a conversation with a child. A 10-year-old asked a simple question and deserved a direct, conversational answer, not a treatise on scale pedagogy.",
+      "critique": "This response is highly inappropriate for a 10-year-old student. The tutor appears to be responding to an adult colleague or student teacher rather than directly addressing the child. The language includes meta-commentary like 'Here's how I'd respond', 'I'll break it down into a few parts', and extensive instructional formatting with asterisked notes about teaching strategy. A 10-year-old would be confused by this indirect approach and the adult-level pedagogical discussion. While the content within the quoted examples uses age-appropriate language and analogies (LEGOs, sports, bouncy balls), the overall structure and tone treats the student as if they're not present in the conversation.",
       "agree": false
     },
     {
       "id": 7,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response uses appropriate conversational language for an 11-year-old student. The vocabulary is accessible but doesn't oversimplify - it correctly introduces musical terms like 'vibrato,' 'intonation,' and 'pitch' with clear explanations. The analogies are age-appropriate and relatable ('rocking horse,' 'pendulum,' 'shimmer'). The tone is encouraging and instructional without being condescending. The step-by-step structure works well for this age group who can handle more detailed instruction than younger children. The response acknowledges this is a complex technique that takes time, which is realistic and supportive. The technical content is appropriate for an intermediate student who would be learning vibrato.",
+      "critique": "This response uses appropriate language for an 11-year-old violin student. The tutor uses conversational, encouraging tone ('Okay, great question!', 'Let's break it down') and explains concepts clearly without being condescending. Technical terms like 'vibrato', 'intonation', and 'pitch' are appropriate for this age and are explained in accessible ways ('slight, regular fluctuation in pitch', 'playing in tune'). The analogies used are age-appropriate - 'gentle shimmer', 'rocking horse', 'pendulum' - these are concrete images an 11-year-old can understand. The structure is clear with numbered sections and bullet points, and the instructions are detailed but not overly academic. The tone remains warm and supportive throughout ('Please don't rush!', 'Breathe deeply and relax'). While comprehensive, the language complexity is suitable for an intermediate elementary student who has been taking violin lessons.",
       "agree": true
     },
     {
       "id": 22,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response demonstrates excellent age-appropriate language for a 14-year-old piano student. The tutor uses proper musical terminology like 'voicing,' 'accompaniment,' and 'arm weight' which is entirely appropriate for a teen who has been taking lessons long enough to encounter melody/accompaniment pieces. The explanations are clear and conversational without being condescending. The analogy of a 'singer with backup instruments' and 'mixing board' are sophisticated enough for a teenager while remaining relatable. The structure with bullet points and bold headers appeals to teen learning preferences. The tone is encouraging and treats the student as capable of understanding technical concepts. The response ends with an engaging question that invites further dialogue. This is exactly the right level of complexity and respect for a 14-year-old's developmental stage.",
+      "critique": "This response is well-calibrated for a 14-year-old piano student. The tutor uses appropriate musical terminology ('voicing', 'melody', 'accompaniment', 'arm weight') that a teenager taking piano lessons should understand, while still explaining concepts clearly. The language is conversational and encouraging without being condescending. The analogies used (singer with backup instruments, volume sliders on a mixing board) are age-appropriate and relatable for a teenager. The structure is clear with bullet points and practical exercises. The tone strikes a good balance - professional but warm, treating the student as capable of understanding more complex musical concepts. The response avoids both overly simplistic baby-talk and overly academic jargon.",
       "agree": true
     },
     {
       "id": 32,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "The response is perfectly appropriate for a 16-year-old guitar student. The tutor uses proper musical terminology (minor blues scale, 12-bar progression, pentatonic, vibrato) which is expected for a teenager who has been learning guitar. The language is conversational and respectful without being condescending. Technical concepts like 'Box 1 pattern' and chord symbols (A7, D7, E7) are appropriate for this age group. The structure is clear and organized, breaking down a complex topic into manageable steps. The tone is encouraging and engaging, offering practical next steps. The tutor treats the student as capable of understanding proper musical concepts while still providing clear guidance.",
+      "critique": "The language is perfectly appropriate for a 16-year-old guitar student. The tutor uses proper musical terminology (minor blues scale, 12-bar blues progression, pentatonic, vibrato, hammer-ons, pull-offs) which is expected at this age and level. The tone is conversational and respectful without being condescending. The explanation is structured and detailed enough for a teenager to follow, breaking down complex concepts into manageable steps. The tutor assumes the student can handle chord symbols (A7, D7, E7) and technical terms, which is appropriate. The ending question engages the student as an equal participant in the learning process. No overly simplistic language or patronizing tone.",
       "agree": true
     },
     {
       "id": 8,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response is entirely appropriate for a 15-year-old violinist. The language strikes the right balance - it uses proper musical terminology (rubato, ritardando, dynamics, bow placement) which is suitable for a teenager taking violin lessons, while still being conversational and encouraging. The tutor doesn't condescend with overly simplified language or childish analogies, but instead treats the student as a developing musician capable of understanding technical concepts. The organization with clear headings and bullet points is helpful for a teenager. The tone is warm and supportive ('that's a huge accomplishment!') without being patronizing. The detailed explanations and practical exercises show respect for the student's ability to handle more complex instruction appropriate for their age and level.",
+      "critique": "This response demonstrates excellent age-appropriate language for a 15-year-old violin student. The tutor uses proper musical terminology (rubato, ritardando, dynamics, bow placement) which is appropriate for a teenager who has been studying violin. The tone is respectful and conversational without being condescending. The response treats the student as capable of understanding more complex concepts while still being encouraging. The structure is clear with organized categories and specific exercises. The language complexity matches what a 15-year-old can handle, and the analogies (phrases like sentences, breathing) are sophisticated enough without being overly simplistic. The tutor acknowledges the student's frustration maturely and provides comprehensive, actionable advice.",
       "agree": true
     },
     {
       "id": 15,
       "human": "Pass",
-      "judge": "Fail",
-      "critique": "This response is completely inappropriate for a 15-year-old due to its overwhelming length, complexity, and academic presentation style. The tutor uses formatting with asterisks, bullet points, and section headers that create a textbook-like structure rather than a conversational response. The content includes advanced concepts like 'rubato,' 'vocal timbre,' 'resonance placement,' and detailed technical breakdowns that would be more appropriate for college-level voice students or adults. The tone, while enthusiastic, is also condescending with phrases like 'you're already ahead of the game' and excessive use of capitalization and exclamation points. A 15-year-old asking about singing with emotion needs a concise, conversational response with 2-3 practical tips, not a comprehensive treatise on vocal technique and emotional interpretation.",
-      "agree": false
+      "judge": "Pass",
+      "critique": "This response uses completely appropriate language for a 15-year-old. The tutor uses proper musical terminology (vibrato, resonance, rubato, timbre) which is expected at this developmental level, while explaining these concepts clearly. The tone is conversational and encouraging ('that's a *fantastic* question!', 'you're already ahead of the game') without being condescending. The structure is mature and organized, treating the student as capable of understanding complex concepts. The analogies used (acting, vehicle for feelings) are age-appropriate for a teenager. The tutor provides practical exercises and acknowledges the student's ability to work independently ('Record yourself', 'let me know which area you'd like to focus on first'). The language is engaging and respectful of the student's intelligence.",
+      "agree": true
     },
     {
       "id": 2,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response demonstrates excellent age-appropriate language for a 14-year-old piano student. The tutor uses proper musical terminology like 'voicing,' 'dynamic contrast,' 'tenuto,' and 'articulation' which is appropriate for a teenager with piano experience. The explanations are thorough but not condescending - the tutor treats the student as capable of understanding complex concepts while still breaking them down clearly. The tone is encouraging and enthusiastic ('fantastic question!') without being patronizing. The analogies used ('like highlighting the most important part of a sentence,' 'gentle nudge, not a shout') are mature and relatable. The structured approach with numbered sections and practical exercises shows respect for the student's ability to follow detailed instruction. The language strikes the right balance between being educational and conversational, which is perfect for a 14-year-old.",
+      "critique": "The tutor's language is highly appropriate for a 14-year-old. The response uses proper musical terminology ('voicing', 'dynamic contrast', 'tenuto', 'legato') which is suitable for a teen with piano experience, while still explaining concepts clearly. The tone is encouraging and conversational ('that's a *fantastic* question!') without being condescending. The structure is well-organized with clear headings and step-by-step explanations. The analogies used ('like highlighting the most important part of a sentence', 'think of it as a gentle nudge, not a shout') are age-appropriate and helpful. The tutor engages the student with questions and offers practical exercises. The language complexity matches what a 14-year-old can handle while treating them with appropriate maturity for their age.",
       "agree": true
     },
     {
       "id": 4,
       "human": "Pass",
       "judge": "Fail",
-      "critique": "This response is inappropriate for a 10-year-old due to excessive length and complexity. While the tutor uses some age-appropriate analogies (LEGO bricks) and maintains a warm, encouraging tone, the response is overwhelming in scope and detail. The formatting with multiple numbered sections, bullet points, and four detailed exercises creates a wall of text that would likely lose a 10-year-old's attention. The language includes some technical terms that may be too advanced ('sustain pedal', 'phrase', detailed timing instructions). A 10-year-old would benefit from one simple concept explained briefly with a clear, immediate action to try, rather than this comprehensive tutorial approach. The response reads more like instructional material for an older student or adult rather than conversational guidance for a child.",
+      "critique": "This response is too complex and verbose for a 10-year-old. While the tutor attempts some age-appropriate elements like the LEGO analogy and uses encouraging language, the overall structure and content are overwhelming. The response contains dense technical explanations ('sustain pedal tells piano strings to keep vibrating'), complex numbered sections with multiple sub-points, and an excessive amount of information delivered at once. A 10-year-old would likely feel overwhelmed by this wall of text and detailed exercise breakdown. The language level fluctuates between appropriate ('muddy', 'blurry') and too advanced ('phrase', 'sustain some sound', 'individualized advice'). While not using highly technical jargon, the response reads more like a textbook chapter than a conversation with a child.",
       "agree": false
     },
     {
       "id": 37,
       "human": "Pass",
       "judge": "Pass",
-      "critique": "This response demonstrates excellent age-appropriate communication for a 13-year-old. The tutor uses conversational language that respects the student's maturity level without being condescending. The tone is encouraging and empathetic ('I understand you might be feeling stuck!') rather than dismissive. The vocabulary is appropriate - using terms like 'chord shape,' 'rhythm,' and musical concepts that a 13-year-old guitar student would understand. The tutor explains the pedagogical reasoning in a way the teen can appreciate ('you might forget it by next week' vs 'understand it forever'). The response avoids baby talk while maintaining warmth and support. The structured approach with bullet points and questions engages the student as a capable learner, which is perfect for this age group.",
+      "critique": "The tutor's language is well-matched for a 13-year-old student. The vocabulary is conversational and appropriate - using terms like 'stuck', 'frustrated', and 'aha moment' that resonate with teenagers. The sentence structure is natural and not overly complex. The tone strikes a good balance - it's encouraging and understanding without being condescending or talking down to the student. The tutor acknowledges the student's frustration ('I know it can be frustrating') which shows emotional awareness appropriate for this age group. The explanation about why working through problems is better than just getting answers is presented in a relatable way that a 13-year-old can understand and appreciate. The specific examples given (chord shapes, reading music, rhythm) use appropriate musical terminology for someone taking guitar lessons at this age. Overall, the response treats the student as capable while being supportive.",
       "agree": true
     },
     {
       "id": 3,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response is mostly appropriate for an 8-year-old but has some issues with length and complexity. The tutor uses good age-appropriate analogies ('like learning to write with your left hand', 'turtle pace', 'think of it as a different language') and maintains an encouraging, warm tone throughout. The vocabulary is generally suitable, explaining music terms like 'melody', 'chords', and 'bass line' in simple language. However, the response is excessively long and detailed for an 8-year-old's attention span, with multiple bullet points, bolded sections, and complex organizational structure that might overwhelm a young student. The formatting and extensive options list reads more like a lesson plan than a conversational response to a child's simple observation.",
+      "critique": "This response is generally appropriate for an 8-year-old but contains some issues with length and complexity. The positive aspects include: age-appropriate analogies (writing with left hand, turtle pace), conversational tone, encouragement, and basic music terms explained simply (melody as 'tune you sing', chords as 'background sounds'). However, the response is extremely lengthy and dense for an 8-year-old's attention span. The formatting with bold headers and bullet points, while organized, creates a wall of text that could overwhelm a young student. The response reads more like a comprehensive lesson plan than a direct conversation with a child. Additionally, some explanations like 'proprioceptive coordination' concepts are implied but complex. An 8-year-old would benefit from shorter, more focused guidance with one or two simple suggestions rather than this comprehensive approach.",
       "agree": true
     },
     {
       "id": 16,
       "human": "Fail",
       "judge": "Fail",
-      "critique": "This response is completely inappropriate for a 5-year-old. The tutor uses complex vocabulary like 'validate their feelings,' 'interrogate,' and 'tailor your response.' The structure is overly academic with numbered sections, bullet points, and meta-commentary about pedagogy. A 5-year-old cannot process phrases like 'underlying issue,' 'open-ended,' or 'prioritize their well-being.' The tone is clinical and instructional, as if addressing an adult teacher rather than a child. The response also contains adult psychological concepts and teaching methodology that are completely beyond a young child's developmental level. A 5-year-old needs simple, warm, direct language with playful elements, not a complex pedagogical framework.",
+      "critique": "This response is completely inappropriate for a 5-year-old. The tutor writes as if addressing an adult instructor or parent, not the child. The language is complex with phrases like 'validate their feelings,' 'underlying issue,' 'tailor your response,' and 'game-ify it.' The response is structured as a teaching manual with numbered steps, bullet points, and meta-commentary like 'Please read the whole response first.' A 5-year-old cannot process this level of instructional complexity, advanced vocabulary, or abstract concepts about teaching methodology. The child simply said they don't want to practice and needs a direct, simple, warm response using age-appropriate language.",
       "agree": true
     }
   ],
