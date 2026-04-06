@@ -1,0 +1,160 @@
+{
+  "dimension": "D2_check",
+  "splits": {
+    "train": 5,
+    "dev": 20,
+    "test": 15
+  },
+  "dev_metrics": {
+    "tp": 7,
+    "fn": 3,
+    "tn": 9,
+    "fp": 1,
+    "tpr": 0.7,
+    "tnr": 0.9,
+    "accuracy": 0.8
+  },
+  "dev_results": [
+    {
+      "id": 24,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive instruction about pedal technique, including specific exercises and listening strategies. Crucially, the response ends with 'Would you like to try the pedal exercise with a specific part of your piece?' This is a clear practice invitation that asks the student to apply the instruction to their actual music. This goes beyond generic questions like 'does that make sense?' and specifically invites the student to engage with the material through practice.",
+      "agree": true
+    },
+    {
+      "id": 2,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor provides comprehensive instruction about voicing techniques and theory, but fails to include any comprehension checks or practice invitations within the response. While the response mentions 'exercises to try' and ends with questions about the student's specific piece, these are incomplete - the response cuts off mid-sentence before actually asking the student to demonstrate anything or checking their understanding. The exercises described are instructional ('you'd play the E, G, B, D notes slightly louder') rather than invitations for the student to try something specific right now. No verification of the student's grasp of the concepts occurs before or after the instruction.",
+      "agree": false
+    },
+    {
+      "id": 19,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides extensive explanations about practice methods and factors affecting improvement, but includes two specific comprehension checks. First: 'Can you tell me: What pieces are you currently working on? Do you feel like those pieces are challenging, too easy, or just right?' Second: 'Can you tell me: When you practice, do you mostly play through the whole pieces, or do you break them down into smaller sections? Do you ever practice really slowly?' These questions ask the student to reflect on and describe their current practice habits, which serves as verification that they understand the concepts being discussed and can apply them to their own experience.",
+      "agree": true
+    },
+    {
+      "id": 34,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive explanation about why voice cracks happen and offers multiple practical strategies. Most importantly, the response ends with 'Would you like to try a fun exercise together to help with those high notes?' This is a clear practice invitation that asks the student to engage with specific vocal exercises rather than just passively receiving information. This invitation to try an exercise counts as verification under the criteria.",
+      "agree": true
+    },
+    {
+      "id": 4,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides a very comprehensive explanation of the pedal, why it sounds muddy, and offers detailed exercises. However, most importantly, the response ends with a clear comprehension check: 'Okay, let's start with Exercise 1 (the single note pedal). Can you try that and tell me: How does it feel'. This directly invites the student to try a specific exercise and report back on their experience, which requires active engagement with the material rather than passive reception.",
+      "agree": true
+    },
+    {
+      "id": 27,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor provides comprehensive instruction on vibrato technique with clear steps and exercises, but ends with only a generic offer to explain steps further ('Would you like me to explain any of these steps more?'). While this shows willingness to help, it doesn't ask the student to try any of the specific exercises described or check their understanding of the concepts. The tutor could have asked the student to try the 'polishing' exercise, demonstrate the wave motion, or check if they can feel the difference between tense and relaxed hand positions. The response is purely instructional without verification that the student can execute or understand the material.",
+      "agree": false
+    },
+    {
+      "id": 29,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides a clear explanation of forte with age-appropriate analogies (calling across a playground, speaking loudly vs shouting). Importantly, the response ends with a direct practice invitation: 'Would you like to try playing something forte right now? We can practice making your violin sing with a strong, confident voice!' This asks the student to demonstrate the concept they just learned, which constitutes a genuine comprehension check through practice.",
+      "agree": true
+    },
+    {
+      "id": 35,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor provides comprehensive instruction on singing with emotion, covering lyrics analysis, personal connection, body language, and technical aspects. However, the response ends with only a question about what song the student is working on ('What song are you working on right now?'). While this shows interest in personalizing future instruction, it doesn't ask the student to try, demonstrate, or practice any of the techniques just explained. The tutor mentions a 'practice exercise' (singing one line five different ways) but doesn't invite the student to actually try it or ask them to demonstrate their understanding of any concept. The response is purely instructional without verification that the student can apply these techniques.",
+      "agree": false
+    },
+    {
+      "id": 3,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The response provides extensive explanation about why the left hand feels different, with multiple strategies and encouragement. The tutor does include verification elements: 'Can you play it slowly and steadily?' when discussing left-hand-only practice, and ends with 'Can you try playing just the left hand part of the piece slowly?' These are specific invitations for the student to demonstrate their playing, which constitutes genuine comprehension checking through action rather than just passive understanding.",
+      "agree": true
+    },
+    {
+      "id": 20,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides excellent step-by-step guidance and supportive explanations about hand coordination difficulties. The response includes a clear invitation for the student to engage: 'Would you like to try playing just two notes together first - one with each hand?' This is a specific practice invitation that asks the student to demonstrate a skill, not just passively receive information. The question invites concrete action and serves as both a comprehension check and practice opportunity.",
+      "agree": true
+    },
+    {
+      "id": 12,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "This response provides extensive information about blues improvisation but is purely instructional without any comprehension checks or practice invitations. While the tutor mentions finding backing tracks and suggests exercises, they never ask the student to try anything, demonstrate their understanding, or engage with the material. Phrases like 'feel free to ask questions' and mentions of exercises are not actual invitations to practice or checks for understanding - they're just part of the explanation. The response ends mid-sentence without completing the thought or asking the student to attempt any of the concepts discussed.",
+      "agree": true
+    },
+    {
+      "id": 11,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides extensive, well-organized information about chord switching techniques and exercises, but this is purely instructional content without any verification of understanding or invitation for the student to demonstrate. While the response mentions 'Let me know what those are if you want specific advice!' regarding difficult chords, this is a conditional offer for future interaction, not an active comprehension check or practice invitation. The tutor never asks the student to try any of the suggested exercises, demonstrate their current technique, or reflect on what they notice about their playing. The response ends with general encouragement but no specific call to action or verification that the student understood the concepts presented.",
+      "agree": true
+    },
+    {
+      "id": 30,
+      "human": "Fail",
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive and empathetic advice about finger soreness, covering quick fixes, the natural adaptation process, equipment considerations, and encouragement. At the very end, the tutor asks 'Would you like to learn some easier songs that use fewer string presses while your fingers get stronger?' This is a clear practice invitation that offers specific action (learning easier songs) tailored to the student's current challenge. This counts as verification because it invites the student to engage with adapted material rather than just passively receive advice.",
+      "agree": false
+    },
+    {
+      "id": 37,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides good explanation about why working through problems is better than just getting answers, and shows empathy for the student's frustration. However, the response ends with 'What do you say - can you tell me what you're working on so we can tackle it together?' This is asking the student to identify their specific problem so they can work on it together, but it's not asking them to try, demonstrate, or practice anything specific. The tutor is gathering information rather than checking comprehension of any instruction or inviting specific musical practice. While 'tackle it together' suggests collaborative work, there's no concrete invitation to play, demonstrate, or try something musical.",
+      "agree": true
+    },
+    {
+      "id": 15,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "This response provides extremely detailed instruction covering song interpretation, technical aspects, and exercises, but fails to include any comprehension check or practice invitation. While the tutor mentions 'let me know which area you'd like to focus on first' and suggests recording exercises, these are general instructions rather than specific invitations to try something immediately or verify understanding. The response ends mid-sentence without asking the student to demonstrate any concept, try any exercise, or explain back their understanding. The tutor delivers comprehensive information but doesn't check if the student grasps any of it before moving forward.",
+      "agree": true
+    },
+    {
+      "id": 8,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides an extensive explanation of what 'doesn't sound musical' could mean and offers detailed categories of improvement (tone production, rhythm/phrasing, expression). However, the response is purely instructional - it explains concepts and suggests exercises but never asks the student to try anything, demonstrate their current playing, or check their understanding. The tutor doesn't ask the student to play a passage to hear what the teacher might be referring to, doesn't invite them to experiment with bow pressure while the tutor listens, and doesn't ask any diagnostic questions about what specifically the student notices about their own playing. This is comprehensive information delivery without any verification that the student can apply or understands these concepts.",
+      "agree": true
+    },
+    {
+      "id": 13,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "This is a detailed instructional response that explains concepts thoroughly, but it fails to include any comprehension checks or practice invitations. While the tutor provides extensive explanations about why the student sounds repetitive and offers many exercises (target notes, rhythmic variation, bending, etc.), they don't ask the student to try anything specific or verify understanding at any point. The response is purely instructional delivery - explaining concepts and listing exercises without asking the student to demonstrate, try, or reflect on anything. Even when mentioning specific exercises, there's no invitation like 'Can you try this?' or 'Let me hear you play position 2' or 'What do you notice when you skip notes?' The response cuts off mid-sentence, but even up to that point, it's all explanation without any student engagement or verification.",
+      "agree": true
+    },
+    {
+      "id": 7,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides extensive detailed instruction about vibrato technique, breaking down theory, mechanics, and specific exercises. However, after giving all this information and detailed exercises, the response ends without any comprehension check or practice invitation. There's no 'Can you try the rocking horse exercise?' or 'Let me see you place your hand in position' or 'What do you notice when you try the wrist movement?' The response appears to be cut off mid-sentence but even the preceding content lacks any student verification. This is pure information delivery without checking if the student understands or can demonstrate any of the concepts.",
+      "agree": true
+    },
+    {
+      "id": 23,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides comprehensive instruction on practicing hands separately and together, with clear step-by-step methods. However, the response ends with only a question about what piece the student is working on ('What piece are you working on?'), which is asking for information rather than inviting the student to try, demonstrate, or practice any of the techniques just explained. There's no comprehension check asking the student to attempt the Superman method, try playing just the left hand, or demonstrate their understanding of any concept. The tutor delivers solid instruction but fails to verify the student engages with or understands the material before moving on.",
+      "agree": true
+    },
+    {
+      "id": 33,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides extensive instruction on rhythm techniques, note choices, and flavor additions to break out of repetitive pentatonic playing. However, the response lacks any verification mechanism. While the tutor mentions a 'quick exercise' (picking 3-4 notes to create phrases), they don't actually ask the student to try it or demonstrate it. The closing question 'What style of music are you most interested in playing?' is purely informational gathering, not a comprehension check or practice invitation. The student receives comprehensive instruction but no opportunity to engage with or demonstrate understanding of the concepts presented.",
+      "agree": true
+    }
+  ],
+  "status": "NEEDS ITERATION"
+}
