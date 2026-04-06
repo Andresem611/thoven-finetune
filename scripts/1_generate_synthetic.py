@@ -29,14 +29,15 @@ import anthropic
 # Constants
 # ---------------------------------------------------------------------------
 
-OPUS_MODEL = "claude-opus-4-20250514"
-SONNET_MODEL = "claude-sonnet-4-20250514"
+TUTOR_MODEL = "claude-sonnet-4-20250514"   # Sonnet as tutor (10x cheaper than Opus, quality sufficient for training data)
+STUDENT_MODEL = "claude-haiku-4-5-20251001"  # Haiku as student (cheapest, only needs age-appropriate responses)
 
 # Cost estimates (per million tokens, USD) -- update as pricing changes
-OPUS_INPUT_COST_PER_M = 15.0
-OPUS_OUTPUT_COST_PER_M = 75.0
-SONNET_INPUT_COST_PER_M = 3.0
-SONNET_OUTPUT_COST_PER_M = 15.0
+# Cost per 1M tokens — Sonnet as tutor, Haiku as student
+OPUS_INPUT_COST_PER_M = 3.0    # Sonnet input (tutor) — variable name kept for progress compat
+OPUS_OUTPUT_COST_PER_M = 15.0  # Sonnet output (tutor)
+SONNET_INPUT_COST_PER_M = 0.80  # Haiku input (student)
+SONNET_OUTPUT_COST_PER_M = 4.0  # Haiku output (student)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SEEDS_DIR = REPO_ROOT / "seeds"
@@ -44,7 +45,7 @@ OUTPUT_DIR = REPO_ROOT / "data" / "generated"
 OUTPUT_FILE = OUTPUT_DIR / "synthetic_dialogues.jsonl"
 PROGRESS_FILE = OUTPUT_DIR / "generation_progress.json"
 
-DEFAULT_TURNS = 8
+DEFAULT_TURNS = 5
 MIN_TURNS = 6
 MAX_TURNS = 10
 RATE_LIMIT_SECONDS = 1.0
@@ -166,15 +167,53 @@ STUDENT_PERSONALITIES = [
 def load_scenarios() -> list[dict[str, Any]]:
     """Load and merge scenarios from both seed files."""
     scenarios = []
-    for filename in ["nafme_scenarios.json", "gap_scenarios.json"]:
-        filepath = SEEDS_DIR / filename
-        if not filepath.exists():
-            print(f"  WARNING: Seed file not found: {filepath}")
-            continue
-        with open(filepath, "r") as f:
+
+    # Load NAfME scenarios
+    nafme_path = SEEDS_DIR / "nafme_scenarios.json"
+    if nafme_path.exists():
+        with open(nafme_path, "r") as f:
             data = json.load(f)
-            scenarios.extend(data)
-        print(f"  Loaded {len(data)} scenarios from {filename}")
+        raw = data.get("scenarios", data) if isinstance(data, dict) else data
+        # Normalize field names
+        for s in raw:
+            if "age_range" in s and "student_age" not in s:
+                age_range = s["age_range"]
+                s["student_age"] = age_range[0] if isinstance(age_range, list) else age_range
+            if "standard" in s and "topic" not in s:
+                s["topic"] = s["standard"]
+            if "student_opener" not in s:
+                s["student_opener"] = s.get("description", "Hi, I need help with my music.")
+        scenarios.extend(raw)
+        print(f"  Loaded {len(raw)} scenarios from nafme_scenarios.json")
+
+    # Load gap scenarios
+    gap_path = SEEDS_DIR / "gap_scenarios.json"
+    if gap_path.exists():
+        with open(gap_path, "r") as f:
+            data = json.load(f)
+        if isinstance(data, dict) and "gap_scenarios" in data:
+            for group in data["gap_scenarios"]:
+                group_scenarios = group.get("scenarios", [])
+                for s in group_scenarios:
+                    if "age" in s and "student_age" not in s:
+                        s["student_age"] = s["age"]
+                    if "context" in s and "topic" not in s:
+                        s["topic"] = s["context"]
+                    if "gap_type" in s:
+                        s.setdefault("type", {"prior_knowledge": "A", "body_awareness": "A", "growth_mindset": "B", "student_autonomy": "C"}.get(s["gap_type"], "B"))
+                scenarios.extend(group_scenarios)
+            total = sum(len(g.get("scenarios", [])) for g in data["gap_scenarios"])
+            print(f"  Loaded {total} scenarios from gap_scenarios.json")
+        elif isinstance(data, dict) and "scenarios" in data:
+            raw = data["scenarios"]
+            for s in raw:
+                if "age" in s and "student_age" not in s:
+                    s["student_age"] = s["age"]
+                if "context" in s and "topic" not in s:
+                    s["topic"] = s["context"]
+            scenarios.extend(raw)
+            print(f"  Loaded {len(raw)} scenarios from gap_scenarios.json")
+
     return scenarios
 
 
@@ -302,7 +341,7 @@ def generate_dialogue(
         # --- Tutor turn (Opus) ---
         try:
             tutor_response = client.messages.create(
-                model=OPUS_MODEL,
+                model=TUTOR_MODEL,
                 max_tokens=400,
                 system=tutor_system,
                 messages=tutor_messages,
@@ -328,7 +367,7 @@ def generate_dialogue(
         # --- Student turn (Sonnet) ---
         try:
             student_response = client.messages.create(
-                model=SONNET_MODEL,
+                model=STUDENT_MODEL,
                 max_tokens=200,
                 system=student_system,
                 messages=student_messages,
