@@ -6,7 +6,123 @@
 
 **Date:** April 5, 2026
 
-**Status:** Pre-training phase complete. Baseline evals collected. Post-training evals scheduled for Weekend 2.
+**Status:** Training COMPLETE (2026-04-06). Post-training evals next.
+
+---
+
+## DATA CAPTURE CHECKLIST (Run in Colab AFTER training finishes)
+
+**Run these cells IN ORDER after you see "Training complete!"**
+
+### Cell A: Training Log (copy full output → paste into this doc below)
+```python
+for entry in trainer.state.log_history:
+    if 'loss' in entry:
+        print(f"Step {entry['step']:4d} | Loss {entry['loss']:.6f} | LR {entry.get('learning_rate', 'N/A')}")
+print(f"\nFinal loss: {trainer.state.log_history[-1].get('loss', 'N/A')}")
+print(f"Total steps: {trainer.state.global_step}")
+print(f"Total epochs: {trainer.state.epoch}")
+```
+
+### Cell B: Training Metadata (downloads as JSON)
+```python
+import json
+training_record = {
+    "date": "2026-04-06",
+    "model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "method": "QLoRA 4-bit",
+    "lora_r": 16, "lora_alpha": 16,
+    "learning_rate": 1e-4,
+    "epochs": 3,
+    "batch_size_effective": 8,
+    "training_examples": len(dataset),
+    "total_steps": trainer.state.global_step,
+    "final_loss": trainer.state.log_history[-1].get('loss'),
+    "gpu": "Tesla T4 16GB",
+    "training_time_seconds": trainer.state.log_history[-1].get('train_runtime', 'N/A'),
+    "trainable_params": 42_401_792,
+    "total_params": 8_038_558_240,
+    "trainable_pct": 0.5275,
+    "framework": "Unsloth 2026.4.4 + TRL 0.24.0",
+    "seed": 3407,
+}
+with open("/content/training_record.json", "w") as f:
+    json.dump(training_record, f, indent=2)
+print(json.dumps(training_record, indent=2))
+```
+
+### Cell C: GPU Memory
+```python
+import torch
+print(f"Peak GPU memory: {torch.cuda.max_memory_allocated() / 1e9:.2f} GB")
+print(f"Current GPU memory: {torch.cuda.memory_allocated() / 1e9:.2f} GB")
+```
+
+### Cell D: Sample Output (qualitative comparison for paper)
+```python
+test_messages = [
+    {"role": "user", "content": "A 7-year-old piano student says: I can't play with both hands at the same time"}
+]
+outputs = model.generate(
+    **tokenizer.apply_chat_template(test_messages, return_tensors="pt", add_generation_prompt=True).to("cuda"),
+    max_new_tokens=512, temperature=0.7,
+)
+print("=== FINE-TUNED MODEL OUTPUT ===")
+print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+```
+
+### Cell E: Export GGUF
+```python
+model.save_pretrained_gguf(
+    "/content/thoven-tutor-gguf", tokenizer,
+    quantization_method="q4_k_m",
+)
+print("GGUF exported!")
+```
+
+### Cell F: Copy to Google Drive
+```python
+import shutil
+from google.colab import drive
+drive.mount("/content/drive")
+shutil.copytree("/content/thoven-tutor-gguf", "/content/drive/MyDrive/thoven-tutor-gguf")
+print("Copied to Google Drive!")
+```
+
+### Cell G: Download training_record.json
+```python
+from google.colab import files
+files.download("/content/training_record.json")
+```
+
+## TRAINING RESULTS (2026-04-06)
+
+- **Final loss:** 1.437 (step 510)
+- **Best loss:** 1.345 (step 430)
+- **Total steps:** 510
+- **Total epochs:** 3.0
+- **Peak GPU memory:** 12.89 GB (headroom: 3.1 GB on T4 16GB)
+- **Current GPU memory:** 10.44 GB
+- **Training examples:** 1,354
+- **Trainable params:** 42,401,792 / 8,038,558,240 (0.53%)
+- **Framework:** Unsloth 2026.4.4 + TRL 0.24.0
+- **Cosine LR:** 1e-4 → 1.6e-8 (final step)
+
+### Loss Curve Data
+| Step | Loss | LR |
+|------|------|-----|
+| 10 | 10.095 | 5.63e-5 |
+| 50 | 2.813 | 9.90e-5 |
+| 100 | 1.868 | 9.35e-5 |
+| 150 | 1.715 | 8.36e-5 |
+| 200 | 1.548 | 7.04e-5 |
+| 250 | 1.518 | 5.51e-5 |
+| 300 | 1.495 | 3.93e-5 |
+| 350 | 1.412 | 2.45e-5 |
+| 400 | 1.392 | 1.24e-5 |
+| 450 | 1.433 | 4.08e-6 |
+| 500 | 1.358 | 1.98e-7 |
+| 510 | 1.438 | 1.62e-8 |
 
 ---
 

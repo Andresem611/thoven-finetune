@@ -91,6 +91,18 @@
 | Synthetic generation (100 dialogues) | $5 | ~$3 (so far) | Sonnet+Haiku, 5 turns |
 | **Total Weekend 1** | **$20-26** | **~$25** | Within budget |
 
+### Weekend 2 Costs
+
+| Item | Estimated | Actual | Notes |
+|------|-----------|--------|-------|
+| Pre-flight 6-agent doc audit | $2-3 | ~$2 | Context7 research agents |
+| 10-agent verification | $3-5 | ~$4 | Parallel verification |
+| Judge labeling (2 agents) | $1-2 | ~$2 | 40 responses × 6 new dims |
+| Judge validation (11 dims) | $3-5 | ~$3 | Sonnet API calls |
+| Colab training (GPU) | $0 | **$0** | Free T4 tier |
+| Judge iteration (7 judges) | $2-3 | ~$2 (partial) | 4 judges iterated so far |
+| **Total Weekend 2 (so far)** | **$15-22** | **~$13** | Under budget |
+
 ---
 
 ## Pre-Flight Verification (2026-04-06)
@@ -128,10 +140,41 @@
 - [x] JSON prompt files created (eval/prompts/)
 - [x] Weekend 2 eval config written (eval/promptfoo-pedagogy-w2.yaml)
 - [ ] Ollama installed on Mac
-- [ ] Colab training completed
-- [ ] GGUF downloaded and imported to Ollama
+- [x] Colab training completed (2026-04-06, 510 steps, final loss 1.44, peak GPU 12.89GB)
+- [ ] GGUF exported and downloading to Mac
+- [ ] GGUF imported to Ollama
+
+### Training Results (2026-04-06)
+
+| Metric | Value |
+|--------|-------|
+| Final loss | 1.437 (step 510) |
+| Best loss | 1.345 (step 430) |
+| Total steps | 510 (3 epochs × 170 steps) |
+| Training time | ~2.25 hours |
+| Peak GPU memory | 12.89 GB / 15.6 GB (82.6% utilization) |
+| Trainable params | 42,401,792 / 8,038,558,240 (0.53%) |
+| Framework | Unsloth 2026.4.4 + TRL 0.24.0 |
+| GGUF export | Q4_K_M (~5 GB) |
+
+**Loss curve:** 10.1 (step 10) → 1.9 (step 90) → 1.5 (step 200) → 1.35 (step 430) → 1.44 (step 510)
+
+**Qualitative observation:** Initial test output shows structured response with scaffolding intent but reads as a teacher guide rather than direct student conversation. Formal eval with 11 judges needed to quantify.
+
+---
 
 ### Weekend 2 Plan (Updated)
+1. ~~Open Google Colab → T4 GPU → verify with nvidia-smi~~ DONE
+2. ~~Upload training_sft.jsonl to Colab~~ DONE
+3. ~~Run notebooks/colab_sft.py cells 1-8 (smoke test)~~ DONE
+4. ~~Run cell 9 (full SFT, ~2-3 hrs)~~ DONE (510 steps, 2.25 hrs)
+5. ~~Run cells 10-12 (export GGUF → Google Drive)~~ IN PROGRESS
+6. Download GGUF from Drive to Mac (~4.98 GB)
+7. `ollama create thoven-tutor -f models/Modelfile`
+8. Run 4-condition eval: `npx promptfoo eval --config eval/promptfoo-pedagogy-w2.yaml`
+9. Decision gate: proceed to DPO / adjust data / stop
+
+Previously:
 1. Open Google Colab → T4 GPU → verify with nvidia-smi
 2. Upload `training_sft.jsonl` to Colab
 3. Run `notebooks/colab_sft.py` cells 1-8 (smoke test)
