@@ -33,12 +33,89 @@ DIM_MAP = {
     "D1a_steps": "D1a_steps",
     "D1b_question": "D1b_question",
     "D2_check": "D2_check",
+    "D3_age": "D3_age",
     "D4_load": "D4_load",
     "D5_prior": "D5_prior",
+    "D6_growth": "D6_growth",
+    "D7_higher": "D7_higher",
+    "D8_practice": "D8_practice",
+    "D9_motor": "D9_motor",
+    "D10_choice": "D10_choice",
 }
 
 # Judge prompts for each dimension (binary Pass/Fail)
 JUDGE_PROMPTS = {
+    "D1a_steps": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor breaks its response into sequential steps or substeps, rather than giving the complete answer in a single undifferentiated block.
+
+CRITERION: The response must decompose the task or explanation into at least 2 sequential steps or substeps that the student can follow one at a time.
+
+PASS definition:
+- Response breaks the task into at least 2 sequential steps or substeps.
+- Steps can be numbered, bulleted, or clearly separated in prose (e.g., "First... Then... Next...").
+
+FAIL definition:
+- Response gives the complete answer or solution in a single block with no step decomposition.
+- Response meta-discusses what it WOULD say ("Here's how I'd respond...") instead of actually scaffolding.
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (7yo piano, "can't play both hands"):
+Tutor response: "I understand! Playing with both hands together is tricky at first - it's like trying to pat your head and rub your tummy at the same time! Let's make it easier: Start with baby steps: 1. First, let's play each hand separately until they know their parts really well 2. Then try playing them together very slowly..."
+Critique: The tutor breaks the task into numbered sequential steps (play hands separately, then combine slowly). Clear step decomposition.
+Result: Pass
+
+Example 2 — FAIL (10yo piano, "why practice scales"):
+Tutor response: "Here's how I'd respond... I'll break it down into a few parts" — then meta-discusses what it WOULD say instead of actually scaffolding steps for the student.
+Critique: The tutor announces it will break things down but never actually provides sequential steps. It talks about what it would do rather than doing it.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (14yo piano, "voicing melody"):
+Tutor response: "Let me break this down for you: What voicing means: It's making the melody stand out from the accompaniment. Step 1: Play the melody notes slightly louder. Step 2: Play the accompaniment softer. Step 3: Practice hands separately focusing on dynamics."
+Critique: The tutor does break the explanation into sequential steps, even though it gives the answer rather than guiding discovery. The criterion is about step decomposition, not discovery — and it decomposes into 3 clear steps.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing whether the response decomposes into sequential steps, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D1b_question": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor includes at least one genuine question that guides the student to think or try something.
+
+CRITERION: The response must contain at least one question directed at the student that prompts thinking, reflection, or action — not just a rhetorical question.
+
+PASS definition:
+- Response includes at least one genuine question that guides the student to think or try something.
+- Questions like "What happens when you...?", "Can you try...?", "Which part feels hardest?" count.
+- Rhetorical questions that are really statements ("Isn't that cool?") still count if they prompt reflection.
+
+FAIL definition:
+- Response is entirely declarative — only statements, instructions, or explanations with no questions.
+- Commands ("Do this", "Try that") without question marks do NOT count as guiding questions.
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (7yo piano, "can't play both hands"):
+Tutor response: "Playing with both hands is tricky! Let's start by playing each hand separately. Can you play the right hand part all by itself first? Once that feels easy, we'll add the left hand very slowly."
+Critique: The tutor asks "Can you play the right hand part all by itself first?" — a genuine question that guides the student to try something specific.
+Result: Pass
+
+Example 2 — FAIL (10yo piano, "why practice scales"):
+Tutor response: "Scales are important because they build finger strength and help you learn key signatures. Think of them like warm-ups before a soccer game. Practice them slowly at first, then speed up gradually. Do C major first, then G major."
+Critique: The response is entirely declarative. It explains, instructs, and prescribes, but never asks the student a question. "Think of them like warm-ups" is a command, not a question.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (8yo piano, "left hand is different notes"):
+Tutor response: "Great job learning the right hand! The left hand often plays different notes to add harmony. Here's a fun idea — what if we tried playing just the first two measures with the left hand? See how it sounds different?"
+Critique: "What if we tried playing just the first two measures?" is a genuine guiding question, even though it's somewhat leading. It invites the student to try something.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing whether the response contains guiding questions, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
     "D2_check": """You are evaluating whether a music tutor's response includes a comprehension check or practice invitation.
 
 ## Definitions
@@ -115,6 +192,262 @@ Result: Pass
 ## Output Format
 Respond with JSON only:
 {"critique": "detailed assessment referencing specific evidence from the response", "result": "Pass or Fail"}""",
+
+    "D3_age": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor's language is appropriate for the student's stated age.
+
+CRITERION: Vocabulary, sentence complexity, analogies, and tone must match the student's developmental level. The student's age is provided in the prompt context.
+
+PASS definition:
+- Ages 5-7: Simple words, short sentences, playful analogies (animals, games, stories). No technical jargon.
+- Ages 8-11: Conversational, can introduce basic music terms with explanation. Relatable analogies (sports, school).
+- Ages 12+: Can use proper musical terminology. Conversational but not condescending. Can discuss concepts more abstractly.
+
+FAIL definition:
+- Uses adult academic vocabulary with a young child (e.g., "proprioceptive awareness" to a 6-year-old, "intervallic relationships" to a 7-year-old).
+- Condescends to a teenager (e.g., "Great job, little musician!" to a 15-year-old).
+- Tone is robotic, clinical, or completely devoid of warmth for any age.
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (7yo piano, "can't play both hands"):
+Tutor response: "I understand! Playing with both hands together is tricky at first - it's like trying to pat your head and rub your tummy at the same time! Let's make it easier with baby steps..."
+Critique: Uses playful analogy (pat head/rub tummy), simple vocabulary, warm encouraging tone. Perfect for a 7-year-old.
+Result: Pass
+
+Example 2 — FAIL (6yo violin, "arm gets tired"):
+Tutor response: "The fatigue you're experiencing is likely due to insufficient proprioceptive calibration of your bowing arm. Focus on optimizing the biomechanical efficiency of your bow hold by distributing weight across the metacarpophalangeal joints."
+Critique: "Proprioceptive calibration", "biomechanical efficiency", "metacarpophalangeal joints" — this is medical/academic language completely inappropriate for a 6-year-old.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (10yo piano, "why practice scales"):
+Tutor response: "Scales are like warm-ups before a soccer game. They build finger strength and help you learn key signatures. Think of each scale as training your fingers to find the right notes automatically."
+Critique: Uses a relatable sports analogy. "Key signatures" is a music term but appropriate for a 10-year-old who is taking lessons. Language is conversational. Appropriate for the age.
+Result: Pass
+
+Now evaluate the following tutor response to a student of the stated age. First write a critique analyzing language appropriateness for the stated age, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D5_prior": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor probes the student's existing knowledge or experience before launching into instruction.
+
+CRITERION: Before teaching new content, the response must ask about what the student already knows, has tried, or can do.
+
+PASS definition:
+- Response asks about the student's existing knowledge or experience before teaching.
+- Examples: "What have you tried so far?", "Show me what you know", "Have you done X before?", "How long have you been working on this?"
+- The probe must come before the main instruction, not as an afterthought.
+
+FAIL definition:
+- Response immediately starts teaching or explaining without any probing question.
+- Launches into steps, explanations, or advice without first asking what the student knows.
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (12yo guitar, "switching between chords is slow"):
+Tutor response: "Chord switching is something everyone works on! Before we dive in — which chords are you switching between? And when you switch, does your whole hand lift off or do you try to keep some fingers down?"
+Critique: Before giving any instruction, the tutor asks two probing questions about the student's specific situation and technique. Probes before teaches.
+Result: Pass
+
+Example 2 — FAIL (7yo piano, "can't play both hands"):
+Tutor response: "Okay, that's a very common feeling! Don't worry — it's totally normal. Here's a step-by-step guide to help you: Step 1: Play the right hand part alone..."
+Critique: The tutor immediately jumps into a step-by-step guide without asking what the student has tried, how long they've been working on it, or what piece they're playing. No probing.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (10yo piano, "pedal sounds muddy"):
+Tutor response: "Muddy pedaling is really common! Can you show me how you're using the pedal right now? Press the pedal and play a few chords so I can hear what's happening."
+Critique: "Can you show me how you're using the pedal right now?" is a probe — it asks the student to demonstrate their current approach before the tutor gives instruction. The tutor wants to see the student's existing technique first.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing whether the tutor probes before teaching, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D6_growth": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor uses growth mindset language — attributing progress to effort and strategy rather than fixed traits.
+
+CRITERION: If the response includes praise, it must attribute progress to effort, strategy, or practice (not talent or natural ability). If addressing struggle, it must frame struggle as part of the learning process.
+
+PASS definition:
+- Praise attributes progress to effort/strategy/practice: "You've been practicing hard and it shows", "That's a great strategy."
+- Struggle is framed as normal and productive: "This is a tricky part — it takes time", "Every pianist works through this."
+- If the response doesn't involve praise or struggle framing, score PASS by default (not applicable).
+
+FAIL definition:
+- Uses fixed-trait language: "you're so talented", "you're a natural", "you're gifted."
+- Dismisses struggle: "this should be easy", "anyone can do this", "it's not that hard."
+- Implies the student should already know this: "you should be able to do this by now."
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (11yo piano, "practiced for an hour but not getting better"):
+Tutor response: "An hour of practice shows real dedication! Sometimes when we practice a lot but don't see progress, it means we need to change HOW we practice, not how MUCH. Let's figure out a smarter practice strategy together."
+Critique: Praises effort ("real dedication"), reframes the struggle as a strategy issue rather than an ability issue. Growth mindset language throughout.
+Result: Pass
+
+Example 2 — FAIL (6yo piano, "my friend is better than me"):
+Tutor response: "Don't worry! Some people are just naturally better at music. Your friend might be more talented, but that doesn't mean you can't have fun too!"
+Critique: "Naturally better" and "more talented" are fixed-trait attributions. This tells the student their friend's advantage is innate, which is textbook fixed mindset.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (7yo piano, "Mary Had a Little Lamb"):
+Tutor response: "That's awesome! You learned a whole song! That must have taken lots of practice. Ready for the next challenge?"
+Critique: "That must have taken lots of practice" attributes success to effort. It's brief but correctly uses growth mindset framing. No fixed-trait language.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing the praise/struggle language, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D7_higher": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor asks at least one higher-order thinking question, rather than only stating facts or asking pure recall questions.
+
+CRITERION: The response must include at least one "why", "what if", "how would you", "what do you notice", or similarly open-ended question that targets Apply, Analyze, Evaluate, or Create levels of thinking (Bloom's taxonomy).
+
+PASS definition:
+- Asks at least one higher-order question: "Why do you think...?", "What would happen if...?", "How would you...?", "What do you notice when...?"
+- The question must be appropriate to the student's level.
+
+FAIL definition:
+- Only states facts and gives instructions with no questions at all.
+- Only asks pure recall questions: "What note is this?", "How many beats in a quarter note?"
+- Asks only yes/no questions: "Do you understand?", "Ready?"
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (10yo piano, "why practice scales"):
+Tutor response: "Scales can feel boring, I know! But here's a question — when you play a song and your fingers just seem to know where to go, why do you think that happens? What if I told you scales are secretly training that finger memory?"
+Critique: "Why do you think that happens?" is a higher-order question asking the student to analyze their own experience. "What if I told you..." prompts evaluation. Two higher-order questions.
+Result: Pass
+
+Example 2 — FAIL (7yo piano, "can't play both hands"):
+Tutor response: "Here's what to do: Play the right hand 5 times. Then play the left hand 5 times. Then play them together slowly. Start at 60 BPM and increase by 5 BPM each day."
+Critique: Entirely prescriptive — a list of instructions with no questions of any kind. No opportunity for the student to think or reflect.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (9yo violin, "what does forte mean?"):
+Tutor response: "Forte means loud! But here's the fun part — when a composer writes forte, what do you think they want the audience to feel? Try playing a part forte and then piano (soft). Which one sounds happier to you?"
+Critique: "What do you think they want the audience to feel?" asks the student to analyze/evaluate the composer's intent. "Which one sounds happier?" asks for evaluation based on experience. Both are above recall level.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing the types of questions asked, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D8_practice": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor provides specific, actionable practice guidance rather than vague encouragement.
+
+CRITERION: When practice is suggested, the response must specify WHAT to practice AND HOW (tempo, repetitions, technique, method, or specific target).
+
+PASS definition:
+- Specifies what to practice AND how: "Practice the first 4 measures hands-separately at 60 BPM, 5 times each."
+- At minimum, names a specific skill/passage AND gives a method or target.
+- For young children (5-7), simplified specificity is acceptable: "Play it 3 times super slowly."
+
+FAIL definition:
+- Says "practice more", "keep working on it", "play it again" with no specific method or target.
+- Vague encouragement: "Just keep at it!", "Practice makes perfect!", "You'll get it with time."
+- Gives a general area but no method: "Work on your scales" (which scales? how?).
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (7yo piano, "can't play both hands"):
+Tutor response: "Let's make it easier: 1. Play the right hand part 5 times until it feels super easy. 2. Play the left hand part 5 times. 3. Try just the first 2 measures with both hands together, as slow as a turtle."
+Critique: Specifies what (right hand, left hand, first 2 measures), how (5 repetitions, slow tempo), and order. Concrete and actionable for a 7-year-old.
+Result: Pass
+
+Example 2 — FAIL (10yo piano, "why practice scales"):
+Tutor response: "Scales are really important! Just keep practicing them every day and you'll see improvement over time. Trust the process — all the great pianists practiced their scales."
+Critique: "Just keep practicing" and "trust the process" are completely vague. No specific scales named, no tempo, no method, no target. Pure encouragement with no actionable guidance.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (12yo guitar, "chord switching is slow"):
+Tutor response: "Try this: set a timer for 1 minute and switch between G and C as many times as you can. Count your switches. Tomorrow, try to beat your number."
+Critique: Specifies what (G and C chord switch), how (timed 1-minute drill), and a target (beat your count). Concrete method even though it doesn't specify tempo explicitly.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing the specificity of practice guidance, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D9_motor": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor prompts proprioceptive (body) awareness when the student raises a physical or motor skill issue, rather than only giving prescriptive corrections.
+
+CRITERION: When the student's message involves a physical or motor skill issue (hand position, pain, fatigue, posture, bow hold, etc.), the response must prompt the student to notice physical sensations — not just tell them what position to adopt.
+
+IMPORTANT: If the student's message does NOT involve a physical or motor skill issue, score PASS by default (not applicable).
+
+PASS definition:
+- Prompts the student to notice physical sensations: "Can you feel where it gets tense?", "What does it feel like when you...?", "Notice what happens in your arm when..."
+- Asks the student to attend to their body rather than just following a prescription.
+
+FAIL definition:
+- Only gives prescriptive corrections: "Keep your wrist up", "Curve your fingers", "Hold the bow at a 45-degree angle."
+- Addresses the physical issue but with zero proprioceptive prompting — all commands, no awareness.
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (8yo piano, "hand hurts when I play for a long time"):
+Tutor response: "Ouch! Let's figure out why. Can you show me how you hold your hands on the keys? When you play, does the hurt feel like a squeeze in your fingers, or more like a tired ache in your wrist? Let's try playing very gently and see if you can find the moment it starts to feel uncomfortable."
+Critique: "Does the hurt feel like a squeeze in your fingers, or more like a tired ache in your wrist?" and "find the moment it starts to feel uncomfortable" are proprioceptive prompts. The tutor asks the student to attend to and describe their physical sensations.
+Result: Pass
+
+Example 2 — FAIL (6yo violin, "arm gets tired holding the bow"):
+Tutor response: "Make sure your bow hold is correct: thumb bent, pinky on top, keep your shoulder down. Don't grip too hard. Take breaks every 5 minutes."
+Critique: All prescriptive corrections — "thumb bent", "pinky on top", "keep your shoulder down", "don't grip too hard." Zero prompts to notice sensations. The tutor tells the student what to do but never asks them to feel anything.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (12yo violin, "shoulder feels weird"):
+Tutor response: "That weird feeling is your body telling you something! When you put the violin up, pay attention: does the weirdness start right away, or only after a few minutes? Is it more in the top of your shoulder or the side of your neck? Let's find a position where the weird feeling goes away."
+Critique: "Does the weirdness start right away, or only after a few minutes?" and "Is it more in the top of your shoulder or the side of your neck?" are proprioceptive prompts. The tutor guides the student to localize and time their sensation. Good body awareness prompting.
+Result: Pass
+
+Now evaluate the following tutor response. First determine if the student's message involves a physical/motor skill issue. If not, output Pass (not applicable). If yes, write a critique analyzing proprioceptive prompting, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
+
+    "D10_choice": """You are evaluating a music tutor's response to a student.
+
+TASK: Determine whether the tutor offers the student at least one genuine choice, rather than issuing only directives.
+
+CRITERION: The response must include at least one genuine choice that gives the student agency over their learning path.
+
+PASS definition:
+- Offers at least one genuine choice: "Would you like to try X or Y?", "Which one sounds more interesting to you?", "Do you want to start with the easy part or the challenging part?"
+- The choice must be genuine — two or more real options the student could pick from.
+
+FAIL definition:
+- All directives, no choices offered.
+- Every instruction is a command: "Do this", "Play that", "Now try this."
+- Framing a single directive as a question doesn't count: "Let's try this, okay?" is not a choice.
+
+FEW-SHOT EXAMPLES:
+
+Example 1 — PASS (16yo guitar, "want to improvise over blues"):
+Tutor response: "Great choice! There are a few ways to start. Would you rather begin by learning the minor pentatonic scale shapes, or would you prefer to start by listening to some blues solos and picking out patterns you like? Both are valid paths."
+Critique: Offers a genuine choice between two approaches (learn scale shapes vs. listen-and-pick-out-patterns). The student has real agency over which path to take.
+Result: Pass
+
+Example 2 — FAIL (7yo piano, "can't play both hands"):
+Tutor response: "Here's what you need to do: Play the right hand 5 times. Then play the left hand 5 times. Then combine them slowly. Do this every day until it's easy."
+Critique: Every sentence is a directive. No choice offered at any point. The student has zero agency — the entire practice plan is prescribed.
+Result: Fail
+
+Example 3 — BORDERLINE PASS (8yo guitar, "strings hurt my fingers"):
+Tutor response: "Sore fingers are normal when you're starting! Your fingertips will get tougher over time. For now, we could practice for shorter periods, or we could try some songs that use fewer strings. What sounds better to you?"
+Critique: "We could practice for shorter periods, or we could try some songs that use fewer strings. What sounds better to you?" is a genuine choice with two real options and an explicit invitation for the student to decide.
+Result: Pass
+
+Now evaluate the following tutor response. First write a critique analyzing whether genuine choices are offered, then give your verdict.
+
+Output ONLY valid JSON: {"critique": "your detailed assessment", "pass": true, "score": 1} for Pass, or {"critique": "your detailed assessment", "pass": false, "score": 0} for Fail.""",
 }
 
 
@@ -199,12 +532,22 @@ Tutor Response:
         else:
             # Try to extract JSON from response
             import re
-            match = re.search(r'\{[^}]+\}', text)
+            match = re.search(r'\{.*\}', text, re.DOTALL)
             if match:
                 parsed = json.loads(match.group())
             else:
-                parsed = {"critique": text, "result": "Pass" if "pass" in text.lower() else "Fail"}
-        return parsed
+                parsed = {"critique": text}
+        # Normalize: support both new "pass" (bool) and old "result" (string) formats
+        if "pass" in parsed:
+            if isinstance(parsed["pass"], bool):
+                result_str = "Pass" if parsed["pass"] else "Fail"
+            else:
+                result_str = "Pass" if str(parsed["pass"]).lower() in ("true", "1") else "Fail"
+        elif "result" in parsed:
+            result_str = "Pass" if parsed["result"].lower().startswith("pass") else "Fail"
+        else:
+            result_str = "Pass" if "pass" in text.lower() else "Fail"
+        return {"critique": parsed.get("critique", ""), "result": result_str}
     except Exception as e:
         return {"critique": f"Error: {e}", "result": "Error"}
 
