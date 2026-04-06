@@ -1,0 +1,160 @@
+{
+  "dimension": "D8_practice",
+  "splits": {
+    "train": 5,
+    "dev": 20,
+    "test": 15
+  },
+  "dev_metrics": {
+    "tp": 10,
+    "fn": 6,
+    "tn": 3,
+    "fp": 1,
+    "tpr": 0.625,
+    "tnr": 0.75,
+    "accuracy": 0.65
+  },
+  "dev_results": [
+    {
+      "id": 9,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor provides a clear explanation of what forte means but offers only a very basic practice suggestion. They ask the student to 'play a short phrase, first piano (softly), and then forte (loudly)' to hear the difference. While this gives the student something to do, it's quite vague - no specific piece or passage is mentioned, no guidance on how to achieve forte on violin (bow pressure, speed, etc.), and no structure for practice. The suggestion 'just a little bit to hear the difference' and 'don't worry about playing perfectly, just focus on the volume' shows some direction but lacks the specificity needed for actionable practice guidance. A 9-year-old would know to play something soft then loud, but wouldn't have clear technical guidance on how to properly execute forte on violin or what specific musical material to use.",
+      "agree": false
+    },
+    {
+      "id": 10,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides some specific, actionable guidance mixed with general advice. The tutor gives concrete practice structure (10-15 minute sessions, a few times a day) and specific technique checks (use fingertips not pads, press right behind frets, don't squeeze too tight). However, much of the response is educational explanation rather than direct practice guidance. The most actionable elements are the short practice sessions recommendation and the technique checklist, but there's no specific exercise or method for the student to practice - just general advice about taking breaks and checking technique. The response ends with questions rather than giving the student something concrete to do right now.",
+      "agree": true
+    },
+    {
+      "id": 35,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides multiple specific practice methods for developing emotional singing. The tutor gives concrete actions like 'read the lyrics like a poem,' 'speak the lyrics with feeling before singing them,' and 'practice in front of a mirror.' The practice exercise is particularly specific: 'Pick one line from your song and sing it five different ways: angry, sad, hopeful, desperate, and joyful.' The student knows exactly what to do - they can select a line, try each of the five named emotions, and compare the results. The technical tips also provide actionable guidance like 'vary your dynamics' and 'use different tone colors - breathy for intimate moments, fuller for powerful ones.' While some advice is more general ('connect to your own experiences'), the response contains enough specific, actionable elements that a student could immediately implement these techniques.",
+      "agree": true
+    },
+    {
+      "id": 30,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides several specific, actionable practice strategies. It tells the student WHAT to do: take breaks every 5-10 minutes, press strings more gently, practice for just a few minutes at a time throughout the day, and use rubbing alcohol on fingertips after practice. It also gives specific guidance on guitar setup (check string height, consider lighter gauge strings). The practice structure is clear - short sessions with frequent breaks rather than long sessions. While much of the response is educational/motivational, the core practice guidance is concrete enough that an 8-year-old could implement these strategies immediately. The student would know exactly how to modify their practice approach.",
+      "agree": true
+    },
+    {
+      "id": 13,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This tutor response contains extremely detailed, specific practice guidance across multiple areas. For position variation, it tells the student to 'Find diagrams of the other pentatonic scale positions' and 'spend 15 minutes each day practicing just one position you haven't used much.' For targeting notes, it gives specific exercises like 'play 1-3-5-1-3-5' or '1-5-3-1-5-3.' For rhythm, it names specific techniques (dotted notes, syncopation, rests) with clear descriptions. It specifies practicing with backing tracks in A minor key and even provides a specific resource (Ultimate Guitar). The response gives the student multiple concrete exercises they can immediately sit down and practice, with clear time allocations (15 minutes daily) and specific technical approaches (bending, vibrato). While comprehensive, every suggestion includes actionable 'how-to' guidance.",
+      "agree": true
+    },
+    {
+      "id": 0,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides multiple specific, actionable practice methods that a 7-year-old could follow. Method #2 gives clear step-by-step guidance: practice each hand separately until smooth, then try one measure with both hands very slowly, repeat that measure, then add measures one at a time. Method #3 provides the specific 'Clap & Count' technique with concrete steps: clap right hand rhythm, clap left hand rhythm, clap both together, tap with fingers, then play on piano. Method #4 describes the 'Walk and Talk' approach with specific instructions to say note names while playing each hand separately, then together. The response specifies practice duration (10-15 minutes daily) and emphasizes working with simple pieces and very slow tempos. While there are no exact BPM numbers or repetition counts, the methods are detailed enough that the student knows exactly what to do and how to approach the problem systematically.",
+      "agree": true
+    },
+    {
+      "id": 4,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides excellent specific practice guidance. The tutor gives four distinct exercises with clear, actionable instructions: Exercise 1 (single note pedal with exact timing - press as you play, lift as you lift finger), Exercise 2 (two notes with quick pedal press/release between specific notes like C and D), Exercise 3 (four-note sequence C-D-E-F with alternating pedal changes), and Exercise 4 (listening exercise with C Major chord). Each exercise specifies what to play (Middle C, C-D, C-D-E-F, C Major chord), how to coordinate the pedal timing (press just as you play, lift just as you play the next note), and what to focus on (clean release, slight connection, clearing old sounds). The response also includes specific technique guidance like 'lift, then play' rule and 'small movements.' The student would know exactly what to practice and how to approach each exercise.",
+      "agree": true
+    },
+    {
+      "id": 20,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides excellent specific practice guidance with clear actionable steps. The tutor breaks down the complex task into concrete components: (1) Practice each hand separately - specifies exactly what to do (right hand on lap, play left hand 3 times, then switch). (2) Gives a specific combining method - both hands together 'super slowly like a turtle'. (3) Provides a clear progression strategy - start with one measure at a time, count '1, 2, 3, 4' out loud to stay together, then add one more measure when ready. (4) Offers a concrete starting point - 'try playing just two notes together first - one with each hand'. The student knows exactly what to practice (hands separately 3 times each, then slowly together), how to approach it (one measure at a time with counting), and has a clear progression path. While there are no BPM numbers, the qualitative guidance ('super slowly like a turtle', 'one measure at a time') gives sufficient specificity for a 7-year-old to execute.",
+      "agree": true
+    },
+    {
+      "id": 6,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "While this response contains some specific practice elements, it ultimately fails the actionable specificity test. The response does include some named exercises like 'shoulder rolls,' 'wrist circles,' and 'fist clenches & releases,' which show an attempt at specificity. However, these are mostly generic stretching exercises rather than violin-specific practice guidance. The core violin technique advice remains vague - phrases like 'we'll do some exercises focusing on a loose grip' and 'we'll experiment with moving your hand slightly up or down' don't tell the student what specifically to do. The student wouldn't know how to practice proper bow hold technique from this response. Most critically, there's no specific practice structure - no clear steps the student can follow to address the bow hold issue. The response is more of a general explanation and promise of future help rather than immediate actionable guidance the 6-year-old can implement.",
+      "agree": false
+    },
+    {
+      "id": 14,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The response provides extensive educational content about vocal cracks and lists several specific warm-up exercises (lip trills, humming, sirens) with some concrete guidance (5 minutes of warm-ups). However, the actual practice instructions lack sufficient specificity. While it mentions 'lip trills like a horse neighing' and 'sustained ssss for as long as you can,' it doesn't provide clear parameters for how to practice these exercises systematically. The response ends mid-sentence and turns to asking diagnostic questions rather than giving the student a clear practice plan they could immediately implement. A 10-year-old would have some idea of what to do but wouldn't know exactly how to structure their practice sessions or what specific goals to work toward.",
+      "agree": false
+    },
+    {
+      "id": 12,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides exceptionally detailed and specific practice guidance. The tutor gives clear, actionable steps including: (1) The exact 12-bar blues progression in A with specific chord names and bar numbers, (2) Named scales to learn (A minor pentatonic with specific notes: A-C-D-E-G), (3) Specific practice methods like 'play ascending and descending' and 'practice across the neck in different positions', (4) Target note exercises with exact chord tones to emphasize (A, C#, E, G for A7), (5) A concrete exercise structure using backing tracks, and (6) 'Exercise 1: Chord Tones Only' with a clear method. The student would know exactly what to practice: which scales, which chords, how to approach target notes, and what backing tracks to use. While the response is cut off, what's provided gives comprehensive, actionable guidance that goes far beyond vague encouragement.",
+      "agree": true
+    },
+    {
+      "id": 27,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides excellent specific practice guidance for learning vibrato. The tutor gives multiple named exercises with clear instructions: the 'polishing' exercise specifies exactly where to place the finger (first finger on A string for B note) and what motion to make (rock hand back and forth while finger stays in place). The 'wave motion' exercise describes the specific gesture (bye-bye waving) and where to practice it (away from violin first). The response includes specific technique descriptions (keep thumb relaxed, don't squeeze neck), qualitative tempo guidance (start VERY slowly, think 'wah... wah... wah...'), and practice structure advice (just a few minutes at a time). The student would know exactly what exercises to do, how to position their hand, what motions to practice, and how to approach the timing. This goes far beyond vague encouragement and gives concrete, actionable steps.",
+      "agree": true
+    },
+    {
+      "id": 1,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "This response is completely focused on explaining WHY scales are important and making them 'less boring' through various creative approaches, but it provides zero specific practice guidance. While the tutor offers many interesting ideas like 'vary the rhythm with dotted rhythms' and 'play with dynamics,' none of these are developed into actionable practice instructions. The student is left with concepts but no concrete method - they don't know which scale to practice, how many times, at what tempo, or what specific steps to take. The response reads more like a teaching philosophy discussion than practice guidance. Even the creative suggestions lack specificity: 'Can you play it faster?' and 'just let their fingers explore' give no structured approach. The student would still not know what to actually DO when they sit down to practice.",
+      "agree": false
+    },
+    {
+      "id": 2,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "This response contains some good theory and conceptual explanations about voicing, but fails to provide specific, actionable practice guidance. While it mentions some general techniques like 'play melody notes slightly louder' and 'use different touch,' it doesn't give the student concrete steps to practice these skills. The 'exercises' section starts promisingly with the 'One Note at a Time' exercise, which does specify what to do (play accompaniment alone, then melody alone, then together), but even this lacks specific musical examples or parameters. The response ends abruptly mid-sentence and asks questions back to the student rather than providing immediate actionable guidance. A 14-year-old asking this question needs specific practice methods they can implement right away, not just theoretical understanding.",
+      "agree": false
+    },
+    {
+      "id": 31,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response provides excellent specific, actionable practice guidance. The tutor gives multiple concrete methods: (1) practicing just two chords at a time without strumming, (2) using anchor fingers with specific examples (Am to C, first finger stays), (3) the 'freeze and release' method with specific timing (2 seconds), (4) 'chord shadows' technique with clear description, and (5) metronome practice with specific BPM (40-50) and progression (4 beats, then 2, then 1). The response includes practice structure (5-10 minutes daily), quantifies expectations (100-200 repetitions), and gives a timeline (improvements in 1-2 weeks). Each technique is described with enough detail that the student knows exactly what to do and how to approach it.",
+      "agree": true
+    },
+    {
+      "id": 3,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "This response provides extensive educational content about why the left hand feels different but falls short on specific practice guidance. While it offers many suggestions, most lack the actionable detail needed. 'Left Hand Only Practice' is mentioned but without specific parameters like how many times, at what tempo, or for how long. 'Slow and Steady' suggests 'turtle pace' but doesn't specify what that means practically. 'Short Sections' mentions '4 bars at a time' which is somewhat specific, but doesn't explain the practice method. The 'games' like 'Note Hunt' and 'Rhythm Challenge' are vaguely described activities rather than concrete practice instructions. The response asks what piece the student is working on, which shows good diagnostic thinking, but doesn't provide immediate actionable guidance the student could follow right now. Most critically, the final instruction 'Can you try playing just the left hand part of the piece slowly?' lacks specificity - the student wouldn't know exactly how slowly, how many times, or what to focus on while doing it.",
+      "agree": false
+    },
+    {
+      "id": 38,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "This response is purely diagnostic and motivational without providing any specific practice guidance. The tutor asks clarifying questions and offers general reassurance ('That's okay - everyone feels unsure sometimes'), but gives no actionable practice instructions. The only concrete suggestions are vague possibilities ('Would you like to try playing some open strings together, or maybe we could clap out a rhythm first?') presented as questions rather than specific practice directions. While the response is appropriate for gathering information from a confused 7-year-old, it contains no specific practice guidance that tells the student WHAT to do or HOW to do it. The student would not know what concrete steps to take after reading this response.",
+      "agree": true
+    },
+    {
+      "id": 29,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor correctly explains what forte means and uses an age-appropriate analogy (calling across a playground). However, when they suggest practicing forte, they provide no specific guidance on HOW to achieve a forte sound on violin. They ask if the student wants to 'try playing something forte' and mention 'making your violin sing with a strong, confident voice,' but give zero actionable instruction on violin technique - such as bow pressure, bow speed, contact point, or any specific exercises. The student would not know what to actually DO differently with their bow and violin to produce a forte sound. This is purely conceptual explanation followed by vague encouragement to 'try' without any specific practice method.",
+      "agree": true
+    },
+    {
+      "id": 36,
+      "human": "Fail",
+      "judge": "Pass",
+      "critique": "This response provides several specific, actionable practice strategies that a 5-year-old can understand and implement. The tutor suggests concrete activities: playing pieces with different character interpretations (turtle/bunny), using a 5-minute timer for practice sessions, implementing a sticker reward chart, and starting with favorite songs. These are all specific methods that tell the student exactly what to do and how to approach practice differently. The 5-minute timer suggestion is particularly specific with a clear parameter. The character-based playing (turtle vs bunny) gives the child a specific way to vary their practice approach. While the response does include some motivational elements and asks diagnostic questions, the core contains multiple concrete practice strategies that pass the specificity test - a 5-year-old would know exactly what actions to take.",
+      "agree": false
+    },
+    {
+      "id": 17,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides no specific practice guidance whatsoever. The entire response is focused on asking the student questions to understand their problem, which is appropriate for information gathering, but offers zero actionable practice direction. The tutor explicitly refuses to provide 'the answer' and instead asks diagnostic questions about what the student is struggling with, what they've tried, and what's confusing them. While this pedagogical approach of guiding discovery rather than giving direct answers may be educationally sound, it completely fails the criterion of providing specific practice guidance. There are no exercises, techniques, methods, or any concrete actions the student can take. The student would have no idea what to practice after reading this response.",
+      "agree": true
+    }
+  ],
+  "status": "NEEDS ITERATION"
+}

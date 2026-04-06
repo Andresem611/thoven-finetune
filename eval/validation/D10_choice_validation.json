@@ -1,0 +1,153 @@
+{
+  "dimension": "D10_choice",
+  "splits": {
+    "train": 5,
+    "dev": 19,
+    "test": 16
+  },
+  "dev_metrics": {
+    "tp": 10,
+    "fn": 4,
+    "tn": 5,
+    "fp": 0,
+    "tpr": 0.714,
+    "tnr": 1.0,
+    "accuracy": 0.789
+  },
+  "dev_results": [
+    {
+      "id": 18,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides multiple ways for the student to direct the conversation and identify their own needs. The response includes several moments where the student gets agency: 1) 'Can you tell me a little bit more?' - open invitation for the student to share what they want, 2) Three bulleted questions that let the student choose which area to focus on (what they were working on, what feels tricky, or if they need a reminder), and 3) The final direct question 'What were we doing when you said I don't know?' invites the student to steer the direction. The student has genuine choice in how to respond and what aspect of their confusion to address first. This gives clear agency over what happens next in the lesson.",
+      "agree": true
+    },
+    {
+      "id": 19,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor response is almost entirely directive with extensive explanations and information delivery. While the tutor asks several questions throughout ('What pieces are you currently working on?', 'Do you feel like those pieces are challenging, too easy, or just right?', 'When you practice, do you mostly play through the whole pieces, or do you break them down into smaller sections?', 'Do you ever practice really slowly?'), these are all information-gathering questions designed to diagnose the problem. The tutor does not give the student any agency over what happens next or what direction to take. There are no choices offered about how to proceed, no options presented for the student to select from, and no invitation for the student to influence the lesson direction. The student cannot decide anything about what happens next - they can only answer diagnostic questions while the tutor maintains complete control over the direction and approach. The final statement 'Tell me a bit more, and we can start to pinpoint some specific things you can try' indicates the tutor will be doing the pinpointing and deciding what to try, not the student.",
+      "agree": false
+    },
+    {
+      "id": 38,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response gives the student multiple forms of agency. First, the tutor presents a list of specific possibilities ('Are you: Not sure how to hold your bow? Confused about where to put your fingers? Having trouble reading the music? Not sure what to practice?') and includes 'Or is it something else?' which is open-ended, allowing the student to direct where the help goes. Then the tutor offers a genuine binary choice: 'Would you like to try playing some open strings together, or maybe we could clap out a rhythm first?' This gives the student clear agency to decide the direction of what happens next in the lesson.",
+      "agree": true
+    },
+    {
+      "id": 34,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides excellent educational content about voice cracks, explaining why they happen and offering multiple helpful techniques. However, the response is almost entirely directive - giving information and listing what the student should do. The only moment where the student gets any agency is at the very end: 'Would you like to try a fun exercise together to help with those high notes?' This is a genuine binary choice that gives the student the power to decide whether to engage in practice right now or not. While the bulk of the response consists of directives and explanations, this single question at the end does provide the student with agency over what happens next in the lesson.",
+      "agree": true
+    },
+    {
+      "id": 22,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive instruction on voicing techniques but only gives the student agency at the very end with 'What piece are you working on? I can give you specific tips for that music!' This question allows the student to direct the conversation toward their specific repertoire and get tailored advice. However, the vast majority of the response consists of directives and explanations without offering the student choices about how to approach the topic or what aspects to focus on first. The student could have been given options like 'Would you rather start with the physical technique or try it on a piece you know?' or 'Which of these approaches sounds most interesting to try first?' But the single question about their current piece does provide genuine agency over the next direction of the lesson.",
+      "agree": true
+    },
+    {
+      "id": 0,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides extensive suggestions but does give the student clear agency over what happens next. After presenting multiple approaches (slow and steady, clap & count, walk and talk, etc.), the tutor explicitly asks 'Which of these ideas sounds most appealing to you to try first?' This is a direct invitation for the student to choose their preferred direction. Additionally, the tutor asks if the student has a piece they want to work with or if they need help finding one, and asks about the student's frustration level to gauge how to help. The key moment is the clear choice-giving question that lets the student decide which method to try first, giving them real agency over the lesson direction.",
+      "agree": true
+    },
+    {
+      "id": 9,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides a clear explanation of what 'forte' means, then gives the student a genuine choice at the end. The question 'Do you want to try that now? Or would you like me to explain anything else about it?' presents two distinct options and lets the student decide what happens next - either practice the concept immediately or get more explanation. This gives the student agency over the direction of the lesson.",
+      "agree": true
+    },
+    {
+      "id": 26,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive advice about addressing arm fatigue, but crucially ends with giving the student agency. The final sentence offers a clear choice: 'Would you like to try one of these exercises together? Or show me how you're holding your bow so I can help?' This presents two distinct options and explicitly asks the student to decide which direction to take next. The student gets to choose whether to practice exercises or focus on bow hold technique, giving them real influence over what happens in the immediate next steps of the lesson.",
+      "agree": true
+    },
+    {
+      "id": 15,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response contains a clear moment where the student gets agency over the direction of the lesson. The tutor explicitly states: 'Please read through all of this, and then let me know which area you think you'd like to focus on first.' This is a direct invitation for the student to choose which of the three areas (Understanding & Connecting to the Song, Technical Aspects, or Exercises) they want to prioritize. The student gets to decide the direction of their learning path rather than having it dictated to them. While the response is very comprehensive and directive in its information delivery, this key moment of choice-giving satisfies the criterion for student agency.",
+      "agree": true
+    },
+    {
+      "id": 23,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor provides comprehensive advice and encouragement about playing with both hands, but does not give the student any agency over what happens next. The response consists entirely of explanatory content followed by four numbered directives about what the student should do. The only question asked is 'What piece are you working on?' which is purely information-gathering - it doesn't give the student a choice about direction or approach. The tutor doesn't offer any options like 'Would you like to try the Superman method first, or would you prefer to practice the left hand alone?' or 'Which of these approaches sounds most fun to you?' The student has no opportunity to influence what they work on or how they approach the problem.",
+      "agree": false
+    },
+    {
+      "id": 21,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "This response gives the student clear agency in multiple ways. First, the tutor asks 'What's a song you really want to learn?' - this is an open-ended question that lets the student direct the content of future lessons. The student gets to choose which song to focus on, giving them real decision-making power over what they'll work on. Additionally, while the tutor suggests 'How about we try just 5 minutes of scales at the start of practice, then dive into the fun stuff?' this is framed as a negotiable suggestion rather than a directive, and it's immediately followed by the student-choice question about song selection. The combination of letting the student pick their preferred song and the promise to connect scales to that chosen song gives the student meaningful agency over the direction of their learning.",
+      "agree": true
+    },
+    {
+      "id": 32,
+      "human": "Pass",
+      "judge": "Pass",
+      "critique": "The tutor provides comprehensive information about blues improvisation, breaking it down into clear steps from the blues scale through techniques. However, examining the response for student agency, there is only one moment where the student gets to influence what happens next: the final question 'Would you like me to show you the fingering pattern for that first blues box, or do you want to know more about phrasing and making it sound musical?' This gives the student a genuine binary choice between two different directions - learning the physical fingering pattern versus focusing on the musical/expressive aspects. The rest of the response consists of informational content and implied directives ('Start with...', 'Learn...', 'Begin by...'), but that final choice question does give the student agency over the lesson's next direction.",
+      "agree": true
+    },
+    {
+      "id": 2,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "This response is entirely directive and instructional. The tutor provides extensive explanation about voicing techniques, gives specific exercises to try, and outlines a detailed learning plan. While the tutor asks some information-gathering questions at the end ('What piece are you working on right now?' and 'Can you describe a specific section where you're struggling with voicing?'), these are purely for gathering information to provide more targeted instruction. The tutor never offers the student any choices about what to focus on, which approach to try first, or how to proceed. The student gets no agency over the direction of the lesson - everything is prescribed by the tutor. The questions are cut off at the end, but even if completed, they appear to be leading toward more specific instruction rather than giving the student options to choose from.",
+      "agree": false
+    },
+    {
+      "id": 3,
+      "human": "Pass",
+      "judge": "Fail",
+      "critique": "The tutor provides an extensive explanation and multiple suggestions, but fails to give the student genuine agency over what happens next. While the response includes '(Choose a few that sound fun to you)' after listing practice strategies, this is immediately followed by a directive: 'Let's try that now. (I'll wait for you to try!)' The tutor then asks two information-gathering questions ('What piece are you working on?' and 'What part of the left hand is feeling the most difficult?') but these don't give the student choice over direction. The response concludes with a direct command: 'Can you try playing just the left hand part of the piece slowly?' The parenthetical suggestion to 'choose a few that sound fun' is undermined by the tutor immediately taking control and directing specific actions. The student never gets to actually decide what approach to take or what happens next in the lesson.",
+      "agree": false
+    },
+    {
+      "id": 10,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides extensive information about why fingers hurt and offers detailed explanations across multiple categories. However, when analyzing for student agency, the response is predominantly directive. The tutor tells the student what to do: 'Don't try to play for a long time all at once,' 'Let's start with just 10-15 minutes,' 'Don't push through it,' 'Rest your fingers,' etc. While the tutor asks information-gathering questions at the end ('What kind of guitar do you have?' 'How long have you been playing?' 'What are you trying to play right now?'), these don't give the student agency over what happens next - they're just collecting data. The tutor also says 'Let's have a quick look at how you're fretting' and 'Can you show me how you're holding down the strings,' but these are instructional directives, not choices. There are no moments where the student gets to decide between different approaches or influence the direction of the lesson. The student has no say in what happens next.",
+      "agree": true
+    },
+    {
+      "id": 8,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor's response is entirely composed of directives and explanations without offering the student any agency over what happens next. While the response is comprehensive and organized into clear categories (Tone Production, Rhythm & Phrasing, Expression), every suggestion is presented as something the student should do: 'Try playing...', 'Experiment!', 'Practice bowing...', 'Spend 10-15 minutes...', 'Listen to professional recordings...', etc. The tutor never asks the student to choose between approaches, select what they'd like to focus on first, or express any preferences about which area sounds most relevant to their situation. There are no questions that invite the student to steer the direction of the practice or lesson. The response assumes a one-size-fits-all approach without giving the student any say in prioritizing the extensive list of suggestions or identifying which aspect of 'sounding musical' feels most pressing to them.",
+      "agree": true
+    },
+    {
+      "id": 13,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "The tutor provides an extensive, educational response with detailed explanations and exercises, but fails to give the student any agency over what happens next. The entire response is structured as a comprehensive plan ('Here's a plan, broken down into categories') with specific exercises and actions laid out as directives. While the tutor uses inclusive language like 'Let's break down' and 'Let's go!', these are rhetorical - no actual choices are offered. The student is not asked what aspect they'd like to focus on first, which of the suggested approaches sounds most appealing, or given any opportunity to influence the direction. Every suggestion is presented as 'Action:' and 'Exercise:' items to be followed. The response reads like a detailed curriculum rather than an interactive lesson where the student has input. Though educational and thorough, it gives the student zero decision-making power over what to work on or how to proceed.",
+      "agree": true
+    },
+    {
+      "id": 1,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "This response is entirely directive with no agency given to the student. The tutor provides a comprehensive set of explanations and suggestions but never asks the student to choose between options or decide what happens next. Every element is presented as 'here's what we should do' or 'let's try this' without offering genuine choices. While the tutor mentions 'you can pick and choose what feels most appropriate,' this appears to be directed at the teacher reading the response, not the student. The tutor never asks the student what they would like to try first, which explanation resonates with them, or what approach sounds most interesting. The response is well-intentioned but completely prescriptive.",
+      "agree": true
+    },
+    {
+      "id": 12,
+      "human": "Fail",
+      "judge": "Fail",
+      "critique": "This response is entirely directive with zero student agency. The tutor provides a comprehensive, structured plan broken into numbered sections (1-5) and subsections, but every single instruction is a command or directive: 'Let's break this down', 'Let's look at it', 'Learn this scale really well', 'Practice: Play this scale', 'Think about the chord tones', 'Try to land on a chord tone', 'Find a 12-bar blues backing track', etc. While the tutor says 'feel free to ask questions at any point', this is not the same as giving the student a choice about what direction to take or what to focus on. The student gets no opportunity to decide between different approaches, choose what interests them most, or influence the lesson structure in any way. The entire learning path is prescribed without any genuine choices offered.",
+      "agree": true
+    }
+  ],
+  "status": "NEEDS ITERATION"
+}

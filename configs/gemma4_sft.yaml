@@ -1,16 +1,19 @@
-# configs/gemma4_sft.yaml (Rev 2 — T4-safe, from design doc)
-# Used in Weekend 2 on Google Colab free T4
+# configs/gemma4_sft.yaml (Rev 3 — verified against docs 2026-04-06)
+# Verified by: Unsloth docs, TRL v0.29.0, Gemma 4 model card
 #
-# VRAM budget: ~2.6GB model + ~2-4GB activations + ~1GB overhead = ~6-8GB
-# (well within T4's 16GB)
+# VRAM budget: ~8-10GB QLoRA training (T4 16GB = minimum)
+# Architecture: Dense with PLE, 8B total params, 4.5B effective
 
-model: unsloth/gemma-4-E4B-it
-load_in_4bit: true              # QLoRA — T4 cannot fit 16-bit (10.2GB weights alone)
-fp16: true                      # T4 does NOT support bf16 (Turing arch)
+model: unsloth/gemma-4-E4B-it-unsloth-bnb-4bit  # Pre-quantized (faster load)
+load_in_4bit: true
+fp16: true                      # T4 (Turing) does NOT support bf16
 bf16: false
+max_seq_length: 2048            # Unsloth param — matches TRL max_length
+
+# LoRA config
 lora_r: 16
 lora_alpha: 16
-lora_dropout: 0
+lora_dropout: 0                 # Unsloth optimized path
 target_modules:
   - q_proj
   - k_proj
@@ -19,15 +22,30 @@ target_modules:
   - gate_proj
   - up_proj
   - down_proj
-max_seq_length: 2048            # Most dialogues <1.5K tokens; 8192 wastes 4x VRAM
-gradient_checkpointing: unsloth
-learning_rate: 2e-4
-epochs: 3
-batch_size: 2
-gradient_accumulation_steps: 4
-warmup_steps: 5
+exclude_modules:                # PEFT bug: Gemma4ClippableLinear in vision layers
+  - vision_tower
+  - multi_modal_projector
+  - audio_tower
+
+# Training
+gradient_checkpointing: unsloth # 30% less VRAM than standard
+per_device_train_batch_size: 1  # Conservative for T4 (was 2, reduced after VRAM audit)
+gradient_accumulation_steps: 8  # Effective batch = 1 * 8 = 8
+learning_rate: 1e-4             # fine-tuning-expert: 2e-4 is QLoRA ceiling; 1e-4 safer for 1,354 examples
+num_train_epochs: 3
+warmup_ratio: 0.03              # fine-tuning-expert: 5 steps too few; 0.03 ratio = ~15 steps
 optimizer: adamw_8bit
 weight_decay: 0.01
 lr_scheduler_type: cosine
-save_steps: 100                 # Catches overfitting, 5-6 checkpoints
-save_total_limit: 3             # Keep latest 3 to avoid filling Colab disk
+max_grad_norm: 1.0              # fine-tuning-expert: safety net against gradient spikes
+logging_steps: 10               # fine-tuning-expert: loss curve visibility (default 500 too sparse)
+save_steps: 100
+save_total_limit: 3
+
+# Checkpoint recovery (Colab session preemption)
+push_to_hub: true
+hub_strategy: all_checkpoints
+hub_model_id: thoven/gemma4-pedagogy-tutor-v1
+
+# GGUF export
+gguf_quantization: q4_k_m      # Actual file size: 4.98 GB (not ~3GB)

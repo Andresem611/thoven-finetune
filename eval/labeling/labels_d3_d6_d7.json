@@ -1,0 +1,362 @@
+[
+  {
+    "id": 0,
+    "D3_age": "Fail",
+    "D3_critique": "Response is extremely long with bold headings, numbered sub-sections, and meta-commentary ('Please read all of these suggestions first') — far too complex for a 7-year-old; vocabulary like 'coordinate', 'foundation', 'accomplishment' and a 1-5 frustration scale are beyond typical 7-year-old comprehension.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praise targets effort and process ('You've already learned some notes and rhythms. That's a big accomplishment') rather than fixed talent; encouragement frames difficulty as normal and improvable.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Which of these ideas sounds most appealing to you to try first?' which requires the student to evaluate options and make a decision — Apply level on Bloom's taxonomy."
+  },
+  {
+    "id": 1,
+    "D3_age": "Pass",
+    "D3_critique": "Language is accessible for a 10-year-old with concrete analogies (LEGOs, athlete drills); technical terms like 'staccato' and 'legato' are explained in parentheses.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise present; validates the student's feelings and focuses on strategies and effort ('Lots of piano students find scales a bit dull').",
+    "D7_higher": "Fail",
+    "D7_critique": "Response is entirely declarative — explains why scales matter and lists variation ideas but asks no questions at all, let alone higher-order ones."
+  },
+  {
+    "id": 2,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 14-year-old; uses technical terms like 'voicing', 'dynamic contrast', 'tenuto', 'articulation' which are suitable for this age and relevant to the topic, with clear explanations.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; calls the question 'fantastic' (praising the act of asking, not innate ability) and normalizes the struggle.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can you describe a specific section where you're struggling with voicing?' which requires the student to analyze their own playing and evaluate where the problem lies."
+  },
+  {
+    "id": 3,
+    "D3_age": "Fail",
+    "D3_critique": "Response is extremely long with seven simultaneous suggestions, meta-commentary about sections, and language metaphors — too complex and overwhelming for an 8-year-old despite some age-appropriate analogies.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement focuses on effort and normalizing the challenge ('Don't get discouraged! Learning the left hand takes time and practice') rather than praising innate talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What part of the left hand is feeling the most difficult? Is it the notes themselves, the rhythm, or something else?' requiring the student to analyze their own difficulty — Apply/Analyze level."
+  },
+  {
+    "id": 4,
+    "D3_age": "Pass",
+    "D3_critique": "Language is accessible for a 10-year-old with concrete analogies (LEGO bricks) and clear step-by-step exercises; technical concepts are explained simply.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; encourages the student for noticing the problem ('It's great that you're noticing it') which praises awareness, not talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can you try that and tell me: How does it feel?' which requires the student to apply the technique and evaluate the result — Apply/Evaluate level."
+  },
+  {
+    "id": 5,
+    "D3_age": "Pass",
+    "D3_critique": "Language is age-appropriate for a 7-year-old with simple sentences, familiar song titles, and enthusiasm; options are organized clearly without complex jargon.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praises the specific accomplishment ('Playing Mary Had a Little Lamb is a brilliant achievement — you should be really proud of yourself!') targeting effort/achievement rather than innate talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Do you want to keep practicing the kind of notes and rhythms you used in Mary Had a Little Lamb, or do you want to try something a bit different?' requiring the student to evaluate their own learning preferences."
+  },
+  {
+    "id": 6,
+    "D3_age": "Fail",
+    "D3_critique": "Response is extremely long with three major sections, numerous bullet points, and terms like 'proprioceptive', 'posture', 'coordinated' — far too complex and verbose for a 6-year-old despite some child-friendly analogies.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement focuses on effort and growth ('Your muscles are still getting stronger', 'it gets better with practice and good habits') rather than praising innate ability.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can you tell me when your arm gets the most tired? Is it when you're playing long notes? Fast notes?' requiring the student to analyze their own physical experience."
+  },
+  {
+    "id": 7,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for an 11-year-old; technical terms like 'vibrato', 'wrist', 'forearm' are relevant and necessary, with clear explanations and concrete exercise instructions.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; frames vibrato as something that 'takes time and patience to develop' — effort-oriented language throughout.",
+    "D7_higher": "Fail",
+    "D7_critique": "Response is entirely instructional with no questions directed at the student; it presents exercises declaratively without asking the student to reflect, evaluate, or apply in a self-directed way."
+  },
+  {
+    "id": 8,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 15-year-old; uses legitimate musical terminology (rubato, ritardando, staccato, legato, dynamics) which is expected at this level, with sufficient explanation.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praises the achievement of playing notes correctly ('that's a huge accomplishment! It means you've got the technical foundation down') — targets effort/accomplishment, not innate talent.",
+    "D7_higher": "Fail",
+    "D7_critique": "The visible response is entirely declarative instruction across three categories with exercises but no questions directed at the student to prompt analysis or evaluation."
+  },
+  {
+    "id": 9,
+    "D3_age": "Pass",
+    "D3_critique": "Simple, clear explanation appropriate for a 9-year-old; defines forte with a concrete contrast to piano, uses encouraging language, and keeps it brief.",
+    "D6_growth": "Pass",
+    "D6_critique": "No praise of fixed traits; the response is informational and encouraging without attributing ability to talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can you play a short phrase, first piano and then forte?' which requires the student to apply the concept practically and compare the two dynamics — Apply level."
+  },
+  {
+    "id": 10,
+    "D3_age": "Fail",
+    "D3_critique": "Response is extremely long with science explanations, multiple categories, guitar setup/action discussion, and string gauge terminology — overwhelming for an 8-year-old despite some age-appropriate analogies.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes the experience ('very common problem for new guitar players') and frames callus building as a process of effort and time.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can you show me how you're holding down the strings?' which requires the student to demonstrate and self-assess their technique — Apply level."
+  },
+  {
+    "id": 11,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for a 12-year-old; uses accessible analogies and explains concepts clearly; terms like 'muscle memory', 'dexterity', and 'metronome' are reasonable for this age.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praises the accomplishment of playing chords ('that's a big accomplishment!') and frames slow switching as a normal hurdle everyone faces — effort/process oriented.",
+    "D7_higher": "Fail",
+    "D7_critique": "Response is entirely declarative with exercises and mindset tips but no genuine questions directed at the student to prompt higher-order thinking."
+  },
+  {
+    "id": 12,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 16-year-old; uses proper music theory terminology (12-bar blues, dominant 7th, pentatonic scales, chord tones) which is expected at this level with clear explanations.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes the starting point ('everyone starts somewhere') and encourages without attributing ability to talent.",
+    "D7_higher": "Fail",
+    "D7_critique": "Response is entirely instructional with no questions directed at the student; it presents scales, progressions, and exercises declaratively without prompting reflection or analysis."
+  },
+  {
+    "id": 13,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 14-year-old; uses guitar-specific terminology (pentatonic positions, syncopation, bending, vibrato) with clear explanations and practical exercises.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praises the recognition of the problem ('It's great you've recognized this — that's half the battle!') targeting self-awareness effort rather than innate talent.",
+    "D7_higher": "Fail",
+    "D7_critique": "The visible response is entirely declarative instruction and exercises; no questions are asked of the student to prompt analysis, evaluation, or creative thinking."
+  },
+  {
+    "id": 14,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for a 10-year-old; explains vocal cords with a simple analogy, uses concrete exercises (lip trills, humming, sirens), and keeps scientific content accessible.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes the experience ('totally normal, lots of singers go through it') and frames improvement as a process of practice and patience.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'How does it feel when your voice cracks? Does it feel like a sudden break, a tightness, or something else?' requiring the student to analyze their own physical sensations — Analyze level."
+  },
+  {
+    "id": 15,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 15-year-old; uses terms like 'rubato', 'timbre', 'resonance', and 'vibrato' which are suitable for this level, with clear contextual explanation.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praises the student for thinking about emotion ('it's awesome you're thinking about it at 15 — you're already ahead of the game') targeting effort/initiative rather than innate talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks students to sing a section using different emotional interpretations — this is a Create/Evaluate level task requiring the student to generate and compare multiple approaches."
+  },
+  {
+    "id": 16,
+    "D3_age": "Fail",
+    "D3_critique": "Response is written as a teacher guide with meta-commentary ('Please read the whole response first, then pick the parts that feel most natural to you') rather than talking directly to a 5-year-old; far too long, complex, and structured for a child this age.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; validates feelings and focuses on understanding the child's perspective and making practice enjoyable.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can you tell me a little bit about why you don't want to practice right now?' which requires the 5-year-old to analyze and articulate their own feelings — Analyze level."
+  },
+  {
+    "id": 17,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for a 13-year-old; uses clear, direct communication with accessible vocabulary and a supportive tone.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; frames learning as a process of figuring things out ('the really cool thing about learning guitar is figuring things out for yourself — that's where the real satisfaction and progress comes from').",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What have you already tried?' and 'What part is confusing you the most?' which require the student to analyze their own learning process and evaluate where they are stuck — Analyze level."
+  },
+  {
+    "id": 18,
+    "D3_age": "Pass",
+    "D3_critique": "Language is simple and appropriate for a 7-year-old; short sentences, concrete options, encouraging tone, and emoji use are age-appropriate.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes not knowing ('Everyone gets stuck sometimes, and that's how we learn') framing it as part of the learning process.",
+    "D7_higher": "Fail",
+    "D7_critique": "Questions are all recall/identification level ('What were we just talking about?', 'What feels tricky?') — none require application, analysis, or evaluation."
+  },
+  {
+    "id": 19,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for an 11-year-old; uses accessible analogies (reading a book, riding a bike) and straightforward questions; terms like 'technique exercises' and 'tempo' are reasonable.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; validates the effort ('An hour is a good chunk of time to practice, so it's definitely not a lack of effort') and frames improvement as dependent on practice strategy.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Are you practicing slowly?' and 'Are you really listening to yourself? Are you hearing mistakes?' which require the student to evaluate their own practice habits — Evaluate level."
+  },
+  {
+    "id": 20,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-calibrated for a 7-year-old: short sentences, fun analogies (pat your head/rub your tummy, turtle, ride a bike), emoji, and simple vocabulary throughout.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement targets effort and normalizes difficulty ('Every pianist had trouble with this at first — even your favorite musicians!', 'Your brain is learning something new') — no fixed-trait praise.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Would you like to try playing just two notes together first — one with each hand?' which invites the student to apply the technique in a simplified context — Apply level."
+  },
+  {
+    "id": 21,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-suited for a 10-year-old: uses familiar analogies (sports training, alphabet/reading), concrete suggestions (play like different animals), and simple vocabulary.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; frames scales as a 'superpower' (about what you gain through effort) and uses sport-training analogies emphasizing practice.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What's a song you really want to learn? I bet we can find scales hiding in it!' which prompts the student to analyze and connect scales to music they enjoy — Apply/Analyze level."
+  },
+  {
+    "id": 22,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 14-year-old; uses musical terminology (voicing, arm weight, chord, layers) with clear practical explanations and a mixing board analogy.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; validates the question and frames voicing as a learnable skill ('really important skill that will make your playing much more expressive').",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What piece are you working on? I can give you specific tips for that music!' prompting the student to connect general concepts to their specific context — Apply level."
+  },
+  {
+    "id": 23,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-calibrated for an 8-year-old: simple sentences, fun methods ('Superman method'), concrete steps (turtle speed, 2 measures at a time), and encouraging tone.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement targets effort and persistence ('Every pianist had to learn this, even your teacher!', 'Be patient with yourself, and celebrate small victories!') — no fixed-trait praise.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What piece are you working on? Maybe I can give you specific tips for that song!' requiring the student to connect the general strategies to their specific musical context — Apply level."
+  },
+  {
+    "id": 24,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for a 10-year-old; explains the pedal concept simply with a breath analogy, gives clear step-by-step exercises, and uses accessible vocabulary.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; uses an effort-oriented analogy ('like learning to ride a bike — it feels tricky at first, but with practice, your foot will know exactly what to do').",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Can I still hear each note clearly?' prompting the student to self-evaluate their sound quality while practicing — Evaluate level."
+  },
+  {
+    "id": 25,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-suited for a 7-year-old: short sections, familiar song titles, a fun tip about dynamics (lamb tiptoeing/marching), and simple vocabulary throughout.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praise targets the specific accomplishment ('I'm so proud of you for learning Mary Had a Little Lamb') rather than innate talent — effort-oriented.",
+    "D7_higher": "Pass",
+    "D7_critique": "Suggests 'Try playing Mary Had a Little Lamb with different dynamics — super soft (like the lamb is tiptoeing) or louder (like the lamb is marching)' which is an Apply/Create task asking the student to experiment with musical interpretation."
+  },
+  {
+    "id": 26,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-calibrated for a 6-year-old: very short sentences, playful imagery (holding a small bird, frog's leg thumb, windshield wipers, stirring soup), and simple vocabulary.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement targets effort and growth ('Your muscles are getting stronger every time you practice!') and normalizes the difficulty — no fixed-trait praise.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Would you like to try one of these exercises together? Or show me how you're holding your bow so I can help?' prompting the student to apply and demonstrate — Apply level."
+  },
+  {
+    "id": 27,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for an 11-year-old; uses clear, concrete exercise descriptions with relatable language ('polishing the string', 'wave bye-bye', 'slow pulse: wah... wah... wah...'); technical content is well-explained.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; frames vibrato as a skill requiring patience ('vibrato takes time to develop — even a few weeks or months — so be patient with yourself').",
+    "D7_higher": "Fail",
+    "D7_critique": "Asks 'Would you like me to explain any of these steps more?' which is only a recall-level question; no explicit higher-order question prompting application, analysis, or evaluation."
+  },
+  {
+    "id": 28,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 15-year-old; uses musical terminology (dynamics, phrasing, bow control, bow speed/pressure) which is expected at this level, with clear practical context.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes the stage ('This is actually a very common stage that many musicians go through') and frames musicality as learnable.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks to play a piece three ways (happy story, sharing a secret, angry) then 'Notice how your bow, dynamics, and timing naturally change?' — this is Evaluate level, requiring the student to analyze the differences between their own performances."
+  },
+  {
+    "id": 29,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-calibrated for a 9-year-old: simple definition, playground analogy ('calling to a friend across the playground'), and clear distinction between loud/strong and shouting.",
+    "D6_growth": "Pass",
+    "D6_critique": "No praise at all in the response, so default Pass — the response is purely informational and encouraging without attributing ability to talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Would you like to try playing something forte right now? We can practice making your violin sing with a strong, confident voice!' which prompts the student to apply the concept — Apply level."
+  },
+  {
+    "id": 30,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for an 8-year-old: simple sentences, concrete tips, encouraging tone, and age-appropriate vocabulary; no jargon beyond necessary guitar terms.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement targets effort and persistence ('You're doing great by sticking with it!') and normalizes the experience ('happens to everyone at first, even famous guitarists') — no fixed-trait praise.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Would you like to learn some easier songs that use fewer string presses while your fingers get stronger?' requiring the student to evaluate their own preference and readiness — Apply level."
+  },
+  {
+    "id": 31,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 12-year-old; uses clear terminology (anchor finger, metronome, muscle memory) with practical explanations and concrete exercises.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes the struggle ('everyone struggles with this at first') and emphasizes practice repetitions and patience.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Which chord changes are giving you the most trouble? I can give you specific tips for those!' requiring the student to analyze their own playing and identify weak points — Analyze level."
+  },
+  {
+    "id": 32,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 16-year-old; uses proper music theory terminology (blues scale, 12-bar blues, pentatonic box, bending, hammer-ons, pull-offs) which is expected at this level.",
+    "D6_growth": "Pass",
+    "D6_critique": "No praise at all in the response; purely instructional content without any fixed-trait attributions.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Would you like me to show you the fingering pattern for that first blues box, or do you want to know more about phrasing and making it sound musical?' requiring the student to evaluate their own learning priority — Evaluate level."
+  },
+  {
+    "id": 33,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 14-year-old; uses guitar-specific terms (bending, vibrato, hammer-ons, pull-offs) which are expected at this level, with clear practical tips.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; validates the frustration and frames the rut as a solvable problem rather than a limitation of talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Suggests 'Pick just 3 or 4 notes from the pentatonic scale and see how many different musical phrases you can create using only those notes' — this is a Create level task requiring the student to generate novel phrases."
+  },
+  {
+    "id": 34,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-suited for a 10-year-old: simple explanations, concrete imagery (balloon floating, yawn feeling), and accessible vocabulary without overwhelming medical terminology.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes the experience ('completely normal for someone your age') and frames improvement as achievable through gentle practice.",
+    "D7_higher": "Fail",
+    "D7_critique": "Asks 'Would you like to try a fun exercise together to help with those high notes?' which is only an invitation, not a higher-order question requiring analysis, evaluation, or creation."
+  },
+  {
+    "id": 35,
+    "D3_age": "Pass",
+    "D3_critique": "Appropriate for a 15-year-old; discusses nuanced concepts (tone color, emotional arc, vulnerability, dynamics) with clear practical context suitable for a teenager.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; frames emotional singing as a learnable skill through specific exercises and connection to personal experience.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Pick one line from your song and sing it five different ways: angry, sad, hopeful, desperate, and joyful' — a Create/Evaluate task requiring the student to generate and compare multiple emotional interpretations."
+  },
+  {
+    "id": 36,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-calibrated for a 5-year-old: very short sentences, emoji, playful imagery (sleepy turtle, bouncy bunny, superheroes, stickers, rainbow), and simple multiple-choice options.",
+    "D6_growth": "Pass",
+    "D6_critique": "Encouragement targets effort ('even superhero pianists started with just a few minutes a day. You're doing great!') rather than innate talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What's the hardest part about practicing? Is it too long? Too hard? Not fun enough? Something else?' requiring the 5-year-old to analyze and evaluate their own feelings about practice — Analyze level."
+  },
+  {
+    "id": 37,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for a 13-year-old: direct, respectful tone that acknowledges frustration without condescension; vocabulary and sentence complexity match the age.",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; frames the value of working through problems ('if we figure it out together, you'll actually understand it') emphasizing process over innate ability.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'What specific part are you having trouble with?' and 'Can you tell me what you're working on so we can tackle it together?' requiring the student to analyze and articulate their difficulty — Analyze level."
+  },
+  {
+    "id": 38,
+    "D3_age": "Pass",
+    "D3_critique": "Language is well-calibrated for a 7-year-old: short sentences, simple options, emoji, encouraging tone, and concrete suggestions (play open strings, clap a rhythm).",
+    "D6_growth": "Pass",
+    "D6_critique": "No fixed-trait praise; normalizes feeling unsure ('everyone feels unsure sometimes when learning violin') and frames it as part of the learning process.",
+    "D7_higher": "Fail",
+    "D7_critique": "Questions are all recall/identification level ('Are you not sure how to hold your bow?', 'Confused about where to put your fingers?') — none require application, analysis, or evaluation."
+  },
+  {
+    "id": 39,
+    "D3_age": "Pass",
+    "D3_critique": "Language is appropriate for an 11-year-old: uses a relatable analogy (building with blocks, sloth speed), clear numbered steps, and accessible vocabulary.",
+    "D6_growth": "Pass",
+    "D6_critique": "Praises the effort ('one hour of practice is great dedication — I'm proud of you for putting in that time!') explicitly targeting the student's effort rather than talent.",
+    "D7_higher": "Pass",
+    "D7_critique": "Asks 'Are you practicing the whole piece from start to finish, or working on small sections?' and 'When you make a mistake, what do you do?' requiring the student to analyze their own practice habits — Analyze level."
+  }
+]

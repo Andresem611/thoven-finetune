@@ -93,24 +93,54 @@
 
 ---
 
-## Weekend 2: Training + Evaluation (NEXT)
+## Pre-Flight Verification (2026-04-06)
 
-### Prerequisites (from Weekend 1)
+### 6-Agent Documentation Audit
+
+| Agent | Provider | Critical Findings |
+|-------|----------|------------------|
+| verify-unsloth | Unsloth docs | `FastModel` (not `FastLanguageModel`), `standardize_sharegpt()`, `gemma-it` template |
+| verify-ollama | Ollama docs | All 8/8 confirmed. `apiKey="ollama"` for OpenAI-compat endpoint |
+| verify-promptfoo | Promptfoo docs | **`config.systemPrompt` silently ignored** — root cause of Weekend 1 Condition B bug |
+| verify-trl | TRL v0.29.0 | `SFTConfig` (not `TrainingArguments`), `max_length` (not `max_seq_length`) |
+| verify-colab | Web search | T4 not guaranteed (might get K80), GGUF download unreliable (use Google Drive) |
+| verify-gemma4 | HF model card | Chat template changed to `<\|turn>`, VRAM 8-10GB, GGUF 4.98GB, E4B is DENSE |
+
+### Remediation Applied
+
+- [x] Custom skill updated (10 corrections)
+- [x] Training config revised (batch_size=1, exclude_modules, push_to_hub)
+- [x] Promptfoo eval rewritten with JSON prompt files
+- [x] Complete Colab training script with all verified APIs
+- [x] Ollama Modelfile prepared
+- [x] STATUS.md updated
+
+---
+
+## Weekend 2: Training + Evaluation
+
+### Prerequisites (from Weekend 1 + Remediation)
 - [x] Baseline scores recorded
 - [x] Kill criterion passed
-- [ ] training_sft.jsonl finalized (~1,350 examples)
-- [x] Training config written (configs/gemma4_sft.yaml)
-- [x] Colab instructions written
+- [x] training_sft.jsonl finalized (1,354 examples)
+- [x] Training config written (configs/gemma4_sft.yaml Rev 3)
+- [x] Colab script written (notebooks/colab_sft.py)
+- [x] JSON prompt files created (eval/prompts/)
+- [x] Weekend 2 eval config written (eval/promptfoo-pedagogy-w2.yaml)
+- [ ] Ollama installed on Mac
+- [ ] Colab training completed
+- [ ] GGUF downloaded and imported to Ollama
 
-### Weekend 2 Plan
-1. Upload `training_sft.jsonl` to Google Colab
-2. Open Unsloth official Gemma 4 notebook
-3. Smoke test: `max_steps=1`
-4. Full SFT run (~2-3 hours on T4)
-5. Export to GGUF Q4_K_M
-6. Import to Ollama locally
-7. Run 4-condition eval (A, B, C, D) with local inference
-8. Decision gate: proceed to DPO / adjust data / stop
+### Weekend 2 Plan (Updated)
+1. Open Google Colab → T4 GPU → verify with nvidia-smi
+2. Upload `training_sft.jsonl` to Colab
+3. Run `notebooks/colab_sft.py` cells 1-8 (smoke test)
+4. Run cell 9 (full SFT, ~2-3 hrs)
+5. Run cells 10-12 (export GGUF → Google Drive)
+6. Download GGUF from Drive to Mac (~4.98 GB)
+7. `ollama create thoven-tutor -f models/Modelfile`
+8. Run 4-condition eval: `npx promptfoo eval --config eval/promptfoo-pedagogy-w2.yaml`
+9. Decision gate: proceed to DPO / adjust data / stop
 
 ### Success Criteria (Weekend 2)
 
