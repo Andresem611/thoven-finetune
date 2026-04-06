@@ -47,7 +47,7 @@ SYSTEM_PROMPT = (
 # Regex to split on speaker labels. Handles variations like:
 # "Tutor:", "Student:", "Tutor :", "TUTOR:", etc.
 SPEAKER_PATTERN = re.compile(
-    r"(?:^|\n)\s*(Tutor|Student)\s*:\s*",
+    r"(?:^|\n)\s*(Tutor|Teacher|Student)\s*:\s*",
     re.IGNORECASE,
 )
 
@@ -99,14 +99,14 @@ def turns_to_sharegpt(turns: list[dict[str, str]]) -> list[dict[str, str]]:
     conversation = [{"from": "system", "value": SYSTEM_PROMPT}]
 
     # If conversation starts with tutor, prepend a generic student opener
-    if turns[0]["speaker"] == "tutor":
+    if turns[0]["speaker"] in ("tutor", "teacher"):
         conversation.append({
             "from": "human",
             "value": "Hi! I'm ready for today's lesson.",
         })
 
     for turn in turns:
-        role = "gpt" if turn["speaker"] == "tutor" else "human"
+        role = "gpt" if turn["speaker"] in ("tutor", "teacher") else "human"
 
         # Avoid consecutive same-role turns -- merge them
         if conversation and conversation[-1]["from"] == role:
