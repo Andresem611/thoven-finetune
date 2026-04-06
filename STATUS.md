@@ -141,7 +141,9 @@
 - [x] Weekend 2 eval config written (eval/promptfoo-pedagogy-w2.yaml)
 - [ ] Ollama installed on Mac
 - [x] Colab training completed (2026-04-06, 510 steps, final loss 1.44, peak GPU 12.89GB)
-- [ ] GGUF exported and downloading to Mac
+- [x] LoRA adapter saved to HuggingFace Hub (AndresMartinezThoven/thoven-tutor-v1-lora)
+- [x] LoRA adapter backed up to Google Drive
+- [ ] GGUF conversion (blocked: Colab GPU limit + Unsloth VLM bug, retry tomorrow)
 - [ ] GGUF imported to Ollama
 
 ### Training Results (2026-04-06)
