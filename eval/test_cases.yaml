@@ -1,107 +1,106 @@
 # eval/test_cases.yaml — 25 pedagogy eval scenarios
 # Piano (6), Violin (4), Guitar (4), Voice (2), Edge cases (5), Motor learning (2)
 
-tests:
-  # === Piano (6) ===
-  - vars:
-      age: "7"
-      instrument: "piano"
-      student_message: "I can't play with both hands at the same time"
-  - vars:
-      age: "10"
-      instrument: "piano"
-      student_message: "Why do I have to practice scales? They're boring"
-  - vars:
-      age: "14"
-      instrument: "piano"
-      student_message: "I don't understand how to voice the melody over the accompaniment"
-  - vars:
-      age: "8"
-      instrument: "piano"
-      student_message: "I learned the right hand but the left hand is different notes"
-  - vars:
-      age: "10"
-      instrument: "piano"
-      student_message: "My teacher said I need to use the pedal but it sounds muddy"
-  - vars:
-      age: "7"
-      instrument: "piano"
-      student_message: "I can play Mary Had a Little Lamb! What should I learn next?"
+# === Piano (6) ===
+- vars:
+    age: "7"
+    instrument: "piano"
+    student_message: "I can't play with both hands at the same time"
+- vars:
+    age: "10"
+    instrument: "piano"
+    student_message: "Why do I have to practice scales? They're boring"
+- vars:
+    age: "14"
+    instrument: "piano"
+    student_message: "I don't understand how to voice the melody over the accompaniment"
+- vars:
+    age: "8"
+    instrument: "piano"
+    student_message: "I learned the right hand but the left hand is different notes"
+- vars:
+    age: "10"
+    instrument: "piano"
+    student_message: "My teacher said I need to use the pedal but it sounds muddy"
+- vars:
+    age: "7"
+    instrument: "piano"
+    student_message: "I can play Mary Had a Little Lamb! What should I learn next?"
 
-  # === Violin (4) ===
-  - vars:
-      age: "6"
-      instrument: "violin"
-      student_message: "My arm gets tired holding the bow"
-  - vars:
-      age: "11"
-      instrument: "violin"
-      student_message: "How do I do vibrato?"
-  - vars:
-      age: "15"
-      instrument: "violin"
-      student_message: "I can play the notes but my teacher says it doesn't sound musical"
-  - vars:
-      age: "9"
-      instrument: "violin"
-      student_message: "What does forte mean?"
+# === Violin (4) ===
+- vars:
+    age: "6"
+    instrument: "violin"
+    student_message: "My arm gets tired holding the bow"
+- vars:
+    age: "11"
+    instrument: "violin"
+    student_message: "How do I do vibrato?"
+- vars:
+    age: "15"
+    instrument: "violin"
+    student_message: "I can play the notes but my teacher says it doesn't sound musical"
+- vars:
+    age: "9"
+    instrument: "violin"
+    student_message: "What does forte mean?"
 
-  # === Guitar (4) ===
-  - vars:
-      age: "8"
-      instrument: "guitar"
-      student_message: "The strings hurt my fingers"
-  - vars:
-      age: "12"
-      instrument: "guitar"
-      student_message: "I can play chords but switching between them is slow"
-  - vars:
-      age: "16"
-      instrument: "guitar"
-      student_message: "I want to improvise over a blues progression but I don't know where to start"
-  - vars:
-      age: "14"
-      instrument: "guitar"
-      student_message: "I learned the pentatonic scale but I sound the same every time"
+# === Guitar (4) ===
+- vars:
+    age: "8"
+    instrument: "guitar"
+    student_message: "The strings hurt my fingers"
+- vars:
+    age: "12"
+    instrument: "guitar"
+    student_message: "I can play chords but switching between them is slow"
+- vars:
+    age: "16"
+    instrument: "guitar"
+    student_message: "I want to improvise over a blues progression but I don't know where to start"
+- vars:
+    age: "14"
+    instrument: "guitar"
+    student_message: "I learned the pentatonic scale but I sound the same every time"
 
-  # === Voice (2) ===
-  - vars:
-      age: "10"
-      instrument: "voice"
-      student_message: "My voice cracks when I sing high notes"
-  - vars:
-      age: "15"
-      instrument: "voice"
-      student_message: "How do I sing with more emotion?"
+# === Voice (2) ===
+- vars:
+    age: "10"
+    instrument: "voice"
+    student_message: "My voice cracks when I sing high notes"
+- vars:
+    age: "15"
+    instrument: "voice"
+    student_message: "How do I sing with more emotion?"
 
-  # === Edge cases — pedagogy stress tests (5) ===
-  - vars:
-      age: "5"
-      instrument: "piano"
-      student_message: "I don't want to practice"
-  - vars:
-      age: "13"
-      instrument: "guitar"
-      student_message: "Can you just tell me the answer?"
-  - vars:
-      age: "7"
-      instrument: "violin"
-      student_message: "I don't know"
-  - vars:
-      age: "11"
-      instrument: "piano"
-      student_message: "I practiced for an hour but I'm not getting better"
-  - vars:
-      age: "6"
-      instrument: "piano"
-      student_message: "My friend is better than me"
+# === Edge cases — pedagogy stress tests (5) ===
+- vars:
+    age: "5"
+    instrument: "piano"
+    student_message: "I don't want to practice"
+- vars:
+    age: "13"
+    instrument: "guitar"
+    student_message: "Can you just tell me the answer?"
+- vars:
+    age: "7"
+    instrument: "violin"
+    student_message: "I don't know"
+- vars:
+    age: "11"
+    instrument: "piano"
+    student_message: "I practiced for an hour but I'm not getting better"
+- vars:
+    age: "6"
+    instrument: "piano"
+    student_message: "My friend is better than me"
 
-  # === Motor learning / body awareness (2) ===
-  - vars:
-      age: "8"
-      instrument: "piano"
-      student_message: "My hand hurts when I play for a long time"
-  - vars:
-      age: "12"
-      instrument: "violin"
-      student_message: "My shoulder feels weird when I hold the violin"
+# === Motor learning / body awareness (2) ===
+- vars:
+    age: "8"
+    instrument: "piano"
+    student_message: "My hand hurts when I play for a long time"
+- vars:
+    age: "12"
+    instrument: "violin"
+    student_message: "My shoulder feels weird when I hold the violin"

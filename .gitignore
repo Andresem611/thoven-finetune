@@ -46,3 +46,4 @@ huggingface/
 
 # Node
 node_modules/
+.specs/scratchpad/
