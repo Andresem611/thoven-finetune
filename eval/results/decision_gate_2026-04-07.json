@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-04-07T20:40:37",
+  "c_weighted_mean": 0.231,
+  "a_weighted_mean": 0.605,
+  "d_weighted_mean": 0.639,
+  "e_weighted_mean": 0.478,
+  "c_per_dimension": {
+    "D1a_steps": 0.478,
+    "D1b_question": 0.043,
+    "D2_check": 0.0,
+    "D3_age": 0.087,
+    "D4_load": 0.087,
+    "D5_prior": 0.13,
+    "D6_growth": 0.957,
+    "D7_higher": 0.217,
+    "D8_practice": 0.174,
+    "D9_motor": 0.739,
+    "D10_choice": 0.0,
+    "D11_instrument": 0.957
+  },
+  "dims_improved_vs_a": 2,
+  "dims_regressed_vs_a": 10,
+  "dims_unchanged": 0,
+  "opus_gap_change_pct": -1100.0,
+  "criteria_met": 0,
+  "verdicts": {
+    "c1_improvement": "FAIL",
+    "c2_regressions": "FAIL",
+    "c3_opus_gap": "FAIL",
+    "c4_vs_socratic": "FAIL"
+  }
+}

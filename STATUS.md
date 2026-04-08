@@ -1,6 +1,6 @@
 # Fine-Tuning Experiment Status
 
-**Last updated:** 2026-04-05 22:00 UTC
+**Last updated:** 2026-04-07 21:00 UTC
 **Design doc:** `docs/plans/2026-04-05-finetuning-experiment-design.md` (Rev 2)
 **Paper outline:** `docs/paper_outline.md`
 
@@ -14,7 +14,7 @@
 |-----------|-------|--------|:---:|--------|
 | **A** | Gemma 3 12B | Neutral | **0.605** | Floor |
 | **B** | Gemma 3 12B | Socratic | 0.605* | *systemPrompt not delivered via HF API |
-| **C** | Fine-tuned | Neutral | TBD | Weekend 2 |
+| **C** | Fine-tuned Gemma 4 E4B | Bare (no system) | **0.231** | ❌ REGRESSION — teacher-guide register |
 | **D** | Opus 4.6 | Neutral | **0.639** | Fair ceiling |
 | **E** | Opus 4.6 | Socratic | **0.478** | Socratic HURT scores |
 
@@ -101,7 +101,8 @@
 | Judge validation (11 dims) | $3-5 | ~$3 | Sonnet API calls |
 | Colab training (GPU) | $0 | **$0** | Free T4 tier |
 | Judge iteration (7 judges) | $2-3 | ~$2 (partial) | 4 judges iterated so far |
-| **Total Weekend 2 (so far)** | **$15-22** | **~$13** | Under budget |
+| Condition C eval (253 judge calls) | $2-3 | ~$3 | 23 test cases × 11 judges |
+| **Total Weekend 2** | **$15-22** | **~$16** | Within budget |
 
 ---
 
@@ -176,25 +177,55 @@
 8. Run 4-condition eval: `npx promptfoo eval --config eval/promptfoo-pedagogy-w2.yaml`
 9. Decision gate: proceed to DPO / adjust data / stop
 
-Previously:
-1. Open Google Colab → T4 GPU → verify with nvidia-smi
-2. Upload `training_sft.jsonl` to Colab
-3. Run `notebooks/colab_sft.py` cells 1-8 (smoke test)
-4. Run cell 9 (full SFT, ~2-3 hrs)
-5. Run cells 10-12 (export GGUF → Google Drive)
-6. Download GGUF from Drive to Mac (~4.98 GB)
-7. `ollama create thoven-tutor -f models/Modelfile`
-8. Run 4-condition eval: `npx promptfoo eval --config eval/promptfoo-pedagogy-w2.yaml`
-9. Decision gate: proceed to DPO / adjust data / stop
+### Condition C — Fine-Tuned Model Eval Results (2026-04-07)
 
-### Success Criteria (Weekend 2)
+| # | Dimension | Gemma (A) | Fine-Tuned (C) | Opus (D) | C vs A |
+|---|-----------|:---------:|:-------------:|:--------:|:------:|
+| D1a | Scaffolding | 0.739 | 0.478 | 0.870 | -0.261 ↓ |
+| D1b | Questions | 0.478 | 0.043 | 0.609 | -0.435 ↓↓ |
+| D2 | Comprehension | 0.261 | 0.000 | 0.304 | -0.261 ↓↓ |
+| D3 | Age-appropriate | 0.674 | 0.087 | 1.000 | -0.587 ↓↓↓ |
+| D4 | Cognitive load | 0.130 | 0.087 | 0.217 | -0.043 ↓ |
+| D5 | Prior knowledge | 0.196 | 0.130 | 0.196 | -0.066 ↓ |
+| **D6** | **Growth mindset** | 0.839 | **0.957** | 0.652 | **+0.118 ↑** |
+| D7 | Higher-order | 0.783 | 0.217 | 0.565 | -0.566 ↓↓↓ |
+| D8 | Practice | 0.630 | 0.174 | 0.587 | -0.456 ↓↓ |
+| **D9** | **Motor awareness** | 0.557 | **0.739** | 0.435 | **+0.182 ↑** |
+| D10 | Student choice | 0.891 | 0.000 | 1.000 | -0.891 ↓↓↓ |
+| D11 | Instrument | 1.000 | 0.957 | 1.000 | -0.043 = |
 
-| Metric | Fail | Pass | Great |
-|--------|------|------|-------|
-| C > B (fine-tuned+neutral beats base+Socratic) | C < B on scaffolding | C > B on >4 dims | C > B on >7 dims |
-| Dimensions improved (C vs A) | < 5 of 11 | > 7 of 11 | > 9 of 11 |
-| No regression | Any dimension drops | All hold or improve | All improve |
-| Opus gap narrows (C vs D) | Gap unchanged | Gap narrows >10% | Gap narrows >25% |
+**Weighted Mean:** A=0.605 → **C=0.231** → D=0.639 (62% drop)
+
+### Decision Gate — FAIL (0/4 criteria met)
+
+| Criterion | Result | Verdict |
+|-----------|--------|---------|
+| Dims improved (C > A) | 2/12 | ❌ FAIL |
+| No regressions | 10/12 regressed | ❌ FAIL |
+| Opus gap narrows | Gap widened -1100% | ❌ FAIL |
+| C beats Socratic (E) | 0.231 < 0.478 | ❌ FAIL |
+
+**RECOMMENDATION: STOP. Regenerate training data before next training run.**
+
+### Root Cause Analysis
+
+**Primary failure: Training data register mismatch.** The model learned pedagogy concepts (D6 ↑, D9 ↑) but outputs them as teacher-guide advice ("Here is how you can respond...") rather than direct student conversation. 23/23 responses use "Here is/are" framing.
+
+**Why this happened:**
+- ConvoLearn data (1,250 examples) = earth science tutoring, not music-specific, meta-commentary heavy
+- Synthetic data (100 examples) = Sonnet playing teacher, Haiku playing student — but Sonnet's "teacher voice" is advisory, not conversational
+- No explicit register control in training data generation prompts
+
+**What the model DID learn:**
+- Growth mindset language (+11.8%) — consistent positive framing
+- Motor/body awareness (+18.2%) — practical physical guidance
+- Instrument relevance (95.7%) — stays on-topic
+
+**What collapsed:**
+- D10 Student choice (89.1% → 0%) — model gives teacher multiple approach options instead of offering the student choices
+- D3 Age-appropriate (67.4% → 8.7%) — writes at adult teacher level, not kid level
+- D7 Higher-order thinking (78.3% → 21.7%) — explains concepts instead of prompting discovery
+- D1b Questions (47.8% → 4.3%) — talks about what to ask, doesn't actually ask
 
 ---
 

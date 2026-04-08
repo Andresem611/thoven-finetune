@@ -6,7 +6,7 @@
 
 **Date:** April 5, 2026
 
-**Status:** Training COMPLETE (2026-04-06). Post-training evals next.
+**Status:** Wave 1 COMPLETE (2026-04-07). Decision gate: FAIL (0/4). Root cause: training data register mismatch. Wave 2 planned.
 
 ---
 
@@ -123,6 +123,37 @@ files.download("/content/training_record.json")
 | 450 | 1.433 | 4.08e-6 |
 | 500 | 1.358 | 1.98e-7 |
 | 510 | 1.438 | 1.62e-8 |
+
+---
+
+## WAVE 1 EVAL RESULTS (2026-04-07)
+
+**Condition C (Fine-Tuned Gemma 4 E4B + LoRA) — Weighted Mean: 0.231**
+
+| Dimension | Baseline (A) | Fine-Tuned (C) | Delta | Notes |
+|-----------|:---:|:---:|:---:|-------|
+| D1a Scaffolding | 0.739 | 0.478 | -0.261 | Model gives steps but frames as teacher advice |
+| D1b Questions | 0.478 | 0.043 | -0.435 | Talks ABOUT what to ask, doesn't ASK |
+| D2 Comprehension | 0.261 | 0.000 | -0.261 | Zero comprehension checks |
+| D3 Age-Appropriate | 0.674 | 0.087 | -0.587 | Writes at adult teacher level |
+| D4 Cognitive Load | 0.130 | 0.087 | -0.043 | Still dumps info |
+| D5 Prior Knowledge | 0.196 | 0.130 | -0.066 | Still no probing |
+| **D6 Growth Mindset** | 0.839 | **0.957** | **+0.118** | **Improved — positive framing learned** |
+| D7 Higher-Order | 0.783 | 0.217 | -0.566 | Explains instead of prompting discovery |
+| D8 Practice | 0.630 | 0.174 | -0.456 | Practice advice is for teacher, not student |
+| **D9 Motor Awareness** | 0.557 | **0.739** | **+0.182** | **Improved — body awareness learned** |
+| D10 Student Choice | 0.891 | 0.000 | -0.891 | Gives teacher multiple options, not student |
+| D11 Instrument | 1.000 | 0.957 | -0.043 | Near-perfect |
+
+**Decision Gate: FAIL (0/4 criteria met)**
+- Dims improved: 2/12 (need >7) ❌
+- Regressions: 10/12 ❌
+- Opus gap: widened from 0.034 to 0.408 ❌
+- vs Socratic: 0.231 < 0.478 ❌
+
+**Key Paper Finding:** Fine-tuning on teacher-facing data successfully encodes pedagogical knowledge (D6 ↑, D9 ↑) but in the wrong output register — the model learned to advise teachers about students rather than tutor students directly. This is a training data quality finding, not a model capability finding. Implications: register control in synthetic data generation is critical for conversational AI tutors.
+
+**Wave 2 hypothesis:** Regenerate training data with explicit student-facing register control. Same model, same eval, different data.
 
 ---
 
