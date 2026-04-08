@@ -31,10 +31,14 @@
 - [ ] Decision: which model balances capability + deployability?
 
 ### Task 2: Data Strategy Research
-- [ ] Research NVIDIA NeMo DataDesigner for structured synthetic data generation
-- [ ] Evaluate: does DataDesigner support persona-locked multi-turn conversation generation?
-- [ ] Compare: DataDesigner vs custom two-LLM script (Wave 1 approach) vs single-LLM with register constraints
-- [ ] Decision: data generation approach for Wave 2
+- [x] ~~Research NVIDIA NeMo DataDesigner~~ — **EVALUATED: NOT SUITABLE for Wave 2**
+  - No native Anthropic support (would need LiteLLM proxy)
+  - No pre-built pedagogical rubric
+  - Multi-turn requires manual column chaining, not native dialogue loop
+  - Value kicks in at 10,000+ rows (we need 200)
+  - Register/voice control is prompt-only, same as direct generation
+  - **Decision: Use improved two-LLM script (Sonnet tutor + Haiku student) with register-locked prompts**
+  - Revisit DataDesigner if we scale to 5,000+ training examples in future waves
 
 ### Task 3: AutoResearch Evaluation
 - [ ] Clone Karpathy's AutoResearch repo (github.com/karpathy/autoresearch)
